@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-bg: #0B0B0B;
+  --color-secondary-bg: #141414;
+  --color-bronze: #8B5E3C;
+  --color-light-bronze: #D4A373;
+  --color-champagne: #E7D3B0;
+  --color-white-text: #F8F8F8;
+  --color-gray-text: #CFCFCF;
+  --color-border-color: #242424;
+  --color-heading: #F8F8F8;
+
+  --font-heading: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 40s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+}
+
+:root {
+  --background: #0B0B0B;
+  --foreground: #F8F8F8;
+}
+
+body {
+  background-color: var(--color-primary-bg);
+  color: var(--color-white-text);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ================================================
+   LIGHT THEME OVERRIDES
+   ================================================ */
+[data-theme="light"] {
+  --color-primary-bg: #F5F0EA;
+  --color-secondary-bg: #EBE3D9;
+  --color-white-text: #1A1A1A;
+  --color-gray-text: #333333;
+  --color-border-color: #D1C5B6;
+  --color-heading: #1A1A1A;
+  --background: #F5F0EA;
+  --foreground: #1A1A1A;
+}
+
+/* Bronze text needs a darker value on the light canvas to retain WCAG AA contrast. */
+[data-theme="light"] {
+  --color-bronze: #704421;
+  --color-light-bronze: #704421;
+  --color-champagne: #5C361A;
+}
+
+/* Glassmorphism — Dark Theme (default) */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.glass-card {
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glassmorphism — Light Theme */
+[data-theme="light"] .glass-panel {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-primary-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5E3C;
+}
+
+/* Lenis smooth scroll adjustments */
+/* html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+} */
+
+/* Text masking for high-end text reveal effects */
+.text-reveal-mask {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* ================================================
+   NAVBAR DIVIDER
+   ================================================ */
+.navbar-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(139, 94, 60, 0.3) 20%,
+    rgba(212, 163, 115, 0.5) 50%,
+    rgba(139, 94, 60, 0.3) 80%,
+    transparent 100%
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.navbar-divider::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 20%;
+  right: 20%;
+  height: 6px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(212, 163, 115, 0.12) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* ================================================
+   LIGHT THEME — Hardcoded Color Overrides
+   These override Tailwind arbitrary value classes
+   that won't respond to CSS variable changes.
+   ================================================ */
+
+/* Override hardcoded #F8F8F8 text for light mode */
+[data-theme="light"] .text-\[\#F8F8F8\] {
+  color: var(--color-heading) !important;
+}
+
+/* Override hardcoded bg-[#0B0B0B] backgrounds */
+[data-theme="light"] .bg-\[\#0B0B0B\] {
+  background-color: var(--color-primary-bg) !important;
+}
+
+[data-theme="light"] .bg-\[\#0B0B0B\]\/85 {
+  background-color: rgba(245, 240, 234, 0.85) !important;
+}
+
+[data-theme="light"] .bg-\[\#0B0B0B\]\/98 {
+  background-color: rgba(245, 240, 234, 0.98) !important;
+}
+
+/* Override hardcoded bg-[#141414] */
+[data-theme="light"] .bg-\[\#141414\] {
+  background-color: var(--color-secondary-bg) !important;
+}
+
+[data-theme="light"] .bg-\[\#141414\]\/30 {
+  background-color: rgba(235, 227, 217, 0.3) !important;
+}
+
+/* Override SVG stroke/text colors in charts */
+[data-theme="light"] .text-\[\#CFCFCF\] {
+  color: var(--color-gray-text) !important;
+}
+
+/* Selection color in light mode */
+[data-theme="light"] ::selection {
+  background: rgba(139, 94, 60, 0.3);
+  color: #1A1A1A;
+}
+
+/* Fix green/status colors that look fine in both themes */
+[data-theme="light"] .text-green-500 {
+  color: #16a34a !important;
+}
+[data-theme="light"] .text-green-400 {
+  color: #16a34a !important;
+}
