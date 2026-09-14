@@ -59,8 +59,7 @@ export default function ContactPage() {
             Whether you are looking to strengthen your website, improve your Google
             Business Profile, build local search visibility, or understand how our
             services could support your business — we are happy to discuss where you
-            are today and what a useful next step might look like. We&apos;ll review
-            your enquiry and get back to you using the contact details you provide.
+            are today and what the next useful step might look like. We help align your website, Google Maps, and Business Profile for real search intent
           </p>
         </div>
       </section>
