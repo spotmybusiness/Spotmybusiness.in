@@ -22,6 +22,8 @@ const inter = Inter({
   display: "swap",
 });
 
+import { getLocalBusinessSchema } from "@/lib/business";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://spotmybusiness.in"),
 
@@ -29,17 +31,20 @@ export const metadata: Metadata = {
     canonical: "https://spotmybusiness.in/",
   },
 
-  title: "Local SEO, Google Maps & Website Services | Spot My Business",
+  title: "Spot My Business | Internet Marketing Service in Kolkata",
 
   description:
-    "Spot My Business strengthens local visibility with Google Business Profile optimization, Google Maps and Local SEO, reputation management, and website development, management, SEO, and performance.",
+    "Spot My Business is an internet marketing service in Kolkata helping businesses grow with Google Business Profile, Google Maps, Local SEO and website solutions.",
 
   keywords: [
+    "Internet Marketing Service",
+    "Internet Marketing Service in Kolkata",
+    "Spot My Business",
+    "Local SEO Kolkata",
     "Google Business Profile Optimization",
-    "Local SEO",
     "Google Maps SEO",
     "Reputation Management",
-    "Website Development",
+    "Website Development Kolkata",
     "Website Management",
     "Website SEO",
     "Website Performance",
@@ -52,10 +57,10 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Local SEO, Google Maps & Website Services | Spot My Business",
+    title: "Spot My Business | Internet Marketing Service in Kolkata",
 
     description:
-      "Spot My Business strengthens local visibility with Google Business Profile optimization, Google Maps and Local SEO, reputation management, and website services.",
+      "Spot My Business is an internet marketing service in Kolkata helping businesses grow with Google Business Profile, Google Maps, Local SEO and website solutions.",
 
     url: "https://spotmybusiness.in",
 
@@ -76,10 +81,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Local SEO, Google Maps & Website Services | Spot My Business",
+    title: "Spot My Business | Internet Marketing Service in Kolkata",
 
     description:
-      "Spot My Business strengthens local visibility with Google Business Profile optimization, Google Maps and Local SEO, reputation management, and website services.",
+      "Spot My Business is an internet marketing service in Kolkata helping businesses grow with Google Business Profile, Google Maps, Local SEO and website solutions.",
 
     images: ["/assets/logo.png"],
   },
@@ -111,44 +116,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-
-    name: "Spot My Business",
-    url: "https://spotmybusiness.in",
-
-    telephone: ["+91 8597913452", "+91 9007960333"],
-
-    address: {
-      "@type": "PostalAddress",
-
-      streetAddress: "Middle Rd, Sen Para, Santoshpur",
-
-      addressLocality: "Kolkata",
-
-      addressRegion: "West Bengal",
-
-      postalCode: "700075",
-
-      addressCountry: "IN",
-    },
-
-    geo: {
-      "@type": "GeoCoordinates",
-
-      latitude: 22.49583535142233,
-
-      longitude: 88.3806285747356,
-    },
-
-    openingHours: "Mo-Su 00:00-23:59",
-
-    sameAs: [
-      "https://www.linkedin.com/company/spot-my-business/",
-      "https://www.instagram.com/spotmybusiness.in/",
-    ],
-  };
+  const jsonLd = getLocalBusinessSchema();
 
   return (
     <html

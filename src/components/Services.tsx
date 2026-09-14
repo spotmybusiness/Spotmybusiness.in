@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import {
   Building2, Gauge, Globe, Map, MapPin, Search, Settings, Star,
-  TrendingUp, X, ArrowUpRight,
+  TrendingUp, X, ArrowUpRight, Megaphone,
 } from "lucide-react";
 
 interface ServiceItem {
@@ -17,6 +17,15 @@ interface ServiceItem {
 }
 
 const servicesList: ServiceItem[] = [
+  {
+    id: 0,
+    title: "Internet Marketing",
+    href: "/services/internet-marketing/",
+    icon: Megaphone,
+    shortDesc: "Connect your local business with high-intent searchers in Kolkata through integrated SEO, Maps, and web strategies.",
+    longDesc: "We provide end-to-end internet marketing services for local businesses in Kolkata, integrating Local SEO, Google Business Profile management, Google Maps visibility, high-performance websites, and reputation building.",
+    features: ["Local Search Strategy", "Google Business Profile Optimization", "Google Maps Alignment", "Lead Generation Paths"],
+  },
   {
     id: 1,
     title: "Website Development",

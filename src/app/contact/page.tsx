@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import Contact from "@/components/Contact";
+import { businessHours } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Contact Spot My Business | Phone, WhatsApp, Email & Enquiry Form",
@@ -127,12 +128,12 @@ export default function ContactPage() {
               smb.spot.my.business@gmail.com
             </a>
             <p className="text-xs text-gray-text/60 leading-relaxed">
-              Use the subject line "Digital Presence Enquiry" for the fastest routing.
+              Use the subject line &quot;Digital Presence Enquiry&quot; for the fastest routing.
             </p>
           </div>
 
-          {/* Address */}
-          <div className="glass-card border border-border-color rounded-2xl p-8 space-y-3 hover:border-bronze/40 transition-colors duration-300 md:col-span-2 lg:col-span-2">
+          {/* Location */}
+          <div className="glass-card border border-border-color rounded-2xl p-8 space-y-3 hover:border-bronze/40 transition-colors duration-300">
             <span className="text-[10px] uppercase tracking-[0.25em] text-gray-text/50 font-bold">
               Location
             </span>
@@ -141,8 +142,28 @@ export default function ContactPage() {
             </p>
             <p className="text-xs text-gray-text/60 leading-relaxed">
               Spot My Business operates remotely and works with local businesses across
-              Kolkata and beyond. We do not require in-person meetings and serve clients
-              through phone, WhatsApp, and email.
+              Kolkata and beyond. We serve clients through phone, WhatsApp, and email.
+            </p>
+          </div>
+
+          {/* Business Hours */}
+          <div className="glass-card border border-border-color rounded-2xl p-8 space-y-3 hover:border-bronze/40 transition-colors duration-300">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-gray-text/50 font-bold">
+              Business Hours
+            </span>
+            <div className="space-y-1.5 text-xs">
+              {businessHours.map((h) => (
+                <div
+                  key={h.day}
+                  className="flex justify-between items-center py-0.5 text-gray-text border-b border-border-color/20 last:border-b-0"
+                >
+                  <span className="font-medium text-heading">{h.day}</span>
+                  <span className="text-light-bronze font-semibold">{h.hours}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-[11px] text-gray-text/60 pt-1 leading-relaxed">
+              Available 24 hours every day across all communication channels.
             </p>
           </div>
 

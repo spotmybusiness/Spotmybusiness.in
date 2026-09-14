@@ -30,13 +30,13 @@ export default function Home() {
               <div className="space-y-6 md:space-y-8 lg:col-span-6">
                 <div className="space-y-4">
                   <span className="inline-block rounded-full border border-bronze/20 bg-bronze/5 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.35em] text-light-bronze">
-                    Digital Presence for Local Businesses
+                    Internet Marketing &amp; Local SEO in Kolkata
                   </span>
 
                   <h1 className="font-heading text-4xl font-extrabold uppercase leading-[1.08] tracking-tight text-heading sm:text-5xl md:text-[54px]">
-                    GOOGLE BUSINESS PROFILE
+                    INTERNET MARKETING
                     <span className="mt-2 block bg-gradient-to-r from-bronze via-light-bronze to-champagne bg-clip-text text-transparent drop-shadow-sm">
-                      & LOCAL SEO EXPERTS
+                      &amp; LOCAL SEO IN KOLKATA
                     </span>
                   </h1>
                 </div>
@@ -44,10 +44,10 @@ export default function Home() {
                 <p
                   className="max-w-xl text-base font-normal leading-relaxed text-gray-text md:text-lg"
                 >
-                  We combine high-quality websites, SEO, Google Search and
-                  Maps visibility, Google Business Profile optimization, and
-                  reputation management to help local businesses build trust
-                  and generate enquiries.
+                  Spot My Business is an internet marketing service in Kolkata. We
+                  combine high-quality websites, SEO, Google Search and Maps
+                  visibility, Google Business Profile optimization, and reputation
+                  management to help local businesses build trust and generate enquiries.
                 </p>
 
                 {/* CTA BUTTONS */}

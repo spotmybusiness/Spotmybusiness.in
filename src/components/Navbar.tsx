@@ -100,6 +100,7 @@ export default function Navbar() {
               </a>
               <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-72 -translate-x-1/2 rounded-xl border border-border-color bg-primary-bg p-3 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 <div className="flex flex-col gap-1">
+                  <a href="/services/internet-marketing/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Internet Marketing</a>
                   <a href="/services/google-business-profile-optimization/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Google Business Profile Optimization</a>
                   <a href="/services/google-maps-seo/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Google Maps SEO</a>
                   <a href="/services/local-seo/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Local SEO</a>
@@ -214,6 +215,13 @@ export default function Navbar() {
 
             {isServicesOpen && (
               <div className="w-full my-2 py-2 px-4 rounded-2xl bg-secondary-bg/80 border border-border-color/60 flex flex-col gap-2.5 text-center text-xs font-medium animate-in fade-in slide-in-from-top-2 duration-200">
+                <a
+                  href="/services/internet-marketing/"
+                  onClick={handleRouteClick}
+                  className="py-1.5 text-gray-text hover:text-light-bronze"
+                >
+                  Internet Marketing
+                </a>
                 <a
                   href="/services/google-business-profile-optimization/"
                   onClick={handleRouteClick}

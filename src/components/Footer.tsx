@@ -66,6 +66,7 @@ export default function Footer() {
               Services
             </p>
             <ul className="space-y-2.5 text-xs text-gray-text font-medium">
+              <li><a href="/services/internet-marketing/" className="hover:text-light-bronze transition-colors">Internet Marketing</a></li>
               <li><a href="/services/google-business-profile-optimization/" className="hover:text-light-bronze transition-colors">Google Business Profile Optimization</a></li>
               <li><a href="/services/google-maps-seo/" className="hover:text-light-bronze transition-colors">Google Maps SEO</a></li>
               <li><a href="/services/local-seo/" className="hover:text-light-bronze transition-colors">Local SEO</a></li>
@@ -122,6 +123,7 @@ export default function Footer() {
     <p>Middle Rd, Sen Para, Santoshpur, Kolkata, West Bengal 700075</p>
     <p>Phone: <a href="tel:+919007960333" className="hover:text-light-bronze transition-colors">+91 9007960333</a> / <a href="tel:+918597913452" className="hover:text-light-bronze transition-colors">+91 8597913452</a></p>
     <p>Email: <a href="mailto:smb.spot.my.business@gmail.com" className="hover:text-light-bronze transition-colors">smb.spot.my.business@gmail.com</a></p>
+    <p>Hours: <span className="text-heading font-medium">Mon – Sun: Open 24 Hours</span></p>
     <p><a href="https://wa.me/919007960333" target="_blank" rel="noopener noreferrer" className="hover:text-light-bronze transition-colors">WhatsApp</a></p>
   </div>
 </div>

@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/services/",
+    "/services/internet-marketing/",
     "/services/google-business-profile-optimization/",
     "/services/google-maps-seo/",
     "/services/local-seo/",
@@ -19,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/case-studies/",
     "/about/",
     "/contact/",
+    "/privacy-policy/",
+    "/terms/",
   ];
 
   return routes.map((route) => ({

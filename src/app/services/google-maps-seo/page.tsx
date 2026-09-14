@@ -335,6 +335,12 @@ export default function GoogleMapsSeoPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
+              href="/services/internet-marketing/"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
+            >
+              Internet Marketing
+            </a>
+            <a
               href="/services/google-business-profile-optimization/"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >

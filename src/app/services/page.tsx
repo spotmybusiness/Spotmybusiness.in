@@ -20,6 +20,18 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   const services = [
     {
+      title: "Internet Marketing",
+      href: "/services/internet-marketing/",
+      shortDesc:
+        "Comprehensive internet marketing services in Kolkata uniting Local SEO, Google Business Profile optimization, Google Maps, and high-performance websites.",
+      features: [
+        "Local Search & Maps Strategy",
+        "Google Business Profile Optimization",
+        "Conversion-Focused Web Solutions",
+        "Customer Trust & Reputation Growth",
+      ],
+    },
+    {
       title: "Website Development",
       href: "/services/website-development/",
       shortDesc:

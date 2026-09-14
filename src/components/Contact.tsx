@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { CheckCircle2, AlertCircle, Phone, Mail, MapPin, Loader2, MessageSquare, Copy, Check } from "lucide-react";
+import { CheckCircle2, AlertCircle, Phone, Mail, MapPin, Clock, Loader2, MessageSquare, Copy, Check } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -170,6 +170,16 @@ export default function Contact({ hideSidebar = false }: { hideSidebar?: boolean
                   >
                     +91 9007960333 (Chat Directly)
                   </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-primary-bg border border-border-color rounded-xl text-light-bronze shrink-0">
+                  <Clock className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-[10px] uppercase tracking-wider text-gray-text/50">Business Hours</span>
+                  <p className="text-sm font-semibold text-heading mt-0.5">Monday – Sunday: Open 24 Hours</p>
                 </div>
               </div>
 

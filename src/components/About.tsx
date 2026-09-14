@@ -34,9 +34,9 @@ export default function About() {
                 WHO WE ARE
               </span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tight text-heading mt-3 leading-tight">
-                BUILD A PRESENCE THAT<br />
+                GROW YOUR BUSINESS ONLINE<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-bronze via-light-bronze to-champagne">
-                  HELPS CUSTOMERS FIND YOU.
+                  IN KOLKATA &amp; BEYOND.
                 </span>
               </h2>
             </div>
@@ -45,7 +45,7 @@ export default function About() {
               className="space-y-4 text-gray-text text-base leading-relaxed"
             >
               <p>
-                Your customers are already searching. We help them find you. Spot My Business helps local businesses strengthen their presence across Google Search, Google Maps, and the web. We combine Google Business Profile optimization, Local SEO, and high-quality website development and management to build a digital presence that attracts attention, earns trust, and generates enquiries. No unnecessary complexity—just a clear strategy built around your business and your market.
+                Your customers are already searching. We help them find you. Based in Santoshpur, Kolkata, Spot My Business is an internet marketing service helping local businesses strengthen their presence across Google Search, Google Maps, and the web. We combine Google Business Profile optimization, Local SEO, and high-quality website development and management to build a digital presence that attracts attention, earns trust, and generates enquiries. No unnecessary complexity—just a clear strategy built around your business and your market.
               </p>
             </div>
           </div>

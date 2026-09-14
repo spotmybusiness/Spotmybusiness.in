@@ -89,6 +89,12 @@ export default function LocationsPage() {
 
   const relevantServices = [
     {
+      title: "Internet Marketing",
+      detail:
+        "End-to-end internet marketing services uniting Local SEO, Google Business Profile, Maps, and website solutions in Kolkata.",
+      link: "/services/internet-marketing/",
+    },
+    {
       title: "Local SEO",
       detail:
         "Connect local search intent to informative website pages and structured content.",
