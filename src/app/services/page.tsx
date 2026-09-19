@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Website, Local SEO, Maps & Reputation Services | Spot My Business",
   description:
-    "Explore Spot My Business services for websites, Local SEO, Google Maps, Google Business Profile optimization, and reputation management—practical digital presence work for local businesses.",
+    "Explore Spot My Business services for websites, Local SEO, Google Maps, Google Business Profile optimization, and reputation management - practical digital presence work for local businesses.",
   alternates: {
     canonical: "https://spotmybusiness.in/services/",
   },
   openGraph: {
     title: "Website, Local SEO, Maps & Reputation Services | Spot My Business",
     description:
-      "Explore Spot My Business services for websites, Local SEO, Google Maps, Google Business Profile optimization, and reputation management—practical digital presence work for local businesses.",
+      "Explore Spot My Business services for websites, Local SEO, Google Maps, Google Business Profile optimization, and reputation management - practical digital presence work for local businesses.",
     url: "https://spotmybusiness.in/services/",
     siteName: "Spot My Business",
     type: "website",
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                     View Service →
                   </a>
                 ) : (
-                  /* Website Growth — no dedicated route; CTA directs to /contact/ */
+                  /* Website Growth  -  no dedicated route; CTA directs to /contact/ */
                   <a
                     href="/contact/"
                     className="inline-block text-[10px] tracking-[0.2em] font-heading font-bold text-light-bronze uppercase hover:text-champagne transition-colors duration-300"
@@ -279,7 +279,7 @@ export default function ServicesPage() {
             well-structured website supports SEO. A complete Google Business Profile
             reinforces Maps visibility. Reputation management makes every other channel
             more effective. Our services are designed to work as a connected whole, and
-            we approach each engagement with that in mind — starting from where your
+            we approach each engagement with that in mind  -  starting from where your
             business is today.
           </p>
           <p className="mt-4 text-gray-text text-sm leading-relaxed">
@@ -334,7 +334,7 @@ export default function ServicesPage() {
             <p className="text-gray-text text-sm leading-relaxed">
               Tell us where your business is today and what you would like to improve.
               We can discuss your website, Google Business Profile, Local SEO, Google
-              Maps visibility, or reputation — whichever area is the right starting
+              Maps visibility, or reputation  -  whichever area is the right starting
               point for you.
             </p>
             <a

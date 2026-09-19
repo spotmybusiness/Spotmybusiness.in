@@ -69,7 +69,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
     {
       title: "Categories that match the business",
       detail:
-        "Primary and, where they fit, secondary categories are checked so the profile describes what the business actually does—not a generic or misleading label.",
+        "Primary and, where they fit, secondary categories are checked so the profile describes what the business actually does - not a generic or misleading label.",
     },
     {
       title: "Services and customer-facing details",
@@ -99,7 +99,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
     {
       title: "Reviews and reputation considerations",
       detail:
-        "We look at how reviews appear on the profile and how they fit a practical approach to customer feedback—without fabricating ratings or reviews.",
+        "We look at how reviews appear on the profile and how they fit a practical approach to customer feedback - without fabricating ratings or reviews.",
     },
     {
       title: "Ongoing profile maintenance",
@@ -127,7 +127,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
     {
       title: "Monitoring and maintenance",
       detail:
-        "We watch for changes that affect the listing—edits, outdated hours, or incomplete sections—and keep the profile in usable shape.",
+        "We watch for changes that affect the listing - edits, outdated hours, or incomplete sections - and keep the profile in usable shape.",
     },
     {
       title: "Ongoing refinement",
@@ -196,7 +196,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             Spot My Business helps you present accurate hours, services,
             photos, and contact details on the Google Business Profile that
-            appears in Google Search and Google Maps—so local customers can
+            appears in Google Search and Google Maps - so local customers can
             understand the business and take the next step.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -237,7 +237,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
             <p>
               Completeness, clarity, relevance, and consistency all play a
               part. The profile should describe the same business that appears
-              on your website and in Google Maps—not a mixed set of names,
+              on your website and in Google Maps - not a mixed set of names,
               categories, or contact details.
             </p>
             <p>
@@ -275,7 +275,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
             The sequence is practical: understand the current listing, fix
             what is unclear, align it with the business, then keep it current.
-            Each step is about useful information—not a promised outcome.
+            Each step is about useful information - not a promised outcome.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (

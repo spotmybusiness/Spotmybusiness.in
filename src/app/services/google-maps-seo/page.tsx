@@ -88,7 +88,7 @@ export default function GoogleMapsSeoPage() {
     {
       title: "Locally relevant on-site signals",
       detail:
-        "Where the website can reasonably support Maps and local search—clear service pages, accurate location details, and usable contact information—we identify those supporting pieces.",
+        "Where the website can reasonably support Maps and local search - clear service pages, accurate location details, and usable contact information - we identify those supporting pieces.",
     },
     {
       title: "Reviews and reputation considerations",
@@ -121,7 +121,7 @@ export default function GoogleMapsSeoPage() {
     {
       title: "Improve and maintain supporting presence",
       detail:
-        "We work through the agreed information updates and the on-site details that reasonably support local discovery—without inventing extra locations or coverage claims.",
+        "We work through the agreed information updates and the on-site details that reasonably support local discovery - without inventing extra locations or coverage claims.",
     },
     {
       title: "Monitor and refine",
@@ -195,7 +195,7 @@ export default function GoogleMapsSeoPage() {
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             Spot My Business helps local businesses present accurate, relevant
             information on Google Maps and strengthen the local search signals
-            around that listing—so customers can find the business, understand
+            around that listing - so customers can find the business, understand
             it, and decide how to get in touch. Profile field-by-field
             management is a related service, not the whole of this work.
           </p>
@@ -231,7 +231,7 @@ export default function GoogleMapsSeoPage() {
             <p>
               Accurate, relevant information is the foundation. If the pin,
               hours, services, or contact details are wrong, people may
-              dismiss the listing or arrive with the wrong expectation—even
+              dismiss the listing or arrive with the wrong expectation - even
               if they found you in the first place.
             </p>
             <p>
@@ -247,7 +247,7 @@ export default function GoogleMapsSeoPage() {
               search approach: a Google Business Profile that is in good
               order, a website that describes the same services and location
               clearly, and consistent business information elsewhere online.
-              This page is about that Maps and local-discovery layer—not
+              This page is about that Maps and local-discovery layer - not
               about managing every profile field in isolation.
             </p>
             <p>
@@ -372,8 +372,8 @@ export default function GoogleMapsSeoPage() {
             Discuss how your business appears on Maps
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If customers already look for you on Google Maps—or you want that
-            listing to be easier to understand—we can review the current
+            If customers already look for you on Google Maps - or you want that
+            listing to be easier to understand - we can review the current
             presence and the supporting local search details. The
             conversation is about useful information, not a promised pin
             position.

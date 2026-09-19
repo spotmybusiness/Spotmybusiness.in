@@ -93,6 +93,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-gray-text font-medium">
               <li><a href="/case-studies/" className="hover:text-light-bronze transition-colors">Case Studies</a></li>
               <li><a href="/about/" className="hover:text-light-bronze transition-colors">About</a></li>
+              <li><a href="/faq/" className="hover:text-light-bronze transition-colors">FAQ</a></li>
               <li><a href="/contact/" className="hover:text-light-bronze transition-colors">Contact</a></li>
               <li><a href="/privacy-policy/" className="hover:text-light-bronze transition-colors">Privacy Policy</a></li>
               <li><a href="/terms/" className="hover:text-light-bronze transition-colors">Terms</a></li>

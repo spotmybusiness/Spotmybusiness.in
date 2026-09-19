@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
 
+import { getAllLocationSlugs } from "@/lib/locations";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://spotmybusiness.in";
 
-  const routes = [
+  const staticRoutes = [
     "",
     "/services/",
     "/services/internet-marketing/",
@@ -20,14 +22,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/case-studies/",
     "/about/",
     "/contact/",
+    "/faq/",
     "/privacy-policy/",
     "/terms/",
   ];
 
-  return routes.map((route) => ({
+  const locationRoutes = getAllLocationSlugs().map((slug) => `/locations/${slug}/`);
+
+  const allRoutes = [...staticRoutes, ...locationRoutes];
+
+  return allRoutes.map((route) => ({
     url: `${baseUrl}${route}`,
     changeFrequency: (route === "" ? "weekly" : "monthly") as MetadataRoute.Sitemap[0]["changeFrequency"],
     priority: route === "" ? 1.0 : route.startsWith("/services/") ? 0.8 : 0.7,
   }));
 }
-

@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Internet Marketing Services in Kolkata | Spot My Business",
   description:
-    "Spot My Business provides internet marketing services in Kolkata for local businesses—combining Local SEO, Google Business Profile, Maps, and website solutions.",
+    "Spot My Business provides internet marketing services in Kolkata for local businesses - combining Local SEO, Google Business Profile, Maps, and website solutions.",
   alternates: {
     canonical: "https://spotmybusiness.in/services/internet-marketing/",
   },
   openGraph: {
     title: "Internet Marketing Services in Kolkata | Spot My Business",
     description:
-      "Spot My Business provides internet marketing services in Kolkata for local businesses—combining Local SEO, Google Business Profile, Maps, and website solutions.",
+      "Spot My Business provides internet marketing services in Kolkata for local businesses - combining Local SEO, Google Business Profile, Maps, and website solutions.",
     url: "https://spotmybusiness.in/services/internet-marketing/",
     siteName: "Spot My Business",
     type: "website",
