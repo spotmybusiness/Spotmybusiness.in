@@ -68,7 +68,7 @@ export default function ReputationManagementPage() {
     {
       title: "Response guidance and workflows",
       detail:
-        "We set a practical way to reply: who responds, in what tone, and how quickly—so replies stay professional even when the feedback is mixed.",
+        "We set a practical way to reply: who responds, in what tone, and how quickly - so replies stay professional even when the feedback is mixed.",
     },
     {
       title: "A consistent professional presence",
@@ -121,7 +121,7 @@ export default function ReputationManagementPage() {
     {
       title: "Use feedback constructively",
       detail:
-        "Public reviews are one source of insight. They can inform website copy, service descriptions, or internal process—without treating every comment as a verdict.",
+        "Public reviews are one source of insight. They can inform website copy, service descriptions, or internal process - without treating every comment as a verdict.",
     },
     {
       title: "Take some conversations offline",
@@ -144,7 +144,7 @@ export default function ReputationManagementPage() {
     {
       title: "Establish a response approach",
       detail:
-        "We agree a simple way to reply to praise, mixed feedback, and concerns—so responses are consistent rather than improvised each time.",
+        "We agree a simple way to reply to praise, mixed feedback, and concerns - so responses are consistent rather than improvised each time.",
     },
     {
       title: "Maintain consistency",
@@ -154,7 +154,7 @@ export default function ReputationManagementPage() {
     {
       title: "Review and refine",
       detail:
-        "The approach is revisited as the business and its feedback change. Refinement is about a calmer, clearer public presence—not a target rating.",
+        "The approach is revisited as the business and its feedback change. Refinement is about a calmer, clearer public presence - not a target rating.",
     },
   ];
 
@@ -162,7 +162,7 @@ export default function ReputationManagementPage() {
     {
       title: "Easier for prospective customers to evaluate the business",
       detail:
-        "People already read reviews and public details before they call. A monitored, professionally handled presence gives them more context—not a promised conversion rate.",
+        "People already read reviews and public details before they call. A monitored, professionally handled presence gives them more context - not a promised conversion rate.",
     },
     {
       title: "A more credible first impression",
@@ -223,7 +223,7 @@ export default function ReputationManagementPage() {
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             Spot My Business helps local businesses monitor customer
             feedback, respond with care, and keep public business information
-            consistent—so people evaluating you online see a presence that is
+            consistent - so people evaluating you online see a presence that is
             easier to trust. The work is not a campaign to manufacture
             reviews or a promised star rating.
           </p>
@@ -270,7 +270,7 @@ export default function ReputationManagementPage() {
               Business Profile, Maps, the website, and other public
               information all contribute to the same first impression. This
               page is about how feedback is handled and how that public
-              picture stays coherent—not about ranking in local search or
+              picture stays coherent - not about ranking in local search or
               editing every profile field.
             </p>
             <p>

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { locationsData, getLocationBySlug } from "@/lib/locations";
+
 export const metadata: Metadata = {
   title: "Location-Aware Local Presence & Market Reach | Spot My Business",
   description:
@@ -87,6 +89,29 @@ export default function LocationsPage() {
     },
   ];
 
+  const marketRegions = [
+    {
+      name: "Eastern Region & Bengal",
+      description: "Local search and digital visibility across our home state and regional commercial corridors.",
+      slugs: ["kolkata", "bidhannagar", "howrah", "west-bengal", "bhubaneswar"],
+    },
+    {
+      name: "National Capital Region & North",
+      description: "Navigating high-density search competition across the capital, NCR sectors, and northern hubs.",
+      slugs: ["delhi", "noida", "gurugram", "jaipur", "lucknow"],
+    },
+    {
+      name: "Western & Central India",
+      description: "Supporting commercial enterprises, industrial belts, logistics centers, and tourism markets.",
+      slugs: ["mumbai", "pune", "nagpur", "ahmedabad", "goa"],
+    },
+    {
+      name: "Southern India",
+      description: "Optimizing visibility for technology hubs, healthcare capitals, and coastal trade centers.",
+      slugs: ["bengaluru", "hyderabad", "chennai", "kochi", "visakhapatnam"],
+    },
+  ];
+
   const relevantServices = [
     {
       title: "Internet Marketing",
@@ -166,7 +191,7 @@ export default function LocationsPage() {
             Spot My Business is based in Santoshpur, Kolkata, and operates remotely
             to help local businesses establish clear, reliable visibility in the
             areas they genuinely serve. We help align your website, Google Maps,
-            and Business Profile to real search intent—without spammy doorway
+            and Business Profile to real search intent - without spammy doorway
             pages or artificial boundaries.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -245,7 +270,7 @@ export default function LocationsPage() {
             Our past work includes businesses serving distinct local
             communities across the Kolkata metropolitan region. These examples
             illustrate how search intent and customer habits differ by location
-            and service model—not separate branch territories.
+            and service model - not separate branch territories.
           </p>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -265,6 +290,67 @@ export default function LocationsPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Service Areas & Markets We Support */}
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">
+            Service areas and markets we support
+          </h2>
+          <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
+            Spot My Business delivers remote digital presence, SEO, and website
+            solutions to businesses across our verified Google Business Profile service
+            areas. Explore market-specific considerations and search dynamics for
+            each location.
+          </p>
+
+          <div className="mt-10 space-y-10">
+            {marketRegions.map((region) => {
+              const regionLocations = region.slugs
+                .map((slug) => getLocationBySlug(slug))
+                .filter((loc): loc is NonNullable<typeof loc> => loc !== undefined);
+
+              return (
+                <div key={region.name} className="space-y-4">
+                  <div className="border-b border-border-color/40 pb-2">
+                    <h3 className="text-xl font-heading font-bold text-heading">
+                      {region.name}
+                    </h3>
+                    <p className="text-xs text-gray-text mt-1">
+                      {region.description}
+                    </p>
+                  </div>
+
+                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {regionLocations.map((loc) => (
+                      <a
+                        key={loc.slug}
+                        href={`/locations/${loc.slug}/`}
+                        className="group flex flex-col justify-between rounded-xl border border-border-color bg-secondary-bg p-5 transition-all duration-200 hover:border-bronze/50 hover:shadow-md"
+                      >
+                        <div>
+                          <div className="flex items-center justify-between">
+                            <span className="font-heading font-bold text-heading group-hover:text-light-bronze transition-colors">
+                              {loc.name}
+                            </span>
+                            <span className="text-[10px] uppercase tracking-wider text-light-bronze font-semibold">
+                              {loc.state}
+                            </span>
+                          </div>
+                          <p className="mt-2 text-xs leading-relaxed text-gray-text line-clamp-2">
+                            {loc.heroSubtitle}
+                          </p>
+                        </div>
+                        <span className="mt-4 inline-block text-xs font-semibold text-light-bronze group-hover:text-heading transition-colors">
+                          View market details →
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -321,4 +407,3 @@ export default function LocationsPage() {
     </main>
   );
 }
-

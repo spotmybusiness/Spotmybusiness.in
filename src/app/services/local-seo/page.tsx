@@ -63,7 +63,7 @@ export default function LocalSeoPage() {
     {
       title: "Local search-intent research",
       detail:
-        "We look at how people actually search for the services you offer in your market—the language they use, the questions they ask, and which pages on the site should answer them.",
+        "We look at how people actually search for the services you offer in your market - the language they use, the questions they ask, and which pages on the site should answer them.",
     },
     {
       title: "On-page optimization",
@@ -73,7 +73,7 @@ export default function LocalSeoPage() {
     {
       title: "Service and location relevance",
       detail:
-        "Service pages and location details are written around what the business actually does and where it genuinely operates—not around invented coverage or thin doorway pages.",
+        "Service pages and location details are written around what the business actually does and where it genuinely operates - not around invented coverage or thin doorway pages.",
     },
     {
       title: "Website content structure",
@@ -116,7 +116,7 @@ export default function LocalSeoPage() {
     {
       title: "Understand the business and market",
       detail:
-        "We start with what you offer, who you serve, and how customers currently find and contact you—so the work is built around the real business, not a generic local template.",
+        "We start with what you offer, who you serve, and how customers currently find and contact you - so the work is built around the real business, not a generic local template.",
     },
     {
       title: "Research relevant local search intent",
@@ -207,7 +207,7 @@ export default function LocalSeoPage() {
             wider online presence easier to discover for relevant searches in
             their market. That includes useful service pages, consistent
             business information, and alignment with Search, Maps, and the
-            Google Business Profile—not profile editing or Maps listing work
+            Google Business Profile - not profile editing or Maps listing work
             on their own.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -236,7 +236,7 @@ export default function LocalSeoPage() {
             <p>
               Local search is how people look for a nearby business when they
               already have a need. The job is to make the right business
-              easier to recognize—through pages that answer that need, and
+              easier to recognize - through pages that answer that need, and
               through facts that match across the web.
             </p>
             <p>
@@ -264,7 +264,7 @@ export default function LocalSeoPage() {
               Search engines are not something Spot My Business can operate
               from the inside. The work is to organize genuine information
               and useful pages so local search has something clear to
-              understand—not to manipulate ranking systems or promise a
+              understand - not to manipulate ranking systems or promise a
               position in results.
             </p>
           </div>
@@ -383,7 +383,7 @@ export default function LocalSeoPage() {
             If you want the website and the rest of your local presence to
             match how customers already search, we can review the current
             pages, information, and gaps. The conversation is about a
-            clearer foundation—not guaranteed rankings or lead numbers.
+            clearer foundation - not guaranteed rankings or lead numbers.
           </p>
           <a
             href="/contact/"

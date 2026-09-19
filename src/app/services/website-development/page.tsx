@@ -63,7 +63,7 @@ export default function WebsiteDevelopmentPage() {
     {
       title: "Website planning and structure",
       detail:
-        "We start with the pages the business actually needs—services, about, contact, and supporting content—so the site has a clear map before it is built.",
+        "We start with the pages the business actually needs - services, about, contact, and supporting content - so the site has a clear map before it is built.",
     },
     {
       title: "Responsive website development",
@@ -83,7 +83,7 @@ export default function WebsiteDevelopmentPage() {
     {
       title: "Contact and enquiry pathways",
       detail:
-        "Phone, WhatsApp, forms, and other contact options the business already uses can be placed where they are easy to act on—without inventing extra channels.",
+        "Phone, WhatsApp, forms, and other contact options the business already uses can be placed where they are easy to act on - without inventing extra channels.",
     },
     {
       title: "Accurate business information",
@@ -116,7 +116,7 @@ export default function WebsiteDevelopmentPage() {
     {
       title: "The people you want to reach",
       detail:
-        "Structure and copy are shaped around how those customers look for help—what they need to know first, and what would make them comfortable getting in touch.",
+        "Structure and copy are shaped around how those customers look for help - what they need to know first, and what would make them comfortable getting in touch.",
     },
     {
       title: "How the business wants to be seen",
@@ -131,7 +131,7 @@ export default function WebsiteDevelopmentPage() {
     {
       title: "Clear calls to action",
       detail:
-        "Each key page should make the next step obvious: call, message, or send an enquiry—without pressure tactics or false urgency.",
+        "Each key page should make the next step obvious: call, message, or send an enquiry - without pressure tactics or false urgency.",
     },
   ];
 
@@ -139,7 +139,7 @@ export default function WebsiteDevelopmentPage() {
     {
       title: "Understand the business",
       detail:
-        "We learn what you offer, who you serve, and what the website needs to do—inform, support contact, and represent the business clearly.",
+        "We learn what you offer, who you serve, and what the website needs to do - inform, support contact, and represent the business clearly.",
     },
     {
       title: "Plan structure and content",
@@ -159,7 +159,7 @@ export default function WebsiteDevelopmentPage() {
     {
       title: "Launch and hand over",
       detail:
-        "The site goes live once the agreed work is in place. Ongoing updates and SEO programmes are separate, related services—not assumed in the build.",
+        "The site goes live once the agreed work is in place. Ongoing updates and SEO programmes are separate, related services - not assumed in the build.",
     },
   ];
 
@@ -243,7 +243,7 @@ export default function WebsiteDevelopmentPage() {
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             Spot My Business plans and builds professional websites around
             what you offer, who you serve, and how you want customers to get
-            in touch. The aim is a site people can understand and use—not a
+            in touch. The aim is a site people can understand and use - not a
             promised ranking, traffic figure, or revenue result.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -278,7 +278,7 @@ export default function WebsiteDevelopmentPage() {
             <p>
               Clear structure comes first: pages that match real services,
               navigation that makes sense, and a path from interest to
-              enquiry. User experience is the practical side of that—can
+              enquiry. User experience is the practical side of that - can
               someone read the page, find the next step, and complete it on
               the device they already have.
             </p>
@@ -434,7 +434,7 @@ export default function WebsiteDevelopmentPage() {
             If you need a site that explains what you do and makes it easier
             for customers to enquire, tell us how the business works today
             and what the website should support. We can discuss a practical
-            starting point—without a published price list or a promised
+            starting point - without a published price list or a promised
             result.
           </p>
           <a

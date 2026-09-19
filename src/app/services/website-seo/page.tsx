@@ -83,12 +83,12 @@ export default function WebsiteSeoPage() {
     {
       title: "Content that is useful to read",
       detail:
-        "SEO work includes making the page worth visiting: specific service information, plain language, and a next step—not keyword-stuffed paragraphs.",
+        "SEO work includes making the page worth visiting: specific service information, plain language, and a next step - not keyword-stuffed paragraphs.",
     },
     {
       title: "Technical SEO fundamentals",
       detail:
-        "Where it helps understanding and crawlability—indexable HTML, sensible URLs, one main heading per page, and pages that are not blocked from being found—we address those basics.",
+        "Where it helps understanding and crawlability - indexable HTML, sensible URLs, one main heading per page, and pages that are not blocked from being found - we address those basics.",
     },
     {
       title: "Priority pages, not every URL at once",
@@ -185,9 +185,9 @@ export default function WebsiteSeoPage() {
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             Spot My Business improves how a website is structured, written,
             and technically presented so search engines and people can see
-            what each page is for. The work is on the site itself—search
+            what each page is for. The work is on the site itself - search
             intent, on-page relevance, internal links, and crawlable
-            foundations—not a promise of rankings, traffic, or leads.
+            foundations - not a promise of rankings, traffic, or leads.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
@@ -228,7 +228,7 @@ export default function WebsiteSeoPage() {
             <p>
               On-page work covers titles, headings, body copy, and how
               related pages point to each other. Technical fundamentals
-              matter where they affect crawlability and clarity—indexable
+              matter where they affect crawlability and clarity - indexable
               content, working internal links, and pages that are not hidden
               behind unnecessary barriers.
             </p>

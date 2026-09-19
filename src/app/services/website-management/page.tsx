@@ -78,7 +78,7 @@ export default function WebsiteManagementPage() {
     {
       title: "Issue fixes and small improvements",
       detail:
-        "When something on an existing page is wrong, unclear, or awkward to use, we correct it. That is upkeep of the current site—not a redesign or a new build.",
+        "When something on an existing page is wrong, unclear, or awkward to use, we correct it. That is upkeep of the current site - not a redesign or a new build.",
     },
     {
       title: "General site health reviews",
@@ -121,7 +121,7 @@ export default function WebsiteManagementPage() {
     {
       title: "Report back and adjust",
       detail:
-        "You know what was changed. If a different kind of work is needed—new pages, search work, or a performance review—that is discussed as a related service.",
+        "You know what was changed. If a different kind of work is needed - new pages, search work, or a performance review - that is discussed as a related service.",
     },
   ];
 
@@ -186,7 +186,7 @@ export default function WebsiteManagementPage() {
             Spot My Business helps businesses look after a website after it
             launches: updating content, keeping business information
             accurate, fixing routine issues, and checking that pages, links,
-            and forms still work. This is ongoing support—not a new website,
+            and forms still work. This is ongoing support - not a new website,
             an SEO programme, or a performance overhaul.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -225,7 +225,7 @@ export default function WebsiteManagementPage() {
               customers actually use.
             </p>
             <p>
-              It also includes fixing issues that appear in ordinary use—a
+              It also includes fixing issues that appear in ordinary use - a
               form that stops sending, a button that points to an old URL, a
               page that still mentions a service you no longer offer. Those
               are maintenance tasks. They are not a rebuild, a ranking

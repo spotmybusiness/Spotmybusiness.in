@@ -88,7 +88,7 @@ export default function WebsitePerformancePage() {
     {
       title: "Mobile performance",
       detail:
-        "Many visits happen on a phone and a slower connection. Layout, tap targets, and load behaviour are reviewed with that in mind—not only a fast desktop.",
+        "Many visits happen on a phone and a slower connection. Layout, tap targets, and load behaviour are reviewed with that in mind - not only a fast desktop.",
     },
     {
       title: "Core Web Vitals as a practical lens",
@@ -111,7 +111,7 @@ export default function WebsitePerformancePage() {
     {
       title: "Identify meaningful technical priorities",
       detail:
-        "Issues are ranked by how much they affect real use—heavy media, excess JavaScript, blocking assets—not by chasing a vanity metric.",
+        "Issues are ranked by how much they affect real use - heavy media, excess JavaScript, blocking assets - not by chasing a vanity metric.",
     },
     {
       title: "Agree the scope of changes",
@@ -190,7 +190,7 @@ export default function WebsitePerformancePage() {
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             Spot My Business reviews how a website is built and delivered so
             it can load with less waste, feel more responsive, and stay
-            usable on mobile. The work is technical and practical—not a
+            usable on mobile. The work is technical and practical - not a
             promised PageSpeed score, ranking, or conversion increase.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -235,8 +235,8 @@ export default function WebsitePerformancePage() {
               awkward in the hand.
             </p>
             <p>
-              Core Web Vitals—loading, interactivity, and visual
-              stability—are a widely used way to describe those qualities.
+              Core Web Vitals - loading, interactivity, and visual
+              stability - are a widely used way to describe those qualities.
               They are a useful checklist, not a score Spot My Business can
               guarantee, and not a lever that controls Google&apos;s ranking
               systems.
