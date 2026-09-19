@@ -56,7 +56,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
-          <div className="relative z-50">
+          <div className="relative z-50 shrink-0 md:mr-8 lg:mr-12">
             <a
               href="/"
               onClick={handleRouteClick}
@@ -84,7 +84,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-7">
             <a
               href="/"
               className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300"
@@ -126,6 +126,9 @@ export default function Navbar() {
             </a>
             <a href="/about/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               About
+            </a>
+            <a href="/faq/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
+              FAQ
             </a>
             <a href="/contact/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               Contact
@@ -312,6 +315,14 @@ export default function Navbar() {
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             About
+          </a>
+
+          <a
+            href="/faq/"
+            onClick={handleRouteClick}
+            className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
+          >
+            FAQ
           </a>
 
           <div className="w-full border-t border-border-color/50 my-2" />
