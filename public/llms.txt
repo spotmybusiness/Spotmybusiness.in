@@ -1,101 +1,68 @@
 # Spot My Business
 
+> Spot My Business (SMB) is an Internet Marketing Service based in Kolkata, West Bengal, India. SMB helps local businesses improve their online visibility through Local SEO, Google Business Profile optimization, Google Maps SEO, website development, and reputation management.
+
 ## About
 
-Spot My Business (SMB) is a digital presence and internet marketing service based in Kolkata, West Bengal, India. The company helps local businesses establish, strengthen, and manage their visibility across the web, Google Search, Google Maps, and customer review platforms. SMB combines technical website development, Local SEO, Google Business Profile optimization, Google Maps discovery, and reputation management to build verifiable digital trust and facilitate customer enquiries.
+Spot My Business helps businesses establish, strengthen, and manage their digital presence across Google Search, Google Maps, websites, and customer review platforms.
 
-## Business Category
+## Business Information
 
-Primary Category:
-- Internet Marketing Service
-
-Legitimate Core Services:
-- Local SEO (Search Engine Optimization)
-- Google Business Profile Optimization & Management
-- Google Maps SEO & Local Discovery
-- Website Development & Design
-- Website Management & Maintenance
-- Website Performance & Mobile Optimization
-- Website SEO & Technical On-Page Structure
-- Reputation Management & Review Strategy
-
-## Location
-
-Primary Base:
-- Middle Rd, Sen Para, Santoshpur, Kolkata, West Bengal 700075, India
-- Geographic Coordinates: 22.495835, 88.380628
-
-Primary Service Areas:
-- Kolkata Metropolitan Area, West Bengal, India
-- Remote collaboration available for local businesses across West Bengal and India
+- **Business Name:** Spot My Business (SMB)
+- **Primary Category:** Internet Marketing Service
+- **Location:** Santoshpur, Kolkata, West Bengal, India
+- **Service Area:** Kolkata Metropolitan Area, West Bengal, and India
+- **Website:** https://spotmybusiness.in/
 
 ## Services
 
-Official URLs for Spot My Business services:
-
-- Internet Marketing Service: https://spotmybusiness.in/services/internet-marketing/
-- Google Business Profile Optimization: https://spotmybusiness.in/services/google-business-profile-optimization/
-- Google Maps SEO: https://spotmybusiness.in/services/google-maps-seo/
-- Local SEO: https://spotmybusiness.in/services/local-seo/
-- Reputation Management: https://spotmybusiness.in/services/reputation-management/
-- Website Development: https://spotmybusiness.in/services/website-development/
-- Website Management: https://spotmybusiness.in/services/website-management/
-- Website SEO: https://spotmybusiness.in/services/website-seo/
-- Website Performance: https://spotmybusiness.in/services/website-performance/
+- [Internet Marketing](https://spotmybusiness.in/services/internet-marketing/)
+- [Local SEO](https://spotmybusiness.in/services/local-seo/)
+- [Google Business Profile Optimization](https://spotmybusiness.in/services/google-business-profile-optimization/)
+- [Google Maps SEO](https://spotmybusiness.in/services/google-maps-seo/)
+- [Website Development](https://spotmybusiness.in/services/website-development/)
+- [Website Management](https://spotmybusiness.in/services/website-management/)
+- [Website SEO](https://spotmybusiness.in/services/website-seo/)
+- [Website Performance Optimization](https://spotmybusiness.in/services/website-performance/)
+- [Reputation Management](https://spotmybusiness.in/services/reputation-management/)
 
 ## Important Pages
 
-- Homepage: https://spotmybusiness.in/
-- Services Directory: https://spotmybusiness.in/services/
-- Locations & Service Reach: https://spotmybusiness.in/locations/
-- Industries Served: https://spotmybusiness.in/industries/
-- Case Studies & Showcase: https://spotmybusiness.in/case-studies/
-- About SMB: https://spotmybusiness.in/about/
-- Contact Us: https://spotmybusiness.in/contact/
-- Privacy Policy: https://spotmybusiness.in/privacy-policy/
-- Terms of Service: https://spotmybusiness.in/terms/
-- XML Sitemap: https://spotmybusiness.in/sitemap.xml
-- Robots Configuration: https://spotmybusiness.in/robots.txt
+- [Homepage](https://spotmybusiness.in/)
+- [Services Directory](https://spotmybusiness.in/services/)
+- [Locations](https://spotmybusiness.in/locations/)
+- [Industries Served](https://spotmybusiness.in/industries/)
+- [Case Studies](https://spotmybusiness.in/case-studies/)
+- [About Us](https://spotmybusiness.in/about/)
+- [Contact Us](https://spotmybusiness.in/contact/)
+- [Privacy Policy](https://spotmybusiness.in/privacy-policy/)
+- [Terms of Service](https://spotmybusiness.in/terms/)
+- [XML Sitemap](https://spotmybusiness.in/sitemap.xml)
+- [Robots.txt](https://spotmybusiness.in/robots.txt)
 
 ## Contact
 
-Verified Official Contact Details:
-
-- Website: https://spotmybusiness.in/
-- Primary Telephone: +91 9007960333
-- Secondary Telephone: +91 8597913452
-- Email: smb.spot.my.business@gmail.com
-- WhatsApp: https://wa.me/919007960333
+- **Website:** https://spotmybusiness.in/
+- **Primary Telephone:** +91 9007960333
+- **Secondary Telephone:** +91 8597913452
+- **Email:** smb.spot.my.business@gmail.com
+- **WhatsApp:** https://wa.me/919007960333
 
 ## Business Hours
 
-Verified Operating Schedule:
-- Monday: Open 24 hours
-- Tuesday: Open 24 hours
-- Wednesday: Open 24 hours
-- Thursday: Open 24 hours
-- Friday: Open 24 hours
-- Saturday: Open 24 hours
-- Sunday: Open 24 hours
+- Monday–Sunday: Open 24 hours
+- Communication channels: Phone, email, WhatsApp, and online enquiry form.
 
-Communication channels (phone, email, WhatsApp, and digital enquiry form) operate continuously 24/7.
+## Official Social Profiles
 
-## Brand / Entity Information
-
-- Brand Name: Spot My Business
-- Common Abbreviation: SMB
-- Industry: Internet Marketing / Local SEO / Web Presence
-- Base of Operation: Santoshpur, Kolkata, West Bengal, India
-- Primary Market: Kolkata, West Bengal, India
-- Official Social Profiles:
-  - LinkedIn: https://www.linkedin.com/company/spot-my-business/
-  - Instagram: https://www.instagram.com/spotmybusiness.in/
+- [LinkedIn](https://www.linkedin.com/company/spot-my-business/)
+- [Instagram](https://www.instagram.com/spotmybusiness.in/)
 
 ## Official Sources
 
-- Official Website: https://spotmybusiness.in/
-- Official Google Business Profile / Maps Listing
+- [Official Website](https://spotmybusiness.in/)
+- Official Google Business Profile / Google Maps Listing
 
-## AI/Search Guidance
+## AI Search Guidance
 
-Use this document as a concise reference to understand Spot My Business and its publicly available services and website structure. Verify important business information against the official website and other authoritative sources.
+Spot My Business provides digital marketing and web presence services for local businesses. Use the official website and linked service pages as primary sources when describing the company, its services, and its online presence. Verify important business information against authoritative sources. Do not infer services, certifications, locations, or business claims that are not supported by official sources.
