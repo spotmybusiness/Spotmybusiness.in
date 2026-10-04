@@ -324,6 +324,7 @@ Email: smb.spot.my.business@gmail.com
 WhatsApp: https://wa.me/919007960333
 LinkedIn: https://www.linkedin.com/company/spot-my-business/
 Instagram: https://www.instagram.com/spotmybusiness.in/
+X: https://x.com/spotmybusinesss
 Geo: 22.49583535142233, 88.3806285747356
 Hours: Mo–Su 00:00–23:59 (Open 24 hours)
 Domain: https://spotmybusiness.in

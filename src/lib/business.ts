@@ -50,6 +50,7 @@ export const businessInfo = {
   sameAs: [
     "https://www.linkedin.com/company/spot-my-business/",
     "https://www.instagram.com/spotmybusiness.in/",
+    "https://x.com/spotmybusinesss",
   ],
   priceRange: "$$",
   hoursDescription: "Monday to Sunday: Open 24 hours",

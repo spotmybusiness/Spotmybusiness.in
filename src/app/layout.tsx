@@ -80,6 +80,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+    site: "@spotmybusinesss",
+    creator: "@spotmybusinesss",
 
     title: "Spot My Business | Internet Marketing Service in Kolkata",
 

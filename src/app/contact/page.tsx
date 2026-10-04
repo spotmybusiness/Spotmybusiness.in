@@ -189,6 +189,14 @@ export default function ContactPage() {
               >
                 Instagram
               </a>
+              <a
+                href="https://x.com/spotmybusinesss"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm font-semibold text-heading hover:text-light-bronze transition-colors duration-200"
+              >
+                X (formerly Twitter)
+              </a>
             </div>
           </div>
 
