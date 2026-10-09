@@ -51,7 +51,7 @@ export const foundersData: Founder[] = [
     phone: "+91-8101812459",
     email: "rajabhaskar508@gmail.com",
     linkedin: "https://www.linkedin.com/in/sagnik-bhaskar-2b42b93a6?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    qualification: "MAKAUT",
+    qualification: "KALYANI GOVERNMENT ENGINEERING COLLEGE",
     initials: "SB",
     image: "/images/team/sagnik.jpg",
     bio: "Drives web development execution, digital touchpoints, and brand credibility workflows.",
