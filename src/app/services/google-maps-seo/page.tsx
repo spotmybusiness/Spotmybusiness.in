@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Google Maps SEO Services for Local Businesses | Spot My Business",
   description:
     "Improve Google Maps visibility with aligned business profile signals, accurate category relevance, and supporting website structure.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/google-maps-seo/",
+    canonical: "https://www.spotmybusiness.in/services/google-maps-seo",
   },
   openGraph: {
     title: "Google Maps SEO Services for Local Businesses | Spot My Business",
     description:
       "Improve Google Maps visibility with aligned business profile signals, accurate category relevance, and supporting website structure.",
-    url: "https://spotmybusiness.in/services/google-maps-seo/",
+    url: "https://www.spotmybusiness.in/services/google-maps-seo",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,19 +29,19 @@ export default function GoogleMapsSeoPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Google Maps SEO",
-            item: "https://spotmybusiness.in/services/google-maps-seo/",
+            item: "https://www.spotmybusiness.in/services/google-maps-seo",
           },
         ],
       },
@@ -49,11 +50,11 @@ export default function GoogleMapsSeoPage() {
         name: "Google Maps SEO",
         description:
           "Local discovery optimization and alignment between Google Maps presence, Google Business Profile, and website signals.",
-        url: "https://spotmybusiness.in/services/google-maps-seo/",
+        url: "https://www.spotmybusiness.in/services/google-maps-seo",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -170,15 +171,15 @@ export default function GoogleMapsSeoPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Google Maps SEO</li>
@@ -200,18 +201,18 @@ export default function GoogleMapsSeoPage() {
             management is a related service, not the whole of this work.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/google-business-profile-optimization/"
+            </Link>
+            <Link
+              href="/services/google-business-profile-optimization"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Business Profile Optimization
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -334,36 +335,36 @@ export default function GoogleMapsSeoPage() {
             treated as connected parts of the same presence.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/internet-marketing/"
+            <Link
+              href="/services/internet-marketing"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
-              Internet Marketing
-            </a>
-            <a
-              href="/services/google-business-profile-optimization/"
+              Centralized Digital Presence &amp; SEO Management
+            </Link>
+            <Link
+              href="/services/google-business-profile-optimization"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Google Business Profile Optimization
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Local SEO
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
-            <a
-              href="/services/reputation-management/"
+            </Link>
+            <Link
+              href="/services/reputation-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Reputation management
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -378,12 +379,12 @@ export default function GoogleMapsSeoPage() {
             conversation is about useful information, not a promised pin
             position.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

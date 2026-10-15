@@ -25,10 +25,10 @@ const inter = Inter({
 import { getLocalBusinessSchema } from "@/lib/business";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://spotmybusiness.in"),
+  metadataBase: new URL("https://www.spotmybusiness.in"),
 
   alternates: {
-    canonical: "https://spotmybusiness.in/",
+    canonical: "https://www.spotmybusiness.in/",
   },
 
   title: "Spot My Business | Internet Marketing Service in Kolkata",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description:
       "Spot My Business is an internet marketing service in Kolkata helping businesses grow with Google Business Profile, Google Maps, Local SEO and website solutions.",
 
-    url: "https://spotmybusiness.in",
+    url: "https://www.spotmybusiness.in",
 
     siteName: "Spot My Business",
 

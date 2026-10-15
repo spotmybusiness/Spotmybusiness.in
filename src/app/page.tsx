@@ -8,12 +8,10 @@ import ClientShowcase from "@/components/ClientShowcase";
 import Comparison from "@/components/Comparison";
 import Contact from "@/components/Contact";
 import PhoneMockup from "@/components/PhoneMockup";
-import PujoOfferModal from "@/components/PujoOfferModal";
 
 export default function Home() {
   return (
     <>
-      <PujoOfferModal />
       {/* Primary Web Layout */}
       <div className="relative flex min-h-screen flex-col">
         <main id="main-content">

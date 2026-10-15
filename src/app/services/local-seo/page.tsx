@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Local SEO Services for Local Businesses | Spot My Business",
   description:
     "Strengthen your local search presence across website content, on-page SEO, search intent, and consistent business information.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/local-seo/",
+    canonical: "https://www.spotmybusiness.in/services/local-seo",
   },
   openGraph: {
     title: "Local SEO Services for Local Businesses | Spot My Business",
     description:
       "Strengthen your local search presence across website content, on-page SEO, search intent, and consistent business information.",
-    url: "https://spotmybusiness.in/services/local-seo/",
+    url: "https://www.spotmybusiness.in/services/local-seo",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,19 +29,19 @@ export default function LocalSeoPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Local SEO",
-            item: "https://spotmybusiness.in/services/local-seo/",
+            item: "https://www.spotmybusiness.in/services/local-seo",
           },
         ],
       },
@@ -49,11 +50,11 @@ export default function LocalSeoPage() {
         name: "Local SEO",
         description:
           "Comprehensive local search engine optimization across website content, on-page structure, and local business signals.",
-        url: "https://spotmybusiness.in/services/local-seo/",
+        url: "https://www.spotmybusiness.in/services/local-seo",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -180,15 +181,15 @@ export default function LocalSeoPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Local SEO</li>
@@ -211,18 +212,18 @@ export default function LocalSeoPage() {
             on their own.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/google-maps-seo/"
+            </Link>
+            <Link
+              href="/services/google-maps-seo"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Google Maps SEO
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -342,36 +343,36 @@ export default function LocalSeoPage() {
             connected parts of the same digital presence.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/internet-marketing/"
+            <Link
+              href="/services/internet-marketing"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
-              Internet Marketing
-            </a>
-            <a
-              href="/services/google-business-profile-optimization/"
+              Centralized Digital Presence &amp; SEO Management
+            </Link>
+            <Link
+              href="/services/google-business-profile-optimization"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Google Business Profile Optimization
-            </a>
-            <a
-              href="/services/google-maps-seo/"
+            </Link>
+            <Link
+              href="/services/google-maps-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Google Maps SEO
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
-            <a
-              href="/services/reputation-management/"
+            </Link>
+            <Link
+              href="/services/reputation-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Reputation management
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -385,12 +386,12 @@ export default function LocalSeoPage() {
             pages, information, and gaps. The conversation is about a
             clearer foundation - not guaranteed rankings or lead numbers.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

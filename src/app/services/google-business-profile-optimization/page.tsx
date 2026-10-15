@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Google Business Profile Optimization | Spot My Business",
@@ -6,13 +7,13 @@ export const metadata: Metadata = {
     "Review, optimize, and maintain your Google Business Profile for accurate local discovery across Google Search and Google Maps.",
   alternates: {
     canonical:
-      "https://spotmybusiness.in/services/google-business-profile-optimization/",
+      "https://www.spotmybusiness.in/services/google-business-profile-optimization",
   },
   openGraph: {
     title: "Google Business Profile Optimization | Spot My Business",
     description:
       "Review, optimize, and maintain your Google Business Profile for accurate local discovery across Google Search and Google Maps.",
-    url: "https://spotmybusiness.in/services/google-business-profile-optimization/",
+    url: "https://www.spotmybusiness.in/services/google-business-profile-optimization",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -29,19 +30,19 @@ export default function GoogleBusinessProfileOptimizationPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Google Business Profile Optimization",
-            item: "https://spotmybusiness.in/services/google-business-profile-optimization/",
+            item: "https://www.spotmybusiness.in/services/google-business-profile-optimization",
           },
         ],
       },
@@ -50,11 +51,11 @@ export default function GoogleBusinessProfileOptimizationPage() {
         name: "Google Business Profile Optimization",
         description:
           "Review, cleanup, optimization, and ongoing maintenance of Google Business Profiles for local businesses.",
-        url: "https://spotmybusiness.in/services/google-business-profile-optimization/",
+        url: "https://www.spotmybusiness.in/services/google-business-profile-optimization",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -171,15 +172,15 @@ export default function GoogleBusinessProfileOptimizationPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Google Business Profile Optimization</li>
@@ -200,18 +201,18 @@ export default function GoogleBusinessProfileOptimizationPage() {
             understand the business and take the next step.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/google-maps-seo/"
+            </Link>
+            <Link
+              href="/services/google-maps-seo"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Google Maps SEO
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -322,36 +323,36 @@ export default function GoogleBusinessProfileOptimizationPage() {
             offer.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/internet-marketing/"
+            <Link
+              href="/services/internet-marketing"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
-              Internet Marketing
-            </a>
-            <a
-              href="/services/google-maps-seo/"
+              Centralized Digital Presence &amp; SEO Management
+            </Link>
+            <Link
+              href="/services/google-maps-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Google Maps SEO
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Local SEO
-            </a>
-            <a
-              href="/services/reputation-management/"
+            </Link>
+            <Link
+              href="/services/reputation-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Reputation management
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -365,12 +366,12 @@ export default function GoogleBusinessProfileOptimizationPage() {
             currently looks and what you would like to improve. We can talk
             through the work without promising rankings or lead numbers.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

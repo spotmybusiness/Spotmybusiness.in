@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { faqCategories } from "@/lib/faq";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | Spot My Business",
   description:
-    "Straightforward answers to common questions about Spot My Business services, our remote collaboration model, website development, Local SEO, and profile optimization.",
+    "Straightforward answers to common questions about Spot My Business services, our remote collaboration model, web engineering, Local SEO, AI search visibility, and Search Console management.",
   alternates: {
-    canonical: "https://spotmybusiness.in/faq/",
+    canonical: "https://www.spotmybusiness.in/faq",
   },
   openGraph: {
     title: "Frequently Asked Questions | Spot My Business",
     description:
-      "Straightforward answers to common questions about Spot My Business services, our remote collaboration model, website development, Local SEO, and profile optimization.",
-    url: "https://spotmybusiness.in/faq/",
+      "Straightforward answers to common questions about Spot My Business services, our remote collaboration model, web engineering, Local SEO, AI search visibility, and Search Console management.",
+    url: "https://www.spotmybusiness.in/faq",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,23 +29,23 @@ export default function FAQPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://spotmybusiness.in/",
+        item: "https://www.spotmybusiness.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "FAQ",
-        item: "https://spotmybusiness.in/faq/",
+        item: "https://www.spotmybusiness.in/faq",
       },
     ],
   };
 
   const relatedResources = [
-    { label: "Services Hub", href: "/services/" },
-    { label: "Location Markets", href: "/locations/" },
-    { label: "Industries & Business Models", href: "/industries/" },
-    { label: "Selected Case Studies", href: "/case-studies/" },
-    { label: "About Our Company", href: "/about/" },
+    { label: "Services Hub", href: "/services" },
+    { label: "Location Markets", href: "/locations" },
+    { label: "Industries & Business Models", href: "/industries" },
+    { label: "Selected Case Studies", href: "/case-studies" },
+    { label: "About Our Company", href: "/about" },
   ];
 
   return (
@@ -60,9 +61,9 @@ export default function FAQPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">FAQ</li>
@@ -83,18 +84,18 @@ export default function FAQPage() {
             what to expect when working together on your digital presence.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Ask a Question
-            </a>
-            <a
-              href="/services/"
+            </Link>
+            <Link
+              href="/services"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Services
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -168,12 +169,12 @@ export default function FAQPage() {
                     ))}
                     {item.relatedLink && (
                       <p className="pt-2">
-                        <a
+                        <Link
                           href={item.relatedLink.href}
                           className="inline-flex items-center text-xs font-semibold text-light-bronze hover:text-champagne transition-colors"
                         >
                           {item.relatedLink.text} →
-                        </a>
+                        </Link>
                       </p>
                     )}
                   </div>
@@ -192,13 +193,13 @@ export default function FAQPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {relatedResources.map((resource) => (
-              <a
+              <Link
                 key={resource.href}
                 href={resource.href}
                 className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors"
               >
                 {resource.label}
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -213,15 +214,14 @@ export default function FAQPage() {
             discuss your specific website, Google Business Profile, or local SEO
             needs, reach out directly to Spot My Business.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>
   );
 }
-

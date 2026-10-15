@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Website Development Services for Local Businesses | Spot My Business",
   description:
     "Custom, responsive website development built for clarity, mobile usability, clear contact pathways, and sound technical foundations.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/website-development/",
+    canonical: "https://www.spotmybusiness.in/services/website-development",
   },
   openGraph: {
     title: "Website Development Services for Local Businesses | Spot My Business",
     description:
       "Custom, responsive website development built for clarity, mobile usability, clear contact pathways, and sound technical foundations.",
-    url: "https://spotmybusiness.in/services/website-development/",
+    url: "https://www.spotmybusiness.in/services/website-development",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,19 +29,19 @@ export default function WebsiteDevelopmentPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Website Development",
-            item: "https://spotmybusiness.in/services/website-development/",
+            item: "https://www.spotmybusiness.in/services/website-development",
           },
         ],
       },
@@ -49,11 +50,11 @@ export default function WebsiteDevelopmentPage() {
         name: "Website Development",
         description:
           "Planning, design, and development of responsive, clear, and conversion-focused business websites.",
-        url: "https://spotmybusiness.in/services/website-development/",
+        url: "https://www.spotmybusiness.in/services/website-development",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -218,15 +219,15 @@ export default function WebsiteDevelopmentPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Website Development</li>
@@ -247,18 +248,18 @@ export default function WebsiteDevelopmentPage() {
             promised ranking, traffic figure, or revenue result.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/website-management/"
+            </Link>
+            <Link
+              href="/services/website-management"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Website Management
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -399,30 +400,36 @@ export default function WebsiteDevelopmentPage() {
             reviewed, or the pages connected more tightly to local search.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/website-management/"
+            <Link
+              href="/services/website-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website management
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
-            <a
-              href="/services/website-performance/"
+            </Link>
+            <Link
+              href="/services/website-performance"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website performance
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Local SEO
-            </a>
+            </Link>
+            <Link
+              href="/services/google-search-console-management"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
+            >
+              Search Console Management
+            </Link>
           </div>
         </section>
 
@@ -437,12 +444,12 @@ export default function WebsiteDevelopmentPage() {
             starting point - without a published price list or a promised
             result.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

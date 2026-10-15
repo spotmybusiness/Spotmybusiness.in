@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Spot My Business",
   description:
     "Terms of Service for Spot My Business. Review our service scope, transparent search disclaimers, client responsibilities, and governing policies.",
   alternates: {
-    canonical: "https://spotmybusiness.in/terms/",
+    canonical: "https://www.spotmybusiness.in/terms",
   },
   robots: { index: false, follow: true },
 };
@@ -20,12 +21,12 @@ export default function TermsPage() {
       >
         <ol className="flex items-center gap-2 text-xs text-gray-text/60 font-medium tracking-wide">
           <li>
-            <a
+            <Link
               href="/"
               className="hover:text-light-bronze transition-colors duration-200"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true" className="text-gray-text/30">
             /
@@ -46,7 +47,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p className="text-gray-text text-sm md:text-base leading-relaxed">
-            Last Updated: September 2026. These Terms of Service (&quot;Terms&quot;) govern the use of the Spot My Business website (https://spotmybusiness.in) and the professional digital presence services provided by Spot My Business (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;).
+            Last Updated: September 2026. These Terms of Service (&quot;Terms&quot;) govern the use of the Spot My Business website (https://www.spotmybusiness.in) and the professional digital presence services provided by Spot My Business (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;).
           </p>
         </div>
       </section>
@@ -171,18 +172,18 @@ export default function TermsPage() {
         <div className="flex flex-wrap gap-4 items-center justify-between">
           <span className="text-xs text-gray-text/60">Review how we protect your information:</span>
           <div className="flex gap-3">
-            <a
-              href="/privacy-policy/"
+            <Link
+              href="/privacy-policy"
               className="px-5 py-2.5 rounded-full border border-border-color text-xs tracking-wider uppercase font-semibold text-gray-text hover:border-bronze/50 hover:text-white transition-all duration-200"
             >
               Privacy Policy
-            </a>
-            <a
-              href="/contact/"
+            </Link>
+            <Link
+              href="/contact"
               className="px-5 py-2.5 rounded-full bg-gradient-to-r from-bronze to-light-bronze text-xs tracking-wider uppercase font-semibold text-heading hover:shadow-lg hover:shadow-bronze/20 transition-all duration-200"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { locationsData, getLocationBySlug } from "@/lib/locations";
+import { getLocationBySlug } from "@/lib/locations";
 
 export const metadata: Metadata = {
   title: "Location-Aware Local Presence & Market Reach | Spot My Business",
   description:
     "Learn how Spot My Business helps local businesses build geographic visibility across Google Search, Google Maps, and their website from our base in Kolkata.",
   alternates: {
-    canonical: "https://spotmybusiness.in/locations/",
+    canonical: "https://www.spotmybusiness.in/locations",
   },
   openGraph: {
     title: "Location-Aware Local Presence & Market Reach | Spot My Business",
     description:
       "Learn how Spot My Business helps local businesses build geographic visibility across Google Search, Google Maps, and their website from our base in Kolkata.",
-    url: "https://spotmybusiness.in/locations/",
+    url: "https://www.spotmybusiness.in/locations",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,13 +29,13 @@ export default function LocationsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://spotmybusiness.in/",
+        item: "https://www.spotmybusiness.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Locations",
-        item: "https://spotmybusiness.in/locations/",
+        item: "https://www.spotmybusiness.in/locations",
       },
     ],
   };
@@ -114,46 +115,58 @@ export default function LocationsPage() {
 
   const relevantServices = [
     {
-      title: "Internet Marketing",
+      title: "Centralized Digital Presence & SEO Management",
       detail:
-        "End-to-end internet marketing services uniting Local SEO, Google Business Profile, Maps, and website solutions in Kolkata.",
-      link: "/services/internet-marketing/",
+        "End-to-end digital presence management coordinating custom web development, organic SEO, verified Maps listings, and search telemetry.",
+      link: "/services/internet-marketing",
     },
     {
       title: "Local SEO",
       detail:
         "Connect local search intent to informative website pages and structured content.",
-      link: "/services/local-seo/",
+      link: "/services/local-seo",
     },
     {
       title: "Google Maps SEO",
       detail:
         "Strengthen local discovery and alignment between your Maps listing and website.",
-      link: "/services/google-maps-seo/",
+      link: "/services/google-maps-seo",
     },
     {
       title: "Google Business Profile Optimization",
       detail:
         "Review, organize, and maintain your Business Profile details for Search and Maps.",
-      link: "/services/google-business-profile-optimization/",
+      link: "/services/google-business-profile-optimization",
+    },
+    {
+      title: "AI Search Optimization",
+      detail:
+        "Brand entity structuring, GEO, and conversational answer readiness across Google AI Overviews, Perplexity, and ChatGPT.",
+      link: "/services/ai-search-optimization",
+    },
+    {
+      title: "Google Search Console Management",
+      detail:
+        "First-party indexation telemetry, crawl error diagnostics, and search performance monitoring directly from Google's reporting engine.",
+      link: "/services/google-search-console-management",
     },
     {
       title: "Website Development",
       detail:
         "Build a clean, responsive website with clear contact and enquiry pathways.",
-      link: "/services/website-development/",
+      link: "/services/website-development",
     },
     {
-      title: "Website SEO",
+      title: "Website Performance",
       detail:
-        "On-page structure, crawlability, and search relevance for your core service pages.",
-      link: "/services/website-seo/",
+        "Optimize recommended Core Web Vitals thresholds (LCP, INP, CLS) and fast mobile responsiveness for demanding visitors.",
+      link: "/services/website-performance",
     },
     {
       title: "Reputation Management",
       detail:
         "Monitor public feedback and establish professional review response workflows.",
-      link: "/services/reputation-management/",
+      link: "/services/reputation-management",
     },
   ];
 
@@ -170,9 +183,9 @@ export default function LocationsPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Locations</li>
@@ -195,18 +208,18 @@ export default function LocationsPage() {
             pages or artificial boundaries.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Local SEO
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -301,7 +314,7 @@ export default function LocationsPage() {
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
             Spot My Business delivers remote digital presence, SEO, and website
             solutions to businesses across our verified Google Business Profile service
-            areas. Explore market-specific considerations and search dynamics for
+            areas. Explore contextual considerations and local search dynamics for
             each location.
           </p>
 
@@ -324,9 +337,9 @@ export default function LocationsPage() {
 
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {regionLocations.map((loc) => (
-                      <a
+                      <Link
                         key={loc.slug}
-                        href={`/locations/${loc.slug}/`}
+                        href={`/locations/${loc.slug}`}
                         className="group flex flex-col justify-between rounded-xl border border-border-color bg-secondary-bg p-5 transition-all duration-200 hover:border-bronze/50 hover:shadow-md"
                       >
                         <div>
@@ -345,7 +358,7 @@ export default function LocationsPage() {
                         <span className="mt-4 inline-block text-xs font-semibold text-light-bronze group-hover:text-heading transition-colors">
                           View market details →
                         </span>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -367,7 +380,7 @@ export default function LocationsPage() {
             {relevantServices.map((service) => (
               <div
                 key={service.title}
-                className="flex flex-col justify-between rounded-xl border border-border-color p-5"
+                className="flex flex-col justify-between rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <div>
                   <h3 className="font-semibold text-heading">{service.title}</h3>
@@ -375,12 +388,12 @@ export default function LocationsPage() {
                     {service.detail}
                   </p>
                 </div>
-                <a
+                <Link
                   href={service.link}
                   className="mt-4 inline-block text-xs font-semibold text-light-bronze hover:text-heading"
                 >
                   Learn more →
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -396,12 +409,12 @@ export default function LocationsPage() {
             customers in your area, contact Spot My Business to review your
             current presence across Google Search, Maps, and your website.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

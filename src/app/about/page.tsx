@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import About from "@/components/About";
 import TeamShowcase from "@/components/TeamShowcase";
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Spot My Business helps local businesses become easier to find and understand online across their website, Google Search, Google Maps, and customer-facing reputation.",
   alternates: {
-    canonical: "https://spotmybusiness.in/about/",
+    canonical: "https://www.spotmybusiness.in/about",
   },
   openGraph: {
     title: "About Spot My Business | Digital Presence for Local Businesses",
     description:
       "Spot My Business helps local businesses become easier to find and understand online across their website, Google Search, Google Maps, and customer-facing reputation.",
-    url: "https://spotmybusiness.in/about/",
+    url: "https://www.spotmybusiness.in/about",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -53,12 +54,12 @@ export default function AboutPage() {
       >
         <ol className="flex items-center gap-2 text-xs text-gray-text/60 font-medium tracking-wide">
           <li>
-            <a
+            <Link
               href="/"
               className="hover:text-light-bronze transition-colors duration-200"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true" className="text-gray-text/30">
             /
@@ -145,12 +146,12 @@ export default function AboutPage() {
               We approach each engagement with the full picture in mind — starting from
               where the business is today.
             </p>
-            <a
-              href="/services/"
+            <Link
+              href="/services"
               className="inline-block mt-2 text-[10px] tracking-[0.2em] font-heading font-bold text-light-bronze uppercase hover:text-champagne transition-colors duration-300"
             >
               See All Services →
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -167,19 +168,19 @@ export default function AboutPage() {
         </p>
         <div className="flex flex-wrap gap-3">
           {[
-            { label: "Services", href: "/services/" },
-            { label: "Case Studies", href: "/case-studies/" },
-            { label: "Industries", href: "/industries/" },
-            { label: "Locations", href: "/locations/" },
-            { label: "Contact", href: "/contact/" },
+            { label: "Services", href: "/services" },
+            { label: "Case Studies", href: "/case-studies" },
+            { label: "Industries", href: "/industries" },
+            { label: "Locations", href: "/locations" },
+            { label: "Contact", href: "/contact" },
           ].map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="px-5 py-2.5 rounded-full border border-border-color text-xs tracking-[0.15em] uppercase font-semibold text-gray-text hover:border-bronze/50 hover:text-white transition-all duration-200"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -206,12 +207,12 @@ export default function AboutPage() {
               We are happy to discuss your website, Google Business Profile, local
               search visibility, or reputation — whichever is the right starting point.
             </p>
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="inline-block mt-2 px-8 py-4 rounded-full bg-gradient-to-r from-bronze to-light-bronze text-xs tracking-[0.25em] uppercase font-bold font-heading text-heading hover:shadow-lg hover:shadow-bronze/20 transition-all duration-300"
             >
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
       </section>

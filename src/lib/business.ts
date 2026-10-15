@@ -23,9 +23,9 @@ export const businessInfo = {
   primaryCategory: "Internet Marketing Service",
   description:
     "Spot My Business is an internet marketing service in Kolkata helping businesses grow with Google Business Profile, Google Maps, Local SEO, and website solutions.",
-  url: "https://spotmybusiness.in",
-  logo: "https://spotmybusiness.in/assets/logo.png",
-  image: "https://spotmybusiness.in/assets/logo.png",
+  url: "https://www.spotmybusiness.in",
+  logo: "https://www.spotmybusiness.in/assets/logo.png",
+  image: "https://www.spotmybusiness.in/assets/logo.png",
   telephones: ["+91 9007960333", "+91 8597913452"],
   primaryPhone: "+91 9007960333",
   secondaryPhone: "+91 8597913452",

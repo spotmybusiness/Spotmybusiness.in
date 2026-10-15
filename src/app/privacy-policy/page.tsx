@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Spot My Business",
   description:
     "Privacy Policy for Spot My Business. Understand how we collect, handle, and protect your information when you use our website and services.",
   alternates: {
-    canonical: "https://spotmybusiness.in/privacy-policy/",
+    canonical: "https://www.spotmybusiness.in/privacy-policy",
   },
   robots: { index: false, follow: true },
 };
@@ -20,12 +21,12 @@ export default function PrivacyPolicyPage() {
       >
         <ol className="flex items-center gap-2 text-xs text-gray-text/60 font-medium tracking-wide">
           <li>
-            <a
+            <Link
               href="/"
               className="hover:text-light-bronze transition-colors duration-200"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true" className="text-gray-text/30">
             /
@@ -46,7 +47,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-gray-text text-sm md:text-base leading-relaxed">
-            Last Updated: September 2026. Spot My Business (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (https://spotmybusiness.in) and communicate with us.
+            Last Updated: September 2026. Spot My Business (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (https://www.spotmybusiness.in) and communicate with us.
           </p>
         </div>
       </section>
@@ -145,18 +146,18 @@ export default function PrivacyPolicyPage() {
         <div className="flex flex-wrap gap-4 items-center justify-between">
           <span className="text-xs text-gray-text/60">Need to discuss terms or get started?</span>
           <div className="flex gap-3">
-            <a
-              href="/terms/"
+            <Link
+              href="/terms"
               className="px-5 py-2.5 rounded-full border border-border-color text-xs tracking-wider uppercase font-semibold text-gray-text hover:border-bronze/50 hover:text-white transition-all duration-200"
             >
               Terms of Service
-            </a>
-            <a
-              href="/contact/"
+            </Link>
+            <Link
+              href="/contact"
               className="px-5 py-2.5 rounded-full bg-gradient-to-r from-bronze to-light-bronze text-xs tracking-wider uppercase font-semibold text-heading hover:shadow-lg hover:shadow-bronze/20 transition-all duration-200"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>

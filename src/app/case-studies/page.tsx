@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -6,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Explore selected client projects showcasing how Spot My Business supports local businesses with Google Business Profile optimization, local SEO, and website development.",
   alternates: {
-    canonical: "https://spotmybusiness.in/case-studies/",
+    canonical: "https://www.spotmybusiness.in/case-studies",
   },
   openGraph: {
     title: "Client Work & Case Studies | Spot My Business",
     description:
       "Explore selected client projects showcasing how Spot My Business supports local businesses with Google Business Profile optimization, local SEO, and website development.",
-    url: "https://spotmybusiness.in/case-studies/",
+    url: "https://www.spotmybusiness.in/case-studies",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -27,13 +28,13 @@ export default function CaseStudiesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://spotmybusiness.in/",
+        item: "https://www.spotmybusiness.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Case Studies",
-        item: "https://spotmybusiness.in/case-studies/",
+        item: "https://www.spotmybusiness.in/case-studies",
       },
     ],
   };
@@ -106,9 +107,9 @@ export default function CaseStudiesPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Case Studies</li>
@@ -131,18 +132,18 @@ export default function CaseStudiesPage() {
             delivered.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/"
+            </Link>
+            <Link
+              href="/services"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore All Services
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -286,48 +287,48 @@ export default function CaseStudiesPage() {
             projects.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/google-business-profile-optimization/"
+            <Link
+              href="/services/google-business-profile-optimization"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Google Business Profile Optimization
-            </a>
-            <a
-              href="/services/google-maps-seo/"
+            </Link>
+            <Link
+              href="/services/google-maps-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Google Maps SEO
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Local SEO
-            </a>
-            <a
-              href="/services/website-development/"
+            </Link>
+            <Link
+              href="/services/website-development"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website Development
-            </a>
-            <a
-              href="/services/website-management/"
+            </Link>
+            <Link
+              href="/services/website-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website Management
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
-            <a
-              href="/services/reputation-management/"
+            </Link>
+            <Link
+              href="/services/reputation-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Reputation Management
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -341,12 +342,12 @@ export default function CaseStudiesPage() {
             market goals. We can review what your business needs without
             unrealistic guarantees.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>
