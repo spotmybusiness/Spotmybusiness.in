@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { businessInfo } from "@/lib/business";
 import {
-  locationsData,
   getLocationBySlug,
   getAllLocationSlugs,
 } from "@/lib/locations";
@@ -34,12 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: location.metaTitle,
     description: location.metaDescription,
     alternates: {
-      canonical: `https://spotmybusiness.in/locations/${location.slug}/`,
+      canonical: `https://www.spotmybusiness.in/locations/${location.slug}`,
     },
     openGraph: {
       title: location.metaTitle,
       description: location.metaDescription,
-      url: `https://spotmybusiness.in/locations/${location.slug}/`,
+      url: `https://www.spotmybusiness.in/locations/${location.slug}`,
       siteName: "Spot My Business",
       type: "website",
     },
@@ -68,19 +68,19 @@ export default async function LocationDetailPage({ params }: Props) {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Locations",
-            item: "https://spotmybusiness.in/locations/",
+            item: "https://www.spotmybusiness.in/locations",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: location.name,
-            item: `https://spotmybusiness.in/locations/${location.slug}/`,
+            item: `https://www.spotmybusiness.in/locations/${location.slug}`,
           },
         ],
       },
@@ -88,7 +88,7 @@ export default async function LocationDetailPage({ params }: Props) {
         "@type": "Service",
         name: `Local Digital Presence & SEO for ${location.name}`,
         description: location.metaDescription,
-        url: `https://spotmybusiness.in/locations/${location.slug}/`,
+        url: `https://www.spotmybusiness.in/locations/${location.slug}`,
         areaServed: {
           "@type": location.locationType === "state" ? "State" : "City",
           name: location.name,
@@ -125,15 +125,15 @@ export default async function LocationDetailPage({ params }: Props) {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/locations/" className="hover:text-light-bronze">
+              <Link href="/locations" className="hover:text-light-bronze">
                 Locations
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">{location.name}</li>
@@ -152,18 +152,18 @@ export default async function LocationDetailPage({ params }: Props) {
             {location.heroDescription}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/locations/"
+            </Link>
+            <Link
+              href="/locations"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               View All Locations
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -242,13 +242,13 @@ export default async function LocationDetailPage({ params }: Props) {
             Services for businesses in {location.name}
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Core digital presence, SEO, and website development services tailored to the commercial needs of {location.name}.
+            Recommended digital presence, SEO, and website engineering services contextually relevant for businesses operating in {location.name}.
           </p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {location.recommendedServices.map((service) => (
               <div
                 key={service.title}
-                className="flex flex-col justify-between rounded-xl border border-border-color p-5"
+                className="flex flex-col justify-between rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <div>
                   <h3 className="font-semibold text-heading">{service.title}</h3>
@@ -256,12 +256,12 @@ export default async function LocationDetailPage({ params }: Props) {
                     {service.detail}
                   </p>
                 </div>
-                <a
+                <Link
                   href={service.href}
                   className="mt-4 inline-block text-xs font-semibold text-light-bronze hover:text-heading"
                 >
                   Learn more →
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -278,20 +278,20 @@ export default async function LocationDetailPage({ params }: Props) {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               {relatedLocationsList.map((relLoc) => (
-                <a
+                <Link
                   key={relLoc.slug}
-                  href={`/locations/${relLoc.slug}/`}
+                  href={`/locations/${relLoc.slug}`}
                   className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
                 >
                   {relLoc.name}
-                </a>
+                </Link>
               ))}
-              <a
-                href="/locations/"
+              <Link
+                href="/locations"
                 className="rounded-full border border-border-color px-5 py-2 text-sm text-light-bronze hover:text-heading"
               >
                 All Locations →
-              </a>
+              </Link>
             </div>
           </section>
         )}
@@ -304,12 +304,12 @@ export default async function LocationDetailPage({ params }: Props) {
           <p className="mt-3 max-w-2xl text-gray-text">
             If you want to strengthen how your business is discovered by customers in {location.name}, contact Spot My Business to review your current presence across Google Search, Maps, and your website.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

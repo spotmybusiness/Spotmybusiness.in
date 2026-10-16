@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Website Performance Optimization Services | Spot My Business",
   description:
     "Practical website performance improvements: reducing page weight, optimizing media, trimming client JS, and improving mobile responsiveness.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/website-performance/",
+    canonical: "https://www.spotmybusiness.in/services/website-performance",
   },
   openGraph: {
     title: "Website Performance Optimization Services | Spot My Business",
     description:
       "Practical website performance improvements: reducing page weight, optimizing media, trimming client JS, and improving mobile responsiveness.",
-    url: "https://spotmybusiness.in/services/website-performance/",
+    url: "https://www.spotmybusiness.in/services/website-performance",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,19 +29,19 @@ export default function WebsitePerformancePage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Website Performance",
-            item: "https://spotmybusiness.in/services/website-performance/",
+            item: "https://www.spotmybusiness.in/services/website-performance",
           },
         ],
       },
@@ -49,11 +50,11 @@ export default function WebsitePerformancePage() {
         name: "Website Performance",
         description:
           "Technical optimization of page weight, asset loading, images, scripts, and mobile responsiveness for live websites.",
-        url: "https://spotmybusiness.in/services/website-performance/",
+        url: "https://www.spotmybusiness.in/services/website-performance",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -165,15 +166,15 @@ export default function WebsitePerformancePage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Website Performance</li>
@@ -194,18 +195,18 @@ export default function WebsitePerformancePage() {
             promised PageSpeed score, ranking, or conversion increase.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Website SEO
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -323,24 +324,30 @@ export default function WebsitePerformancePage() {
             substitutes for performance improvements.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/website-development/"
+            <Link
+              href="/services/website-development"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website development
-            </a>
-            <a
-              href="/services/website-management/"
+            </Link>
+            <Link
+              href="/services/website-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website management
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
+            </Link>
+            <Link
+              href="/services/google-search-console-management"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
+            >
+              Search Console (Core Web Vitals)
+            </Link>
           </div>
         </section>
 
@@ -354,12 +361,12 @@ export default function WebsitePerformancePage() {
             improvements. There is no promised score, ranking, or business
             result attached to that conversation.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

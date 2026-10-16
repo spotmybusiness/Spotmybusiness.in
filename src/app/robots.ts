@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://spotmybusiness.in/sitemap.xml",
+    sitemap: "https://www.spotmybusiness.in/sitemap.xml",
   };
 }
 

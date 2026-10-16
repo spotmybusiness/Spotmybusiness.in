@@ -92,26 +92,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Inconsistent operating hours across festival periods and seasonal schedules can lead to lost customer inquiries.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
-        title: "Internet Marketing",
-        href: "/services/internet-marketing/",
-        detail: "Comprehensive digital presence uniting Local SEO, Google Business Profile, and website development in Kolkata.",
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Comprehensive digital presence uniting custom web engineering, Local SEO, Google Business Profile optimization, and performance telemetry from our Kolkata headquarters.",
       },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Refine categories, attributes, and location details for accurate local Search and Maps visibility.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Refine categories, attributes, and location details for accurate local Search and Maps visibility.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Structure website content and on-page signals around locality-specific search intent.",
+        href: "/services/local-seo",
+        detail:
+          "Structure website content and on-page signals around locality-specific search intent.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Develop clean, responsive websites with direct phone and WhatsApp contact pathways.",
+        href: "/services/website-development",
+        detail:
+          "Develop clean, responsive websites with direct phone and WhatsApp contact pathways.",
       },
     ],
     relatedLocations: ["howrah", "bidhannagar", "west-bengal"],
@@ -165,21 +169,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Businesses in Salt Lake frequently serve clients across greater Kolkata, requiring clear distinctions between physical premises and broader service coverage.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
+      {
+        title: "AI Search Optimization",
+        href: "/services/ai-search-optimization",
+        detail:
+          "Entity structuring, GEO, and conversational search readiness for technology firms and corporate service providers in Sector V and Salt Lake.",
+      },
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Align sector and landmark details for straightforward navigation on Google Maps.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Align sector and landmark details for straightforward navigation on Google Maps.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build professional, fast-loading websites that articulate complex commercial capabilities.",
+        href: "/services/website-development",
+        detail:
+          "Build professional, fast-loading websites that articulate complex commercial capabilities.",
       },
       {
         title: "Reputation Management",
-        href: "/services/reputation-management/",
-        detail: "Establish structured feedback loops to build credible client trust across digital channels.",
+        href: "/services/reputation-management",
+        detail:
+          "Establish structured feedback loops to build credible client trust across digital channels.",
       },
     ],
     relatedLocations: ["kolkata", "howrah", "west-bengal"],
@@ -233,21 +246,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Clear service categorization prevents mismatched inquiries for industrial suppliers that do not cater to retail walk-ins.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Target regional B2B and consumer search queries across Howrah and greater Kolkata.",
+        href: "/services/local-seo",
+        detail:
+          "Target regional B2B and consumer search queries across Howrah and greater Kolkata.",
       },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Accurately define service categories, commercial photos, and direct communication points.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Accurately define service categories, commercial photos, and direct communication points.",
       },
       {
         title: "Website SEO",
-        href: "/services/website-seo/",
-        detail: "Structure technical capability pages to capture organic search traffic for specific services.",
+        href: "/services/website-seo",
+        detail:
+          "Structure technical capability pages to capture organic search traffic for specific services.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "Monitor first-party search query performance, crawl coverage, and indexing health for manufacturing and logistics businesses.",
       },
     ],
     relatedLocations: ["kolkata", "bidhannagar", "west-bengal"],
@@ -301,21 +323,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Emerging regional hubs like Siliguri and Durgapur have distinct competitor densities that require tailored local search strategies.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build high-performance websites structured for state-wide and multi-district discovery.",
+        href: "/services/website-development",
+        detail:
+          "Build high-performance websites structured for state-wide and multi-district discovery.",
+      },
+      {
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Unified multi-channel presence coordinating website engineering, search visibility, and directory consistency across West Bengal's regional hubs.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Develop clean, location-aware content architectures for regional service businesses.",
+        href: "/services/local-seo",
+        detail:
+          "Develop clean, location-aware content architectures for regional service businesses.",
       },
       {
         title: "Website Management",
-        href: "/services/website-management/",
-        detail: "Ensure ongoing content accuracy, security, and technical reliability across all web assets.",
+        href: "/services/website-management",
+        detail:
+          "Ensure ongoing content accuracy, security, and technical reliability across all web assets.",
       },
     ],
     relatedLocations: ["kolkata", "howrah", "bidhannagar", "bhubaneswar"],
@@ -369,21 +400,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Searchers visiting from other parts of Odisha need straightforward directions, landmark references, and immediate phone access.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Optimize institutional attributes, consultation hours, and verified contact avenues.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Optimize institutional attributes, consultation hours, and verified contact avenues.",
+      },
+      {
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Cohesive digital strategy coordinating website engineering, local map visibility, and organic search for emerging enterprises in Bhubaneswar.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Develop clean, informative websites that address student, patient, or client inquiries clearly.",
+        href: "/services/website-development",
+        detail:
+          "Develop clean, informative websites that address student, patient, or client inquiries clearly.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Align on-page content with local geographic search intent across Bhubaneswar.",
+        href: "/services/local-seo",
+        detail:
+          "Align on-page content with local geographic search intent across Bhubaneswar.",
       },
     ],
     relatedLocations: ["kolkata", "west-bengal", "visakhapatnam"],
@@ -437,21 +477,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Frequent business relocations and changes in local commercial complexes make NAP (Name, Address, Phone) consistency vital.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Build localized website structures capable of ranking for specific micro-market searches.",
+        href: "/services/local-seo",
+        detail:
+          "Build localized website structures capable of ranking for specific micro-market searches.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "First-party search query analytics, crawl error diagnosis, and indexing verification to protect visibility in Delhi's high-competition search landscape.",
       },
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Refine Google Maps attributes, service radii, and location signals in high-density areas.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Refine Google Maps attributes, service radii, and location signals in high-density areas.",
       },
       {
         title: "Website Performance",
-        href: "/services/website-performance/",
-        detail: "Ensure ultra-fast mobile loading for users on mobile connections across the capital.",
+        href: "/services/website-performance",
+        detail:
+          "Ensure ultra-fast mobile loading for users on mobile connections across the capital.",
       },
     ],
     relatedLocations: ["noida", "gurugram", "jaipur"],
@@ -505,21 +554,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Clear service boundaries prevent dilution between Noida, Greater Noida, and adjacent East Delhi territories.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
+      {
+        title: "AI Search Optimization",
+        href: "/services/ai-search-optimization",
+        detail:
+          "Generative engine optimization and structured answer architecture for software companies, digital agencies, and B2B providers across Noida sectors.",
+      },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Accurately set sector addresses, categories, and direct service highlights for NCR discovery.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Accurately set sector addresses, categories, and direct service highlights for NCR discovery.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Construct modern, mobile-responsive websites that communicate corporate and local credibility.",
+        href: "/services/website-development",
+        detail:
+          "Construct modern, mobile-responsive websites that communicate corporate and local credibility.",
       },
       {
         title: "Reputation Management",
-        href: "/services/reputation-management/",
-        detail: "Build authentic customer review workflows that strengthen search trust in competitive sectors.",
+        href: "/services/reputation-management",
+        detail:
+          "Build authentic customer review workflows that strengthen search trust in competitive sectors.",
       },
     ],
     relatedLocations: ["delhi", "gurugram", "lucknow"],
@@ -573,21 +631,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Offices located within multi-building commercial campuses require precise pin calibration on Google Maps.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
+      {
+        title: "AI Search Optimization",
+        href: "/services/ai-search-optimization",
+        detail:
+          "Entity optimization and conversational search readiness for tech startups, financial consultancies, and corporate brands in DLF Cyber City and Golf Course Road.",
+      },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Develop clean, fast, and conversion-focused web architecture matching executive expectations.",
+        href: "/services/website-development",
+        detail:
+          "Develop clean, fast, and conversion-focused web architecture matching executive expectations.",
       },
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Ensure flawless map visibility and navigation accuracy across Gurugram's complex business hubs.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Ensure flawless map visibility and navigation accuracy across Gurugram's complex business hubs.",
       },
       {
         title: "Website Performance",
-        href: "/services/website-performance/",
-        detail: "Optimize core technical vitals for instant mobile rendering across all devices.",
+        href: "/services/website-performance",
+        detail:
+          "Optimize core technical vitals for instant mobile rendering across all devices.",
       },
     ],
     relatedLocations: ["delhi", "noida", "jaipur"],
@@ -641,21 +708,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Businesses with multiple branches must maintain separate, compliant Google profiles without violating address guidelines.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Structure neighborhood-specific website pages to rank in targeted suburban search clusters.",
+        href: "/services/local-seo",
+        detail:
+          "Structure neighborhood-specific website pages to rank in targeted suburban search clusters.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "Technical indexation health monitoring, CTR analysis, and crawl error resolution for high-traffic corporate portals and multi-location businesses in Mumbai.",
       },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Maximize profile completeness, accurate categorizations, and photo presentation for Mumbai searchers.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Maximize profile completeness, accurate categorizations, and photo presentation for Mumbai searchers.",
       },
       {
         title: "Website SEO",
-        href: "/services/website-seo/",
-        detail: "Refine on-page technical structures to compete effectively in high-competition search results.",
+        href: "/services/website-seo",
+        detail:
+          "Refine on-page technical structures to compete effectively in high-competition search results.",
       },
     ],
     relatedLocations: ["pune", "nagpur", "ahmedabad"],
@@ -709,21 +785,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Tech-savvy consumers rely heavily on review authenticity, requiring proactive reputation monitoring workflows.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
+      {
+        title: "AI Search Optimization",
+        href: "/services/ai-search-optimization",
+        detail:
+          "Generative engine optimization and brand entity architecture for software product firms, engineering consultancies, and tech services in Pune.",
+      },
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Strengthen local discovery across Pune's sprawling IT and residential sectors.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Strengthen local discovery across Pune's sprawling IT and residential sectors.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build responsive, user-friendly websites that convert technical and consumer traffic.",
+        href: "/services/website-development",
+        detail:
+          "Build responsive, user-friendly websites that convert technical and consumer traffic.",
       },
       {
         title: "Reputation Management",
-        href: "/services/reputation-management/",
-        detail: "Implement ethical customer review collection systems to build durable public trust.",
+        href: "/services/reputation-management",
+        detail:
+          "Implement ethical customer review collection systems to build durable public trust.",
       },
     ],
     relatedLocations: ["mumbai", "nagpur", "goa"],
@@ -777,21 +862,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Clear website service categorization is required to route wholesale inquiries and consumer walk-ins appropriately.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Claim, verify, and fully optimize business details for central India discovery.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Claim, verify, and fully optimize business details for central India discovery.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "Crawl diagnostics, search coverage verification, and search telemetry for industrial suppliers, logistics providers, and regional clinics in Nagpur.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Develop clean, accessible websites with clear contact paths for local and regional clients.",
+        href: "/services/website-development",
+        detail:
+          "Develop clean, accessible websites with clear contact paths for local and regional clients.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Establish search visibility across key Nagpur neighborhoods and commercial corridors.",
+        href: "/services/local-seo",
+        detail:
+          "Establish search visibility across key Nagpur neighborhoods and commercial corridors.",
       },
     ],
     relatedLocations: ["mumbai", "pune", "hyderabad"],
@@ -845,21 +939,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Campuses with multiple buildings need precise map coordinates and landmark details to guide clients accurately.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
+      {
+        title: "AI Search Optimization",
+        href: "/services/ai-search-optimization",
+        detail:
+          "Brand entity structuring, GEO, and conversational answer optimization for technology firms, product startups, and venture-backed services across Bengaluru.",
+      },
       {
         title: "Website Performance",
-        href: "/services/website-performance/",
-        detail: "Ensure elite Core Web Vitals and instant responsiveness for demanding mobile visitors.",
+        href: "/services/website-performance",
+        detail:
+          "Optimize recommended Core Web Vitals thresholds (LCP, INP, CLS) and fast mobile responsiveness for technical audiences.",
       },
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Optimize local map visibility across Bengaluru's high-density commercial corridors.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Optimize local map visibility across Bengaluru's high-density commercial corridors.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Target neighborhood-specific search queries across Whitefield, HSR, Koramangala, and beyond.",
+        href: "/services/local-seo",
+        detail:
+          "Target neighborhood-specific search queries across Whitefield, HSR, Koramangala, and beyond.",
       },
     ],
     relatedLocations: ["hyderabad", "chennai", "kochi"],
@@ -913,21 +1016,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Distinct search habits across Secunderabad, Old City, and Cyberabad require targeted on-page content strategies.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
+      {
+        title: "AI Search Optimization",
+        href: "/services/ai-search-optimization",
+        detail:
+          "Generative engine optimization, entity knowledge graph mapping, and structured citation management for technology, biotech, and enterprise services in Cyberabad.",
+      },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Ensure complete profile accuracy, service categories, and direct contact options.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Ensure complete profile accuracy, service categories, and direct contact options.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build modern, responsive websites designed to convert local search traffic into direct calls.",
+        href: "/services/website-development",
+        detail:
+          "Build modern, responsive websites designed to convert local search traffic into direct calls.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Structure website content around localized search intent across HITEC City, Banjara Hills, and Kukatpally.",
+        href: "/services/local-seo",
+        detail:
+          "Structure website content around localized search intent across HITEC City, Banjara Hills, and Kukatpally.",
       },
     ],
     relatedLocations: ["bengaluru", "chennai", "visakhapatnam"],
@@ -981,21 +1093,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Medical practices and diagnostic centers need precise specialty categorization to stand out in map searches.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Align website structure with locality searches across Anna Nagar, Adyar, Velachery, and OMR.",
+        href: "/services/local-seo",
+        detail:
+          "Align website structure with locality searches across Anna Nagar, Adyar, Velachery, and OMR.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "First-party indexation telemetry, technical crawl health, and search visibility monitoring for healthcare networks, manufacturers, and tech firms in Chennai.",
       },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Refine map listings, operating hours, and attributes for accurate mobile discovery.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Refine map listings, operating hours, and attributes for accurate mobile discovery.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Construct straightforward, informative websites with clear service descriptions and contact pathways.",
+        href: "/services/website-development",
+        detail:
+          "Construct straightforward, informative websites with clear service descriptions and contact pathways.",
       },
     ],
     relatedLocations: ["bengaluru", "kochi", "visakhapatnam"],
@@ -1049,21 +1170,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Businesses must structure web content so tourist visitors and permanent residents both find relevant service information.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Optimize Google Maps visibility for local travelers and neighborhood searchers.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Optimize Google Maps visibility for local travelers and neighborhood searchers.",
+      },
+      {
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Unified digital presence coordination aligning multilingual website development, Google Maps listings, and customer review governance across Kochi.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build clean, mobile-responsive websites with prominent WhatsApp and phone integration.",
+        href: "/services/website-development",
+        detail:
+          "Build clean, mobile-responsive websites with prominent WhatsApp and phone integration.",
       },
       {
         title: "Reputation Management",
-        href: "/services/reputation-management/",
-        detail: "Cultivate authentic reviews that reassure both local clients and overseas family coordinators.",
+        href: "/services/reputation-management",
+        detail:
+          "Cultivate authentic reviews that reassure both local clients and overseas family coordinators.",
       },
     ],
     relatedLocations: ["bengaluru", "chennai", "goa"],
@@ -1117,21 +1247,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Clear on-page structuring prevents mismatched consumer visits for bulk B2B suppliers.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Create professional business websites that present capabilities clearly to commercial buyers.",
+        href: "/services/website-development",
+        detail:
+          "Create professional business websites that present capabilities clearly to commercial buyers.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "First-party search query intelligence, crawl error detection, and indexation management for manufacturing exporters, financial firms, and merchants in Ahmedabad.",
       },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Ensure comprehensive profile data, accurate attributes, and verified contact points.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Ensure comprehensive profile data, accurate attributes, and verified contact points.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Target localized search queries across Ahmedabad and surrounding commercial hubs.",
+        href: "/services/local-seo",
+        detail:
+          "Target localized search queries across Ahmedabad and surrounding commercial hubs.",
       },
     ],
     relatedLocations: ["mumbai", "pune", "jaipur"],
@@ -1185,21 +1324,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Event and tourism-linked service providers need stable online presence management across peak and off-peak months.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Enhance map visibility for travelers and resident searchers across Jaipur.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Enhance map visibility for travelers and resident searchers across Jaipur.",
+      },
+      {
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Coordinated multi-channel digital presence uniting localized web development, verified Maps discovery, and review trust for Jaipur hospitality and retail businesses.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build visually polished, fast-loading websites that convert inquiries into phone calls.",
+        href: "/services/website-development",
+        detail:
+          "Build visually polished, fast-loading websites that convert inquiries into phone calls.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Structure on-page content to capture neighborhood search intent in Mansarovar, Malviya Nagar, and C-Scheme.",
+        href: "/services/local-seo",
+        detail:
+          "Structure on-page content to capture neighborhood search intent in Mansarovar, Malviya Nagar, and C-Scheme.",
       },
     ],
     relatedLocations: ["delhi", "gurugram", "ahmedabad"],
@@ -1253,21 +1401,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Clear location indicators help customers verify parking and accessibility across different zones of Lucknow.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Clean up, verify, and fully optimize business profile details for accurate search discovery.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Clean up, verify, and fully optimize business profile details for accurate search discovery.",
+      },
+      {
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Centralized digital visibility combining modern responsive websites, Google Business Profile optimization, and local search strategy for businesses in Lucknow.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Build clean, mobile-friendly websites with prominent phone calling and inquiry pathways.",
+        href: "/services/website-development",
+        detail:
+          "Build clean, mobile-friendly websites with prominent phone calling and inquiry pathways.",
       },
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Target neighborhood queries across Gomti Nagar, Hazratganj, and Indira Nagar.",
+        href: "/services/local-seo",
+        detail:
+          "Target neighborhood queries across Gomti Nagar, Hazratganj, and Indira Nagar.",
       },
     ],
     relatedLocations: ["noida", "delhi", "bhubaneswar"],
@@ -1321,21 +1478,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Industrial suppliers in Gajuwaka or Autonagar need clear categorization to distinguish themselves from urban retail services.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Local SEO",
-        href: "/services/local-seo/",
-        detail: "Build targeted website pages for searchers across Dwaraka Nagar, Gajuwaka, and Madhurawada.",
+        href: "/services/local-seo",
+        detail:
+          "Build targeted website pages for searchers across Dwaraka Nagar, Gajuwaka, and Madhurawada.",
+      },
+      {
+        title: "Google Search Console Management",
+        href: "/services/google-search-console-management",
+        detail:
+          "Technical search performance tracking, crawl error resolution, and indexing health for industrial suppliers, maritime services, and enterprises in Visakhapatnam.",
       },
       {
         title: "Google Business Profile Optimization",
-        href: "/services/google-business-profile-optimization/",
-        detail: "Ensure map coordinates, business categories, and operating details are accurately maintained.",
+        href: "/services/google-business-profile-optimization",
+        detail:
+          "Ensure map coordinates, business categories, and operating details are accurately maintained.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Develop fast, responsive websites that present industrial and local capabilities with clarity.",
+        href: "/services/website-development",
+        detail:
+          "Develop fast, responsive websites that present industrial and local capabilities with clarity.",
       },
     ],
     relatedLocations: ["hyderabad", "bhubaneswar", "chennai"],
@@ -1389,21 +1555,30 @@ export const locationsData: LocationMarketDetail[] = [
           "Properties located off main village roads require precise GPS coordinates and landmark cues for customer arrival.",
       },
     ],
-    recommendedServices: [
+        recommendedServices: [
       {
         title: "Google Maps SEO",
-        href: "/services/google-maps-seo/",
-        detail: "Maximize visibility on Google Maps for mobile travelers and event organizers across Goa.",
+        href: "/services/google-maps-seo",
+        detail:
+          "Maximize visibility on Google Maps for mobile travelers and event organizers across Goa.",
+      },
+      {
+        title: "Centralized Digital Presence & SEO Management",
+        href: "/services/internet-marketing",
+        detail:
+          "Unified digital presence management aligning seasonal website updates, Google Maps optimization, and customer review governance for Goa hospitality and lifestyle businesses.",
       },
       {
         title: "Website Development",
-        href: "/services/website-development/",
-        detail: "Construct visually clear, mobile-optimized websites featuring direct WhatsApp and phone booking pathways.",
+        href: "/services/website-development",
+        detail:
+          "Construct visually clear, mobile-optimized websites featuring direct WhatsApp and phone booking pathways.",
       },
       {
         title: "Reputation Management",
-        href: "/services/reputation-management/",
-        detail: "Build verified customer reviews that establish trust with remote clients planning events or stays in Goa.",
+        href: "/services/reputation-management",
+        detail:
+          "Build verified customer reviews that establish trust with remote clients planning events or stays in Goa.",
       },
     ],
     relatedLocations: ["mumbai", "pune", "kochi"],

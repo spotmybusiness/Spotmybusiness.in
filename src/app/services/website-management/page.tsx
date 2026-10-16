@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Website Management & Maintenance Services | Spot My Business",
   description:
     "Ongoing website management and maintenance. We handle content updates, business info changes, routine checks, and link fixes.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/website-management/",
+    canonical: "https://www.spotmybusiness.in/services/website-management",
   },
   openGraph: {
     title: "Website Management & Maintenance Services | Spot My Business",
     description:
       "Ongoing website management and maintenance. We handle content updates, business info changes, routine checks, and link fixes.",
-    url: "https://spotmybusiness.in/services/website-management/",
+    url: "https://www.spotmybusiness.in/services/website-management",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,19 +29,19 @@ export default function WebsiteManagementPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Website Management",
-            item: "https://spotmybusiness.in/services/website-management/",
+            item: "https://www.spotmybusiness.in/services/website-management",
           },
         ],
       },
@@ -49,11 +50,11 @@ export default function WebsiteManagementPage() {
         name: "Website Management",
         description:
           "Ongoing website maintenance, content updates, link checks, and technical support for live websites.",
-        url: "https://spotmybusiness.in/services/website-management/",
+        url: "https://www.spotmybusiness.in/services/website-management",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -160,15 +161,15 @@ export default function WebsiteManagementPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Website Management</li>
@@ -190,18 +191,18 @@ export default function WebsiteManagementPage() {
             an SEO programme, or a performance overhaul.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/website-development/"
+            </Link>
+            <Link
+              href="/services/website-development"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Website Development
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -314,24 +315,30 @@ export default function WebsiteManagementPage() {
             rather than substitutes for day-to-day management.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/website-development/"
+            <Link
+              href="/services/website-development"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website development
-            </a>
-            <a
-              href="/services/website-seo/"
+            </Link>
+            <Link
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website SEO
-            </a>
-            <a
-              href="/services/website-performance/"
+            </Link>
+            <Link
+              href="/services/website-performance"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website performance
-            </a>
+            </Link>
+            <Link
+              href="/services/google-search-console-management"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
+            >
+              Search Console Management
+            </Link>
           </div>
         </section>
 
@@ -346,12 +353,12 @@ export default function WebsiteManagementPage() {
             retainer, a guaranteed uptime figure, or a promised business
             result.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

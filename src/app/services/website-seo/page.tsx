@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Website SEO Services for Local Businesses | Spot My Business",
   description:
     "On-page SEO, search-intent alignment, site structure, and technical fundamentals to help search engines understand your website.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/website-seo/",
+    canonical: "https://www.spotmybusiness.in/services/website-seo",
   },
   openGraph: {
     title: "Website SEO Services for Local Businesses | Spot My Business",
     description:
       "On-page SEO, search-intent alignment, site structure, and technical fundamentals to help search engines understand your website.",
-    url: "https://spotmybusiness.in/services/website-seo/",
+    url: "https://www.spotmybusiness.in/services/website-seo",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -28,19 +29,19 @@ export default function WebsiteSeoPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Website SEO",
-            item: "https://spotmybusiness.in/services/website-seo/",
+            item: "https://www.spotmybusiness.in/services/website-seo",
           },
         ],
       },
@@ -49,11 +50,11 @@ export default function WebsiteSeoPage() {
         name: "Website SEO",
         description:
           "On-page SEO, search intent optimization, internal linking, and technical crawlability improvements for websites.",
-        url: "https://spotmybusiness.in/services/website-seo/",
+        url: "https://www.spotmybusiness.in/services/website-seo",
         provider: {
           "@type": "LocalBusiness",
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
         },
       },
     ],
@@ -160,15 +161,15 @@ export default function WebsiteSeoPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
-              <a href="/" className="hover:text-light-bronze">
+              <Link href="/" className="hover:text-light-bronze">
                 Home
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <a href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
-              </a>
+              </Link>
             </li>
             <li aria-hidden="true">→</li>
             <li aria-current="page">Website SEO</li>
@@ -190,18 +191,18 @@ export default function WebsiteSeoPage() {
             foundations - not a promise of rankings, traffic, or leads.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/contact/"
+            <Link
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
             >
               Talk to Us
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading"
             >
               Explore Local SEO
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -320,30 +321,42 @@ export default function WebsiteSeoPage() {
             are the actual next need.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/website-development/"
+            <Link
+              href="/services/website-development"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website development
-            </a>
-            <a
-              href="/services/website-management/"
+            </Link>
+            <Link
+              href="/services/website-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website management
-            </a>
-            <a
-              href="/services/website-performance/"
+            </Link>
+            <Link
+              href="/services/website-performance"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Website performance
-            </a>
-            <a
-              href="/services/local-seo/"
+            </Link>
+            <Link
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
               Local SEO
-            </a>
+            </Link>
+            <Link
+              href="/services/google-search-console-management"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
+            >
+              Search Console Management
+            </Link>
+            <Link
+              href="/services/ai-search-optimization"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
+            >
+              AI Search Optimization
+            </Link>
           </div>
         </section>
 
@@ -357,12 +370,12 @@ export default function WebsiteSeoPage() {
             practical starting point. There is no promised ranking and no
             unpublished algorithm access in that conversation.
           </p>
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             className="mt-6 inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading"
           >
             Contact Spot My Business
-          </a>
+          </Link>
         </section>
       </div>
     </main>

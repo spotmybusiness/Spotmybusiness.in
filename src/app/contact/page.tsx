@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import Contact from "@/components/Contact";
 import { businessHours } from "@/lib/business";
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Contact Spot My Business by phone, WhatsApp, email, or the enquiry form to discuss your website, Google Business Profile, local search, or reputation work.",
   alternates: {
-    canonical: "https://spotmybusiness.in/contact/",
+    canonical: "https://www.spotmybusiness.in/contact",
   },
   openGraph: {
     title: "Contact Spot My Business | Phone, WhatsApp, Email & Enquiry Form",
     description:
       "Contact Spot My Business by phone, WhatsApp, email, or the enquiry form to discuss your website, Google Business Profile, local search, or reputation work.",
-    url: "https://spotmybusiness.in/contact/",
+    url: "https://www.spotmybusiness.in/contact",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -30,12 +31,12 @@ export default function ContactPage() {
       >
         <ol className="flex items-center gap-2 text-xs text-gray-text/60 font-medium tracking-wide">
           <li>
-            <a
+            <Link
               href="/"
               className="hover:text-light-bronze transition-colors duration-200"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true" className="text-gray-text/30">
             /
@@ -223,17 +224,17 @@ export default function ContactPage() {
         </p>
         <div className="flex flex-wrap gap-3">
           {[
-            { label: "Services", href: "/services/" },
-            { label: "Case Studies", href: "/case-studies/" },
-            { label: "About", href: "/about/" },
+            { label: "Services", href: "/services" },
+            { label: "Case Studies", href: "/case-studies" },
+            { label: "About", href: "/about" },
           ].map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="px-5 py-2.5 rounded-full border border-border-color text-xs tracking-[0.15em] uppercase font-semibold text-gray-text hover:border-bronze/50 hover:text-white transition-all duration-200"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </section>

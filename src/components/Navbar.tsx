@@ -2,8 +2,12 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import { getNavigationClusters } from "@/lib/services";
+
+const navigationClusters = getNavigationClusters();
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,6 +44,18 @@ export default function Navbar() {
     };
   }, [isMobileMenuOpen]);
 
+  // Handle ESC key for accessible menu closing
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsMobileMenuOpen(false);
+        setIsServicesOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   const handleRouteClick = () => {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
@@ -57,7 +73,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <div className="relative z-50 shrink-0 md:mr-8 lg:mr-12">
-            <a
+            <Link
               href="/"
               onClick={handleRouteClick}
               className="flex items-center gap-3 group"
@@ -80,59 +96,87 @@ export default function Navbar() {
                   GLOBAL SEO PARTNER
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-7">
-            <a
-              href="/"
-              className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300"
-            >
-              Home
-            </a>
+          <nav aria-label="Main Navigation" className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-8">
+            {/* Categorized Services Mega-Menu Dropdown */}
             <div className="group relative">
-              <a
-                href="/services/"
-                className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300"
+              <Link
+                href="/services"
+                className="flex items-center gap-1.5 text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300 py-1"
+                aria-haspopup="true"
               >
-                Services
-              </a>
-              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-72 -translate-x-1/2 rounded-xl border border-border-color bg-primary-bg p-3 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                <div className="flex flex-col gap-1">
-                  <a href="/services/internet-marketing/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Internet Marketing</a>
-                  <a href="/services/google-business-profile-optimization/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Google Business Profile Optimization</a>
-                  <a href="/services/google-maps-seo/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Google Maps SEO</a>
-                  <a href="/services/local-seo/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Local SEO</a>
-                  <a href="/services/reputation-management/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Reputation Management</a>
-                  <a href="/services/website-development/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Website Development</a>
-                  <a href="/services/website-management/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Website Management</a>
-                  <a href="/services/website-seo/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Website SEO</a>
-                  <a href="/services/website-performance/" className="rounded-lg px-3 py-2 text-xs text-gray-text hover:bg-secondary-bg hover:text-light-bronze">Website Performance</a>
+                <span>Services</span>
+                <ChevronDown className="w-3.5 h-3.5 text-gray-text/60 group-hover:text-light-bronze group-hover:rotate-180 transition-transform duration-200" />
+              </Link>
+
+              <div
+                id="desktop-services-menu"
+                role="region"
+                aria-label="Services Directory"
+                className="invisible absolute left-0 top-full z-50 mt-3 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 w-[640px] max-w-[calc(100vw-2rem)] rounded-2xl border border-border-color bg-primary-bg/95 backdrop-blur-2xl p-6 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+              >
+                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                  {navigationClusters.map(({ cluster, services }) => (
+                    <div key={cluster.id} className="space-y-2.5">
+                      <div className="border-b border-border-color/50 pb-1.5">
+                        <span className="text-[10px] font-heading font-bold uppercase tracking-[0.18em] text-light-bronze">
+                          {cluster.name}
+                        </span>
+                      </div>
+                      <ul className="space-y-1">
+                        {services.map((service) => (
+                          <li key={service.id}>
+                            <Link
+                              href={service.href!}
+                              onClick={handleRouteClick}
+                              className="block rounded-lg px-2.5 py-1.5 text-xs font-medium text-gray-text hover:bg-secondary-bg hover:text-white transition-colors"
+                            >
+                              {service.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Bottom Bar: Quick link to all services */}
+                <div className="mt-6 pt-3.5 border-t border-border-color/50 flex items-center justify-between text-xs">
+                  <span className="text-gray-text/60 text-[11px]">
+                    11 integrated services across 4 disciplines
+                  </span>
+                  <Link
+                    href="/services"
+                    onClick={handleRouteClick}
+                    className="font-heading font-bold uppercase text-[10px] tracking-[0.2em] text-light-bronze hover:text-champagne transition-colors"
+                  >
+                    View All Services Hub →
+                  </Link>
                 </div>
               </div>
             </div>
-            <a
-              href="/industries/"
+
+            <Link
+              href="/industries"
               className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300"
             >
               Industries
-            </a>
-            <a href="/locations/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
-              Locations
-            </a>
-            <a href="/case-studies/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
+            </Link>
+            <Link href="/case-studies" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               Case Studies
-            </a>
-            <a href="/about/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
+            </Link>
+            <Link href="/about" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               About
-            </a>
-            <a href="/faq/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
+            </Link>
+            <Link href="/faq" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               FAQ
-            </a>
-            <a href="/contact/" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
+            </Link>
+            <Link href="/contact" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               Contact
-            </a>
+            </Link>
 
             {/* Theme Switcher */}
             <ThemeSwitcher />
@@ -193,20 +237,14 @@ export default function Navbar() {
         <div className="absolute top-16 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full bg-bronze/10 blur-[90px] pointer-events-none" />
 
         <div className="w-full max-w-sm flex flex-col items-center gap-5 my-auto py-4 relative z-10">
-          
-          <a
-            href="/"
-            onClick={handleRouteClick}
-            className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
-          >
-            Home
-          </a>
-
-          {/* Collapsible Services Menu */}
-          <div className="w-full flex flex-col items-center">
+          {/* Categorized Mobile Services Accordion */}
+          <div className="w-full flex flex-col">
             <button
+              type="button"
               onClick={() => setIsServicesOpen((prev) => !prev)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze transition-colors"
+              aria-expanded={isServicesOpen}
+              aria-controls="mobile-services-menu"
+              className="w-full flex items-center justify-center gap-2 py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze transition-colors cursor-pointer"
             >
               <span>Services</span>
               <ChevronDown
@@ -217,123 +255,82 @@ export default function Navbar() {
             </button>
 
             {isServicesOpen && (
-              <div className="w-full my-2 py-2 px-4 rounded-2xl bg-secondary-bg/80 border border-border-color/60 flex flex-col gap-2.5 text-center text-xs font-medium animate-in fade-in slide-in-from-top-2 duration-200">
-                <a
-                  href="/services/internet-marketing/"
+              <div
+                id="mobile-services-menu"
+                className="w-full my-2 py-3 px-3.5 rounded-2xl bg-secondary-bg/90 border border-border-color/60 flex flex-col gap-4 text-xs font-medium animate-in fade-in slide-in-from-top-2 duration-200"
+              >
+                <Link
+                  href="/services"
                   onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
+                  className="w-full py-2 px-3 text-center rounded-xl bg-primary-bg/70 border border-border-color text-light-bronze font-heading font-bold uppercase tracking-[0.15em] text-[11px] hover:text-champagne transition-colors"
                 >
-                  Internet Marketing
-                </a>
-                <a
-                  href="/services/google-business-profile-optimization/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Google Business Profile Optimization
-                </a>
-                <a
-                  href="/services/google-maps-seo/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Google Maps SEO
-                </a>
-                <a
-                  href="/services/local-seo/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Local SEO
-                </a>
-                <a
-                  href="/services/reputation-management/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Reputation Management
-                </a>
-                <a
-                  href="/services/website-development/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Website Development
-                </a>
-                <a
-                  href="/services/website-management/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Website Management
-                </a>
-                <a
-                  href="/services/website-seo/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Website SEO
-                </a>
-                <a
-                  href="/services/website-performance/"
-                  onClick={handleRouteClick}
-                  className="py-1.5 text-gray-text hover:text-light-bronze"
-                >
-                  Website Performance
-                </a>
+                  All Services Overview →
+                </Link>
+
+                {navigationClusters.map(({ cluster, services }) => (
+                  <div key={cluster.id} className="space-y-1.5 text-left">
+                    <p className="text-[10px] uppercase font-heading font-bold tracking-[0.18em] text-light-bronze/90 px-2 py-0.5 border-b border-border-color/40">
+                      {cluster.name}
+                    </p>
+                    <div className="flex flex-col gap-0.5 pt-0.5">
+                      {services.map((service) => (
+                        <Link
+                          key={service.id}
+                          href={service.href!}
+                          onClick={handleRouteClick}
+                          className="py-1.5 px-2 rounded-lg text-gray-text hover:text-white hover:bg-primary-bg/50 transition-colors"
+                        >
+                          {service.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
           </div>
 
-          <a
-            href="/industries/"
+          <Link
+            href="/industries"
             onClick={handleRouteClick}
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             Industries
-          </a>
+          </Link>
 
-          <a
-            href="/locations/"
-            onClick={handleRouteClick}
-            className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
-          >
-            Locations
-          </a>
-
-          <a
-            href="/case-studies/"
+          <Link
+            href="/case-studies"
             onClick={handleRouteClick}
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             Case Studies
-          </a>
+          </Link>
 
-          <a
-            href="/about/"
+          <Link
+            href="/about"
             onClick={handleRouteClick}
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             About
-          </a>
+          </Link>
 
-          <a
-            href="/faq/"
+          <Link
+            href="/faq"
             onClick={handleRouteClick}
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             FAQ
-          </a>
+          </Link>
 
           <div className="w-full border-t border-border-color/50 my-2" />
 
-          <a
-            href="/contact/"
+          <Link
+            href="/contact"
             onClick={handleRouteClick}
             className="w-full py-3.5 rounded-full bg-gradient-to-r from-bronze to-light-bronze text-center text-xs tracking-[0.2em] uppercase font-bold text-white shadow-lg shadow-bronze/20 transition-all duration-300 active:scale-98"
           >
             Contact
-          </a>
+          </Link>
 
           <div className="flex items-center justify-center gap-6 pt-2 text-xs tracking-[0.15em] uppercase font-semibold">
             <a

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Spot My Business provides internet marketing services in Kolkata for local businesses - combining Local SEO, Google Business Profile, Maps, and website solutions.",
   alternates: {
-    canonical: "https://spotmybusiness.in/services/internet-marketing/",
+    canonical: "https://www.spotmybusiness.in/services/internet-marketing",
   },
   openGraph: {
     title: "Internet Marketing Services in Kolkata | Spot My Business",
     description:
       "Spot My Business provides internet marketing services in Kolkata for local businesses - combining Local SEO, Google Business Profile, Maps, and website solutions.",
-    url: "https://spotmybusiness.in/services/internet-marketing/",
+    url: "https://www.spotmybusiness.in/services/internet-marketing",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -29,19 +29,19 @@ export default function InternetMarketingPage() {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://spotmybusiness.in/",
+            item: "https://www.spotmybusiness.in/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://spotmybusiness.in/services/",
+            item: "https://www.spotmybusiness.in/services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Internet Marketing",
-            item: "https://spotmybusiness.in/services/internet-marketing/",
+            item: "https://www.spotmybusiness.in/services/internet-marketing",
           },
         ],
       },
@@ -50,11 +50,11 @@ export default function InternetMarketingPage() {
         name: "Internet Marketing Service",
         description:
           "Comprehensive internet marketing services in Kolkata encompassing Local SEO, Google Business Profile optimization, Google Maps visibility, and performance website development.",
-        url: "https://spotmybusiness.in/services/internet-marketing/",
+        url: "https://www.spotmybusiness.in/services/internet-marketing",
         provider: {
           "@type": ["LocalBusiness", "ProfessionalService"],
           name: "Spot My Business",
-          url: "https://spotmybusiness.in",
+          url: "https://www.spotmybusiness.in",
           telephone: ["+91 9007960333", "+91 8597913452"],
           email: "smb.spot.my.business@gmail.com",
           address: {
@@ -196,7 +196,7 @@ export default function InternetMarketingPage() {
             </li>
             <li aria-hidden="true">→</li>
             <li>
-              <Link href="/services/" className="hover:text-light-bronze">
+              <Link href="/services" className="hover:text-light-bronze">
                 Services
               </Link>
             </li>
@@ -222,13 +222,13 @@ export default function InternetMarketingPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/contact/"
+              href="/contact"
               className="rounded-full bg-gradient-to-r from-bronze to-light-bronze px-6 py-3 text-sm font-semibold text-heading hover:shadow-lg hover:shadow-bronze/20 transition-all duration-300"
             >
               Talk to Us
             </Link>
             <Link
-              href="/services/local-seo/"
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-6 py-3 text-sm font-semibold text-gray-text hover:text-heading transition-colors duration-300"
             >
               Explore Local SEO
@@ -349,40 +349,52 @@ export default function InternetMarketingPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
-              href="/services/local-seo/"
+              href="/services/local-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
             >
               Local SEO
             </Link>
             <Link
-              href="/services/google-business-profile-optimization/"
+              href="/services/google-business-profile-optimization"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
             >
               Google Business Profile
             </Link>
             <Link
-              href="/services/google-maps-seo/"
+              href="/services/google-maps-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
             >
               Google Maps SEO
             </Link>
             <Link
-              href="/services/website-development/"
+              href="/services/website-development"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
             >
               Website Development
             </Link>
             <Link
-              href="/services/website-seo/"
+              href="/services/website-seo"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
             >
               Website SEO
             </Link>
             <Link
-              href="/services/reputation-management/"
+              href="/services/reputation-management"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
             >
               Reputation Management
+            </Link>
+            <Link
+              href="/services/ai-search-optimization"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
+            >
+              AI Search Optimization
+            </Link>
+            <Link
+              href="/services/google-search-console-management"
+              className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze transition-colors duration-200"
+            >
+              Search Console Management
             </Link>
           </div>
         </section>
@@ -397,7 +409,7 @@ export default function InternetMarketingPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
-              href="/contact/"
+              href="/contact"
               className="inline-block rounded-full bg-gradient-to-r from-bronze to-light-bronze px-8 py-3.5 text-sm font-semibold text-heading hover:shadow-lg hover:shadow-bronze/20 transition-all duration-300"
             >
               Contact Spot My Business

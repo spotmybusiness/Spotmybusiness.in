@@ -73,7 +73,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - `<html lang="en">` with `suppressHydrationWarning`
 - Inline `<script>` in `<head>` for theme-flash prevention (reads `smb-theme` from localStorage)
 - Global `LocalBusiness` + `ProfessionalService` JSON-LD in `<head>` via `getLocalBusinessSchema()` from `src/lib/business.ts`
-- `metadataBase: new URL("https://spotmybusiness.in")` in layout `metadata`
+- `metadataBase: new URL("https://www.spotmybusiness.in")` in layout `metadata`
 
 ### Data Modules (`src/lib/`)
 All domain data is centralized in typed modules. **Always import from these modules rather than hardcoding strings:**
@@ -82,10 +82,10 @@ All domain data is centralized in typed modules. **Always import from these modu
 - `src/lib/faq.ts` — `faqCategories[]`, `getAllFAQs()`, `getFAQById()` (13 factual Q&As across 4 categories)
 
 ### Sitemap (`src/app/sitemap.ts`)
-Exports **39 URLs** dynamically combining the 19 static routes and all 20 location slugs from `src/lib/locations.ts`. No `lastModified` timestamps (prevents false crawl frequency signals).
+Exports **37 indexable URLs** dynamically combining the 17 static indexable routes and all 20 location slugs from `src/lib/locations.ts` (excluding noindex routes `/privacy-policy` and `/terms`). No `lastModified` timestamps (prevents false crawl frequency signals).
 
 ### Robots (`src/app/robots.ts`)
-`allow: "/"` for all user agents. Points sitemap to `https://spotmybusiness.in/sitemap.xml`.
+`allow: "/"` for all user agents. Points sitemap to `https://www.spotmybusiness.in/sitemap.xml`.
 
 ---
 
@@ -121,12 +121,12 @@ export const metadata: Metadata = {
   title: "Page-Specific Title | Spot My Business",
   description: "Natural sentence description matching the page.",
   alternates: {
-    canonical: "https://spotmybusiness.in/path/",   // strict trailing slash always
+    canonical: "https://www.spotmybusiness.in/path",   // canonical origin with no trailing slash except /
   },
   openGraph: {
     title: "...",
     description: "...",
-    url: "https://spotmybusiness.in/path/",
+    url: "https://www.spotmybusiness.in/path",
     siteName: "Spot My Business",
     type: "website",
   },
@@ -134,7 +134,7 @@ export const metadata: Metadata = {
 ```
 - **No `twitter` card** on individual pages (defined globally in `layout.tsx`)
 - **No `keywords`** on individual pages
-- Canonical always uses the full absolute URL with a trailing slash
+- Canonical always uses the full absolute URL on `https://www.spotmybusiness.in` with no trailing slash (root is `https://www.spotmybusiness.in/`)
 
 ### noindex Pages
 ```ts
@@ -142,7 +142,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 ```
-Applied to `/privacy-policy/` and `/terms/`.
+Applied to `/privacy-policy` and `/terms`.
 
 ### JSON-LD Schema Patterns
 
@@ -327,11 +327,11 @@ Instagram: https://www.instagram.com/spotmybusiness.in/
 X: https://x.com/spotmybusinesss
 Geo: 22.49583535142233, 88.3806285747356
 Hours: Mo–Su 00:00–23:59 (Open 24 hours)
-Domain: https://spotmybusiness.in
+Domain: https://www.spotmybusiness.in
 ```
 
 ### Canonical Convention
-- Full absolute URL with trailing slash (e.g., `https://spotmybusiness.in/locations/bengaluru/`, `https://spotmybusiness.in/faq/`)
+- Full absolute URL on canonical origin `https://www.spotmybusiness.in` with no trailing slash except root `/` (e.g., `https://www.spotmybusiness.in/locations/bengaluru`, `https://www.spotmybusiness.in/faq`)
 - Self-referencing on every indexable page
 
 ---

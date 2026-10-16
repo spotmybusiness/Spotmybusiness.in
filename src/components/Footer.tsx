@@ -1,5 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUp } from "lucide-react";
+import { getServicesByCluster } from "@/lib/services";
+
+const webAndAIServices = [
+  ...getServicesByCluster("web-engineering"),
+  ...getServicesByCluster("ai-search"),
+];
+
+const searchAndGovernanceServices = [
+  ...getServicesByCluster("search-local"),
+  ...getServicesByCluster("governance-management"),
+];
 
 export default function Footer() {
   return (
@@ -71,74 +83,81 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Web & AI Services */}
           <div className="md:col-span-2 space-y-4">
-            <p className="text-xs uppercase tracking-[0.2em] text-heading font-bold">
-              Services
+            <p className="text-xs uppercase tracking-[0.18em] text-heading font-bold">
+              Web & AI Search
             </p>
             <ul className="space-y-2.5 text-xs text-gray-text font-medium">
-              <li><a href="/services/internet-marketing/" className="hover:text-light-bronze transition-colors">Internet Marketing</a></li>
-              <li><a href="/services/google-business-profile-optimization/" className="hover:text-light-bronze transition-colors">Google Business Profile Optimization</a></li>
-              <li><a href="/services/google-maps-seo/" className="hover:text-light-bronze transition-colors">Google Maps SEO</a></li>
-              <li><a href="/services/local-seo/" className="hover:text-light-bronze transition-colors">Local SEO</a></li>
-              <li><a href="/services/reputation-management/" className="hover:text-light-bronze transition-colors">Reputation Management</a></li>
-              <li><a href="/services/website-development/" className="hover:text-light-bronze transition-colors">Website Development</a></li>
-              <li><a href="/services/website-management/" className="hover:text-light-bronze transition-colors">Website Management</a></li>
-              <li><a href="/services/website-seo/" className="hover:text-light-bronze transition-colors">Website SEO</a></li>
-              <li><a href="/services/website-performance/" className="hover:text-light-bronze transition-colors">Website Performance</a></li>
+              {webAndAIServices.map((service) => (
+                <li key={service.id}>
+                  <Link href={service.href!} className="hover:text-light-bronze transition-colors">
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Explore */}
+          {/* Search & Governance Services */}
           <div className="md:col-span-2 space-y-4">
-            <p className="text-xs uppercase tracking-[0.2em] text-heading font-bold">Explore</p>
+            <p className="text-xs uppercase tracking-[0.18em] text-heading font-bold">
+              Search & Governance
+            </p>
             <ul className="space-y-2.5 text-xs text-gray-text font-medium">
-              <li><a href="/industries/" className="hover:text-light-bronze transition-colors">Industries</a></li>
-              <li><a href="/locations/" className="hover:text-light-bronze transition-colors">Locations</a></li>
+              {searchAndGovernanceServices.map((service) => (
+                <li key={service.id}>
+                  <Link href={service.href!} className="hover:text-light-bronze transition-colors">
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company & Explore */}
           <div className="md:col-span-2 space-y-4">
-            <p className="text-xs uppercase tracking-[0.2em] text-heading font-bold">Company</p>
+            <p className="text-xs uppercase tracking-[0.18em] text-heading font-bold">
+              Company
+            </p>
             <ul className="space-y-2.5 text-xs text-gray-text font-medium">
-              <li><a href="/case-studies/" className="hover:text-light-bronze transition-colors">Case Studies</a></li>
-              <li><a href="/about/" className="hover:text-light-bronze transition-colors">About</a></li>
-              <li><a href="/faq/" className="hover:text-light-bronze transition-colors">FAQ</a></li>
-              <li><a href="/contact/" className="hover:text-light-bronze transition-colors">Contact</a></li>
-              <li><a href="/privacy-policy/" className="hover:text-light-bronze transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms/" className="hover:text-light-bronze transition-colors">Terms</a></li>
+              <li><Link href="/industries" className="hover:text-light-bronze transition-colors">Industries</Link></li>
+              <li><Link href="/locations" className="hover:text-light-bronze transition-colors">Locations</Link></li>
+              <li><Link href="/case-studies" className="hover:text-light-bronze transition-colors">Case Studies</Link></li>
+              <li><Link href="/about" className="hover:text-light-bronze transition-colors">About</Link></li>
+              <li><Link href="/faq" className="hover:text-light-bronze transition-colors">FAQ</Link></li>
+              <li><Link href="/contact" className="hover:text-light-bronze transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact & Map */}
-<div className="md:col-span-3 space-y-4">
-  <p className="text-xs uppercase tracking-[0.2em] text-heading font-bold">
-    Find Us
-  </p>
+          <div className="md:col-span-3 space-y-4">
+            <p className="text-xs uppercase tracking-[0.18em] text-heading font-bold">
+              Find Us
+            </p>
 
-  <div className="overflow-hidden rounded-xl border border-border-color">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.222150801929!2d88.3806334!3d22.4958468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027174483eab37%3A0xdff839b9e9c6b474!2sSpot%20My%20Business!5e0!3m2!1sen!2sin!4v1785688925625!5m2!1sen!2sin"
-      width="100%"
-      height="220"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="strict-origin-when-cross-origin"
-      title="Spot My Business Location"
-      className="w-full"
-    />
-  </div>
+            <div className="overflow-hidden rounded-xl border border-border-color">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.222150801929!2d88.3806334!3d22.4958468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027174483eab37%3A0xdff839b9e9c6b474!2sSpot%20My%20Business!5e0!3m2!1sen!2sin!4v1785688925625!5m2!1sen!2sin"
+                width="100%"
+                height="220"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Spot My Business Location"
+                className="w-full"
+              />
+            </div>
 
-  <div className="space-y-2 text-xs text-gray-text leading-relaxed font-medium">
-    <p>Middle Rd, Sen Para, Santoshpur, Kolkata, West Bengal 700075</p>
-    <p>Phone: <a href="tel:+919007960333" className="hover:text-light-bronze transition-colors">+91 9007960333</a> / <a href="tel:+918597913452" className="hover:text-light-bronze transition-colors">+91 8597913452</a></p>
-    <p>Email: <a href="mailto:smb.spot.my.business@gmail.com" className="hover:text-light-bronze transition-colors">smb.spot.my.business@gmail.com</a></p>
-    <p>Hours: <span className="text-heading font-medium">Mon – Sun: Open 24 Hours</span></p>
-    <p><a href="https://wa.me/919007960333" target="_blank" rel="noopener noreferrer" className="hover:text-light-bronze transition-colors">WhatsApp</a></p>
-  </div>
-</div>
+            <div className="space-y-2 text-xs text-gray-text leading-relaxed font-medium">
+              <p>Middle Rd, Sen Para, Santoshpur, Kolkata, West Bengal 700075</p>
+              <p>Phone: <a href="tel:+919007960333" className="hover:text-light-bronze transition-colors">+91 9007960333</a> / <a href="tel:+918597913452" className="hover:text-light-bronze transition-colors">+91 8597913452</a></p>
+              <p>Email: <a href="mailto:smb.spot.my.business@gmail.com" className="hover:text-light-bronze transition-colors">smb.spot.my.business@gmail.com</a></p>
+              <p>Hours: <span className="text-heading font-medium">Mon – Sun: Open 24 Hours</span></p>
+              <p><a href="https://wa.me/919007960333" target="_blank" rel="noopener noreferrer" className="hover:text-light-bronze transition-colors">WhatsApp</a></p>
+            </div>
+          </div>
 
         </div>
 
@@ -146,8 +165,8 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-border-color/40 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-gray-text/50 uppercase tracking-widest font-semibold">
           <p>© 2026 SPOT MY BUSINESS. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-6">
-            <a href="/privacy-policy/" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="/terms/" className="hover:text-white transition-colors">Terms of Service</a>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
           <a
             href="#"
