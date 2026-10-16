@@ -100,14 +100,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <nav aria-label="Main Navigation" className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-7">
-            <Link
-              href="/"
-              className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300"
-            >
-              Home
-            </Link>
-
+          <nav aria-label="Main Navigation" className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-8">
             {/* Categorized Services Mega-Menu Dropdown */}
             <div className="group relative">
               <Link
@@ -123,7 +116,7 @@ export default function Navbar() {
                 id="desktop-services-menu"
                 role="region"
                 aria-label="Services Directory"
-                className="invisible absolute left-0 md:-left-28 lg:left-1/2 lg:-translate-x-1/2 top-full z-50 mt-3 w-[640px] max-w-[calc(100vw-2rem)] rounded-2xl border border-border-color bg-primary-bg/95 backdrop-blur-2xl p-6 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-50 mt-3 before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 w-[640px] max-w-[calc(100vw-2rem)] rounded-2xl border border-border-color bg-primary-bg/95 backdrop-blur-2xl p-6 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
               >
                 <div className="grid grid-cols-2 gap-x-8 gap-y-6">
                   {navigationClusters.map(({ cluster, services }) => (
@@ -171,9 +164,6 @@ export default function Navbar() {
               className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300"
             >
               Industries
-            </Link>
-            <Link href="/locations" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
-              Locations
             </Link>
             <Link href="/case-studies" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               Case Studies
@@ -247,15 +237,6 @@ export default function Navbar() {
         <div className="absolute top-16 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full bg-bronze/10 blur-[90px] pointer-events-none" />
 
         <div className="w-full max-w-sm flex flex-col items-center gap-5 my-auto py-4 relative z-10">
-          
-          <Link
-            href="/"
-            onClick={handleRouteClick}
-            className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
-          >
-            Home
-          </Link>
-
           {/* Categorized Mobile Services Accordion */}
           <div className="w-full flex flex-col">
             <button
@@ -315,14 +296,6 @@ export default function Navbar() {
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             Industries
-          </Link>
-
-          <Link
-            href="/locations"
-            onClick={handleRouteClick}
-            className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
-          >
-            Locations
           </Link>
 
           <Link
