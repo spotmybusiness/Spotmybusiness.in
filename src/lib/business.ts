@@ -16,6 +16,12 @@ export const businessHours: BusinessHoursEntry[] = [
   { day: "Sunday", schemaDay: "Sunday", hours: "Open 24 hours", opens: "00:00", closes: "23:59" },
 ];
 
+export const socialLinks = {
+  instagram: "https://www.instagram.com/spotmybusiness.in/",
+  linkedin: "https://www.linkedin.com/company/spot-my-business/",
+  x: "https://x.com/spotmybusinesss",
+};
+
 export const businessInfo = {
   name: "Spot My Business",
   alternateName: "SMB",
@@ -48,8 +54,8 @@ export const businessInfo = {
     { name: "India", type: "Country" },
   ],
   sameAs: [
-    "https://www.linkedin.com/company/spot-my-business/",
     "https://www.instagram.com/spotmybusiness.in/",
+    "https://www.linkedin.com/company/spot-my-business/",
     "https://x.com/spotmybusinesss",
   ],
   priceRange: "$$",
@@ -59,9 +65,11 @@ export const businessInfo = {
 export function getLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+    "@id": `${businessInfo.url}/#organization`,
     name: businessInfo.name,
     alternateName: businessInfo.alternateName,
+    legalName: businessInfo.legalName,
     description: businessInfo.description,
     url: businessInfo.url,
     logo: businessInfo.logo,
@@ -92,6 +100,30 @@ export function getLocalBusinessSchema() {
       "@type": area.type,
       name: area.name,
     })),
+    sameAs: businessInfo.sameAs,
+  };
+}
+
+export function getOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${businessInfo.url}/#organization`,
+    name: businessInfo.name,
+    alternateName: businessInfo.alternateName,
+    legalName: businessInfo.legalName,
+    url: businessInfo.url,
+    logo: businessInfo.logo,
+    email: businessInfo.email,
+    telephone: businessInfo.telephones,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: businessInfo.address.streetAddress,
+      addressLocality: businessInfo.address.addressLocality,
+      addressRegion: businessInfo.address.addressRegion,
+      postalCode: businessInfo.address.postalCode,
+      addressCountry: businessInfo.address.addressCountry,
+    },
     sameAs: businessInfo.sameAs,
   };
 }

@@ -94,7 +94,7 @@ export default async function LocationDetailPage({ params }: Props) {
           name: location.name,
         },
         provider: {
-          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
           name: businessInfo.name,
           url: businessInfo.url,
           telephone: businessInfo.telephones,
@@ -107,6 +107,7 @@ export default async function LocationDetailPage({ params }: Props) {
             postalCode: businessInfo.address.postalCode,
             addressCountry: businessInfo.address.addressCountry,
           },
+          sameAs: businessInfo.sameAs,
         },
       },
     ],
