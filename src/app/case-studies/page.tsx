@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ interface PortfolioItem {
   status?: string;
   linkText?: string;
   linkAriaLabel?: string;
+  previewImage?: string;
 }
 
 const gbpClients: PortfolioItem[] = [
@@ -133,6 +135,7 @@ const webDesignClients: PortfolioItem[] = [
     initials: "SMB",
     sector: "Digital Presence Platform",
     destination: "https://spotmybusiness.in/",
+    previewImage: "/images/portfolio/smb-preview.webp",
     linkText: "Live Website",
     linkAriaLabel: "Visit Spot My Business live website",
     desc: "A high-performance digital presence platform built with modern static architecture, multi-market coverage, and dual-theme accessibility.",
@@ -148,6 +151,7 @@ const webDesignClients: PortfolioItem[] = [
     initials: "BR",
     sector: "Moving & Logistics",
     destination: "https://bharatrelocators.com/",
+    previewImage: "/images/portfolio/bharat-relocators-preview.webp",
     linkText: "Live Website",
     linkAriaLabel: "Visit Bharat Relocators website",
     desc: "A relocation website featuring a dedicated shipment-tracking experience.",
@@ -163,6 +167,7 @@ const webDesignClients: PortfolioItem[] = [
     initials: "SS",
     sector: "Education & Science Coaching",
     destination: "https://sciencesquadkolkata.in/",
+    previewImage: "/images/portfolio/science-squad-preview.webp",
     linkText: "Live Website",
     linkAriaLabel: "Visit Science Squad website",
     desc: "An interactive, student-friendly website for a science coaching brand.",
@@ -179,6 +184,7 @@ const webDesignClients: PortfolioItem[] = [
     sector: "Language Training",
     status: "In Development",
     destination: "https://www.thelinguist.co.in/",
+    previewImage: "/images/portfolio/the-linguist-preview.webp",
     linkText: "Preview Site",
     linkAriaLabel: "Visit The Linguist preview website",
     desc: "A modern language training and educational website currently under active development.",
@@ -254,6 +260,40 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
             )}
           </div>
         </div>
+
+        {/* Website Front Page Deliverable Mockup Window */}
+        {item.previewImage && (
+          <div className="mt-5 overflow-hidden rounded-xl border border-border-color bg-primary-bg/90 shadow-md transition-all duration-300 group-hover:border-bronze/40 group-hover:shadow-lg group-hover:shadow-bronze/10">
+            {/* Browser Header Bar */}
+            <div className="flex items-center justify-between border-b border-border-color/60 bg-secondary-bg/90 px-3 py-2">
+              <div className="flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-border-color/80" />
+                <span className="h-2 w-2 rounded-full bg-border-color/80" />
+                <span className="h-2 w-2 rounded-full bg-border-color/80" />
+              </div>
+              <div className="flex items-center gap-1.5 rounded-md bg-primary-bg/80 px-2 py-0.5 text-[10px] font-mono text-gray-text/75">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500/80" />
+                <span className="truncate max-w-[130px] sm:max-w-[170px]">
+                  {item.destination ? new URL(item.destination).hostname.replace(/^www\./, "") : ""}
+                </span>
+              </div>
+              <div className="w-5" />
+            </div>
+
+            {/* Front Page Viewport */}
+            <div className="relative aspect-[16/10] w-full overflow-hidden bg-primary-bg">
+              <Image
+                src={item.previewImage}
+                alt={`${item.name} website front page preview`}
+                width={640}
+                height={400}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-secondary-bg/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </div>
+          </div>
+        )}
 
         {/* Category & Title */}
         <div className="mt-5">
