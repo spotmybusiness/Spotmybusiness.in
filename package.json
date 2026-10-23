@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": "20.x || 22.x || 24.x"
   },
   "dependencies": {
     "@types/three": "^0.184.1",
