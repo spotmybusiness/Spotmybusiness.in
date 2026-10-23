@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "dependencies": {
     "@types/three": "^0.184.1",
     "clsx": "^2.1.1",
