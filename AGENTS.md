@@ -26,6 +26,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 /                              → src/app/page.tsx
 /about/                        → src/app/about/page.tsx
 /case-studies/                 → src/app/case-studies/page.tsx
+/blog/                         → src/app/blog/page.tsx
+/blog/[slug]/                  → src/app/blog/[slug]/page.tsx (SSG for cornerstone guides)
 /contact/                      → src/app/contact/page.tsx
 /faq/                          → src/app/faq/page.tsx
 /industries/                   → src/app/industries/page.tsx

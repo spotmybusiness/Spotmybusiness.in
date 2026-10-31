@@ -169,6 +169,9 @@ export default function Navbar() {
             <Link href="/case-studies" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               Case Studies
             </Link>
+            <Link href="/blog" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
+              Blog
+            </Link>
             <Link href="/about" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               About
             </Link>
@@ -305,6 +308,14 @@ export default function Navbar() {
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
             Case Studies
+          </Link>
+
+          <Link
+            href="/blog"
+            onClick={handleRouteClick}
+            className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
+          >
+            Blog
           </Link>
 
           <Link
