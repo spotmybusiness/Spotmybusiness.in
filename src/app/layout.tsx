@@ -130,6 +130,9 @@ export default function RootLayout({
         {/* Prevent theme flash */}
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
 
+        {/* LLMs.txt AI Discovery Link */}
+        <link rel="describedby" href="/llms.txt" />
+
         {/* Local Business Structured Data */}
         <script
           type="application/ld+json"

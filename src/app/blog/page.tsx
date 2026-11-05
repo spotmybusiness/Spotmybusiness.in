@@ -87,14 +87,16 @@ export default function BlogHubPage() {
         {/* Featured Post Card */}
         <section className="border-t border-border-color py-12">
           <div className="mb-8 flex items-center justify-between">
-            <h2 className="text-2xl font-heading font-bold md:text-3xl">Latest Cornerstone Audit</h2>
+            <h2 className="text-2xl font-heading font-bold md:text-3xl">
+              Published Cornerstone Audits &amp; Field Guides
+            </h2>
             <span className="text-xs uppercase tracking-[0.18em] text-light-bronze font-semibold">
               Updated 2026 Edition
             </span>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-12">
-            {posts.map((post) => (
+            {posts.map((post, index) => (
               <article
                 key={post.slug}
                 className="group lg:col-span-12 overflow-hidden rounded-2xl border border-border-color bg-secondary-bg transition-all duration-300 hover:border-bronze/50"
@@ -108,12 +110,21 @@ export default function BlogHubPage() {
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      priority
+                      priority={index === 0}
                     />
-                    <div className="absolute top-4 left-4 rounded-full bg-primary-bg/90 backdrop-blur-md px-3.5 py-1 border border-border-color/80">
-                      <span className="text-[11px] font-semibold uppercase tracking-wider text-light-bronze">
-                        {post.category}
-                      </span>
+                    <div className="absolute top-4 left-4 flex items-center gap-2">
+                      <div className="rounded-full bg-primary-bg/90 backdrop-blur-md px-3.5 py-1 border border-border-color/80">
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-light-bronze">
+                          {post.category}
+                        </span>
+                      </div>
+                      {post.featured && (
+                        <div className="rounded-full bg-emerald-500/20 backdrop-blur-md px-3 py-1 border border-emerald-500/40">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300">
+                            Featured Checklist
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </div>
 
@@ -122,12 +133,12 @@ export default function BlogHubPage() {
                     <div>
                       <div className="flex items-center gap-4 text-xs text-gray-text/80 mb-3">
                         <span className="flex items-center gap-1.5">
-                          <Calendar className="w-3.5 h-3.5 text-light-bronze" />
+                          <Calendar className="w-3.5 h-3.5 text-light-bronze" aria-hidden="true" />
                           {post.publishDate}
                         </span>
                         <span aria-hidden="true">•</span>
                         <span className="flex items-center gap-1.5">
-                          <Clock className="w-3.5 h-3.5 text-light-bronze" />
+                          <Clock className="w-3.5 h-3.5 text-light-bronze" aria-hidden="true" />
                           {post.readTime}
                         </span>
                       </div>
@@ -142,20 +153,17 @@ export default function BlogHubPage() {
                         {post.excerpt}
                       </p>
 
-                      <div className="mt-6 space-y-2 border-t border-border-color/60 pt-4 text-xs text-gray-text">
-                        <div className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                          <span>Whitespark 2026 local ranking factor data breakdown</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                          <span>Kolkata micro-markets: Santoshpur, Behala, Haltu &amp; Salt Lake</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                          <span>Includes 7-step self-audit scorecard and client snapshot proof</span>
-                        </div>
-                      </div>
+                      <ul className="mt-6 space-y-2 border-t border-border-color/60 pt-4 text-xs text-gray-text">
+                        {post.keyHighlights.map((highlight) => (
+                          <li key={highlight} className="flex items-center gap-2">
+                            <CheckCircle2
+                              className="w-4 h-4 text-emerald-400 shrink-0"
+                              aria-hidden="true"
+                            />
+                            <span>{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
 
                     <div className="mt-8 flex items-center justify-between border-t border-border-color/60 pt-4">
@@ -168,8 +176,8 @@ export default function BlogHubPage() {
                         href={`/blog/${post.slug}`}
                         className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-bronze to-light-bronze px-5 py-2.5 text-xs font-semibold text-heading transition-transform hover:scale-105"
                       >
-                        Read Complete Audit
-                        <ArrowUpRight className="w-4 h-4" />
+                        Read Complete Guide
+                        <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
                       </Link>
                     </div>
                   </div>

@@ -323,9 +323,246 @@ const graphSvg = `
 </svg>
 `;
 
+// 3. Post 1 Hero: 9-Step GBP Optimization Checklist Diagram
+const checklistHeroSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="950" cy="120" r="260" fill="#8B5E3C" fill-opacity="0.12"/>
+  <circle cx="250" cy="520" r="240" fill="#D4A373" fill-opacity="0.06"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • 2026 PRACTITIONER AUDIT FRAMEWORK</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="25" font-weight="700">Google Business Profile Optimization: 9-Step Verification Architecture</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Calibrating Relevance, Distance, Prominence &amp; Gemini AI Search Eligibility (≥3.5★ Threshold)</text>
+
+  <!-- Top Right Badge -->
+  <g transform="translate(930, 50)">
+    <rect width="210" height="60" rx="10" fill="#1B1B1B" stroke="#8B5E3C" stroke-width="1.5"/>
+    <text x="105" y="25" fill="#D4A373" font-size="10" font-weight="700" letter-spacing="1" text-anchor="middle">GEMINI LOCAL AI WEIGHT</text>
+    <text x="105" y="46" fill="#34D399" font-size="14" font-weight="800" text-anchor="middle">38% Reviews • ≥3.5★ Gate</text>
+  </g>
+
+  <!-- 3x3 Grid of the 9 Steps -->
+  <!-- Row 1 (y=148) -->
+  <g transform="translate(60, 148)">
+    <!-- Step 1 -->
+    <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+    <rect x="16" y="16" width="54" height="22" rx="5" fill="#8B5E3C" fill-opacity="0.25"/>
+    <text x="43" y="31" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 01</text>
+    <text x="275" y="31" fill="#34D399" font-size="10" font-weight="700">NAP + PIN</text>
+    <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Core NAP &amp; Operating Hours</text>
+    <text x="16" y="80" fill="#CFCFCF" font-size="11.5">1:1 legal name, street address, postal code,</text>
+    <text x="16" y="97" fill="#9CA3AF" font-size="11">verified special hours &amp; direct local phone.</text>
+
+    <!-- Step 2 -->
+    <g transform="translate(368, 0)">
+      <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="22" rx="5" fill="#8B5E3C" fill-opacity="0.25"/>
+      <text x="43" y="31" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 02</text>
+      <text x="250" y="31" fill="#F59E0B" font-size="10" font-weight="700">#1 RANK DRIVER</text>
+      <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Primary &amp; Secondary Categories</text>
+      <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Specific primary category (avoids #1 → #31 drop)</text>
+      <text x="16" y="97" fill="#9CA3AF" font-size="11">+ 2 to 4 focused secondary categories.</text>
+    </g>
+
+    <!-- Step 3 -->
+    <g transform="translate(736, 0)">
+      <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="22" rx="5" fill="#262626"/>
+      <text x="43" y="31" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 03</text>
+      <text x="260" y="31" fill="#9CA3AF" font-size="10" font-weight="700">CATALOG</text>
+      <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Pre-Defined &amp; Custom Services</text>
+      <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Populate service menus, course batches, and</text>
+      <text x="16" y="97" fill="#9CA3AF" font-size="11">deliverables mapped to dedicated site URLs.</text>
+    </g>
+  </g>
+
+  <!-- Row 2 (y=286) -->
+  <g transform="translate(60, 286)">
+    <!-- Step 4 -->
+    <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+    <rect x="16" y="16" width="54" height="22" rx="5" fill="#262626"/>
+    <text x="43" y="31" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 04</text>
+    <text x="255" y="31" fill="#9CA3AF" font-size="10" font-weight="700">≤750 CHARS</text>
+    <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Compliant Business Description</text>
+    <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Clear scope &amp; neighborhoods served; zero URLs,</text>
+    <text x="16" y="97" fill="#9CA3AF" font-size="11">zero phone numbers, zero promotional spam.</text>
+
+    <!-- Step 5 -->
+    <g transform="translate(368, 0)">
+      <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="22" rx="5" fill="#262626"/>
+      <text x="43" y="31" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 05</text>
+      <text x="250" y="31" fill="#9CA3AF" font-size="10" font-weight="700">TRUST SIGNALS</text>
+      <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Attributes &amp; Opening Date</text>
+      <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Activate "Years in business" badge, payment</text>
+      <text x="16" y="97" fill="#9CA3AF" font-size="11">options, accessibility &amp; consultation modes.</text>
+    </g>
+
+    <!-- Step 6 -->
+    <g transform="translate(736, 0)">
+      <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="22" rx="5" fill="#8B5E3C" fill-opacity="0.25"/>
+      <text x="43" y="31" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 06</text>
+      <text x="235" y="31" fill="#34D399" font-size="10" font-weight="700">DIVERSITY SAFE</text>
+      <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Landing Page &amp; UTM Tracking</text>
+      <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Prevent organic/pack URL cannibalization + tag</text>
+      <text x="16" y="97" fill="#9CA3AF" font-size="11">with ?utm_source=google&amp;utm_campaign=gbp.</text>
+    </g>
+  </g>
+
+  <!-- Row 3 (y=424) -->
+  <g transform="translate(60, 424)">
+    <!-- Step 7 -->
+    <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+    <rect x="16" y="16" width="54" height="22" rx="5" fill="#262626"/>
+    <text x="43" y="31" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 07</text>
+    <text x="250" y="31" fill="#9CA3AF" font-size="10" font-weight="700">VISUAL PROOF</text>
+    <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Authentic Photos &amp; Signage</text>
+    <text x="16" y="80" fill="#CFCFCF" font-size="11.5">10–15 real storefront, classroom, or fleet photos;</text>
+    <text x="16" y="97" fill="#9CA3AF" font-size="11">zero stock imagery to pass visual verification.</text>
+
+    <!-- Step 8 -->
+    <g transform="translate(368, 0)">
+      <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#10B981" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="22" rx="5" fill="#10B981" fill-opacity="0.2"/>
+      <text x="43" y="31" fill="#34D399" font-size="10.5" font-weight="700" text-anchor="middle">STEP 08</text>
+      <text x="235" y="31" fill="#34D399" font-size="10" font-weight="700">38% AI SIGNAL</text>
+      <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Review Velocity &amp; ≥3.5★ Gate</text>
+      <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Steady ethical reviews + owner replies to trigger</text>
+      <text x="16" y="97" fill="#9CA3AF" font-size="11">Map Justifications &amp; Gemini AI citations.</text>
+    </g>
+
+    <!-- Step 9 -->
+    <g transform="translate(736, 0)">
+      <rect width="344" height="122" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="16" width="54" height="22" rx="5" fill="#262626"/>
+      <text x="43" y="31" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 09</text>
+      <text x="245" y="31" fill="#9CA3AF" font-size="10" font-weight="700">GOVERNANCE</text>
+      <text x="16" y="58" fill="#F8F8F8" font-size="14.5" font-weight="700">Edit Defence &amp; Maintenance</text>
+      <text x="16" y="80" fill="#CFCFCF" font-size="11.5">Weekly audit against unauthorized "Suggested</text>
+      <text x="16" y="97" fill="#9CA3AF" font-size="11">Edits", pin drift, and seasonal hour changes.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Evidence Bar -->
+  <rect x="60" y="572" width="1080" height="54" rx="10" fill="#181818" stroke="#2B2B2B"/>
+  <text x="84" y="596" fill="#D4A373" font-size="11.5" font-weight="700">VERIFIED CLIENT BENCHMARKS:</text>
+  <text x="275" y="596" fill="#F3F4F6" font-size="11.5">Science Squad Dankuni (5.0★ • #1 Maps) • Bharat Relocators (4.9★ • 300+ Reviews) • Nayak Decorators Behala (4.8★)</text>
+  <text x="84" y="614" fill="#9CA3AF" font-size="10.5">Sources: Google Business Profile Guidelines, Sterling Sky Empirical Category Testing &amp; First Page Sage Oct 2026 GEO Study</text>
+</svg>
+`;
+
+// 4. Post 1 Visual 1: Science Squad Dankuni GBP Comparison Graphic
+const scienceSquadComparisonSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Glows -->
+  <circle cx="900" cy="340" r="270" fill="#10B981" fill-opacity="0.07"/>
+  <circle cx="300" cy="340" r="240" fill="#EF4444" fill-opacity="0.05"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • FIELD CASE STUDY COMPARISON</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24" font-weight="700">Incomplete Listing vs. Fully Optimized Google Business Profile</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">How structured categories, course batch services, and website alignment elevated Science Squad in Dankuni, West Bengal</text>
+
+  <!-- Left Panel: Unoptimized Coaching Listing -->
+  <g transform="translate(60, 150)">
+    <rect width="510" height="430" rx="12" fill="#1A1A1A" stroke="#3F2323" stroke-width="1.5"/>
+    <rect width="510" height="46" rx="12" fill="#261919"/>
+    <circle cx="26" cy="23" r="6" fill="#EF4444"/>
+    <text x="44" y="28" fill="#FCA5A5" font-size="12" font-weight="700" letter-spacing="0.5">TYPICAL UNOPTIMIZED COACHING PROFILE</text>
+    <rect x="382" y="12" width="110" height="22" rx="11" fill="#EF4444" fill-opacity="0.2"/>
+    <text x="437" y="27" fill="#F87171" font-size="10" font-weight="700" text-anchor="middle">POSITION #18+</text>
+
+    <!-- Row items -->
+    <g transform="translate(24, 66)">
+      <rect width="462" height="58" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">PRIMARY CATEGORY SELECTION</text>
+      <text x="16" y="42" fill="#F87171" font-size="13" font-weight="600">✗ Generic "Educational Consultant" or "School"</text>
+    </g>
+
+    <g transform="translate(24, 136)">
+      <rect width="462" height="68" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">SERVICES &amp; COURSE CATALOG TAB</text>
+      <text x="16" y="42" fill="#E5E7EB" font-size="12.5">✗ Left blank — zero mention of Class 7–12 Boards, JEE,</text>
+      <text x="16" y="58" fill="#9CA3AF" font-size="11.5">   NEET, or Spoken English batch schedules</text>
+    </g>
+
+    <g transform="translate(24, 216)">
+      <rect width="462" height="68" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">LINKED WEBSITE &amp; LANDING PAGE</text>
+      <text x="16" y="42" fill="#E5E7EB" font-size="12.5">✗ No website or single flyer page without crawlable</text>
+      <text x="16" y="58" fill="#9CA3AF" font-size="11.5">   syllabus details, faculty info, or local schema</text>
+    </g>
+
+    <g transform="translate(24, 296)">
+      <rect width="462" height="58" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">STUDENT &amp; PARENT REVIEW SIGNALS</text>
+      <text x="16" y="42" fill="#F87171" font-size="12.5">✗ Sporadic unverified ratings; zero owner responses</text>
+    </g>
+
+    <rect x="24" y="368" width="462" height="42" rx="8" fill="#261919"/>
+    <text x="255" y="394" fill="#FCA5A5" font-size="11.5" font-weight="700" text-anchor="middle">OUTCOME: Invisible for high-intent "coaching center in Dankuni" searches</text>
+  </g>
+
+  <!-- Right Panel: Science Squad Dankuni Optimized Profile -->
+  <g transform="translate(630, 150)">
+    <rect width="510" height="430" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.8"/>
+    <rect width="510" height="46" rx="12" fill="#231D16"/>
+    <circle cx="26" cy="23" r="6" fill="#10B981"/>
+    <text x="44" y="28" fill="#E7D3B0" font-size="12" font-weight="700" letter-spacing="0.5">SCIENCE SQUAD (DANKUNI, WB) • SMB STANDARD</text>
+    <rect x="372" y="12" width="120" height="22" rx="11" fill="#10B981" fill-opacity="0.2"/>
+    <text x="432" y="27" fill="#34D399" font-size="10" font-weight="700" text-anchor="middle">#1 GOOGLE MAPS</text>
+
+    <!-- Row items -->
+    <g transform="translate(24, 66)">
+      <rect width="462" height="58" rx="8" fill="#141414" stroke="#8B5E3C" stroke-width="1.2"/>
+      <text x="16" y="22" fill="#D4A373" font-size="10" font-weight="700">CALIBRATED CATEGORY HIERARCHY</text>
+      <text x="16" y="42" fill="#34D399" font-size="13" font-weight="600">✓ Primary: Coaching Center + Focused Secondary Categories</text>
+    </g>
+
+    <g transform="translate(24, 136)">
+      <rect width="462" height="68" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="22" fill="#D4A373" font-size="10" font-weight="700">STRUCTURED ACADEMIC SERVICE CATALOG</text>
+      <text x="16" y="42" fill="#F8F8F8" font-size="12.5">✓ Class 7–12 Boards, JEE, NEET &amp; Spoken English</text>
+      <text x="16" y="58" fill="#9CA3AF" font-size="11.5">   with clear batch schedules &amp; student intake details</text>
+    </g>
+
+    <g transform="translate(24, 216)">
+      <rect width="462" height="68" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="22" fill="#D4A373" font-size="10" font-weight="700">1:1 WEBSITE &amp; LOCAL ENTITY ALIGNMENT</text>
+      <text x="16" y="42" fill="#F8F8F8" font-size="12.5">✓ Dedicated academic website with matching Dankuni NAP,</text>
+      <text x="16" y="58" fill="#9CA3AF" font-size="11.5">   course modules, and direct parent call/WhatsApp routing</text>
+    </g>
+
+    <g transform="translate(24, 296)">
+      <rect width="462" height="58" rx="8" fill="#141414" stroke="#10B981" stroke-width="1.2"/>
+      <text x="16" y="22" fill="#34D399" font-size="10" font-weight="700">VERIFIED REPUTATION &amp; GEMINI AI ELIGIBILITY</text>
+      <text x="16" y="42" fill="#F8F8F8" font-size="12.5" font-weight="600">✓ 5.0★ Rating (30+ Authentic Reviews) • Passes ≥3.5★ AI Filter</text>
+    </g>
+
+    <rect x="24" y="368" width="462" height="42" rx="8" fill="#0F291E" stroke="#10B981" stroke-width="1"/>
+    <text x="255" y="394" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="middle">RECORDED SNAPSHOT: #1 Google Maps Position &amp; Direct Admission Inquiries</text>
+  </g>
+
+  <!-- Bottom Caption -->
+  <text x="600" y="618" fill="#9CA3AF" font-size="11" text-anchor="middle">Recorded client project snapshot from Spot My Business portfolio (/case-studies) • Science Squad, Dankuni, West Bengal</text>
+</svg>
+`;
+
 async function generate() {
   const file1 = path.join(outputDir, 'gbp-website-alignment-kolkata.webp');
   const file2 = path.join(outputDir, 'google-maps-call-growth-kolkata.webp');
+  const file3 = path.join(outputDir, 'gbp-optimization-9-step-checklist.webp');
+  const file4 = path.join(outputDir, 'science-squad-gbp-comparison.webp');
 
   console.log('Rendering gbp-website-alignment-kolkata.webp...');
   await sharp(Buffer.from(gbpSvg))
@@ -338,6 +575,18 @@ async function generate() {
     .webp({ quality: 90 })
     .toFile(file2);
   console.log('Saved:', file2);
+
+  console.log('Rendering gbp-optimization-9-step-checklist.webp...');
+  await sharp(Buffer.from(checklistHeroSvg))
+    .webp({ quality: 55, effort: 6 })
+    .toFile(file3);
+  console.log('Saved:', file3);
+
+  console.log('Rendering science-squad-gbp-comparison.webp...');
+  await sharp(Buffer.from(scienceSquadComparisonSvg))
+    .webp({ quality: 72, effort: 6 })
+    .toFile(file4);
+  console.log('Saved:', file4);
 }
 
 generate().catch(err => {

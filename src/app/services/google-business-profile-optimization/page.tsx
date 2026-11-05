@@ -354,6 +354,29 @@ export default function GoogleBusinessProfileOptimizationPage() {
               Website SEO
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Explore our step-by-step audit guides for evaluating and maintaining your listing:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/google-business-profile-optimization-checklist"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Google Business Profile Optimization Checklist (9 Steps) →
+              </Link>
+              <Link
+                href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                Why Your GBP Isn&apos;t Getting Calls in Kolkata →
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
