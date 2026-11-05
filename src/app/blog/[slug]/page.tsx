@@ -34,13 +34,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.metaDescription,
     alternates: {
       canonical: canonicalUrl,
-      ...(post.slug === "google-business-profile-optimization-checklist"
-        ? {
-            types: {
-              "text/markdown": "/blog/google-business-profile-optimization-checklist.md",
-            },
-          }
-        : {}),
     },
     openGraph: {
       title: post.metaTitle,
