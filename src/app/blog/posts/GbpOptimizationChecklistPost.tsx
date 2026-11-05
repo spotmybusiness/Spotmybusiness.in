@@ -85,13 +85,7 @@ export default function GbpOptimizationChecklistPost({ post }: PostProps) {
                   Reviewed by: {post.author.name}
                 </p>
                 <p className="text-gray-text/80">
-                  Headquarters: Middle Rd, Sen Para, Santoshpur, Kolkata 700075 •{" "}
-                  <Link
-                    href="/blog/google-business-profile-optimization-checklist.md"
-                    className="text-light-bronze hover:underline"
-                  >
-                    Clean Markdown (.md) Twin
-                  </Link>
+                  Headquarters: Middle Rd, Sen Para, Santoshpur, Kolkata 700075 • Field Audit Practice
                 </p>
               </div>
             </div>
