@@ -334,6 +334,29 @@ export default function IndustriesPage() {
               Website SEO
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Operational Model Field Guide
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Learn how Google Maps location settings and conversion pathways differ between location-based storefronts and mobile service-area teams:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/google-maps-seo-service-area-businesses"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Google Maps SEO for Storefront and Service-Area Businesses →
+              </Link>
+              <Link
+                href="/blog/google-business-profile-optimization-checklist"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                9-Step Google Business Profile Optimization Checklist →
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Final CTA Block */}

@@ -558,11 +558,231 @@ const scienceSquadComparisonSvg = `
 </svg>
 `;
 
+// 5. Post 2 Hero: Google Maps SEO Storefront vs. Service-Area Business Diagram
+const mapsStorefrontVsSabSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="300" cy="260" r="240" fill="#8B5E3C" fill-opacity="0.1"/>
+  <circle cx="900" cy="260" r="240" fill="#10B981" fill-opacity="0.07"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • GOOGLE MAPS SEO ARCHITECTURE (2026)</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24.5" font-weight="700">Storefront Pin vs. Service-Area Boundary Configuration</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Matching your Google Business Profile location settings to how customers actually interact with your business</text>
+
+  <!-- Left Panel: Storefront Model -->
+  <g transform="translate(60, 148)">
+    <rect width="510" height="405" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.6"/>
+    <rect width="510" height="46" rx="12" fill="#231D16"/>
+    <circle cx="26" cy="23" r="6" fill="#D4A373"/>
+    <text x="44" y="28" fill="#E7D3B0" font-size="12" font-weight="700" letter-spacing="0.5">MODEL A: STOREFRONT &amp; FACILITY BUSINESS</text>
+    <rect x="372" y="12" width="120" height="22" rx="11" fill="#8B5E3C" fill-opacity="0.3"/>
+    <text x="432" y="27" fill="#E7D3B0" font-size="10" font-weight="700" text-anchor="middle">VISIBLE PIN</text>
+
+    <!-- Visual Radar / Pin Box -->
+    <g transform="translate(24, 64)">
+      <rect width="462" height="104" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <circle cx="70" cy="52" r="36" fill="#8B5E3C" fill-opacity="0.15" stroke="#D4A373" stroke-dasharray="3 3"/>
+      <circle cx="70" cy="52" r="18" fill="#8B5E3C" fill-opacity="0.3"/>
+      <circle cx="70" cy="52" r="6" fill="#F8F8F8"/>
+      <text x="130" y="32" fill="#D4A373" font-size="11" font-weight="700">PHYSICAL CUSTOMER DESTINATION</text>
+      <text x="130" y="54" fill="#F8F8F8" font-size="13" font-weight="600">Customers travel to your premises</text>
+      <text x="130" y="74" fill="#9CA3AF" font-size="11.5">Examples: Coaching Centers, Clinics, Retail, Workshops</text>
+      <text x="130" y="91" fill="#34D399" font-size="11" font-weight="600">✓ Display full street address, floor &amp; landmark</text>
+    </g>
+
+    <!-- Technical Specs -->
+    <g transform="translate(24, 182)">
+      <rect width="462" height="60" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="23" fill="#9CA3AF" font-size="10" font-weight="700">MAP PIN &amp; SIGNAGE REQUIREMENT</text>
+      <text x="16" y="43" fill="#E5E7EB" font-size="12">Rooftop entrance pin + permanent exterior signage photos</text>
+    </g>
+
+    <g transform="translate(24, 254)">
+      <rect width="462" height="60" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="23" fill="#9CA3AF" font-size="10" font-weight="700">PRIMARY RANKING &amp; CONVERSION SIGNAL</text>
+      <text x="16" y="43" fill="#E5E7EB" font-size="12">Immediate proximity radius + "Get Directions" tap velocity</text>
+    </g>
+
+    <rect x="24" y="328" width="462" height="54" rx="8" fill="#231D16" stroke="#8B5E3C" stroke-width="1"/>
+    <text x="40" y="351" fill="#D4A373" font-size="10.5" font-weight="700">VERIFIED STOREFRONT BENCHMARK:</text>
+    <text x="40" y="369" fill="#F8F8F8" font-size="12" font-weight="600">Science Squad (Dankuni, WB) • 5.0★ (30+) • #1 Google Maps</text>
+  </g>
+
+  <!-- Right Panel: Service-Area Business (SAB) Model -->
+  <g transform="translate(630, 148)">
+    <rect width="510" height="405" rx="12" fill="#1A1A1A" stroke="#10B981" stroke-width="1.6"/>
+    <rect width="510" height="46" rx="12" fill="#13261F"/>
+    <circle cx="26" cy="23" r="6" fill="#10B981"/>
+    <text x="44" y="28" fill="#6EE7B7" font-size="12" font-weight="700" letter-spacing="0.5">MODEL B: SERVICE-AREA BUSINESS (SAB)</text>
+    <rect x="356" y="12" width="136" height="22" rx="11" fill="#10B981" fill-opacity="0.2"/>
+    <text x="424" y="27" fill="#34D399" font-size="10" font-weight="700" text-anchor="middle">BOUNDARY POLYGON</text>
+
+    <!-- Visual Polygon / Zone Box -->
+    <g transform="translate(24, 64)">
+      <rect width="462" height="104" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <polygon points="42,26 96,20 110,58 84,86 36,78" fill="#10B981" fill-opacity="0.15" stroke="#34D399" stroke-width="1.5" stroke-dasharray="4 2"/>
+      <circle cx="72" cy="54" r="4" fill="#34D399"/>
+      <text x="130" y="32" fill="#34D399" font-size="11" font-weight="700">ON-SITE DELIVERY AT CUSTOMER LOCATION</text>
+      <text x="130" y="54" fill="#F8F8F8" font-size="13" font-weight="600">Your team travels to the client's address</text>
+      <text x="130" y="74" fill="#9CA3AF" font-size="11.5">Examples: Packers &amp; Movers, Event Caterers, Home Spa</text>
+      <text x="130" y="91" fill="#34D399" font-size="11" font-weight="600">✓ Up to 20 realistic local zones (≤2 hr drive radius)</text>
+    </g>
+
+    <!-- Technical Specs -->
+    <g transform="translate(24, 182)">
+      <rect width="462" height="60" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="23" fill="#9CA3AF" font-size="10" font-weight="700">ADDRESS VISIBILITY &amp; COMPLIANCE RULE</text>
+      <text x="16" y="43" fill="#E5E7EB" font-size="12">Hide residential address if unstaffed; define contiguous PINs/cities</text>
+    </g>
+
+    <g transform="translate(24, 254)">
+      <rect width="462" height="60" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="23" fill="#9CA3AF" font-size="10" font-weight="700">PRIMARY RANKING &amp; CONVERSION SIGNAL</text>
+      <text x="16" y="43" fill="#E5E7EB" font-size="12">Website service-area pages + direct Phone / WhatsApp Quote CTR</text>
+    </g>
+
+    <rect x="24" y="328" width="462" height="54" rx="8" fill="#13261F" stroke="#10B981" stroke-width="1"/>
+    <text x="40" y="351" fill="#34D399" font-size="10.5" font-weight="700">VERIFIED SAB BENCHMARKS:</text>
+    <text x="40" y="369" fill="#F8F8F8" font-size="12" font-weight="600">Bharat Relocators (4.9★) &amp; Nayak Decorators Behala (4.8★)</text>
+  </g>
+
+  <!-- Bottom Signal Bar -->
+  <rect x="60" y="572" width="1080" height="54" rx="10" fill="#181818" stroke="#2B2B2B"/>
+  <text x="84" y="596" fill="#D4A373" font-size="11.5" font-weight="700">2026 GOOGLE MAPS SIGNALS:</text>
+  <text x="260" y="596" fill="#F3F4F6" font-size="11.5">Verification Centroid Proximity • 15% Website On-Page Weight • 38% Gemini Local Review Weight • Zero Virtual Offices</text>
+  <text x="84" y="614" fill="#9CA3AF" font-size="10.5">Aligned with Google Business Profile Address Guidelines, LocalBusiness Schema &amp; BrightLocal Service-Area Standards</text>
+</svg>
+`;
+
+// 6. Post 2 Visual 1: Storefront vs. SAB Customer Conversion Flow
+const storefrontVsSabFlowSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • OPERATIONAL CONVERSION PATHWAYS</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24" font-weight="700">How Searchers Convert on Google Maps: Storefront vs. Service-Area</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Real customer journey architecture from our documented client portfolio (/industries &amp; /case-studies)</text>
+
+  <!-- Top Flow: Storefront (Science Squad Dankuni) -->
+  <g transform="translate(60, 152)">
+    <rect width="1080" height="205" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.5"/>
+    <rect x="24" y="18" width="250" height="24" rx="6" fill="#8B5E3C" fill-opacity="0.25"/>
+    <text x="36" y="34" fill="#E7D3B0" font-size="11" font-weight="700">PATHWAY 01 • STOREFRONT CAMPUS MODEL</text>
+    <text x="290" y="34" fill="#F8F8F8" font-size="13" font-weight="700">Science Squad (Dankuni, West Bengal) — 5.0★ (30+ Reviews)</text>
+
+    <!-- 4 Flow Nodes -->
+    <g transform="translate(24, 58)">
+      <rect width="235" height="122" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="24" fill="#D4A373" font-size="10" font-weight="700">1. LOCAL SEARCH QUERY</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="12.5" font-weight="600">"JEE / NEET coaching</text>
+      <text x="16" y="66" fill="#F8F8F8" font-size="12.5" font-weight="600">center in Dankuni"</text>
+      <text x="16" y="94" fill="#9CA3AF" font-size="10.5">Parent/student searches</text>
+      <text x="16" y="109" fill="#9CA3AF" font-size="10.5">within 5 km commuter belt</text>
+    </g>
+
+    <text x="271" y="122" fill="#D4A373" font-size="18" font-weight="800" text-anchor="middle">→</text>
+
+    <g transform="translate(284, 58)">
+      <rect width="245" height="122" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="24" fill="#D4A373" font-size="10" font-weight="700">2. MAPS PIN VERIFICATION</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="12.5" font-weight="600">Exact street pin + batch</text>
+      <text x="16" y="66" fill="#F8F8F8" font-size="12.5" font-weight="600">hours &amp; classroom photos</text>
+      <text x="16" y="94" fill="#9CA3AF" font-size="10.5">Confirms safe, accessible</text>
+      <text x="16" y="109" fill="#9CA3AF" font-size="10.5">physical facility location</text>
+    </g>
+
+    <text x="541" y="122" fill="#D4A373" font-size="18" font-weight="800" text-anchor="middle">→</text>
+
+    <g transform="translate(554, 58)">
+      <rect width="245" height="122" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="24" fill="#D4A373" font-size="10" font-weight="700">3. WEBSITE SYLLABUS CHECK</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="12.5" font-weight="600">sciencesquadkolkata.in</text>
+      <text x="16" y="66" fill="#F8F8F8" font-size="12.5" font-weight="600">Course explorer &amp; faculty</text>
+      <text x="16" y="94" fill="#9CA3AF" font-size="10.5">1:1 NAP &amp; Class 7–12 / JEE</text>
+      <text x="16" y="109" fill="#9CA3AF" font-size="10.5">batch timing synchronization</text>
+    </g>
+
+    <text x="811" y="122" fill="#34D399" font-size="18" font-weight="800" text-anchor="middle">→</text>
+
+    <g transform="translate(824, 58)">
+      <rect width="232" height="122" rx="8" fill="#0F291E" stroke="#10B981" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#34D399" font-size="10" font-weight="700">4. STOREFRONT ACTION</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="13" font-weight="700">Tap "Get Directions"</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="13" font-weight="700">&amp; Walk-In Admission</text>
+      <text x="16" y="98" fill="#34D399" font-size="11" font-weight="700">#1 Google Maps Position</text>
+    </g>
+  </g>
+
+  <!-- Bottom Flow: Service-Area Business (Bharat Relocators & Nayak Decorators) -->
+  <g transform="translate(60, 382)">
+    <rect width="1080" height="205" rx="12" fill="#1A1A1A" stroke="#10B981" stroke-width="1.5"/>
+    <rect x="24" y="18" width="250" height="24" rx="6" fill="#10B981" fill-opacity="0.2"/>
+    <text x="36" y="34" fill="#34D399" font-size="11" font-weight="700">PATHWAY 02 • SERVICE-AREA (SAB) MODEL</text>
+    <text x="290" y="34" fill="#F8F8F8" font-size="13" font-weight="700">Bharat Relocators (Haltu, 4.9★) &amp; Nayak Decorators (Behala, 4.8★)</text>
+
+    <!-- 4 Flow Nodes -->
+    <g transform="translate(24, 58)">
+      <rect width="235" height="122" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="24" fill="#34D399" font-size="10" font-weight="700">1. HYPERLOCAL INTENT QUERY</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="12.5" font-weight="600">"packers movers Haltu" or</text>
+      <text x="16" y="66" fill="#F8F8F8" font-size="12.5" font-weight="600">"caterer in Behala"</text>
+      <text x="16" y="94" fill="#9CA3AF" font-size="10.5">Homeowner needs team to</text>
+      <text x="16" y="109" fill="#9CA3AF" font-size="10.5">visit their residence/venue</text>
+    </g>
+
+    <text x="271" y="122" fill="#34D399" font-size="18" font-weight="800" text-anchor="middle">→</text>
+
+    <g transform="translate(284, 58)">
+      <rect width="245" height="122" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="24" fill="#34D399" font-size="10" font-weight="700">2. COVERAGE &amp; TRUST CHECK</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="12.5" font-weight="600">Verified South Kolkata zone</text>
+      <text x="16" y="66" fill="#F8F8F8" font-size="12.5" font-weight="600">+ 300+ / 50+ real reviews</text>
+      <text x="16" y="94" fill="#9CA3AF" font-size="10.5">Map Justification confirms</text>
+      <text x="16" y="109" fill="#9CA3AF" font-size="10.5">specific neighborhood service</text>
+    </g>
+
+    <text x="541" y="122" fill="#34D399" font-size="18" font-weight="800" text-anchor="middle">→</text>
+
+    <g transform="translate(554, 58)">
+      <rect width="245" height="122" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="24" fill="#34D399" font-size="10" font-weight="700">3. DEDICATED SERVICE URL</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="12.5" font-weight="600">Route / catering menu page</text>
+      <text x="16" y="66" fill="#F8F8F8" font-size="12.5" font-weight="600">with instant quote path</text>
+      <text x="16" y="94" fill="#9CA3AF" font-size="10.5">Validates fleet, menu items</text>
+      <text x="16" y="109" fill="#9CA3AF" font-size="10.5">&amp; transparent process</text>
+    </g>
+
+    <text x="811" y="122" fill="#34D399" font-size="18" font-weight="800" text-anchor="middle">→</text>
+
+    <g transform="translate(824, 58)">
+      <rect width="232" height="122" rx="8" fill="#0F291E" stroke="#10B981" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#34D399" font-size="10" font-weight="700">4. SAB DIRECT ACTION</text>
+      <text x="16" y="48" fill="#F8F8F8" font-size="13" font-weight="700">Tap "Call Now" or</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="13" font-weight="700">WhatsApp Quote Form</text>
+      <text x="16" y="98" fill="#34D399" font-size="11" font-weight="700">High-Intent Phone Inquiries</text>
+    </g>
+  </g>
+
+  <!-- Footer Note -->
+  <text x="600" y="622" fill="#9CA3AF" font-size="11" text-anchor="middle">Spot My Business • Operational Business Model Taxonomy (/industries) • Recorded Client Portfolio Snapshots</text>
+</svg>
+`;
+
 async function generate() {
   const file1 = path.join(outputDir, 'gbp-website-alignment-kolkata.webp');
   const file2 = path.join(outputDir, 'google-maps-call-growth-kolkata.webp');
   const file3 = path.join(outputDir, 'gbp-optimization-9-step-checklist.webp');
   const file4 = path.join(outputDir, 'science-squad-gbp-comparison.webp');
+  const file5 = path.join(outputDir, 'google-maps-seo-storefront-vs-sab.webp');
+  const file6 = path.join(outputDir, 'storefront-vs-sab-conversion-flow.webp');
 
   console.log('Rendering gbp-website-alignment-kolkata.webp...');
   await sharp(Buffer.from(gbpSvg))
@@ -587,6 +807,18 @@ async function generate() {
     .webp({ quality: 72, effort: 6 })
     .toFile(file4);
   console.log('Saved:', file4);
+
+  console.log('Rendering google-maps-seo-storefront-vs-sab.webp...');
+  await sharp(Buffer.from(mapsStorefrontVsSabSvg))
+    .webp({ quality: 62, effort: 6 })
+    .toFile(file5);
+  console.log('Saved:', file5);
+
+  console.log('Rendering storefront-vs-sab-conversion-flow.webp...');
+  await sharp(Buffer.from(storefrontVsSabFlowSvg))
+    .webp({ quality: 62, effort: 6 })
+    .toFile(file6);
+  console.log('Saved:', file6);
 }
 
 generate().catch(err => {

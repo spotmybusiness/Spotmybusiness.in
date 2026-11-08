@@ -22,6 +22,35 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "google-maps-seo-service-area-businesses",
+    title:
+      "Google Maps SEO for Storefront and Service-Area Businesses: Pin Accuracy, Boundaries, and Local Pack Signals",
+    metaTitle: "Google Maps SEO: Storefront vs Service-Area [2026 Guide]",
+    metaDescription:
+      "Learn how Google Maps SEO works for storefronts vs. service-area businesses. Align map pins, service boundaries, and local pack signals.",
+    category: "Google Maps & Local SEO",
+    targetPillar: "Google Maps SEO",
+    targetServiceUrl: "/services/google-maps-seo",
+    publishDate: "2026-11-08",
+    modifiedDate: "2026-11-08",
+    readTime: "11 min read",
+    author: {
+      name: "Spot My Business Local Search & Technical SEO Team",
+      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+    },
+    excerpt:
+      "Why do some local businesses rank at the top of the Google Maps 3-Pack while others disappear outside a 1 km radius? Discover the technical differences between Storefront map pins and Service-Area Business (SAB) boundaries, proximity centroid rules, and how to align your website location signals.",
+    heroImage: "/images/blog/google-maps-seo-storefront-vs-sab.webp",
+    heroImageAlt:
+      "Google Maps SEO comparison between storefront pin and service-area boundary",
+    featured: true,
+    keyHighlights: [
+      "Storefront rooftop pin calibration vs. Service-Area Business (SAB) boundary rules",
+      "6-parameter technical configuration matrix & Google 2-hour drive-radius compliance",
+      "Documented conversion flows: Science Squad (Dankuni), Bharat Relocators & Nayak Decorators",
+    ],
+  },
+  {
     slug: "google-business-profile-optimization-checklist",
     title:
       "Google Business Profile Optimization Checklist: 9 Practical Steps for Accurate Local Discovery",

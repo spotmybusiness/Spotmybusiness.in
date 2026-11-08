@@ -366,6 +366,29 @@ export default function GoogleMapsSeoPage() {
               Reputation management
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Read our technical guides on configuring map pins, service boundaries, and Business Profile signals:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/google-maps-seo-service-area-businesses"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Google Maps SEO: Storefront vs. Service-Area Businesses →
+              </Link>
+              <Link
+                href="/blog/google-business-profile-optimization-checklist"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                Google Business Profile Optimization Checklist (9 Steps) →
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">

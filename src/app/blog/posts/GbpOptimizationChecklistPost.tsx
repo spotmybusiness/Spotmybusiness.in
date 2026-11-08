@@ -1101,13 +1101,19 @@ Geo Pin       : 22.49583535142233, 88.3806285747356`}</code>
                 </Link>
               </div>
 
-              <div className="border-t border-border-color pt-4">
+              <div className="border-t border-border-color pt-4 space-y-2">
                 <p className="text-[11px] font-bold uppercase tracking-wider text-gray-text">
-                  Companion Field Audit
+                  Companion Field Guides
                 </p>
                 <Link
+                  href="/blog/google-maps-seo-service-area-businesses"
+                  className="block text-xs font-semibold text-heading hover:text-light-bronze transition-colors"
+                >
+                  Google Maps SEO: Storefront vs. Service-Area [2026 Guide] →
+                </Link>
+                <Link
                   href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
-                  className="mt-1.5 block text-xs font-semibold text-heading hover:text-light-bronze transition-colors"
+                  className="block text-xs font-semibold text-gray-text hover:text-light-bronze transition-colors"
                 >
                   Why Your Google Business Profile Isn&rsquo;t Getting Calls in Kolkata →
                 </Link>
