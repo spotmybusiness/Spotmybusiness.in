@@ -397,6 +397,28 @@ export default function LocationsPage() {
               </div>
             ))}
           </div>
+          <div className="mt-6 rounded-2xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Multi-City Local Search Methodology
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Read how our Kolkata team structures authentic locality pages and connects websites to &ldquo;near me&rdquo; searches without doorway page penalties:
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="inline-block text-sm font-semibold text-heading hover:text-light-bronze underline underline-offset-4"
+              >
+                Local &amp; Hyperlocal SEO Strategy in Kolkata and India [5-Step Guide] →
+              </Link>
+              <Link
+                href="/blog/google-maps-seo-service-area-businesses"
+                className="inline-block text-sm font-semibold text-gray-text hover:text-light-bronze underline underline-offset-4"
+              >
+                Google Maps SEO for Storefront &amp; Service-Area Businesses →
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Final CTA Block */}

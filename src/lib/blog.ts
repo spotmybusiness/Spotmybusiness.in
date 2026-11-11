@@ -22,6 +22,35 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "local-seo-strategy-kolkata-indian-businesses",
+    title:
+      'Local & Hyperlocal SEO Strategy in Kolkata and India: Connecting Your Website to "Near Me" Searches',
+    metaTitle: "Local SEO Strategy for Indian Businesses [5-Step Guide]",
+    metaDescription:
+      "Build durable local search visibility without doorway spam. Follow our 5-step Local SEO framework for Kolkata and Indian markets in 2026.",
+    category: "Google Maps & Local SEO",
+    targetPillar: "Local SEO",
+    targetServiceUrl: "/services/local-seo",
+    publishDate: "2026-11-11",
+    modifiedDate: "2026-11-11",
+    readTime: "12 min read",
+    author: {
+      name: "Spot My Business Local Search & Technical SEO Team",
+      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+    },
+    excerpt:
+      "City-wide keywords in India are saturated, while hyperlocal neighborhood and 'near me' searches carry immediate buyer intent. Learn our 5-step Local SEO system for connecting your website, service-area pages, and local citations across Kolkata and 20 Indian markets—without thin doorway spam.",
+    heroImage: "/images/blog/local-seo-5-step-strategy-india.webp",
+    heroImageAlt:
+      "5-Step Local SEO Strategy Diagram connecting Website, Google Business Profile, and Maps",
+    featured: true,
+    keyHighlights: [
+      "Hyperlocal neighborhood intent vs. city-wide keywords across Kolkata & Indian metros",
+      "Anti-doorway landing page architecture (Nayak Decorators Behala & Republic Packers)",
+      "5-step website-centered Local SEO process + NAP & Indian citation verification",
+    ],
+  },
+  {
     slug: "google-maps-seo-service-area-businesses",
     title:
       "Google Maps SEO for Storefront and Service-Area Businesses: Pin Accuracy, Boundaries, and Local Pack Signals",

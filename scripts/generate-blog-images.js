@@ -776,6 +776,221 @@ const storefrontVsSabFlowSvg = `
 </svg>
 `;
 
+// 7. Post 3 Hero: 5-Step Local & Hyperlocal SEO Strategy Diagram
+const localSeoFiveStepSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="600" cy="180" r="260" fill="#8B5E3C" fill-opacity="0.1"/>
+  <circle cx="920" cy="480" r="220" fill="#10B981" fill-opacity="0.06"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • HYPERLOCAL &amp; LOCAL SEO ARCHITECTURE (2026)</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24.5" font-weight="700">The 5-Step Local SEO System: Website ↔ Google Maps ↔ Near Me Intent</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Building durable neighborhood search visibility across Kolkata and Indian markets without thin doorway pages</text>
+
+  <!-- Central Hub Banner -->
+  <g transform="translate(60, 148)">
+    <rect width="1080" height="74" rx="10" fill="#1B1815" stroke="#8B5E3C" stroke-width="1.5"/>
+    <text x="28" y="30" fill="#D4A373" font-size="11" font-weight="700" letter-spacing="1">CORE ARCHITECTURAL PRINCIPLE (WHITESPARK 2026 BENCHMARK)</text>
+    <text x="28" y="54" fill="#F8F8F8" font-size="14" font-weight="600">Website On-Page Signals Drive 33% of Local Organic &amp; 15% of Local Pack Rankings — The Website Anchors Every Surface</text>
+    <rect x="910" y="20" width="145" height="34" rx="8" fill="#10B981" fill-opacity="0.2"/>
+    <text x="982" y="42" fill="#34D399" font-size="11" font-weight="700" text-anchor="middle">ANTI-DOORWAY</text>
+  </g>
+
+  <!-- 5-Step Horizontal Cards (y=244) -->
+  <g transform="translate(60, 244)">
+    <!-- Step 01 -->
+    <g transform="translate(0, 0)">
+      <rect width="204" height="295" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+      <rect x="16" y="18" width="58" height="24" rx="6" fill="#8B5E3C" fill-opacity="0.25"/>
+      <text x="45" y="34" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 01</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Local Intent &amp;</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Model Audit</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">Map real neighborhood</text>
+      <text x="16" y="136" fill="#CFCFCF" font-size="11.5">phrases ("in Behala",</text>
+      <text x="16" y="154" fill="#CFCFCF" font-size="11.5">"near Haltu", "Dankuni")</text>
+      <text x="16" y="172" fill="#CFCFCF" font-size="11.5">&amp; buyer urgency.</text>
+      <rect x="16" y="228" width="172" height="48" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="248" fill="#D4A373" font-size="10" font-weight="700">FOCUS:</text>
+      <text x="26" y="264" fill="#9CA3AF" font-size="10.5">Hyperlocal vs. City-Wide</text>
+    </g>
+
+    <!-- Step 02 -->
+    <g transform="translate(219, 0)">
+      <rect width="204" height="295" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+      <rect x="16" y="18" width="58" height="24" rx="6" fill="#8B5E3C" fill-opacity="0.25"/>
+      <text x="45" y="34" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 02</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Anti-Doorway</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Service Pages</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">Create distinct pages</text>
+      <text x="16" y="136" fill="#CFCFCF" font-size="11.5">for genuine corridors</text>
+      <text x="16" y="154" fill="#CFCFCF" font-size="11.5">with real landmarks,</text>
+      <text x="16" y="172" fill="#CFCFCF" font-size="11.5">menus &amp; logistics.</text>
+      <rect x="16" y="228" width="172" height="48" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="248" fill="#34D399" font-size="10" font-weight="700">PROOF:</text>
+      <text x="26" y="264" fill="#9CA3AF" font-size="10.5">Nayak &amp; Republic URLs</text>
+    </g>
+
+    <!-- Step 03 -->
+    <g transform="translate(438, 0)">
+      <rect width="204" height="295" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="18" width="58" height="24" rx="6" fill="#262626"/>
+      <text x="45" y="34" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 03</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Internal Links &amp;</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Contact Paths</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">Connect hub-and-spoke</text>
+      <text x="16" y="136" fill="#CFCFCF" font-size="11.5">service pages to friction-</text>
+      <text x="16" y="154" fill="#CFCFCF" font-size="11.5">free Call, WhatsApp &amp;</text>
+      <text x="16" y="172" fill="#CFCFCF" font-size="11.5">quote inquiry forms.</text>
+      <rect x="16" y="228" width="172" height="48" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="248" fill="#D4A373" font-size="10" font-weight="700">SCHEMA:</text>
+      <text x="26" y="264" fill="#9CA3AF" font-size="10.5">Service + areaServed</text>
+    </g>
+
+    <!-- Step 04 -->
+    <g transform="translate(657, 0)">
+      <rect width="204" height="295" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="18" width="58" height="24" rx="6" fill="#262626"/>
+      <text x="45" y="34" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 04</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">NAP Symmetry &amp;</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Indian Citations</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">1:1 character match</text>
+      <text x="16" y="136" fill="#CFCFCF" font-size="11.5">across website, GBP &amp;</text>
+      <text x="16" y="154" fill="#CFCFCF" font-size="11.5">trusted Indian business</text>
+      <text x="16" y="172" fill="#CFCFCF" font-size="11.5">directories (29% AI wt).</text>
+      <rect x="16" y="228" width="172" height="48" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="248" fill="#34D399" font-size="10" font-weight="700">TRUST:</text>
+      <text x="26" y="264" fill="#9CA3AF" font-size="10.5">Zero Automated Blasts</text>
+    </g>
+
+    <!-- Step 05 -->
+    <g transform="translate(876, 0)">
+      <rect width="204" height="295" rx="10" fill="#1A1A1A" stroke="#10B981" stroke-width="1.4"/>
+      <rect x="16" y="18" width="58" height="24" rx="6" fill="#10B981" fill-opacity="0.2"/>
+      <text x="45" y="34" fill="#34D399" font-size="10.5" font-weight="700" text-anchor="middle">STEP 05</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Search Console</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Refinement</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">Track real neighborhood</text>
+      <text x="16" y="136" fill="#CFCFCF" font-size="11.5">query impressions, clicks</text>
+      <text x="16" y="154" fill="#CFCFCF" font-size="11.5">&amp; review themes to</text>
+      <text x="16" y="172" fill="#CFCFCF" font-size="11.5">refine pages quarterly.</text>
+      <rect x="16" y="228" width="172" height="48" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="248" fill="#34D399" font-size="10" font-weight="700">TELEMETRY:</text>
+      <text x="26" y="264" fill="#9CA3AF" font-size="10.5">1st-Party GSC Data</text>
+    </g>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="60" y="562" width="1080" height="62" rx="10" fill="#181818" stroke="#2B2B2B"/>
+  <text x="84" y="587" fill="#D4A373" font-size="11.5" font-weight="700">KOLKATA &amp; PAN-INDIA COVERAGE:</text>
+  <text x="295" y="587" fill="#F3F4F6" font-size="11.5">Santoshpur HQ • Behala • Haltu • Salt Lake • Dankuni • Delhi NCR • Mumbai • Bengaluru • 20 Verified Markets</text>
+  <text x="84" y="607" fill="#9CA3AF" font-size="10.5">Spot My Business (/services/local-seo &amp; /locations) • Remote Engineering from Middle Rd, Sen Para, Santoshpur, Kolkata 700075</text>
+</svg>
+`;
+
+// 8. Post 3 Visual 1: Authentic Hyperlocal Page vs. Thin Doorway Page
+const authenticVsDoorwaySvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Glows -->
+  <circle cx="300" cy="340" r="240" fill="#EF4444" fill-opacity="0.05"/>
+  <circle cx="900" cy="340" r="260" fill="#10B981" fill-opacity="0.07"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • ANTI-DOORWAY ARCHITECTURE STANDARD</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24" font-weight="700">Thin Programmatic Doorway Page vs. Authentic Hyperlocal Landing Page</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Why Google demotes mass-duplicated city swaps—and how real neighborhood context wins "Near Me" searches</text>
+
+  <!-- Left Panel: Thin Doorway Spam -->
+  <g transform="translate(60, 150)">
+    <rect width="510" height="430" rx="12" fill="#1A1A1A" stroke="#3F2323" stroke-width="1.5"/>
+    <rect width="510" height="46" rx="12" fill="#261919"/>
+    <circle cx="26" cy="23" r="6" fill="#EF4444"/>
+    <text x="44" y="28" fill="#FCA5A5" font-size="12" font-weight="700" letter-spacing="0.5">THIN DOORWAY PAGE (GOOGLE SPAM POLICY VIOLATION)</text>
+
+    <g transform="translate(24, 66)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">URL &amp; TEMPLATE PATTERN</text>
+      <text x="16" y="42" fill="#F87171" font-size="12" font-weight="600">✗ 150 cloned URLs (/best-service-in-[city-name])</text>
+      <text x="16" y="56" fill="#9CA3AF" font-size="10.5">   with identical paragraphs and swapped city tokens</text>
+    </g>
+
+    <g transform="translate(24, 140)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">LOCAL OPERATIONAL CONTEXT</text>
+      <text x="16" y="42" fill="#E5E7EB" font-size="12">✗ Zero local landmarks, zero real project history,</text>
+      <text x="16" y="56" fill="#9CA3AF" font-size="10.5">   and unverified claims of "local branch offices"</text>
+    </g>
+
+    <g transform="translate(24, 214)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">SCHEMA &amp; GBP ALIGNMENT</text>
+      <text x="16" y="42" fill="#E5E7EB" font-size="12">✗ Fake LocalBusiness addresses in cities where</text>
+      <text x="16" y="56" fill="#9CA3AF" font-size="10.5">   the business has no physical staff or signage</text>
+    </g>
+
+    <g transform="translate(24, 288)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#9CA3AF" font-size="10" font-weight="700">GSC &amp; USER BEHAVIOR OUTCOME</text>
+      <text x="16" y="42" fill="#F87171" font-size="12">✗ Flagged as "Crawled - currently not indexed"</text>
+      <text x="16" y="56" fill="#9CA3AF" font-size="10.5">   or demoted during Google Core &amp; Spam updates</text>
+    </g>
+
+    <rect x="24" y="366" width="462" height="44" rx="8" fill="#261919"/>
+    <text x="255" y="393" fill="#FCA5A5" font-size="11.5" font-weight="700" text-anchor="middle">RESULT: Zero sustainable traffic &amp; domain-wide trust decay</text>
+  </g>
+
+  <!-- Right Panel: Authentic Hyperlocal Page (SMB Standard) -->
+  <g transform="translate(630, 150)">
+    <rect width="510" height="430" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.8"/>
+    <rect width="510" height="46" rx="12" fill="#231D16"/>
+    <circle cx="26" cy="23" r="6" fill="#10B981"/>
+    <text x="44" y="28" fill="#E7D3B0" font-size="12" font-weight="700" letter-spacing="0.5">AUTHENTIC HYPERLOCAL PAGE (SMB VERIFIED STANDARD)</text>
+
+    <g transform="translate(24, 66)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#8B5E3C" stroke-width="1.2"/>
+      <text x="16" y="22" fill="#D4A373" font-size="10" font-weight="700">VERIFIED CLIENT URL ARCHITECTURE</text>
+      <text x="16" y="42" fill="#34D399" font-size="11.5" font-weight="600">✓ nayakcaterer.com/kolkata/caterers-in-behala</text>
+      <text x="16" y="56" fill="#34D399" font-size="11.5" font-weight="600">✓ republicpackers.com/kolkata-packers-movers-west-bengal</text>
+    </g>
+
+    <g transform="translate(24, 140)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="22" fill="#D4A373" font-size="10" font-weight="700">GENUINE NEIGHBORHOOD &amp; ROUTE PROOF</text>
+      <text x="16" y="42" fill="#F8F8F8" font-size="12">✓ Specific catering menus, transit corridors, society</text>
+      <text x="16" y="56" fill="#9CA3AF" font-size="10.5">   loading logistics, and transparent service scope</text>
+    </g>
+
+    <g transform="translate(24, 214)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="22" fill="#D4A373" font-size="10" font-weight="700">HONEST SCHEMA &amp; REMOTE DISCLOSURE</text>
+      <text x="16" y="42" fill="#F8F8F8" font-size="12">✓ Service schema with areaServed (City/State) tied</text>
+      <text x="16" y="56" fill="#9CA3AF" font-size="10.5">   to verified headquarters — zero fake branch pins</text>
+    </g>
+
+    <g transform="translate(24, 288)">
+      <rect width="462" height="62" rx="8" fill="#141414" stroke="#10B981" stroke-width="1.2"/>
+      <text x="16" y="22" fill="#34D399" font-size="10" font-weight="700">RECORDED CLIENT SNAPSHOT OUTCOMES</text>
+      <text x="16" y="42" fill="#F8F8F8" font-size="12" font-weight="600">✓ Nayak Decorators (4.8★, 50+) • #1 Near Me Searches</text>
+      <text x="16" y="56" fill="#F8F8F8" font-size="12" font-weight="600">✓ Republic Packers (4.7★, 600+) • Top 10 Movers Kolkata</text>
+    </g>
+
+    <rect x="24" y="366" width="462" height="44" rx="8" fill="#0F291E" stroke="#10B981" stroke-width="1"/>
+    <text x="255" y="393" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="middle">RESULT: High-intent neighborhood calls &amp; AI Overview citations</text>
+  </g>
+
+  <!-- Bottom Caption -->
+  <text x="600" y="618" fill="#9CA3AF" font-size="11" text-anchor="middle">Recorded client project snapshots from Spot My Business portfolio (/case-studies) • Anti-Doorway Local SEO Standard</text>
+</svg>
+`;
+
 async function generate() {
   const file1 = path.join(outputDir, 'gbp-website-alignment-kolkata.webp');
   const file2 = path.join(outputDir, 'google-maps-call-growth-kolkata.webp');
@@ -783,6 +998,8 @@ async function generate() {
   const file4 = path.join(outputDir, 'science-squad-gbp-comparison.webp');
   const file5 = path.join(outputDir, 'google-maps-seo-storefront-vs-sab.webp');
   const file6 = path.join(outputDir, 'storefront-vs-sab-conversion-flow.webp');
+  const file7 = path.join(outputDir, 'local-seo-5-step-strategy-india.webp');
+  const file8 = path.join(outputDir, 'authentic-location-page-vs-doorway.webp');
 
   console.log('Rendering gbp-website-alignment-kolkata.webp...');
   await sharp(Buffer.from(gbpSvg))
@@ -819,6 +1036,18 @@ async function generate() {
     .webp({ quality: 62, effort: 6 })
     .toFile(file6);
   console.log('Saved:', file6);
+
+  console.log('Rendering local-seo-5-step-strategy-india.webp...');
+  await sharp(Buffer.from(localSeoFiveStepSvg))
+    .webp({ quality: 62, effort: 6 })
+    .toFile(file7);
+  console.log('Saved:', file7);
+
+  console.log('Rendering authentic-location-page-vs-doorway.webp...');
+  await sharp(Buffer.from(authenticVsDoorwaySvg))
+    .webp({ quality: 62, effort: 6 })
+    .toFile(file8);
+  console.log('Saved:', file8);
 }
 
 generate().catch(err => {

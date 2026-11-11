@@ -950,16 +950,16 @@ export default function GoogleMapsSeoStorefrontVsSabPost({ post }: PostProps) {
                   Companion Field Guides
                 </p>
                 <Link
-                  href="/blog/google-business-profile-optimization-checklist"
+                  href="/blog/local-seo-strategy-kolkata-indian-businesses"
                   className="block text-xs font-semibold text-heading hover:text-light-bronze transition-colors"
                 >
-                  Google Business Profile Optimization [9-Step Checklist] →
+                  Local &amp; Hyperlocal SEO Strategy for Indian Businesses [5-Step Guide] →
                 </Link>
                 <Link
-                  href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                  href="/blog/google-business-profile-optimization-checklist"
                   className="block text-xs font-semibold text-gray-text hover:text-light-bronze transition-colors"
                 >
-                  Why Your GBP Isn&rsquo;t Getting Calls in Kolkata →
+                  Google Business Profile Optimization [9-Step Checklist] →
                 </Link>
               </div>
             </div>
