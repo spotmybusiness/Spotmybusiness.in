@@ -22,6 +22,35 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ai-search-optimization-geo-vs-aeo-vs-seo",
+    title:
+      "AI Search Optimization Explained: How GEO, AEO, and Traditional SEO Work Together in 2026",
+    metaTitle: "GEO vs. AEO vs. SEO: AI Search Guide [2026 Data Study]",
+    metaDescription:
+      "What is the difference between GEO, AEO, and traditional SEO? See 2026 ranking weights for ChatGPT, Gemini, and Claude—and how to structure brand entities.",
+    category: "AI Search (GEO & AEO)",
+    targetPillar: "AI Search Optimization (GEO & AEO)",
+    targetServiceUrl: "/services/ai-search-optimization",
+    publishDate: "2026-11-14",
+    modifiedDate: "2026-11-14",
+    readTime: "13 min read",
+    author: {
+      name: "Spot My Business Local Search & Technical SEO Team",
+      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+    },
+    excerpt:
+      "Decision-makers increasingly ask ChatGPT, Google Gemini, Perplexity, and Claude for vendor recommendations—yet generative engines do not guess in a vacuum. Explore 2026 empirical retrieval weights across 13,604 queries, Gemini's 3.5-star exclusion filter, and our 4-pillar GEO/AEO architecture.",
+    heroImage: "/images/blog/geo-vs-aeo-vs-seo-architecture-2026.webp",
+    heroImageAlt:
+      "Diagram comparing Traditional SEO, Answer Engine Optimization AEO, and Generative Engine Optimization GEO",
+    featured: true,
+    keyHighlights: [
+      "First Page Sage Oct 2026 RAG study (ChatGPT 52.1%, Gemini 26.9%, Claude 10.6%)",
+      "Gemini Local's 38% review weighting & strict 3.5-star minimum rating cutoff",
+      "3-column GEO vs. AEO vs. SEO matrix & 4-pillar entity schema playbook",
+    ],
+  },
+  {
     slug: "local-seo-strategy-kolkata-indian-businesses",
     title:
       'Local & Hyperlocal SEO Strategy in Kolkata and India: Connecting Your Website to "Near Me" Searches',

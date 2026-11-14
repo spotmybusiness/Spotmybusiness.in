@@ -358,6 +358,28 @@ export default function AiSearchOptimizationPage() {
               Google Business Profile Optimization
             </Link>
           </div>
+          <div className="mt-6 rounded-2xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Explore our empirical data breakdown of how ChatGPT, Google Gemini, and Claude retrieve and rank brand entities:
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <Link
+                href="/blog/ai-search-optimization-geo-vs-aeo-vs-seo"
+                className="inline-block text-sm font-semibold text-heading hover:text-light-bronze underline underline-offset-4"
+              >
+                GEO vs. AEO vs. SEO: AI Search Guide [2026 Data Study] →
+              </Link>
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="inline-block text-sm font-semibold text-gray-text hover:text-light-bronze underline underline-offset-4"
+              >
+                Local &amp; Hyperlocal SEO Strategy for Indian Businesses [5-Step Guide] →
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Contact CTA Card */}

@@ -950,16 +950,16 @@ export default function GoogleMapsSeoStorefrontVsSabPost({ post }: PostProps) {
                   Companion Field Guides
                 </p>
                 <Link
-                  href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                  href="/blog/ai-search-optimization-geo-vs-aeo-vs-seo"
                   className="block text-xs font-semibold text-heading hover:text-light-bronze transition-colors"
                 >
-                  Local &amp; Hyperlocal SEO Strategy for Indian Businesses [5-Step Guide] →
+                  GEO vs. AEO vs. SEO: AI Search Guide [2026 Data Study] →
                 </Link>
                 <Link
-                  href="/blog/google-business-profile-optimization-checklist"
+                  href="/blog/local-seo-strategy-kolkata-indian-businesses"
                   className="block text-xs font-semibold text-gray-text hover:text-light-bronze transition-colors"
                 >
-                  Google Business Profile Optimization [9-Step Checklist] →
+                  Local &amp; Hyperlocal SEO Strategy for Indian Businesses [5-Step Guide] →
                 </Link>
               </div>
             </div>

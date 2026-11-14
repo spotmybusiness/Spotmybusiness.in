@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllBlogPostSlugs, getBlogPostBySlug } from "@/lib/blog";
+import AiSearchOptimizationGeoVsAeoVsSeoPost from "@/app/blog/posts/AiSearchOptimizationGeoVsAeoVsSeoPost";
 import LocalSeoStrategyIndiaPost from "@/app/blog/posts/LocalSeoStrategyIndiaPost";
 import GoogleMapsSeoStorefrontVsSabPost from "@/app/blog/posts/GoogleMapsSeoStorefrontVsSabPost";
 import GbpOptimizationChecklistPost from "@/app/blog/posts/GbpOptimizationChecklistPost";
@@ -148,7 +149,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         }}
       />
 
-      {post.slug === "local-seo-strategy-kolkata-indian-businesses" ? (
+      {post.slug === "ai-search-optimization-geo-vs-aeo-vs-seo" ? (
+        <AiSearchOptimizationGeoVsAeoVsSeoPost post={post} />
+      ) : post.slug === "local-seo-strategy-kolkata-indian-businesses" ? (
         <LocalSeoStrategyIndiaPost post={post} />
       ) : post.slug === "google-maps-seo-service-area-businesses" ? (
         <GoogleMapsSeoStorefrontVsSabPost post={post} />

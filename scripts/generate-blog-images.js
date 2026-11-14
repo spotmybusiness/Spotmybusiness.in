@@ -991,6 +991,227 @@ const authenticVsDoorwaySvg = `
 </svg>
 `;
 
+// 9. Post 4 Hero: GEO vs. AEO vs. Traditional SEO Architecture (2026)
+const geoVsAeoVsSeoSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="260" cy="340" r="220" fill="#8B5E3C" fill-opacity="0.09"/>
+  <circle cx="600" cy="340" r="220" fill="#D4A373" fill-opacity="0.08"/>
+  <circle cx="940" cy="340" r="240" fill="#10B981" fill-opacity="0.08"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • AI SEARCH &amp; ENTITY ENGINEERING (2026)</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="25" font-weight="700">Traditional SEO vs. Answer Engine (AEO) vs. Generative Engine (GEO)</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">How crawler indexation, direct snippet extraction, and multi-source entity corroboration reinforce one another</text>
+
+  <!-- Column 1: Traditional SEO -->
+  <g transform="translate(60, 152)">
+    <rect width="340" height="390" rx="12" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.5"/>
+    <rect width="340" height="46" rx="12" fill="#222222"/>
+    <text x="24" y="29" fill="#E7D3B0" font-size="12" font-weight="700" letter-spacing="1">01 • TRADITIONAL SEO (FOUNDATION)</text>
+
+    <g transform="translate(20, 64)">
+      <rect width="300" height="66" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#D4A373" font-size="10" font-weight="700">PRIMARY MECHANISM</text>
+      <text x="14" y="42" fill="#F8F8F8" font-size="12.5" font-weight="600">Crawler Indexation &amp; Blue-Link Ranking</text>
+      <text x="14" y="57" fill="#9CA3AF" font-size="10.5">Google Search, Bing, Google Maps 3-Pack</text>
+    </g>
+
+    <g transform="translate(20, 142)">
+      <rect width="300" height="78" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#D4A373" font-size="10" font-weight="700">CORE TECHNICAL SIGNALS</text>
+      <text x="14" y="42" fill="#E5E7EB" font-size="11.5">• Pre-rendered HTML &amp; XML sitemaps</text>
+      <text x="14" y="58" fill="#E5E7EB" font-size="11.5">• Dedicated service &amp; location URLs</text>
+      <text x="14" y="72" fill="#E5E7EB" font-size="11.5">• Core Web Vitals (LCP, INP, CLS)</text>
+    </g>
+
+    <g transform="translate(20, 232)">
+      <rect width="300" height="72" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#D4A373" font-size="10" font-weight="700">WHY AI ENGINES DEPEND ON IT</text>
+      <text x="14" y="42" fill="#CFCFCF" font-size="11">ChatGPT &amp; Perplexity RAG pipelines</text>
+      <text x="14" y="58" fill="#CFCFCF" font-size="11">retrieve top-ranked organic search URLs</text>
+    </g>
+
+    <rect x="20" y="320" width="300" height="48" rx="8" fill="#1F1B17" stroke="#8B5E3C"/>
+    <text x="170" y="348" fill="#E7D3B0" font-size="11.5" font-weight="700" text-anchor="middle">KPI: Impressions, Clicks &amp; Local Calls</text>
+  </g>
+
+  <!-- Column 2: Answer Engine Optimization (AEO) -->
+  <g transform="translate(430, 152)">
+    <rect width="340" height="390" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.6"/>
+    <rect width="340" height="46" rx="12" fill="#241D16"/>
+    <text x="24" y="29" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="1">02 • ANSWER ENGINE (AEO)</text>
+
+    <g transform="translate(20, 64)">
+      <rect width="300" height="66" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#D4A373" font-size="10" font-weight="700">PRIMARY MECHANISM</text>
+      <text x="14" y="42" fill="#F8F8F8" font-size="12.5" font-weight="600">Direct Passage &amp; Q&amp;A Extraction</text>
+      <text x="14" y="57" fill="#9CA3AF" font-size="10.5">Featured Snippets, PAA, Voice Assistants</text>
+    </g>
+
+    <g transform="translate(20, 142)">
+      <rect width="300" height="78" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#D4A373" font-size="10" font-weight="700">CORE TECHNICAL SIGNALS</text>
+      <text x="14" y="42" fill="#E5E7EB" font-size="11.5">• Question-phrased H2/H3 subheadings</text>
+      <text x="14" y="58" fill="#E5E7EB" font-size="11.5">• 40–55 word Quick Answer blocks</text>
+      <text x="14" y="72" fill="#E5E7EB" font-size="11.5">• Semantic HTML tables &amp; checklists</text>
+    </g>
+
+    <g transform="translate(20, 232)">
+      <rect width="300" height="72" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#D4A373" font-size="10" font-weight="700">WHY AI ENGINES DEPEND ON IT</text>
+      <text x="14" y="42" fill="#CFCFCF" font-size="11">Self-contained definitions &amp; tables are</text>
+      <text x="14" y="58" fill="#CFCFCF" font-size="11">quoted verbatim in AI Overviews</text>
+    </g>
+
+    <rect x="20" y="320" width="300" height="48" rx="8" fill="#1F1B17" stroke="#8B5E3C"/>
+    <text x="170" y="348" fill="#E7D3B0" font-size="11.5" font-weight="700" text-anchor="middle">KPI: Snippet Share &amp; Zero-Click Authority</text>
+  </g>
+
+  <!-- Column 3: Generative Engine Optimization (GEO) -->
+  <g transform="translate(800, 152)">
+    <rect width="340" height="390" rx="12" fill="#1A1A1A" stroke="#10B981" stroke-width="1.8"/>
+    <rect width="340" height="46" rx="12" fill="#12271F"/>
+    <text x="24" y="29" fill="#34D399" font-size="12" font-weight="700" letter-spacing="1">03 • GENERATIVE ENGINE (GEO)</text>
+
+    <g transform="translate(20, 64)">
+      <rect width="300" height="66" rx="8" fill="#141414" stroke="#10B981" stroke-width="1"/>
+      <text x="14" y="22" fill="#34D399" font-size="10" font-weight="700">PRIMARY MECHANISM</text>
+      <text x="14" y="42" fill="#F8F8F8" font-size="12.5" font-weight="600">Multi-Source Entity Synthesis (RAG)</text>
+      <text x="14" y="57" fill="#9CA3AF" font-size="10.5">ChatGPT, Google Gemini, Perplexity, Claude</text>
+    </g>
+
+    <g transform="translate(20, 142)">
+      <rect width="300" height="78" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#34D399" font-size="10" font-weight="700">CORE TECHNICAL SIGNALS</text>
+      <text x="14" y="42" fill="#E5E7EB" font-size="11.5">• JSON-LD Entity Graph + sameAs links</text>
+      <text x="14" y="58" fill="#E5E7EB" font-size="11.5">• Verified NAP &amp; ≥3.5★ Google Reviews</text>
+      <text x="14" y="72" fill="#E5E7EB" font-size="11.5">• Machine-readable /llms.txt v2 index</text>
+    </g>
+
+    <g transform="translate(20, 232)">
+      <rect width="300" height="72" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="14" y="22" fill="#34D399" font-size="10" font-weight="700">HOW AI MODELS CORROBORATE</text>
+      <text x="14" y="42" fill="#CFCFCF" font-size="11">Cross-checks website facts against GBP,</text>
+      <text x="14" y="58" fill="#CFCFCF" font-size="11">directories (29%), and reviews (38%)</text>
+    </g>
+
+    <rect x="20" y="320" width="300" height="48" rx="8" fill="#0F291E" stroke="#10B981"/>
+    <text x="170" y="348" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="middle">KPI: Brand Citations &amp; AI Referral Visits</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="60" y="562" width="1080" height="62" rx="10" fill="#181818" stroke="#2B2B2B"/>
+  <text x="84" y="587" fill="#D4A373" font-size="11.5" font-weight="700">UNIFIED SMB ARCHITECTURE:</text>
+  <text x="275" y="587" fill="#F3F4F6" font-size="11.5">AI Search Optimization does not replace SEO or GBP — it unifies them into a single machine-verifiable entity graph.</text>
+  <text x="84" y="607" fill="#9CA3AF" font-size="10.5">Spot My Business (/services/ai-search-optimization) • Santoshpur, Kolkata HQ • Standards-Based Entity &amp; Schema Engineering</text>
+</svg>
+`;
+
+// 10. Post 4 Visual 1: 2026 Generative AI Engine Weighting Study & 3.5-Star Gate
+const generativeAiWeightsSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="300" cy="300" r="240" fill="#8B5E3C" fill-opacity="0.08"/>
+  <circle cx="900" cy="340" r="250" fill="#10B981" fill-opacity="0.08"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">EMPIRICAL RAG BENCHMARK • 13,604 QUERIES ANALYZED (FIRST PAGE SAGE OCT 2026)</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24" font-weight="700">How ChatGPT, Google Gemini &amp; Claude Select Brand Recommendations</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Signal weight distribution across major AI answer engines and why local businesses below 3.5★ are filtered out</text>
+
+  <!-- Left Panel: AI Engine Signal Breakdown -->
+  <g transform="translate(60, 150)">
+    <rect width="630" height="430" rx="12" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.5"/>
+    <text x="24" y="34" fill="#E7D3B0" font-size="13" font-weight="700" letter-spacing="0.5">2026 GENERATIVE ENGINE RETRIEVAL WEIGHTS BY PLATFORM</text>
+
+    <!-- ChatGPT Row -->
+    <g transform="translate(24, 54)">
+      <rect width="582" height="104" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#34D399" font-size="12" font-weight="700">1. ChatGPT (52.1% AI Search Share) — Bing / Web RAG Retrieval</text>
+      <text x="16" y="46" fill="#E5E7EB" font-size="11.5">• Scans Top 5–10 organic search results for real-time grounding</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">• Weights: Authority &amp; List Mentions (41%) | Website Content &amp; Schema (32%) | Reviews &amp; Trust (27%)</text>
+      <rect x="16" y="78" width="238" height="14" rx="4" fill="#10B981"/>
+      <rect x="258" y="78" width="186" height="14" rx="4" fill="#D4A373"/>
+      <rect x="448" y="78" width="118" height="14" rx="4" fill="#8B5E3C"/>
+    </g>
+
+    <!-- Google Gemini Local Row -->
+    <g transform="translate(24, 174)">
+      <rect width="582" height="114" rx="8" fill="#141414" stroke="#8B5E3C" stroke-width="1.4"/>
+      <text x="16" y="24" fill="#D4A373" font-size="12" font-weight="700">2. Google Gemini Local &amp; AI Overviews (26.9% Share) — Google Index + GBP</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="11.5" font-weight="600">• Local Queries: 38% Local Reviews | 29% Directories &amp; Citations | 22% Website Authority | 11% Social</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">• General B2B Queries: 38% Website Content &amp; Schema | 36% Authority &amp; Citations | 26% Reputation</text>
+      <rect x="16" y="82" width="220" height="16" rx="4" fill="#10B981"/>
+      <text x="26" y="94" fill="#06281E" font-size="9.5" font-weight="800">38% LOCAL REVIEWS</text>
+      <rect x="240" y="82" width="168" height="16" rx="4" fill="#D4A373"/>
+      <text x="250" y="94" fill="#1A120B" font-size="9.5" font-weight="800">29% CITATIONS</text>
+      <rect x="412" y="82" width="154" height="16" rx="4" fill="#8B5E3C"/>
+      <text x="422" y="94" fill="#F8F8F8" font-size="9.5" font-weight="700">33% WEB + SOCIAL</text>
+    </g>
+
+    <!-- Claude AI Row -->
+    <g transform="translate(24, 304)">
+      <rect width="582" height="104" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#E7D3B0" font-size="12" font-weight="700">3. Claude AI (10.6% Share) — Brave Search Live RAG Grounding</text>
+      <text x="16" y="46" fill="#E5E7EB" font-size="11.5">• Triggers live Brave Search retrieval on 67%–81% of commercial prompts</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">• 79%–87% citation overlap with top organic search pages &amp; structured comparison tables</text>
+      <rect x="16" y="80" width="460" height="12" rx="4" fill="#D4A373"/>
+      <text x="486" y="90" fill="#D4A373" font-size="10" font-weight="700">79–87% OVERLAP</text>
+    </g>
+  </g>
+
+  <!-- Right Panel: Gemini 3.5-Star Gate & Client Snapshots -->
+  <g transform="translate(714, 150)">
+    <rect width="426" height="430" rx="12" fill="#1A1A1A" stroke="#10B981" stroke-width="1.6"/>
+    <rect width="426" height="48" rx="12" fill="#12271F"/>
+    <text x="24" y="30" fill="#34D399" font-size="12" font-weight="700" letter-spacing="0.5">CRITICAL FILTER: GEMINI ≥3.5★ RATING CUTOFF</text>
+
+    <!-- Exclusion Warning Box -->
+    <g transform="translate(22, 66)">
+      <rect width="382" height="92" rx="8" fill="#261919" stroke="#EF4444" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#FCA5A5" font-size="11" font-weight="700">BELOW 3.5 STARS = AUTOMATIC EXCLUSION</text>
+      <text x="16" y="46" fill="#E5E7EB" font-size="11.5">Gemini filters out local businesses with a Google</text>
+      <text x="16" y="64" fill="#E5E7EB" font-size="11.5">rating under 3.5★ from AI recommendations,</text>
+      <text x="16" y="80" fill="#FCA5A5" font-size="11" font-weight="600">even when their website ranks on Page 1.</text>
+    </g>
+
+    <!-- Verified SMB Client Benchmarks -->
+    <g transform="translate(22, 176)">
+      <rect width="382" height="230" rx="8" fill="#141414" stroke="#2D2D2D"/>
+      <text x="16" y="26" fill="#D4A373" font-size="10.5" font-weight="700" letter-spacing="0.5">RECORDED SMB CLIENT REPUTATION SNAPSHOTS</text>
+
+      <rect x="16" y="40" width="350" height="38" rx="6" fill="#1B1B1B"/>
+      <text x="28" y="64" fill="#F8F8F8" font-size="11.5" font-weight="600">Science Squad (Dankuni)</text>
+      <text x="352" y="64" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="end">5.0★ (30+ Reviews)</text>
+
+      <rect x="16" y="86" width="350" height="38" rx="6" fill="#1B1B1B"/>
+      <text x="28" y="110" fill="#F8F8F8" font-size="11.5" font-weight="600">Bharat Relocators (Haltu)</text>
+      <text x="352" y="110" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="end">4.9★ (300+ Reviews)</text>
+
+      <rect x="16" y="132" width="350" height="38" rx="6" fill="#1B1B1B"/>
+      <text x="28" y="156" fill="#F8F8F8" font-size="11.5" font-weight="600">Nayak Decorators (Behala)</text>
+      <text x="352" y="156" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="end">4.8★ (50+ Reviews)</text>
+
+      <rect x="16" y="178" width="350" height="38" rx="6" fill="#1B1B1B"/>
+      <text x="28" y="202" fill="#F8F8F8" font-size="11.5" font-weight="600">Republic Packers &amp; Movers</text>
+      <text x="352" y="202" fill="#34D399" font-size="11.5" font-weight="700" text-anchor="end">4.7★ (600+ Reviews)</text>
+    </g>
+  </g>
+
+  <!-- Footer Caption -->
+  <text x="600" y="618" fill="#9CA3AF" font-size="11" text-anchor="middle">Data Source: First Page Sage Generative Engine Optimization Study (Oct 2026) &amp; Recorded Spot My Business Client Snapshots (/case-studies)</text>
+</svg>
+`;
+
 async function generate() {
   const file1 = path.join(outputDir, 'gbp-website-alignment-kolkata.webp');
   const file2 = path.join(outputDir, 'google-maps-call-growth-kolkata.webp');
@@ -1000,6 +1221,8 @@ async function generate() {
   const file6 = path.join(outputDir, 'storefront-vs-sab-conversion-flow.webp');
   const file7 = path.join(outputDir, 'local-seo-5-step-strategy-india.webp');
   const file8 = path.join(outputDir, 'authentic-location-page-vs-doorway.webp');
+  const file9 = path.join(outputDir, 'geo-vs-aeo-vs-seo-architecture-2026.webp');
+  const file10 = path.join(outputDir, 'generative-ai-local-ranking-weights-2026.webp');
 
   console.log('Rendering gbp-website-alignment-kolkata.webp...');
   await sharp(Buffer.from(gbpSvg))
@@ -1048,6 +1271,18 @@ async function generate() {
     .webp({ quality: 62, effort: 6 })
     .toFile(file8);
   console.log('Saved:', file8);
+
+  console.log('Rendering geo-vs-aeo-vs-seo-architecture-2026.webp...');
+  await sharp(Buffer.from(geoVsAeoVsSeoSvg))
+    .webp({ quality: 56, effort: 6 })
+    .toFile(file9);
+  console.log('Saved:', file9);
+
+  console.log('Rendering generative-ai-local-ranking-weights-2026.webp...');
+  await sharp(Buffer.from(generativeAiWeightsSvg))
+    .webp({ quality: 56, effort: 6 })
+    .toFile(file10);
+  console.log('Saved:', file10);
 }
 
 generate().catch(err => {

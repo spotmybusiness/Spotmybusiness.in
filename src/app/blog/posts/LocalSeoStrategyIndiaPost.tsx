@@ -967,16 +967,16 @@ export default function LocalSeoStrategyIndiaPost({ post }: PostProps) {
                   Companion Field Guides
                 </p>
                 <Link
-                  href="/blog/google-maps-seo-service-area-businesses"
+                  href="/blog/ai-search-optimization-geo-vs-aeo-vs-seo"
                   className="block text-xs font-semibold text-heading hover:text-light-bronze transition-colors"
                 >
-                  Google Maps SEO: Storefront vs. Service-Area [2026 Guide] →
+                  GEO vs. AEO vs. SEO: AI Search Guide [2026 Data Study] →
                 </Link>
                 <Link
-                  href="/blog/google-business-profile-optimization-checklist"
+                  href="/blog/google-maps-seo-service-area-businesses"
                   className="block text-xs font-semibold text-gray-text hover:text-light-bronze transition-colors"
                 >
-                  Google Business Profile Optimization [9-Step Checklist] →
+                  Google Maps SEO: Storefront vs. Service-Area [2026 Guide] →
                 </Link>
               </div>
             </div>
