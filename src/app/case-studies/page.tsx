@@ -24,6 +24,7 @@ interface PortfolioItem {
   id: string;
   name: string;
   initials: string;
+  logo: string;
   sector: string;
   desc: string;
   highlights: string[];
@@ -39,6 +40,7 @@ const gbpClients: PortfolioItem[] = [
     id: "gbp-smb",
     name: "Spot My Business",
     initials: "SMB",
+    logo: "/images/portfolio/logos/smb-logo.webp",
     sector: "Internet Marketing & Local Search",
     destination: "https://share.google/Hi8iARMEQHLFzyEhc",
     linkText: "Google Profile",
@@ -54,6 +56,7 @@ const gbpClients: PortfolioItem[] = [
     id: "gbp-science-squad",
     name: "Science Squad",
     initials: "SS",
+    logo: "/images/portfolio/logos/science-squad-logo.webp",
     sector: "Academic Coaching",
     destination: "https://share.google/bKTfTl85YtvYxwu62",
     linkText: "Google Profile",
@@ -69,6 +72,7 @@ const gbpClients: PortfolioItem[] = [
     id: "gbp-bharat-relocators",
     name: "Bharat Relocators",
     initials: "BR",
+    logo: "/images/portfolio/logos/bharat-relocators-logo.webp",
     sector: "Moving & Relocation",
     destination: "https://share.google/OKAn1jzj2MBxpJmx9",
     linkText: "Google Profile",
@@ -84,6 +88,7 @@ const gbpClients: PortfolioItem[] = [
     id: "gbp-nayak-decorators",
     name: "Nayak Decorators and Caterer Behala",
     initials: "NDC",
+    logo: "/images/portfolio/logos/nayak-caterer-logo.webp",
     sector: "Catering & Event Decoration",
     destination: "https://share.google/wMfeUTgDLekrqEM5C",
     linkText: "Google Profile",
@@ -100,6 +105,7 @@ const gbpClients: PortfolioItem[] = [
     id: "gbp-the-linguist",
     name: "The Linguist",
     initials: "TL",
+    logo: "/images/portfolio/logos/the-linguist-logo.webp",
     sector: "Language Training",
     destination: "https://share.google/DCyLKGwVk9vNocm5H",
     linkText: "Google Profile",
@@ -115,6 +121,7 @@ const gbpClients: PortfolioItem[] = [
     id: "gbp-royal-home-spa",
     name: "ROYAL HOME SPA & MASSAGE",
     initials: "RHS",
+    logo: "/images/portfolio/logos/royal-home-spa-logo.webp",
     sector: "Wellness & Spa Services",
     destination: "https://share.google/v5MEm5e4gtQanOJg0",
     linkText: "Google Profile",
@@ -133,6 +140,7 @@ const webDesignClients: PortfolioItem[] = [
     id: "web-smb",
     name: "Spot My Business",
     initials: "SMB",
+    logo: "/images/portfolio/logos/smb-logo.webp",
     sector: "Digital Presence Platform",
     destination: "https://spotmybusiness.in/",
     previewImage: "/images/portfolio/smb-preview.webp",
@@ -149,6 +157,7 @@ const webDesignClients: PortfolioItem[] = [
     id: "web-bharat-relocators",
     name: "Bharat Relocators",
     initials: "BR",
+    logo: "/images/portfolio/logos/bharat-relocators-logo.webp",
     sector: "Moving & Logistics",
     destination: "https://bharatrelocators.com/",
     previewImage: "/images/portfolio/bharat-relocators-preview.webp",
@@ -165,6 +174,7 @@ const webDesignClients: PortfolioItem[] = [
     id: "web-science-squad",
     name: "Science Squad",
     initials: "SS",
+    logo: "/images/portfolio/logos/science-squad-logo.webp",
     sector: "Education & Science Coaching",
     destination: "https://sciencesquadkolkata.in/",
     previewImage: "/images/portfolio/science-squad-preview.webp",
@@ -181,6 +191,7 @@ const webDesignClients: PortfolioItem[] = [
     id: "web-the-linguist",
     name: "The Linguist",
     initials: "TL",
+    logo: "/images/portfolio/logos/the-linguist-logo.webp",
     sector: "Language Training",
     status: "In Development",
     destination: "https://www.thelinguist.co.in/",
@@ -201,6 +212,7 @@ const gscClients: PortfolioItem[] = [
     id: "gsc-smb",
     name: "Spot My Business",
     initials: "SMB",
+    logo: "/images/portfolio/logos/smb-logo.webp",
     sector: "Search Performance Monitoring",
     destination: "https://spotmybusiness.in/",
     linkText: "Website",
@@ -216,6 +228,7 @@ const gscClients: PortfolioItem[] = [
     id: "gsc-bharat-relocators",
     name: "Bharat Relocators",
     initials: "BR",
+    logo: "/images/portfolio/logos/bharat-relocators-logo.webp",
     sector: "Search Visibility Analysis",
     destination: "https://bharatrelocators.com/",
     linkText: "Website",
@@ -233,10 +246,17 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
   const content = (
     <div className="relative z-10 flex h-full flex-col justify-between">
       <div>
-        {/* Top Bar: Initials Monogram + Status/External Link Indicator */}
+        {/* Top Bar: Client Logo + Status/External Link Indicator */}
         <div className="flex items-start justify-between gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-border-color bg-secondary-bg font-heading text-sm font-bold text-light-bronze shadow-sm transition-colors group-hover:border-bronze/50 group-hover:text-champagne">
-            {item.initials}
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border-color bg-white shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:border-bronze/50">
+            <Image
+              src={item.logo}
+              alt={`${item.name} logo`}
+              width={48}
+              height={48}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
           </div>
 
           <div className="flex flex-wrap items-center justify-end gap-2">
@@ -369,7 +389,7 @@ export default function CaseStudiesPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Case Studies",
+        name: "Portfolio",
         item: "https://www.spotmybusiness.in/case-studies",
       },
     ],
@@ -399,7 +419,7 @@ export default function CaseStudiesPage() {
               →
             </li>
             <li aria-current="page" className="text-light-bronze font-medium">
-              Case Studies
+              Portfolio
             </li>
           </ol>
         </nav>

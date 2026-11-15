@@ -167,7 +167,7 @@ export default function Navbar() {
               Industries
             </Link>
             <Link href="/case-studies" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
-              Case Studies
+              Portfolio
             </Link>
             <Link href="/blog" className="text-xs tracking-[0.2em] uppercase font-medium text-gray-text hover:text-light-bronze transition-colors duration-300">
               Blog
@@ -307,7 +307,7 @@ export default function Navbar() {
             onClick={handleRouteClick}
             className="w-full text-center py-2.5 text-base tracking-[0.2em] uppercase font-semibold text-gray-text hover:text-light-bronze active:text-champagne transition-colors"
           >
-            Case Studies
+            Portfolio
           </Link>
 
           <Link
