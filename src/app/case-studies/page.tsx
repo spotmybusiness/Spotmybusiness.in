@@ -205,6 +205,23 @@ const webDesignClients: PortfolioItem[] = [
       "Modern Learning Experience",
     ],
   },
+  {
+    id: "web-wanna-math",
+    name: "Wanna Math",
+    initials: "WM",
+    logo: "/images/portfolio/logos/wanna-math-logo.webp",
+    sector: "Interactive STEM & EdTech Platform",
+    destination: "https://wanna-math.vercel.app/",
+    previewImage: "/images/portfolio/wanna-math-preview.webp",
+    linkText: "Live Website",
+    linkAriaLabel: "Visit Wanna Math interactive engineering mathematics website",
+    desc: "A 6-volume interactive engineering mathematics textbook pairing TeX typesetting with synchronized 2D domain plots and 3D spatial simulations across 82 labs.",
+    highlights: [
+      "Synchronized 2D & 3D Math Visualizers",
+      "Live Equation Parser & Sandbox Labs",
+      "6-Volume Engineering Curriculum",
+    ],
+  },
 ];
 
 const gscClients: PortfolioItem[] = [
