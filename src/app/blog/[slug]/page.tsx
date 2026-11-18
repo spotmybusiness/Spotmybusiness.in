@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getProviderReference } from "@/lib/business";
 import { getAllBlogPostSlugs, getBlogPostBySlug } from "@/lib/blog";
 import AiSearchOptimizationGeoVsAeoVsSeoPost from "@/app/blog/posts/AiSearchOptimizationGeoVsAeoVsSeoPost";
 import LocalSeoStrategyIndiaPost from "@/app/blog/posts/LocalSeoStrategyIndiaPost";
@@ -108,34 +109,30 @@ export default async function BlogPostPage({ params }: PageProps) {
         datePublished: `${post.publishDate}T09:00:00+05:30`,
         dateModified: `${post.modifiedDate}T18:00:00+05:30`,
         mainEntityOfPage: canonicalUrl,
-        image: {
-          "@type": "ImageObject",
-          url: `https://www.spotmybusiness.in${post.heroImage}`,
-          width: 1200,
-          height: 675,
-        },
-        author: {
-          "@type": "Organization",
-          name: post.author.name,
-          url: "https://www.spotmybusiness.in/about",
-        },
-        publisher: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-          logo: {
+        image: [
+          {
             "@type": "ImageObject",
-            url: "https://www.spotmybusiness.in/assets/logo.png",
+            url: `https://www.spotmybusiness.in${post.heroImage}`,
+            width: 1200,
+            height: 675,
           },
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Middle Rd, Sen Para, Santoshpur",
-            addressLocality: "Kolkata",
-            addressRegion: "West Bengal",
-            postalCode: "700075",
-            addressCountry: "IN",
+          ...post.secondaryImages.map((img) => ({
+            "@type": "ImageObject",
+            url: `https://www.spotmybusiness.in${img}`,
+          })),
+        ],
+        author: {
+          "@type": "Person",
+          name: post.author.name,
+          jobTitle: post.author.role,
+          url: "https://www.spotmybusiness.in/about#team",
+          alumniOf: {
+            "@type": "CollegeOrUniversity",
+            name: post.author.qualification,
           },
+          sameAs: [post.author.linkedin],
         },
+        publisher: getProviderReference(),
       },
     ],
   };

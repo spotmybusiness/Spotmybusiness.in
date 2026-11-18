@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Google Business Profile Optimization | Spot My Business",
   description:
-    "Review, optimize, and maintain your Google Business Profile for accurate local discovery across Google Search and Google Maps.",
+    "Audit, calibrate, and maintain your Google Business Profile—primary categories, service catalogs, attributes, photos, and UTM tracking for Search and Maps.",
   alternates: {
     canonical:
       "https://www.spotmybusiness.in/services/google-business-profile-optimization",
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Google Business Profile Optimization | Spot My Business",
     description:
-      "Review, optimize, and maintain your Google Business Profile for accurate local discovery across Google Search and Google Maps.",
+      "Audit, calibrate, and maintain your Google Business Profile—primary categories, service catalogs, attributes, photos, and UTM tracking for Search and Maps.",
     url: "https://www.spotmybusiness.in/services/google-business-profile-optimization",
     siteName: "Spot My Business",
     type: "website",
@@ -50,113 +52,109 @@ export default function GoogleBusinessProfileOptimizationPage() {
         "@type": "Service",
         name: "Google Business Profile Optimization",
         description:
-          "Review, cleanup, optimization, and ongoing maintenance of Google Business Profiles for local businesses.",
+          "Category calibration, service menu structuring, NAP verification, UTM website linking, and ongoing Google Business Profile maintenance.",
         url: "https://www.spotmybusiness.in/services/google-business-profile-optimization",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Business information accuracy",
+      title: "NAP & holiday hours accuracy",
       detail:
-        "Name, address, phone numbers, hours, and website details are reviewed so customers are not left with conflicting or outdated facts.",
+        "We verify your official business name, street address, phone numbers, and special festival hours so customers never call a dead line or drive to a closed door.",
     },
     {
-      title: "Categories that match the business",
+      title: "Primary & secondary category calibration",
       detail:
-        "Primary and, where they fit, secondary categories are checked so the profile describes what the business actually does - not a generic or misleading label.",
+        "Your primary category is one of the strongest local pack signals. We match categories tightly to what drives revenue rather than leaving a generic label selected.",
     },
     {
-      title: "Services and customer-facing details",
+      title: "Pre-defined & custom service catalogs",
       detail:
-        "Service lists and related details are organized so visitors can see what you offer before they call, message, or visit.",
+        "We organize clear service menus and descriptions inside your GBP dashboard, aligning every entry directly with matching pages on your website.",
     },
     {
-      title: "Business description",
+      title: "Policy-compliant business description",
       detail:
-        "The description is written to explain the business clearly, using language a customer would recognize rather than stuffed keywords.",
+        "We craft a natural, readable 750-character overview explaining your real work and service area without spammy keyword stuffing or promotional links.",
     },
     {
-      title: "Profile completeness",
+      title: "Attributes, opening date & profile completeness",
       detail:
-        "Missing fields, incomplete sections, and unused profile features are identified so the listing is easier to understand at a glance.",
+        "We complete relevant operational attributes, accessibility details, and appointment links so customers see full facts at a glance.",
     },
     {
-      title: "Photos and media organization",
+      title: "Authentic photo & visual curation",
       detail:
-        "Existing photos and other media are reviewed so the profile shows the business, its work, and its location in a useful way.",
+        "We organize real storefront, team, equipment, and project photos—avoiding stock imagery that lowers user trust or triggers automated rejections.",
     },
     {
-      title: "Google Maps presence",
+      title: "Landing page URL & UTM telemetry",
       detail:
-        "The same Business Profile information that appears in Search also supports how the business is represented on Google Maps.",
+        "We connect your profile to the best-converting page on your site with clean UTM tags so Google Search Console and Analytics track actual GBP clicks.",
     },
     {
-      title: "Reviews and reputation considerations",
+      title: "Review workflow & owner reply alignment",
       detail:
-        "We look at how reviews appear on the profile and how they fit a practical approach to customer feedback - without fabricating ratings or reviews.",
+        "We review how feedback appears on your listing and establish calm, timely owner response habits using genuine customer reviews only.",
     },
     {
-      title: "Ongoing profile maintenance",
+      title: "Protection against unwanted suggested edits",
       detail:
-        "When it is useful, we keep information current as hours, services, photos, or contact details change.",
+        "Competitors and automated bots routinely suggest hours or category changes on Maps. Ongoing monitoring catches and reverts inaccurate edits quickly.",
     },
   ];
 
   const process = [
     {
-      title: "Assessment",
+      title: "Profile & Search Audit",
       detail:
-        "We review the current Google Business Profile, how it appears in Search and Maps, and which details are missing, unclear, or inconsistent.",
+        "We inspect how your profile currently renders on Search and Maps, checking categories, pin placement, duplicate listings, and missing fields.",
     },
     {
-      title: "Cleanup and optimization",
+      title: "Cleanup & Field Calibration",
       detail:
-        "We correct inaccurate information, complete useful fields, and tidy the presentation so customers can scan the profile with less friction.",
+        "We fix inaccurate NAP entries, refine primary and secondary categories, and structure your service catalog and description.",
     },
     {
-      title: "Information and service alignment",
+      title: "Website & Schema Sync",
       detail:
-        "Categories, services, and description are aligned with how the business actually operates and with the rest of its digital presence.",
+        "We align your linked website landing page, footer NAP, and Schema.org markup so Google sees identical entity facts everywhere.",
     },
     {
-      title: "Monitoring and maintenance",
+      title: "Visual & Review Hygiene",
       detail:
-        "We watch for changes that affect the listing - edits, outdated hours, or incomplete sections - and keep the profile in usable shape.",
+        "We help organize real on-site photos and put a steady, policy-compliant review response workflow in place.",
     },
     {
-      title: "Ongoing refinement",
+      title: "Ongoing Edit Monitoring",
       detail:
-        "As the business adds services, updates photos, or changes how customers get in touch, the profile can be refined without starting from scratch.",
+        "We watch for holiday hour shifts, service updates, and third-party suggested edits so your listing never drifts out of date.",
     },
   ];
 
   const outcomes = [
     {
-      title: "Clearer information",
+      title: "Fewer confused calls & wasted trips",
       detail:
-        "Potential customers can see who you are, what you offer, and how to reach you without guessing from incomplete or conflicting details.",
+        "Accurate opening hours, exact pin coordinates, and clear service menus help the right customers reach you ready to book.",
     },
     {
-      title: "Stronger local discoverability",
+      title: "Stronger relevance in local searches",
       detail:
-        "A complete, relevant profile gives Google Search and Google Maps better information to work with. That supports local discovery; it does not promise a specific ranking.",
+        "Specific categories and complete service lists give Google Search, Google Maps, and AI local answers cleaner signals to match your business.",
     },
     {
-      title: "A more trustworthy presentation",
+      title: "Higher trust on first impression",
       detail:
-        "Accurate hours, real photos, and a description that matches the business help people decide whether to get in touch.",
+        "Real photos, active owner replies, and consistent facts look visibly more dependable than neglected or half-empty profiles.",
     },
     {
-      title: "Easier next steps",
+      title: "Clearer click & call tracking",
       detail:
-        "When contact details, directions, the website, and messaging options are present and correct, customers can call, visit, or enquire with less effort.",
+        "Proper UTM tagging separates Google Business Profile clicks from standard organic visits so you can see how the listing contributes.",
     },
   ];
 
@@ -168,7 +166,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -195,10 +193,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
             Google Business Profile Optimization for local businesses
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business helps you present accurate hours, services,
-            photos, and contact details on the Google Business Profile that
-            appears in Google Search and Google Maps - so local customers can
-            understand the business and take the next step.
+            Most local customers see your Google Business Profile before they ever click through to your website. Spot My Business audits, calibrates, and maintains your categories, services, hours, photos, and website links so your listing earns trust in Google Search and Maps.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -219,44 +214,62 @@ export default function GoogleBusinessProfileOptimizationPage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              What this work actually involves
+              More than just verifying a pin
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              When local customers search on Google, they often see a Business
-              Profile before they ever open a website. That listing is how many
-              people check whether a business is relevant, currently operating,
-              and worth contacting.
+              Claiming a Google Business Profile is only the starting line. Leaving default categories, empty service tabs, outdated festival hours, or a broken homepage link leaves easy local calls on the table.
             </p>
             <p>
-              Accurate information matters because people act on what they
-              see. A wrong phone number, missing services, or an incomplete
-              description makes it harder to call, get directions, or decide
-              if you offer what they need.
+              Searchers judge your reliability in seconds from your primary category, recent photos, operating status, and how you respond to customer reviews. At the same time, Google cross-checks every detail on your profile against your linked website and public citations.
             </p>
             <p>
-              Completeness, clarity, relevance, and consistency all play a
-              part. The profile should describe the same business that appears
-              on your website and in Google Maps - not a mixed set of names,
-              categories, or contact details.
-            </p>
-            <p>
-              Optimization is the work of reviewing, organizing, and
-              maintaining those details. It does not give anyone control over
-              Google&apos;s ranking systems, and it does not guarantee a
-              particular position in Search or Maps.
+              Our work stays strictly within Google Business Profile guidelines—building authentic completeness and website symmetry without fake locations, keyword-stuffed names, or bought reviews that risk listing suspension.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <figure>
+              <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+                <Image
+                  src="/images/blog/gbp-optimization-9-step-checklist.webp"
+                  alt="9-step Google Business Profile optimization workflow covering NAP accuracy, primary category selection, service menus, photos, and review monitoring"
+                  width={1200}
+                  height={675}
+                  loading="lazy"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-xs text-gray-text">
+                Our 9-step Google Business Profile verification framework aligning profile completeness with website signals.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+                <Image
+                  src="/images/blog/science-squad-gbp-comparison.webp"
+                  alt="Before and after Google Business Profile completeness comparison illustrated with Science Squad Dankuni field workflow"
+                  width={1200}
+                  height={675}
+                  loading="lazy"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-xs text-gray-text">
+                Comparison showing how category specificity, course menus, and structured landing links strengthen local discovery.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What we optimize on your profile</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The focus is the information and presentation customers use on
-            the profile itself. Spot My Business does not have privileged
-            access to Google&apos;s systems; the work stays on the Business
-            Profile and the details you control.
+            Every adjustment focuses on the profile fields, visual assets, and linked website pages you directly own and control.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -265,18 +278,16 @@ export default function GoogleBusinessProfileOptimizationPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Our approach</h2>
+          <h2 className="text-3xl font-heading font-bold">How the cleanup &amp; optimization works</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The sequence is practical: understand the current listing, fix
-            what is unclear, align it with the business, then keep it current.
-            Each step is about useful information - not a promised outcome.
+            A clear sequence from diagnostic audit to website alignment and ongoing protection against unwanted edits.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -288,19 +299,16 @@ export default function GoogleBusinessProfileOptimizationPage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Why this matters</h2>
+          <h2 className="text-3xl font-heading font-bold">Why profile hygiene pays off</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            A well-kept Google Business Profile will not replace a good
-            website or a thoughtful local search approach. It does give
-            people a clearer first look at the business in the places they
-            already search.
+            A well-kept Google Business Profile pairs seamlessly with a fast website so searchers can verify details and contact you without hesitation.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -309,7 +317,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -318,9 +326,7 @@ export default function GoogleBusinessProfileOptimizationPage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Business Profile work sits alongside other parts of a local
-            digital presence. These related pages cover nearby work we also
-            offer.
+            Business Profile optimization works alongside your website SEO, Google Maps signals, and customer review workflows.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -381,13 +387,10 @@ export default function GoogleBusinessProfileOptimizationPage() {
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss your Business Profile
+            Get a candid review of your Business Profile
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If you want the listing customers see on Google Search and Google
-            Maps to be clearer and more complete, tell us how the profile
-            currently looks and what you would like to improve. We can talk
-            through the work without promising rankings or lead numbers.
+            Share your Google Maps link or business name and we will check for category mismatches, missing services, and website disconnects—clearly scoped with zero exaggerated promises.
           </p>
           <Link
             href="/contact"

@@ -18,7 +18,7 @@ interface PostProps {
 
 export default function GbpOptimizationChecklistPost({ post }: PostProps) {
   return (
-    <article className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+    <article className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
         <ol className="flex flex-wrap gap-2">
@@ -78,14 +78,25 @@ export default function GbpOptimizationChecklistPost({ post }: PostProps) {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-secondary-bg border border-border-color flex items-center justify-center font-heading font-bold text-light-bronze">
-                SMB
+                {post.author.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
               </div>
               <div>
                 <p className="font-semibold text-heading">
-                  Reviewed by: {post.author.name}
+                  Written by{" "}
+                  <a
+                    href={post.author.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-light-bronze hover:underline"
+                  >
+                    {post.author.name}
+                  </a>
                 </p>
                 <p className="text-gray-text/80">
-                  Headquarters: Middle Rd, Sen Para, Santoshpur, Kolkata 700075 • Field Audit Practice
+                  {post.author.role} ({post.author.qualification}) • Santoshpur, Kolkata 700075
                 </p>
               </div>
             </div>

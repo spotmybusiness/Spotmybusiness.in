@@ -31,7 +31,7 @@ export const foundersData: Founder[] = [
     linkedin: "https://www.linkedin.com/in/swapnonil-nath-gmb-expert/",
     qualification: "IIT KHARAGPUR",
     initials: "SN",
-    image: "/images/team/swapnonil.jpg",
+    image: "/images/team/swapnonil.webp",
     bio: "Leads client visibility strategy, market presence alignment, and local business growth.",
   },
   {
@@ -42,7 +42,7 @@ export const foundersData: Founder[] = [
     linkedin: "https://www.linkedin.com/in/srijan-seal-2055b43a5",
     qualification: "JADAVPUR UNIVERSITY",
     initials: "SS",
-    image: "/images/team/srijan.jpg",
+    image: "/images/team/srijan.webp",
     bio: "Focuses on search architecture, technical performance, and digital foundation systems.",
   },  
   {
@@ -50,10 +50,10 @@ export const foundersData: Founder[] = [
     role: "Co-Founder",
     phone: "+91-8101812459",
     email: "rajabhaskar508@gmail.com",
-    linkedin: "https://www.linkedin.com/in/sagnik-bhaskar-2b42b93a6?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    linkedin: "https://www.linkedin.com/in/sagnik-bhaskar-2b42b93a6",
     qualification: "KALYANI GOVERNMENT ENGINEERING COLLEGE",
     initials: "SB",
-    image: "/images/team/sagnik.jpg",
+    image: "/images/team/sagnik.webp",
     bio: "Drives web development execution, digital touchpoints, and brand credibility workflows.",
   },
 ];
@@ -326,8 +326,8 @@ export default function TeamShowcase() {
               
               {!imageError ? (
                 <Image
-                  src="/images/team/smb-founders.png"
-                  alt="Spot My Business Founding Team — Srijan Seal, Swapnonil Nath, Sagnik Bhaskar"
+                  src="/images/team/smb-founders.webp"
+                  alt="Spot My Business Founding Team — Srijan Seal, Swapnonil Nath, Sagnik Bhaskar at Santoshpur, Kolkata"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                   className="object-cover object-center transition-all duration-700 ease-out group-hover:scale-[1.02] group-hover:contrast-[1.03]"
@@ -347,7 +347,7 @@ export default function TeamShowcase() {
                     Srijan Seal • Swapnonil Nath • Sagnik Bhaskar
                   </p>
                   <span className="mt-4 px-3 py-1 rounded-full bg-primary-bg border border-border-color text-[11px] text-light-bronze font-mono">
-                    /public/images/team/smb-founders.png
+                    /public/images/team/smb-founders.webp
                   </span>
                 </div>
               )}

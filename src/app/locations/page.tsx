@@ -178,7 +178,7 @@ export default function LocationsPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">

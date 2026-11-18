@@ -51,7 +51,7 @@ export default function LocalSeoStrategyIndiaPost({ post }: PostProps) {
   ];
 
   return (
-    <article className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+    <article className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
         <ol className="flex flex-wrap gap-2">
@@ -111,14 +111,25 @@ export default function LocalSeoStrategyIndiaPost({ post }: PostProps) {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-secondary-bg border border-border-color flex items-center justify-center font-heading font-bold text-light-bronze">
-                SMB
+                {post.author.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
               </div>
               <div>
                 <p className="font-semibold text-heading">
-                  Reviewed by: {post.author.name}
+                  Written by{" "}
+                  <a
+                    href={post.author.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-light-bronze hover:underline"
+                  >
+                    {post.author.name}
+                  </a>
                 </p>
                 <p className="text-gray-text/80">
-                  Headquarters: Middle Rd, Sen Para, Santoshpur, Kolkata 700075 • Field Audit Practice
+                  {post.author.role} ({post.author.qualification}) • Santoshpur, Kolkata 700075
                 </p>
               </div>
             </div>
@@ -450,21 +461,39 @@ export default function LocalSeoStrategyIndiaPost({ post }: PostProps) {
             </div>
 
             {/* Visual 1 Case Comparison */}
-            <figure className="my-8">
-              <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
-                <Image
-                  src="/images/blog/authentic-location-page-vs-doorway.webp"
-                  alt="Authentic hyperlocal landing page vs thin doorway page comparison showing Nayak Decorators Behala and Republic Packers Kolkata"
-                  width={1200}
-                  height={675}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption className="mt-3 text-center text-xs text-gray-text">
-                Figure 2: Architectural contrast between penalized programmatic doorway pages and Spot My Business&rsquo;s verified hyperlocal landing pages.
-              </figcaption>
-            </figure>
+            <div className="my-8 grid gap-6 md:grid-cols-2">
+              <figure>
+                <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+                  <Image
+                    src="/images/blog/authentic-location-page-vs-doorway.webp"
+                    alt="Authentic hyperlocal landing page vs thin doorway page comparison showing Nayak Decorators Behala and Republic Packers Kolkata"
+                    width={1200}
+                    height={675}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption className="mt-3 text-center text-xs text-gray-text">
+                  Figure 2: Contrast between thin doorway clones and authentic hyperlocal landing pages.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+                  <Image
+                    src="/images/portfolio/bharat-relocators-preview.webp"
+                    alt="Bharat Relocators moving and shipment-tracking website front page engineered by Spot My Business"
+                    width={640}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption className="mt-3 text-center text-xs text-gray-text">
+                  Figure 3: Production web architecture for Bharat Relocators (Haltu, Kolkata) pairing local corridor context with shipment tracking.
+                </figcaption>
+              </figure>
+            </div>
           </section>
 
           {/* Step 3 */}

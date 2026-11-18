@@ -94,7 +94,7 @@ export default function Navbar() {
                   SPOT MY BUSINESS
                 </span>
                 <span className="text-[8px] md:text-[8.5px] tracking-[0.35em] text-light-bronze uppercase font-semibold mt-1">
-                  GLOBAL SEO PARTNER
+                  WEB &amp; LOCAL SEARCH
                 </span>
               </div>
             </Link>

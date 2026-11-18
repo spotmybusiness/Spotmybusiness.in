@@ -11,7 +11,7 @@ import {
 
 import About from "@/components/About";
 import TeamShowcase from "@/components/TeamShowcase";
-import { businessInfo } from "@/lib/business";
+import { businessInfo, getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "About Spot My Business | Digital Presence for Local Businesses",
@@ -31,6 +31,40 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.spotmybusiness.in/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "About",
+            item: "https://www.spotmybusiness.in/about",
+          },
+        ],
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://www.spotmybusiness.in/about#webpage",
+        url: "https://www.spotmybusiness.in/about",
+        name: "About Spot My Business | Digital Presence for Local Businesses",
+        mainEntity: getProviderReference(),
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: "https://www.spotmybusiness.in/images/team/smb-founders.webp",
+        },
+      },
+    ],
+  };
+
   const approach = [
     {
       area: "Website",
@@ -56,6 +90,12 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-primary-bg text-heading">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
       {/* Breadcrumb */}
       <nav
         aria-label="Breadcrumb"

@@ -142,7 +142,7 @@ const webDesignClients: PortfolioItem[] = [
     initials: "SMB",
     logo: "/images/portfolio/logos/smb-logo.webp",
     sector: "Digital Presence Platform",
-    destination: "https://spotmybusiness.in/",
+    destination: "https://www.spotmybusiness.in/",
     previewImage: "/images/portfolio/smb-preview.webp",
     linkText: "Live Website",
     linkAriaLabel: "Visit Spot My Business live website",
@@ -231,7 +231,7 @@ const gscClients: PortfolioItem[] = [
     initials: "SMB",
     logo: "/images/portfolio/logos/smb-logo.webp",
     sector: "Search Performance Monitoring",
-    destination: "https://spotmybusiness.in/",
+    destination: "https://www.spotmybusiness.in/",
     linkText: "Website",
     linkAriaLabel: "Visit Spot My Business website",
     desc: "Ongoing search performance tracking, indexation audits, crawl health monitoring, and technical search visibility analysis.",
@@ -420,7 +420,7 @@ export default function CaseStudiesPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap items-center gap-2 text-xs text-gray-text/70">

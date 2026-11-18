@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { businessInfo } from "@/lib/business";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Google Search Console Management Services | Spot My Business",
@@ -54,21 +54,7 @@ export default function GoogleSearchConsoleManagementPage() {
         description:
           "Domain property verification, XML sitemap monitoring, index coverage diagnostics, search performance query analysis, and technical search health reporting via Google Search Console.",
         url: "https://www.spotmybusiness.in/services/google-search-console-management",
-        provider: {
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          name: businessInfo.name,
-          url: businessInfo.url,
-          telephone: businessInfo.telephones,
-          email: businessInfo.email,
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: businessInfo.address.streetAddress,
-            addressLocality: businessInfo.address.addressLocality,
-            addressRegion: businessInfo.address.addressRegion,
-            postalCode: businessInfo.address.postalCode,
-            addressCountry: businessInfo.address.addressCountry,
-          },
-        },
+        provider: getProviderReference(),
       },
     ],
   };
@@ -165,7 +151,7 @@ export default function GoogleSearchConsoleManagementPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
@@ -356,6 +342,29 @@ export default function GoogleSearchConsoleManagementPage() {
             >
               Website Management
             </Link>
+          </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              See how first-party Search Console query data informs local landing pages, GBP optimizations, and AI search strategy:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Using Search Console &amp; GBP Alignment to Fix Zero-Call Profiles →
+              </Link>
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                5-Step Local SEO Strategy for Indian Businesses →
+              </Link>
+            </div>
           </div>
         </section>
 

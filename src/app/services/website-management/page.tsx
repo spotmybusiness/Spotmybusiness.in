@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Website Management & Maintenance Services | Spot My Business",
   description:
-    "Ongoing website management and maintenance. We handle content updates, business info changes, routine checks, and link fixes.",
+    "Keep your live business website current, accurate, and dependable with routine content updates, link and form checks, and business-info synchronization.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/website-management",
   },
   openGraph: {
     title: "Website Management & Maintenance Services | Spot My Business",
     description:
-      "Ongoing website management and maintenance. We handle content updates, business info changes, routine checks, and link fixes.",
+      "Keep your live business website current, accurate, and dependable with routine content updates, link and form checks, and business-info synchronization.",
     url: "https://www.spotmybusiness.in/services/website-management",
     siteName: "Spot My Business",
     type: "website",
@@ -49,103 +50,94 @@ export default function WebsiteManagementPage() {
         "@type": "Service",
         name: "Website Management",
         description:
-          "Ongoing website maintenance, content updates, link checks, and technical support for live websites.",
+          "Ongoing website maintenance covering copy updates, business information accuracy, broken link fixes, enquiry form verification, and technical health checks.",
         url: "https://www.spotmybusiness.in/services/website-management",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Content and business information updates",
+      title: "Business hours, contact & service updates",
       detail:
-        "Hours, services, contact details, and page copy are updated when the business changes, so the site does not describe an older version of how you work.",
+        "Whenever you add a course, shift operating hours, update phone lines, or adjust service territories, we update the live website promptly so facts stay current.",
     },
     {
-      title: "Routine page and link checks",
+      title: "Routine broken link & navigation checks",
       detail:
-        "We look for broken links, outdated buttons, missing pages, and navigation that no longer matches the live site.",
+        "We catch dead internal URLs, broken external citations, and outdated buttons before customers or search crawlers run into 404 pages.",
     },
     {
-      title: "Forms and enquiry paths",
+      title: "Enquiry form, tel & WhatsApp testing",
       detail:
-        "Contact forms and other enquiry routes are checked so customers can still reach you, and obvious failures can be fixed as part of agreed work.",
+        "We periodically test contact forms, click-to-call triggers, and WhatsApp links across mobile and desktop so leads never silently fail.",
     },
     {
-      title: "Issue fixes and small improvements",
+      title: "Clean text, media & layout fixes",
       detail:
-        "When something on an existing page is wrong, unclear, or awkward to use, we correct it. That is upkeep of the current site - not a redesign or a new build.",
+        "Small layout bugs, outdated festival banners, or unoptimized photos get corrected cleanly without waiting on a costly redesign.",
     },
     {
-      title: "General site health reviews",
+      title: "Sync with Google Business Profile changes",
       detail:
-        "Periodically we review whether key pages still load, whether contact details match, and whether anything obvious has drifted since the last update.",
+        "Whenever your website copy or URLs change, we keep your Google Business Profile and Schema.org metadata aligned to prevent mixed signals.",
     },
     {
-      title: "Support after launch",
+      title: "Dependency, build & uptime verification",
       detail:
-        "Once a site is live, someone still needs to change text, add a service, or retire a page. We provide that practical support if you do not want to manage it yourself.",
-    },
-    {
-      title: "Coordinated, agreed changes",
-      detail:
-        "Updates are based on what you ask for and what we notice together. We do not treat management as an open-ended rebuild or an SEO campaign.",
+        "We monitor production build stability, SSL validity, and deployment health so your site stays dependable for everyday visitors.",
     },
   ];
 
   const process = [
     {
-      title: "Review the live site and priorities",
+      title: "Audit the live site",
       detail:
-        "We look at the current pages, contact paths, and the updates that matter most to the business right now.",
+        "We inspect existing pages, enquiry forms, broken links, and outdated business details.",
     },
     {
-      title: "Agree what will be maintained",
+      title: "Agree maintenance priorities",
       detail:
-        "Content changes, fixes, and checks are scoped so the work stays on the existing site rather than becoming a new project by default.",
+        "We align on regular update workflows and technical checks tailored to how often your business changes.",
     },
     {
-      title: "Make the agreed updates",
+      title: "Apply & verify updates",
       detail:
-        "Copy, details, links, and straightforward fixes are applied, then checked so the change is actually live and usable.",
+        "Requested copy edits, service additions, and fixes go live cleanly and get tested on mobile right away.",
     },
     {
-      title: "Keep information current over time",
+      title: "Keep facts synced with Search",
       detail:
-        "As hours, services, or offers change, the website is updated so it stays aligned with how the business operates.",
+        "New pages or updated service info stay consistent across sitemaps, schema, and your Google listing.",
     },
     {
-      title: "Report back and adjust",
+      title: "Clear update reporting",
       detail:
-        "You know what was changed. If a different kind of work is needed - new pages, search work, or a performance review - that is discussed as a related service.",
+        "You receive straightforward summaries of what changed and when a separate SEO or performance pass makes sense.",
     },
   ];
 
   const outcomes = [
     {
-      title: "The site stays aligned with the business",
+      title: "Customers see accurate facts every visit",
       detail:
-        "Customers are less likely to call an old number, read a retired service, or trust hours that are no longer true.",
+        "No more callers dialing disconnected numbers or reading about services your team retired months ago.",
     },
     {
-      title: "Problems are easier to catch",
+      title: "Enquiry paths stay reliable",
       detail:
-        "Broken links, failed forms, and stale pages tend to linger when nobody is looking. Regular attention reduces how long those issues sit unnoticed.",
+        "Routine form and WhatsApp checks catch broken email notifications or script glitches before you lose leads.",
     },
     {
-      title: "You do not have to be the webmaster",
+      title: "Zero internal webmaster headache",
       detail:
-        "If running the site is not a role you want internally, management cover means updates can still happen without waiting for a full rebuild.",
+        "Business owners and staff do not have to wrestle with code deployments or CMS updates between customer calls.",
     },
     {
-      title: "A clearer hand-off to other website work",
+      title: "Cleaner handoff to SEO & growth updates",
       detail:
-        "When a change is really a new page, a search project, or a technical performance review, it is easier to see that from a site that is already being looked after.",
+        "A well-maintained site gives Local SEO, Search Console checks, and new blog content a solid base to build on.",
     },
   ];
 
@@ -157,7 +149,7 @@ export default function WebsiteManagementPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -181,14 +173,10 @@ export default function WebsiteManagementPage() {
             Website Management
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Website management to keep your live site current and usable
+            Ongoing website management so your live site never goes stale
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business helps businesses look after a website after it
-            launches: updating content, keeping business information
-            accurate, fixing routine issues, and checking that pages, links,
-            and forms still work. This is ongoing support - not a new website,
-            an SEO programme, or a performance overhaul.
+            A website starts drifting the week after launch—hours shift, new services get added, phone numbers change, and forms quietly break. Spot My Business handles ongoing content updates, link and form testing, and routine technical care so your online home always matches reality.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -209,45 +197,26 @@ export default function WebsiteManagementPage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              What looking after a website involves
+              Practical upkeep after launch day
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              A website starts to drift as soon as the business changes.
-              Services are added or dropped, hours shift, phone numbers
-              change, and pages that were accurate at launch stop matching
-              reality.
+              Most local businesses do not want a developer on payroll just to update batch schedules, swap seasonal photos, or fix a broken form notification. Yet leaving a site untouched for a year erodes trust with both customers and Google.
             </p>
             <p>
-              Management is the work of keeping that live site in usable
-              shape: content updates, business information that matches how
-              you operate, and attention to links, forms, and pages that
-              customers actually use.
+              Website management keeps your existing pages accurate and dependable—fixing broken links, keeping NAP details synced with your Google Business Profile, and checking that contact pathways work cleanly across phones and desktops.
             </p>
             <p>
-              It also includes fixing issues that appear in ordinary use - a
-              form that stops sending, a button that points to an old URL, a
-              page that still mentions a service you no longer offer. Those
-              are maintenance tasks. They are not a rebuild, a ranking
-              project, or a speed programme.
-            </p>
-            <p>
-              Many businesses do not want a staff member to own the CMS or
-              remember every copy change. Practical support exists so updates
-              still happen. We do not promise uninterrupted uptime, a
-              particular hosting arrangement, or that every possible fault
-              will be found immediately.
+              When your site needs a ground-up rebuild, deep speed work, or a full Local SEO rollout, we scope those separately as dedicated services rather than blurring them into routine upkeep.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What ongoing management covers</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The list below stays on the existing website. New site builds,
-            search campaigns, and in-depth performance work are separate
-            services when they are needed.
+            Steady care focused on keeping your live pages accurate, navigable, and aligned with daily operations.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -256,18 +225,16 @@ export default function WebsiteManagementPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">How ongoing work typically runs</h2>
+          <h2 className="text-3xl font-heading font-bold">How our upkeep workflow runs</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            There is no published response-time or monthly-hour package on
-            this page. The sequence is simply: understand the live site,
-            agree the updates, make them, and keep the facts current.
+            Simple WhatsApp or email change requests, verified updates, and clear summaries—scoped to what your site actually needs.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -279,7 +246,7 @@ export default function WebsiteManagementPage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
@@ -287,12 +254,10 @@ export default function WebsiteManagementPage() {
 
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">
-            Why ongoing management matters
+            Why steady website upkeep matters
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Launch is not the end of the website&apos;s job. The points below
-            describe practical reasons to keep looking after it. They are not
-            guaranteed traffic, conversion, or ranking outcomes.
+            Accurate pages and working forms protect every rupee and hour you put into attracting visitors.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -301,7 +266,7 @@ export default function WebsiteManagementPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -310,9 +275,7 @@ export default function WebsiteManagementPage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            If the site needs to be created, improved for search, or reviewed
-            for technical experience, those are neighbouring pieces of work
-            rather than substitutes for day-to-day management.
+            Website management pairs directly with Search Console monitoring, technical SEO improvements, and Core Web Vitals optimization.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -340,18 +303,37 @@ export default function WebsiteManagementPage() {
               Search Console Management
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              See why outdated website hours, broken NAP details, and stale landing pages quietly hurt Google Maps calls:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Fixing Website &amp; GBP Contradictions →
+              </Link>
+              <Link
+                href="/blog/google-business-profile-optimization-checklist"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                9-Step Business Profile Hygiene Checklist →
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss support for your live website
+            Keep your live website in dependable shape
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If the site is live and you need help keeping pages, details, and
-            contact paths in order, tell us what currently needs updating.
-            We can talk through practical management without a published
-            retainer, a guaranteed uptime figure, or a promised business
-            result.
+            Tell us what currently needs updating or fixing on your site. We quote cleanly around actual update needs—without rigid lock-in contracts or exaggerated uptime promises.
           </p>
           <Link
             href="/contact"

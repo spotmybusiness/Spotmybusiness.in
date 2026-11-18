@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Website Performance Optimization Services | Spot My Business",
+  title: "Website Performance & Core Web Vitals Optimization | Spot My Business",
   description:
-    "Practical website performance improvements: reducing page weight, optimizing media, trimming client JS, and improving mobile responsiveness.",
+    "Improve LCP, INP, and CLS on your live site by trimming heavy JavaScript bundles, compressing images to WebP/AVIF, and optimizing mobile loading.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/website-performance",
   },
   openGraph: {
-    title: "Website Performance Optimization Services | Spot My Business",
+    title: "Website Performance & Core Web Vitals Optimization | Spot My Business",
     description:
-      "Practical website performance improvements: reducing page weight, optimizing media, trimming client JS, and improving mobile responsiveness.",
+      "Improve LCP, INP, and CLS on your live site by trimming heavy JavaScript bundles, compressing images to WebP/AVIF, and optimizing mobile loading.",
     url: "https://www.spotmybusiness.in/services/website-performance",
     siteName: "Spot My Business",
     type: "website",
@@ -49,108 +50,94 @@ export default function WebsitePerformancePage() {
         "@type": "Service",
         name: "Website Performance",
         description:
-          "Technical optimization of page weight, asset loading, images, scripts, and mobile responsiveness for live websites.",
+          "Core Web Vitals (LCP, INP, CLS) optimization, WebP/AVIF media compression, client-side JavaScript reduction, and mobile responsiveness engineering.",
         url: "https://www.spotmybusiness.in/services/website-performance",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Performance review of the live site",
+      title: "Real-device & CrUX performance audit",
       detail:
-        "We look at how pages load and respond on representative devices, including where weight, blocking work, or awkward layout makes the experience feel slow.",
+        "We inspect Search Console Core Web Vitals field reports alongside mobile throttling tests to find what actually slows down first paint and taps.",
     },
     {
-      title: "Page weight and implementation issues",
+      title: "Image & media compression",
       detail:
-        "Oversized files, duplicated assets, and heavy page construction are identified so the site is not carrying more than it needs to do its job.",
+        "Oversized PNG and JPEG files convert to properly sized WebP/AVIF assets with explicit aspect dimensions and smart lazy-loading below the fold.",
     },
     {
-      title: "Image and media optimization",
+      title: "Trimming client-side JavaScript bloat",
       detail:
-        "Photographs and other media are reviewed for size, format, and how they are requested, so they support the page instead of delaying it.",
+        "Animations and UI toggles that CSS and native HTML handle cleanly are stripped out of heavy runtime bundles so mobile CPUs stay responsive.",
     },
     {
-      title: "Reducing unnecessary client-side JavaScript",
+      title: "Font, CSS & critical asset loading",
       detail:
-        "Scripts that run in the browser are checked. Interaction that HTML and CSS can handle does not need a large client bundle sitting in the way of the first view.",
+        "We eliminate render-blocking stylesheets, set font-display swap properly, and prevent layout jumping (CLS) during hydration.",
     },
     {
-      title: "Efficient structure and asset loading",
+      title: "Server rendering & caching efficiency",
       detail:
-        "We look at what the browser has to download first, what can wait, and whether the page structure forces extra work before someone can read or tap.",
+        "We optimize static pre-rendering, cache headers, and asset delivery so pages start painting quickly even on congested mobile networks.",
     },
     {
-      title: "Mobile performance",
+      title: "Core Web Vitals tuning (LCP, INP, CLS)",
       detail:
-        "Many visits happen on a phone and a slower connection. Layout, tap targets, and load behaviour are reviewed with that in mind - not only a fast desktop.",
-    },
-    {
-      title: "Core Web Vitals as a practical lens",
-      detail:
-        "Loading, interactivity, and visual stability are useful ways to talk about experience. They are not a score we guarantee, and they are not a ranking promise.",
-    },
-    {
-      title: "Ongoing monitoring and improvement",
-      detail:
-        "Sites pick up weight as content and features are added. When it is useful, we keep reviewing the experience and making agreed technical improvements.",
+        "We target Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift thresholds systematically across priority templates.",
     },
   ];
 
   const process = [
     {
-      title: "Review the current experience",
+      title: "Measure real bottlenecks",
       detail:
-        "We use the live site as it is: key pages, mobile and desktop, and the journeys customers actually take.",
+        "We profile live pages across mobile network throttling, Lighthouse diagnostics, and Search Console CrUX reports.",
     },
     {
-      title: "Identify meaningful technical priorities",
+      title: "Rank fixes by impact",
       detail:
-        "Issues are ranked by how much they affect real use - heavy media, excess JavaScript, blocking assets - not by chasing a vanity metric.",
+        "Heavy hero images, blocking third-party tags, and oversized scripts move to the front of the queue.",
     },
     {
-      title: "Agree the scope of changes",
+      title: "Scope cleanly on live code",
       detail:
-        "Performance work stays on the existing implementation. A redesign or a new site, if needed, is a separate development conversation.",
+        "We fix bottlenecks inside your existing stack whenever practical—only recommending a rebuild if the platform itself blocks speed.",
     },
     {
-      title: "Apply the agreed improvements",
+      title: "Optimize assets & code",
       detail:
-        "Images, scripts, structure, and loading behaviour in scope are adjusted, then checked so the change is actually present for visitors.",
+        "Images compress, unused JS comes out, dimensions lock against layout shift, and critical resources preload cleanly.",
     },
     {
-      title: "Revisit as the site evolves",
+      title: "Verify field stability",
       detail:
-        "After content or features change, the experience can be reviewed again. There is no published score target or turnaround on this page.",
+        "We confirm measurable improvements in live page responsiveness and Search Console Core Web Vitals diagnostics.",
     },
   ];
 
   const outcomes = [
     {
-      title: "A more usable visit",
+      title: "Visitors stay instead of bouncing",
       detail:
-        "Pages that appear and respond with less friction are easier to read, tap, and complete. That is a better experience, not a guaranteed conversion rate.",
+        "When a page paints immediately on a smartphone, prospective buyers stay long enough to read your offer and tap Call or WhatsApp.",
     },
     {
-      title: "More accessible, less wasteful delivery",
+      title: "Smoother interaction on modest devices",
       detail:
-        "Lighter pages and clearer structure help more people, including those on modest devices or slower networks. Accessibility and performance often overlap here.",
+        "Lighter JavaScript prevents frozen scroll and sluggish tap delays on budget Android phones.",
     },
     {
-      title: "A site that stays maintainable",
+      title: "Cleaner technical standing in Search Console",
       detail:
-        "Unnecessary JavaScript and oversized media make every future change harder. Trimming what is not needed keeps the live site easier to look after.",
+        "Resolving poor LCP, INP, and CLS URLs keeps page experience diagnostics green.",
     },
     {
-      title: "A clearer split from SEO and rebuilds",
+      title: "Easier long-term maintenance",
       detail:
-        "Search-friendly content and a new website architecture are related needs. Performance work is about how the current pages are delivered, not about rewriting the offer.",
+        "Lean, well-organized pages don't break every time you publish new case studies or blog articles.",
     },
   ];
 
@@ -162,7 +149,7 @@ export default function WebsitePerformancePage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -186,13 +173,10 @@ export default function WebsitePerformancePage() {
             Website Performance
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Website performance that makes pages load and respond more efficiently
+            Website performance optimization for fast mobile loading and Core Web Vitals
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business reviews how a website is built and delivered so
-            it can load with less waste, feel more responsive, and stay
-            usable on mobile. The work is technical and practical - not a
-            promised PageSpeed score, ranking, or conversion increase.
+            Most local search visitors open your site on a smartphone over a variable mobile connection. Spot My Business strips out script bloat, compresses heavy media, and stabilizes layout shifts so your pages load quickly and feel responsive on real devices.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -213,50 +197,26 @@ export default function WebsitePerformancePage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              What this technical work involves
+              Why mobile speed quietly decides conversions
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              Performance is how quickly a page becomes usable and how
-              smoothly it responds after that. Visitors feel it as waiting,
-              stuttering, or layout that jumps. It is a user-experience and
-              accessibility concern as much as a technical one.
+              A website can look clean on a developer&apos;s desktop and still take six seconds to become clickable on a mid-range Android phone. Uncompressed PNG banners, third-party chat widgets, and heavy animation libraries stall the main thread before a visitor can tap your phone number.
             </p>
             <p>
-              Typical causes are unnecessary page weight, images that are
-              larger than the screen needs, scripts that run in the browser
-              before anything useful appears, and a page structure that
-              forces extra downloads before the main content is ready.
+              We treat Core Web Vitals—Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS)—as practical engineering targets that make pages comfortable for real customers to read and tap.
             </p>
             <p>
-              Mobile matters because phones often have less power and a
-              weaker connection than the computer the site was designed on.
-              A page that feels acceptable on a fast desktop can still be
-              awkward in the hand.
-            </p>
-            <p>
-              Core Web Vitals - loading, interactivity, and visual
-              stability - are a widely used way to describe those qualities.
-              They are a useful checklist, not a score Spot My Business can
-              guarantee, and not a lever that controls Google&apos;s ranking
-              systems.
-            </p>
-            <p>
-              This is not website development (creating the site) and not
-              website SEO (making pages understandable for search). Those
-              services may sit alongside performance work when the need is
-              genuinely different.
+              Performance optimization focuses strictly on how your current pages load and respond; when full site redesigns or content SEO are needed alongside speed fixes, we coordinate those cleanly across our web and search services.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What we optimize technically</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The capabilities below stay on how the current site is delivered.
-            We do not invent proprietary speed tools, unpublished benchmarks,
-            or a guaranteed lab or field score.
+            Direct reductions in page weight, render-blocking assets, and layout instability across mobile and desktop viewports.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -265,18 +225,16 @@ export default function WebsitePerformancePage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">How the work typically proceeds</h2>
+          <h2 className="text-3xl font-heading font-bold">How our optimization workflow runs</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            There is no published before-and-after timing on this page. The
-            sequence is observe the live experience, choose the work that
-            will actually help, then apply it with care.
+            Profile bottlenecks first, cut the heaviest drags on paint and interactivity, and verify stability in real-user data.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -288,7 +246,7 @@ export default function WebsitePerformancePage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
@@ -296,12 +254,10 @@ export default function WebsitePerformancePage() {
 
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">
-            Why efficient delivery matters
+            What faster delivery changes
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            People leave pages that are hard to use. Lighter, more responsive
-            delivery supports that visit. It does not guarantee traffic,
-            rankings, or revenue.
+            Pages that paint instantly keep local searchers engaged from the first second.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -310,7 +266,7 @@ export default function WebsitePerformancePage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -319,9 +275,7 @@ export default function WebsitePerformancePage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            If the site needs to be built, kept current, or made clearer for
-            search engines, those are neighbouring pieces of work rather than
-            substitutes for performance improvements.
+            Pair Core Web Vitals tuning with Website SEO, Search Console tracking, and custom Next.js web builds.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -349,17 +303,37 @@ export default function WebsitePerformancePage() {
               Search Console (Core Web Vitals)
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Explore how page speed, mobile experience, and landing page conversion tie into Local SEO and AI visibility:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Mobile Experience &amp; Local SEO Strategy Guide →
+              </Link>
+              <Link
+                href="/blog/ai-search-optimization-geo-vs-aeo-vs-seo"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                Technical Foundations for SEO, AEO &amp; GEO →
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss how your website currently loads and responds
+            Diagnose what slows down your live website
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If pages feel heavy, slow on mobile, or awkward to use, we can
-            review the live experience and agree practical technical
-            improvements. There is no promised score, ranking, or business
-            result attached to that conversation.
+            Send us your website URL and we will inspect image weight, script blocking, and mobile Core Web Vitals—giving you clear technical priorities without guaranteed Lighthouse score gimmicks.
           </p>
           <Link
             href="/contact"

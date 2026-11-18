@@ -31,7 +31,7 @@ export default function ServicesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.spotmybusiness.in",
+        item: "https://www.spotmybusiness.in/",
       },
       {
         "@type": "ListItem",

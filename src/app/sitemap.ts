@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
 
 import { getAllLocationSlugs } from "@/lib/locations";
-import { getAllBlogPostSlugs } from "@/lib/blog";
+import { getAllBlogPosts } from "@/lib/blog";
+
+const SITE_RELEASE_DATE = "2026-11-18";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.spotmybusiness.in";
@@ -29,14 +31,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/faq",
   ];
 
-  const locationRoutes = getAllLocationSlugs().map((slug) => `/locations/${slug}`);
-  const blogRoutes = getAllBlogPostSlugs().map((slug) => `/blog/${slug}`);
-
-  const allRoutes = [...staticRoutes, ...locationRoutes, ...blogRoutes];
-
-  return allRoutes.map((route) => ({
+  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
     url: route === "" ? `${baseUrl}/` : `${baseUrl}${route}`,
-    changeFrequency: (route === "" ? "weekly" : "monthly") as MetadataRoute.Sitemap[0]["changeFrequency"],
-    priority: route === "" ? 1.0 : route.startsWith("/services") ? 0.8 : route.startsWith("/blog") ? 0.8 : 0.7,
+    lastModified: SITE_RELEASE_DATE,
+    changeFrequency: route === "" || route === "/blog" ? "weekly" : "monthly",
+    priority: route === "" ? 1.0 : route.startsWith("/services") ? 0.8 : 0.7,
   }));
+
+  const locationEntries: MetadataRoute.Sitemap = getAllLocationSlugs().map((slug) => ({
+    url: `${baseUrl}/locations/${slug}`,
+    lastModified: SITE_RELEASE_DATE,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  const blogEntries: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.modifiedDate,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticEntries, ...locationEntries, ...blogEntries];
 }

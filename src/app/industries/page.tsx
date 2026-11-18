@@ -128,7 +128,7 @@ export default function IndustriesPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
@@ -189,11 +189,7 @@ export default function IndustriesPage() {
               homeowners to reach them quickly by phone or message.
             </p>
             <p>
-              We do not treat industry support as a claim of exclusive niche
-              specialization or proprietary industry secrets. Instead, we apply
-              proven digital presence principles—clarity, accurate business
-              information, intent-focused content, and responsive websites—tailored
-              to how your clients search and choose.
+              Every project starts with how your real customers compare options—whether a parent checking batch schedules, a homeowner comparing moving quotes, or a family calling about wedding catering—and builds clean, accurate digital paths around those decisions.
             </p>
           </div>
         </section>

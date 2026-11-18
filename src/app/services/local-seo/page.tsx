@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Local SEO Services for Local Businesses | Spot My Business",
   description:
-    "Strengthen your local search presence across website content, on-page SEO, search intent, and consistent business information.",
+    "Connect your website service pages, schema markup, and Google Business Profile with neighborhood and 'near me' searches across Kolkata and India.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/local-seo",
   },
   openGraph: {
     title: "Local SEO Services for Local Businesses | Spot My Business",
     description:
-      "Strengthen your local search presence across website content, on-page SEO, search intent, and consistent business information.",
+      "Connect your website service pages, schema markup, and Google Business Profile with neighborhood and 'near me' searches across Kolkata and India.",
     url: "https://www.spotmybusiness.in/services/local-seo",
     siteName: "Spot My Business",
     type: "website",
@@ -49,123 +51,104 @@ export default function LocalSeoPage() {
         "@type": "Service",
         name: "Local SEO",
         description:
-          "Comprehensive local search engine optimization across website content, on-page structure, and local business signals.",
+          "Local search optimization covering dedicated service pages, neighborhood relevance, JSON-LD schema, NAP consistency, and Google Business Profile alignment.",
         url: "https://www.spotmybusiness.in/services/local-seo",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Local search-intent research",
+      title: "Neighborhood & service-intent mapping",
       detail:
-        "We look at how people actually search for the services you offer in your market - the language they use, the questions they ask, and which pages on the site should answer them.",
+        "We research how buyers in your city actually phrase their searches—by locality, landmark, or urgent need—and map each core service to a dedicated crawlable URL.",
     },
     {
-      title: "On-page optimization",
+      title: "On-page titles, headings & local copy",
       detail:
-        "Titles, headings, body copy, and page structure are refined so each important page is easier for customers and search engines to understand.",
+        "We refine page titles, H1/H2 structure, and body copy so visitors and search crawlers immediately see what you offer and where you operate.",
     },
     {
-      title: "Service and location relevance",
+      title: "Authentic location relevance without doorway spam",
       detail:
-        "Service pages and location details are written around what the business actually does and where it genuinely operates - not around invented coverage or thin doorway pages.",
+        "Pages cover the areas where your team genuinely serves customers, backed by real service context rather than cloned templates with swapped city names.",
     },
     {
-      title: "Website content structure",
+      title: "Structured LocalBusiness & Service schema",
       detail:
-        "The site is organized so local customers can move from a service they need to clear proof of relevance and a way to get in touch.",
+        "We wire clean JSON-LD markup connecting your name, verified address, phone numbers, operating hours, and service areas across key pages.",
     },
     {
-      title: "Internal linking",
+      title: "Internal linking & enquiry flow",
       detail:
-        "Related service, location, and supporting pages are linked in a way that helps people and search engines see how the business fits together.",
+        "We link related service hubs, proof snapshots, and contact CTAs so someone searching locally can go straight from reading to calling or messaging on WhatsApp.",
     },
     {
-      title: "Business Profile and website alignment",
+      title: "Website-to-GBP alignment",
       detail:
-        "The website and the Google Business Profile should describe the same business. We check that names, services, and contact information support each other. Day-to-day profile management is a related service.",
+        "Your website and Google Business Profile should reinforce one another. We verify that categories, service menus, landing page URLs, and contact channels match cleanly.",
     },
     {
-      title: "Local business information consistency",
+      title: "NAP consistency & Indian citation hygiene",
       detail:
-        "Name, address, phone, hours, and other facts are reviewed so the website, Maps, and other mentions of the business are not sending mixed signals.",
+        "We audit how your Name, Address, and Phone number appear across major Indian directories so conflicting old numbers stop eroding search trust.",
     },
     {
-      title: "Relevant local citations where appropriate",
+      title: "Search Console query refinement",
       detail:
-        "Where a directory or listing genuinely represents the business, we look at whether the information is accurate and consistent. We do not treat mass citation building as a substitute for useful pages.",
-    },
-    {
-      title: "Reviews and reputation considerations",
-      detail:
-        "Customer feedback that appears in local search is part of how people judge a business. We consider how it fits the wider presence, without creating reviews or ratings.",
-    },
-    {
-      title: "Ongoing monitoring and refinement",
-      detail:
-        "Search behaviour, pages, and local information change. When it is useful, we keep reviewing the site and the supporting local presence and adjusting what is unclear.",
+        "Using first-party Google Search Console data, we track which neighborhood terms generate impressions and refine titles and headings where click-through rates lag.",
     },
   ];
 
   const process = [
     {
-      title: "Understand the business and market",
+      title: "Audit the business & local competitors",
       detail:
-        "We start with what you offer, who you serve, and how customers currently find and contact you - so the work is built around the real business, not a generic local template.",
+        "We examine what you sell, which neighborhoods generate your best enquiries, and why competing listings currently hold top map or organic spots.",
     },
     {
-      title: "Research relevant local search intent",
+      title: "Spot gaps between website & GBP",
       detail:
-        "We identify the searches that matter for your services and the kinds of pages that would actually help someone choosing a business.",
+        "We list missing service pages, mismatched phone numbers or hours, weak internal links, and crawl coverage issues inside Search Console.",
     },
     {
-      title: "Identify website and local-presence gaps",
+      title: "Structure service & market pages",
       detail:
-        "Missing service pages, unclear information, weak internal links, and mismatches between the site, Business Profile, and Maps are listed before changes are made.",
+        "We upgrade existing copy and build clean, focused landing pages so high-intent local searches land on the exact right service explanation.",
     },
     {
-      title: "Optimize and build useful supporting content",
+      title: "Align schema & local citations",
       detail:
-        "Existing pages are improved and, where there is a genuine need, new content is planned so local search intent has a clear place to land on the site.",
+        "We deploy unified Schema.org markup, verify footer NAP symmetry, and clean up outdated directory entries.",
     },
     {
-      title: "Monitor and refine",
+      title: "Monitor real queries & iterate",
       detail:
-        "The site and supporting local details are reviewed as the business and its market change. Refinement is about clearer information, not a promised ranking.",
+        "As new Search Console query data comes in, we adjust page headings, snippets, and internal links around real customer searches.",
     },
   ];
 
   const outcomes = [
     {
-      title: "Easier discovery by relevant customers",
+      title: "Clear visibility for high-intent local searches",
       detail:
-        "When pages and local information match how people search, it is easier for the right customers to find the business. That is not a guarantee of a particular position in results.",
+        "When your website pages echo your Google Business Profile categories and local neighborhoods, both Google Maps and organic results gain stronger relevance signals.",
     },
     {
-      title: "Clearer, more useful website information",
+      title: "Visitors land on answers, not generic brochures",
       detail:
-        "Service pages, location details, and contact paths are written so a visitor can understand the offer without hunting through vague copy.",
+        "Someone searching for a specific service reaches a dedicated page explaining scope, coverage, and next steps instead of hunting through a generic homepage.",
     },
     {
-      title: "Search intent matched to the right pages",
+      title: "Consistent business facts everywhere",
       detail:
-        "Someone looking for a specific service should land on a page that answers that need, instead of a generic homepage that tries to cover everything.",
+        "Aligned hours, phone numbers, and street addresses across your site, Maps, and directories prevent lost calls and confused customers.",
     },
     {
-      title: "A more consistent presence across Google and the web",
+      title: "Direct call & WhatsApp conversion paths",
       detail:
-        "The website, Business Profile, Maps listing, and other mentions of the business should describe the same facts, so customers are not comparing conflicting details.",
-    },
-    {
-      title: "Clearer paths to get in touch",
-      detail:
-        "When the right page is easy to find and contact options are obvious, calling, messaging, or sending an enquiry takes less effort.",
+        "Clear above-the-fold contact triggers turn local discovery impressions into real phone conversations and WhatsApp enquiries.",
     },
   ];
 
@@ -177,7 +160,7 @@ export default function LocalSeoPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -201,15 +184,10 @@ export default function LocalSeoPage() {
             Local SEO
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Local SEO that connects your website with how customers search
+            Local SEO that connects your website with neighborhood searches
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business helps local businesses make their website and
-            wider online presence easier to discover for relevant searches in
-            their market. That includes useful service pages, consistent
-            business information, and alignment with Search, Maps, and the
-            Google Business Profile - not profile editing or Maps listing work
-            on their own.
+            A verified Google Business Profile rarely carries local rankings on its own. At Spot My Business, we align your website service pages, structured schema, and local business citations so Google Search, Google Maps, and nearby customers see one consistent, authoritative picture of your business.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -230,53 +208,44 @@ export default function LocalSeoPage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              What this broader work involves
+              Why your website powers local pack visibility
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              Local search is how people look for a nearby business when they
-              already have a need. The job is to make the right business
-              easier to recognize - through pages that answer that need, and
-              through facts that match across the web.
+              When someone searches for a service nearby, Google cross-checks your Google Business Profile against the website URL attached to it. If your profile lists specialized services that barely appear on your site—or your footer lists an old phone number—local visibility suffers.
             </p>
             <p>
-              The website is the centre of that work. A Google Business
-              Profile and a Maps listing matter, but they are parts of the
-              same picture: Profile optimization is about the listing
-              itself; Maps SEO is about how the business is presented and
-              discovered on the map. Local SEO is the wider discipline that
-              ties the site, those Google surfaces, and other local signals
-              together.
+              Local SEO ties your web engineering, on-page service structure, Google Business Profile, and Maps pin together. While profile optimization keeps your listing fields accurate and Maps SEO sharpens geographic relevance, Local SEO builds the website foundation underneath both.
             </p>
             <p>
-              Useful location and service information is essential. Customers
-              need to see what you offer, how it relates to their search, and
-              how to contact you. Thin pages created only to chase a phrase
-              do not help them, and they are not how we approach the work.
-            </p>
-            <p>
-              Consistency and accuracy across the online presence reduce
-              confusion. If the website, Maps, and other mentions disagree on
-              hours, services, or contact details, people have less reason to
-              trust any of them.
-            </p>
-            <p>
-              Search engines are not something Spot My Business can operate
-              from the inside. The work is to organize genuine information
-              and useful pages so local search has something clear to
-              understand - not to manipulate ranking systems or promise a
-              position in results.
+              We do not spin up dozens of copy-pasted city pages to chase keywords. Instead, we build useful, fast-loading pages grounded in where your team actually serves customers and how local buyers compare options before picking up the phone.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <figure className="max-w-5xl">
+            <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+              <Image
+                src="/images/blog/local-seo-5-step-strategy-india.webp"
+                alt="5-step Local SEO architecture diagram linking website landing pages, NAP citations, Google Business Profile, and Google Search Console"
+                width={1200}
+                height={675}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <figcaption className="mt-3 text-xs text-gray-text">
+              How our 5-step Local SEO architecture connects website service pages, NAP citations, and Google Search Console feedback loops.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What we deliver</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The capabilities below stay on the website and the public local
-            presence around it. We do not claim unpublished tools or
-            privileged access to Google.
+            Practical technical and content work focused on the website, structured markup, and public business signals that govern local discovery.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -285,18 +254,16 @@ export default function LocalSeoPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Our approach</h2>
+          <h2 className="text-3xl font-heading font-bold">Our 5-step workflow</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The sequence is research, then gaps, then useful pages and
-            consistent information. Growth figures and rankings are not part
-            of the promise.
+            We start by auditing how your market searches today, close website-to-profile gaps, and refine pages against live Search Console data.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -308,19 +275,16 @@ export default function LocalSeoPage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Why this work matters</h2>
+          <h2 className="text-3xl font-heading font-bold">Practical impact for your business</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Local customers already search with intent. A clearer website and
-            a more consistent local presence make it easier for them to
-            choose the right next step. The points below describe that
-            practical value; they are not measured results.
+            Clearer pages and consistent local facts make it straightforward for nearby buyers to verify your business and get in touch.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -329,7 +293,7 @@ export default function LocalSeoPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -338,9 +302,7 @@ export default function LocalSeoPage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Local search is easier to sustain when the Business Profile, Maps
-            presence, website SEO, and reputation work are treated as
-            connected parts of the same digital presence.
+            Local search performs best when your website foundations, Google Business Profile, Maps alignment, and customer reviews reinforce one another.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -400,13 +362,10 @@ export default function LocalSeoPage() {
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss your local search presence
+            Review your local search footprint
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If you want the website and the rest of your local presence to
-            match how customers already search, we can review the current
-            pages, information, and gaps. The conversation is about a
-            clearer foundation - not guaranteed rankings or lead numbers.
+            Tell us which neighborhoods and services matter most for your business. We will audit your current website pages, citations, and Google listing and agree on practical fixes—transparently scoped without guaranteed ranking promises.
           </p>
           <Link
             href="/contact"

@@ -56,6 +56,18 @@ export const metadata: Metadata = {
     },
   ],
 
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   openGraph: {
     title: "Spot My Business | Internet Marketing Service in Kolkata",
 
@@ -68,10 +80,10 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/assets/logo.png",
-        width: 512,
-        height: 512,
-        alt: "Spot My Business Logo",
+        url: "/images/og-default.webp",
+        width: 1200,
+        height: 630,
+        alt: "Spot My Business — Web Engineering, Local SEO, Google Maps & AI Search in Kolkata",
       },
     ],
 
@@ -88,7 +100,7 @@ export const metadata: Metadata = {
     description:
       "Spot My Business is an internet marketing service in Kolkata helping businesses grow with Google Business Profile, Google Maps, Local SEO and website solutions.",
 
-    images: ["/assets/logo.png"],
+    images: ["/images/og-default.webp"],
   },
 };
 

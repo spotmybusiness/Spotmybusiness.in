@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
-import { businessInfo } from "@/lib/business";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "AI Search Optimization (GEO & AEO) Services | Spot My Business",
@@ -53,21 +54,7 @@ export default function AiSearchOptimizationPage() {
         description:
           "Structured data engineering, entity Knowledge Graph alignment, answer engine optimization (AEO), and generative engine optimization (GEO) for business visibility across AI search platforms.",
         url: "https://www.spotmybusiness.in/services/ai-search-optimization",
-        provider: {
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          name: businessInfo.name,
-          url: businessInfo.url,
-          telephone: businessInfo.telephones,
-          email: businessInfo.email,
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: businessInfo.address.streetAddress,
-            addressLocality: businessInfo.address.addressLocality,
-            addressRegion: businessInfo.address.addressRegion,
-            postalCode: businessInfo.address.postalCode,
-            addressCountry: businessInfo.address.addressCountry,
-          },
-        },
+        provider: getProviderReference(),
       },
     ],
   };
@@ -164,7 +151,7 @@ export default function AiSearchOptimizationPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
@@ -258,6 +245,25 @@ export default function AiSearchOptimizationPage() {
               and entity optimization that gives your business the strongest factual platform to be understood.
             </p>
           </div>
+        </section>
+
+        {/* Visual Architecture Diagram */}
+        <section className="border-t border-border-color py-12">
+          <figure className="max-w-5xl">
+            <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+              <Image
+                src="/images/blog/geo-vs-aeo-vs-seo-architecture-2026.webp"
+                alt="Architecture diagram comparing Traditional SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO)"
+                width={1200}
+                height={675}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <figcaption className="mt-3 text-xs text-gray-text">
+              How Traditional SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO) stack on top of clean HTML, Schema.org graphs, and verified local reviews.
+            </figcaption>
+          </figure>
         </section>
 
         {/* Core Capabilities */}

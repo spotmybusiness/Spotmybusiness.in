@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import ClientShowcase from "@/components/ClientShowcase";
 import Comparison from "@/components/Comparison";
+import FeaturedGuides from "@/components/FeaturedGuides";
 import Contact from "@/components/Contact";
 import PhoneMockup from "@/components/PhoneMockup";
 
@@ -112,6 +113,8 @@ export default function Home() {
           <ClientShowcase />
 
           <Comparison />
+
+          <FeaturedGuides />
 
           <Contact />
         </main>

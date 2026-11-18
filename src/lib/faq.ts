@@ -29,8 +29,8 @@ export const faqCategories: FAQCategory[] = [
         id: "remote-collaboration-model",
         question: "How does Spot My Business work with clients in different cities?",
         answer: [
-          "Spot My Business operates remotely from our registered office in Santoshpur, Kolkata (Middle Rd, Sen Para, Santoshpur, Kolkata, West Bengal 700075). We do not require in-person meetings or maintain branch offices in other cities.",
-          "We coordinate projects seamlessly via phone calls, Google Meet, WhatsApp communication, email updates, and digital staging reviews. This remote model allows us to support businesses across India — including major metropolitan centers and regional markets — with direct access to our core specialists without bloated overhead costs.",
+          "Spot My Business works from our registered office in Santoshpur, Kolkata (Middle Rd, Sen Para, Santoshpur, Kolkata, West Bengal 700075). You do not need in-person meetings or local branch offices to work with us.",
+          "We stay in touch through phone calls, Google Meet screen-shares, WhatsApp, email, and live staging links. Working remotely lets business owners across India talk directly to the engineers and search specialists building their pages.",
         ],
         relatedLink: {
           text: "View all supported markets on our Locations hub",
@@ -258,8 +258,8 @@ export const faqCategories: FAQCategory[] = [
         id: "ranking-guarantee-policy",
         question: "Do you guarantee #1 rankings on Google or Google Maps?",
         answer: [
-          "No. We do not guarantee specific numerical rankings, traffic volumes, lead counts, or revenue outcomes. Search engine algorithms evaluate hundreds of dynamic factors — including user proximity, search history, competitor activity, and platform updates — that no agency can honestly promise to control.",
-          "What we deliver is rigorous, best-practice execution: clear site architecture, fast responsive code, accurate business data, genuine local signals, and search-friendly technical foundations that give your business the strongest possible platform to compete.",
+          "No. We never promise #1 positions, fixed traffic numbers, or guaranteed lead volumes—no agency controls Google's live proximity, search history, or competitor changes.",
+          "What we deliver is solid engineering and search hygiene: fast responsive pages, accurate business data, authentic neighborhood context, and clean Search Console monitoring so your business competes fairly.",
         ],
         relatedLink: {
           text: "Read our principles on Local SEO",
@@ -271,9 +271,9 @@ export const faqCategories: FAQCategory[] = [
         question:
           "Can you guarantee that my business will be cited or recommended in ChatGPT, Google AI Overviews, or Perplexity?",
         answer: [
-          "No. Spot My Business does not and cannot guarantee that your business will appear in AI Overviews, ChatGPT responses, Perplexity citations, or any generative search summary.",
-          "Large language models and AI answer engines operate probabilistically using retrieval-augmented generation (RAG). They synthesize information from multiple web sources dynamically based on user prompts, context, and model weights that no external agency controls.",
-          "What we provide is technical and architectural rigor: structuring machine-readable entity schemas, ensuring NAP (name, address, phone) factual consistency across authoritative sources, crafting clear conversational Q&A content, and providing machine-readable documentation layers (such as llms.txt). This makes your business as clear and citeable as possible for AI systems, without false promises.",
+          "No. No outside team can force Google AI Overviews, ChatGPT, or Perplexity to cite a business in every prompt.",
+          "AI answer engines retrieve live web sources and weigh domain authority, consistent NAP records, structured schemas, and verified ≥3.5★ reviews probabilistically.",
+          "Our role is making your business easy for automated crawlers to verify: clean Schema.org entity graphs, clear Q&A page formatting, matching directory details, and /llms.txt documentation.",
         ],
         relatedLink: {
           text: "Review our AI Search Optimization scope",

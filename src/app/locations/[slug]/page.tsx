@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { businessInfo } from "@/lib/business";
+import { getProviderReference } from "@/lib/business";
 import {
   getLocationBySlug,
   getAllLocationSlugs,
@@ -93,22 +93,7 @@ export default async function LocationDetailPage({ params }: Props) {
           "@type": location.locationType === "state" ? "State" : "City",
           name: location.name,
         },
-        provider: {
-          "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
-          name: businessInfo.name,
-          url: businessInfo.url,
-          telephone: businessInfo.telephones,
-          email: businessInfo.email,
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: businessInfo.address.streetAddress,
-            addressLocality: businessInfo.address.addressLocality,
-            addressRegion: businessInfo.address.addressRegion,
-            postalCode: businessInfo.address.postalCode,
-            addressCountry: businessInfo.address.addressCountry,
-          },
-          sameAs: businessInfo.sameAs,
-        },
+        provider: getProviderReference(),
       },
     ],
   };
@@ -121,7 +106,7 @@ export default async function LocationDetailPage({ params }: Props) {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
@@ -147,7 +132,7 @@ export default async function LocationDetailPage({ params }: Props) {
             {location.heroSubtitle}
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Digital presence and local search strategy for businesses in {location.name}
+            {location.heroHeading}
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
             {location.heroDescription}
@@ -168,23 +153,17 @@ export default async function LocationDetailPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Remote Delivery & Operating Model */}
+        {/* Delivery & Operating Model */}
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              Remote collaboration with a verified base
+              {location.collaborationSection.headline}
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
-            <p>
-              Spot My Business operates from a single registered headquarters in
-              Santoshpur, Kolkata ({businessInfo.address.streetAddress}, {businessInfo.address.addressLocality}, {businessInfo.address.addressRegion} {businessInfo.address.postalCode}).
-              We work remotely with business owners and enterprises in {location.name} to develop custom websites, optimize Google Business Profiles, and strengthen local search visibility.
-            </p>
-            <p>
-              We do not maintain branch offices, field networks, or physical walk-in studios in {location.name}.
-              Instead, we coordinate directly through direct phone calls ({businessInfo.telephones.join(" / ")}), WhatsApp messaging, email, and digital staging reviews—giving you focused attention from our core specialists without branch overhead.
-            </p>
+          <div className="space-y-4 text-gray-text leading-relaxed">
+            {location.collaborationSection.paragraphs.map((para, idx) => (
+              <p key={idx}>{para}</p>
+            ))}
           </div>
         </section>
 
@@ -214,13 +193,51 @@ export default async function LocationDetailPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Documented Local Work (Verified Regional Markets) */}
+        {location.localProofSnapshots && location.localProofSnapshots.length > 0 && (
+          <section className="border-t border-border-color py-12">
+            <h2 className="text-3xl font-heading font-bold">
+              Documented local work in {location.name}
+            </h2>
+            <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
+              Verified local businesses we have supported across {location.name} with custom web builds, Google Business Profile alignment, and regional SEO.
+            </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {location.localProofSnapshots.map((snapshot) => (
+                <div
+                  key={snapshot.clientName}
+                  className="flex flex-col justify-between rounded-2xl border border-border-color bg-secondary-bg p-6"
+                >
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-light-bronze">
+                      {snapshot.sector} • {snapshot.locality}
+                    </span>
+                    <h3 className="mt-2 text-lg font-bold text-heading">
+                      {snapshot.clientName}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-text">
+                      {snapshot.summary}
+                    </p>
+                  </div>
+                  <Link
+                    href={snapshot.link}
+                    className="mt-4 inline-block text-xs font-semibold text-light-bronze hover:text-heading"
+                  >
+                    View portfolio details →
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Local Search Challenges */}
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">
-            Local search challenges in {location.name}
+            {location.challengesHeading}
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Understanding the real-world visibility and competition obstacles businesses face when reaching local searchers in {location.name}.
+            {location.challengesIntro}
           </p>
           <ul className="mt-8 grid gap-6 sm:grid-cols-2">
             {location.localSearchChallenges.map((challenge) => (
@@ -243,7 +260,7 @@ export default async function LocationDetailPage({ params }: Props) {
             Services for businesses in {location.name}
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Recommended digital presence, SEO, and website engineering services contextually relevant for businesses operating in {location.name}.
+            Core website, search visibility, and profile optimization services suited to local competition in {location.name}.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {location.recommendedServices.map((service) => (
@@ -265,6 +282,29 @@ export default async function LocationDetailPage({ params }: Props) {
                 </Link>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Explore our step-by-step guides on building authentic local visibility without doorway spam:
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="inline-block text-sm font-semibold text-heading hover:text-light-bronze underline underline-offset-4"
+              >
+                Local &amp; Hyperlocal SEO Strategy for Indian Businesses →
+              </Link>
+              <Link
+                href="/blog/google-maps-seo-service-area-businesses"
+                className="inline-block text-sm font-semibold text-gray-text hover:text-light-bronze underline underline-offset-4"
+              >
+                Google Maps SEO: Storefront vs. Service-Area →
+              </Link>
+            </div>
           </div>
         </section>
 

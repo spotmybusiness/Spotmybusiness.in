@@ -110,9 +110,9 @@ const geoVsAeoVsSeoMatrix = [
 
 export default function AiSearchOptimizationGeoVsAeoVsSeoPost({ post }: PostProps) {
   return (
-    <article className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+    <article className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
       {/* Breadcrumb Navigation */}
-      <nav aria-label="Breadcrumb" className="text-sm text-gray-text pt-20 pb-6">
+      <nav aria-label="Breadcrumb" className="text-sm text-gray-text pb-6">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
             <Link href="/" className="hover:text-light-bronze transition-colors">
@@ -161,14 +161,25 @@ export default function AiSearchOptimizationGeoVsAeoVsSeoPost({ post }: PostProp
           <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-gray-text">
             <div className="flex items-center gap-3">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary-bg border border-border-color font-heading font-bold text-light-bronze">
-                SMB
+                {post.author.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
               </div>
               <div>
                 <p className="font-semibold text-heading">
-                  Reviewed by: {post.author.name}
+                  Written by{" "}
+                  <a
+                    href={post.author.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-light-bronze hover:underline"
+                  >
+                    {post.author.name}
+                  </a>
                 </p>
                 <p className="text-[11px] text-gray-text">
-                  Headquarters: Middle Rd, Sen Para, Santoshpur, Kolkata 700075
+                  {post.author.role} ({post.author.qualification}) • Santoshpur, Kolkata
                 </p>
               </div>
             </div>

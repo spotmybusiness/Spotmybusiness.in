@@ -16,7 +16,7 @@ interface PostProps {
 
 export default function KolkataGbpNoCallsPost({ post }: PostProps) {
   return (
-    <article className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+    <article className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
         <ol className="flex flex-wrap gap-2">
@@ -67,12 +67,25 @@ export default function KolkataGbpNoCallsPost({ post }: PostProps) {
 
         <div className="mt-6 flex items-center gap-3 border-t border-border-color pt-6 text-xs text-gray-text">
           <div className="w-9 h-9 rounded-full bg-secondary-bg border border-border-color flex items-center justify-center font-heading font-bold text-light-bronze">
-            SMB
+            {post.author.name
+              .split(" ")
+              .map((n) => n[0])
+              .join("")}
           </div>
           <div>
-            <p className="font-semibold text-heading">{post.author.name}</p>
+            <p className="font-semibold text-heading">
+              Written by{" "}
+              <a
+                href={post.author.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light-bronze hover:underline"
+              >
+                {post.author.name}
+              </a>
+            </p>
             <p className="text-gray-text/80">
-              Published from Kolkata, West Bengal • Field Audit Practice
+              {post.author.role} ({post.author.qualification}) • Santoshpur, Kolkata 700075
             </p>
           </div>
         </div>
@@ -541,13 +554,13 @@ export default function KolkataGbpNoCallsPost({ post }: PostProps) {
                     <th scope="row" className="p-4 font-semibold text-heading text-left">Primary Category</th>
                     <td className="p-4">Generic category disconnected from homepage H1</td>
                     <td className="p-4">1:1 match between GBP category and website core topic</td>
-                    <td className="p-4 font-medium text-heading">+25% to +40% Local 3-Pack rank prominence</td>
+                    <td className="p-4 font-medium text-heading">Stronger topical relevance in Local 3-Pack &amp; organic queries</td>
                   </tr>
                   <tr>
                     <th scope="row" className="p-4 font-semibold text-heading text-left">GBP Services Tab</th>
                     <td className="p-4">15+ services checked, linking to a single generic homepage</td>
                     <td className="p-4">Each GBP service maps to a dedicated, crawlable URL</td>
-                    <td className="p-4 font-medium text-heading">Eliminates bounce rate; lifts call CTR by 3.2x</td>
+                    <td className="p-4 font-medium text-heading">Reduces early bounces and guides visitors straight to Call/WhatsApp</td>
                   </tr>
                   <tr>
                     <th scope="row" className="p-4 font-semibold text-heading text-left">Footer NAP &amp; Schema</th>

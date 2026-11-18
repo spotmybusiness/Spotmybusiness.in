@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Reputation Management for Local Businesses | Spot My Business",
   description:
-    "Monitor customer feedback, establish professional review response workflows, and maintain a trustworthy public business presence.",
+    "Monitor customer feedback, build ethical review workflows, and respond thoughtfully on Google Maps and public platforms—without fake reviews or gating.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/reputation-management",
   },
   openGraph: {
     title: "Reputation Management for Local Businesses | Spot My Business",
     description:
-      "Monitor customer feedback, establish professional review response workflows, and maintain a trustworthy public business presence.",
+      "Monitor customer feedback, build ethical review workflows, and respond thoughtfully on Google Maps and public platforms—without fake reviews or gating.",
     url: "https://www.spotmybusiness.in/services/reputation-management",
     siteName: "Spot My Business",
     type: "website",
@@ -49,141 +50,127 @@ export default function ReputationManagementPage() {
         "@type": "Service",
         name: "Reputation Management",
         description:
-          "Review monitoring, response guidance, and customer feedback workflow management for local businesses.",
+          "Ethical review monitoring, owner response frameworks, and customer trust management across Google Business Profile and public directories.",
         url: "https://www.spotmybusiness.in/services/reputation-management",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Review monitoring",
+      title: "Ongoing review monitoring",
       detail:
-        "We help you keep track of public customer feedback on the surfaces that matter for the business, so comments are not left unnoticed for long periods.",
+        "We track incoming customer reviews across Google and key directories so questions, praise, or service complaints never sit unanswered for weeks.",
     },
     {
-      title: "Response guidance and workflows",
+      title: "Thoughtful owner response playbooks",
       detail:
-        "We set a practical way to reply: who responds, in what tone, and how quickly - so replies stay professional even when the feedback is mixed.",
+        "We put a clear, human tone guide in place—so replies sound natural, mention relevant service context honestly, and stay calm under pressure.",
     },
     {
-      title: "A consistent professional presence",
+      title: "Frictionless ethical review requests",
       detail:
-        "Reviews sit next to hours, photos, and contact details. We look at whether that whole public picture feels coherent, not only at individual comments.",
+        "We help you build simple QR-code or post-service WhatsApp follow-up flows asking real customers for honest feedback, without review gating or incentives.",
     },
     {
-      title: "Recurring feedback themes",
+      title: "Spotting operational feedback patterns",
       detail:
-        "Patterns in what customers praise or raise as problems are more useful than any single comment. We help you notice those themes so they can inform how the business presents itself.",
+        "Recurring comments about wait times, phone availability, or clear pricing reveal fixes that improve real customer experience and future ratings.",
     },
     {
-      title: "How business information is presented",
+      title: "Consistency beside reviews",
       detail:
-        "Unclear hours, missing services, or mixed contact details can undermine trust even when feedback is thoughtful. We review those public facts alongside the review presence.",
+        "A 4.8-star rating still loses trust if your website or hours disagree with what reviewers describe. We keep public details synchronized around your reviews.",
     },
     {
-      title: "Connection to the Business Profile and local presence",
+      title: "Coordination with GBP & AI Search trust",
       detail:
-        "Much of what people read about a local business appears on Google Search, Maps, and the Google Business Profile. Reputation work is coordinated with that presence; day-to-day profile and Maps optimization remain related services.",
-    },
-    {
-      title: "Ongoing reputation maintenance",
-      detail:
-        "Feedback continues after a one-off tidy-up. When it is useful, we keep monitoring, refining replies, and checking that the public picture stays consistent.",
+        "Fresh review velocity and ≥3.5★ ratings increasingly filter which local businesses surface in Google Maps and AI answers like Gemini Local.",
     },
   ];
 
   const negativeFeedback = [
     {
-      title: "Acknowledge legitimate concerns",
+      title: "Acknowledge the real experience",
       detail:
-        "If a customer describes a real issue, a calm acknowledgement is more useful than a dismissal. The public reply can show that the comment was read.",
+        "When a reviewer points out a genuine delay or mistake, a straightforward acknowledgement shows future readers that your team takes accountability.",
     },
     {
-      title: "Respond professionally",
+      title: "Keep replies brief & factual",
       detail:
-        "Short, factual, and courteous replies help other readers. They also leave room to continue the conversation privately.",
+        "Short, polite, specific replies read far better to prospective buyers than scripted corporate apologies.",
     },
     {
-      title: "Avoid arguments in public",
+      title: "Never argue in public",
       detail:
-        "Defensive or heated language rarely helps the original customer and often makes the listing harder for new visitors to trust.",
+        "Heated back-and-forth threads rarely satisfy the unhappy customer and actively discourage neutral visitors scanning your profile.",
     },
     {
-      title: "Look for recurring issues",
+      title: "Resolve specifics offline",
       detail:
-        "One comment may be an outlier. Several similar comments may point to something the business can address in operations or in how it explains its offer.",
+        "Invite dissatisfied clients to call or message a direct manager number so billing or service details get fixed privately.",
     },
     {
-      title: "Use feedback constructively",
+      title: "Flag clear policy violations properly",
       detail:
-        "Public reviews are one source of insight. They can inform website copy, service descriptions, or internal process - without treating every comment as a verdict.",
+        "When genuine spam, competitor harassment, or mistaken-business reviews appear, we document and escalate them through official Google review appeal channels.",
     },
     {
-      title: "Take some conversations offline",
+      title: "Turn patterns into website clarity",
       detail:
-        "Where a specific complaint needs details, invite the customer to continue by phone or message. That is often more appropriate than a long public exchange.",
+        "If multiple reviewers misunderstand a service boundary or pricing rule, clarifying that page copy stops future friction before it happens.",
     },
   ];
 
   const process = [
     {
-      title: "Monitor",
+      title: "Audit existing feedback",
       detail:
-        "We establish where feedback appears and how the business will notice new comments without relying on chance.",
+        "We read your current reviews, rating distribution, unanswered comments, and surrounding profile information.",
     },
     {
-      title: "Assess feedback",
+      title: "Set monitoring & alerts",
       detail:
-        "Existing reviews and comments are read for tone, themes, and whether public information around them is complete and consistent.",
+        "We establish consistent checks so every new customer review gets noticed quickly.",
     },
     {
-      title: "Establish a response approach",
+      title: "Build honest request & reply workflows",
       detail:
-        "We agree a simple way to reply to praise, mixed feedback, and concerns - so responses are consistent rather than improvised each time.",
+        "We create easy post-job feedback links and practical reply guidelines tailored to your tone.",
     },
     {
-      title: "Maintain consistency",
+      title: "Synchronize public business details",
       detail:
-        "Replies, business details, and the wider local presence are kept aligned so customers are not comparing conflicting pictures of the same business.",
+        "Hours, services, and contact numbers are aligned so promises match customer expectations.",
     },
     {
-      title: "Review and refine",
+      title: "Review themes & refine",
       detail:
-        "The approach is revisited as the business and its feedback change. Refinement is about a calmer, clearer public presence - not a target rating.",
+        "We track review recency and recurring topics over time to inform website copy and operations.",
     },
   ];
 
   const outcomes = [
     {
-      title: "Easier for prospective customers to evaluate the business",
+      title: "Higher confidence before the first call",
       detail:
-        "People already read reviews and public details before they call. A monitored, professionally handled presence gives them more context - not a promised conversion rate.",
+        "Recent authentic reviews paired with attentive owner replies reassure prospective clients before they dial your number.",
     },
     {
-      title: "A more credible first impression",
+      title: "Stronger local & AI search prominence",
       detail:
-        "Thoughtful replies and accurate information sit together. That combination is more convincing than a listing that looks neglected or inconsistent.",
+        "Consistent, policy-safe feedback supports both Google Maps Local Pack prominence and generative AI recommendation filters.",
     },
     {
-      title: "Insight into the customer experience",
+      title: "Actionable insight into service quality",
       detail:
-        "Recurring themes in feedback can highlight what is working and what is confusing, which is useful beyond the review platform itself.",
+        "Structured tracking turns scattered comments into clear operational signals.",
     },
     {
-      title: "Consistency across Google and other public information",
+      title: "Zero policy-violation risk",
       detail:
-        "Reputation is easier to trust when the same business facts appear on the website, the Business Profile, Maps, and other public mentions.",
-    },
-    {
-      title: "A constructive way to handle feedback",
-      detail:
-        "Having an agreed response approach reduces the pressure to react in the moment and makes it easier to treat comments as information, not as a public argument.",
+        "Because we never buy, gate, or fabricate testimonials, your listing stays protected from Google review sweeps and penalties.",
     },
   ];
 
@@ -195,7 +182,7 @@ export default function ReputationManagementPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -219,14 +206,10 @@ export default function ReputationManagementPage() {
             Reputation Management
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Reputation management for a credible public presence
+            Ethical reputation management that turns customer trust into enquiries
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business helps local businesses monitor customer
-            feedback, respond with care, and keep public business information
-            consistent - so people evaluating you online see a presence that is
-            easier to trust. The work is not a campaign to manufacture
-            reviews or a promised star rating.
+            Prospective customers read Google reviews and owner replies before deciding whom to call. Spot My Business helps you monitor feedback, ask happy clients for honest reviews consistently, and respond thoughtfully to criticism—without fake testimonials or review-gating tricks.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -247,50 +230,26 @@ export default function ReputationManagementPage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              What this work actually involves
+              Why authentic feedback outweighs shortcuts
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              Before many people call or visit, they read reviews and scan
-              public details: hours, photos, services, and how the business
-              replies. That mix shapes trust as much as any single comment.
+              Customers spot generic five-star spam right away. What actually convinces someone comparing two clinics, caterers, or movers is a steady stream of recent, specific reviews from real clients—paired with calm, attentive owner responses.
             </p>
             <p>
-              Monitoring matters because feedback arrives over time. A listing
-              that is never checked can leave questions unanswered, or leave
-              an old concern as the last thing a new customer sees.
+              Reviews also carry real algorithmic weight across Google Maps and generative AI recommendations, where recency, sentiment, and a rating above 3.5 stars determine whether a business gets surfaced at all.
             </p>
             <p>
-              Professional, consistent replies show that the business is
-              paying attention. They do not need to be long. They do need to
-              stay factual and calm, including when the comment is critical.
-            </p>
-            <p>
-              Reputation sits inside a wider digital presence. The Google
-              Business Profile, Maps, the website, and other public
-              information all contribute to the same first impression. This
-              page is about how feedback is handled and how that public
-              picture stays coherent - not about ranking in local search or
-              editing every profile field.
-            </p>
-            <p>
-              Authentic customer feedback is the only kind worth building
-              around. Generating, buying, or fabricating reviews, hiding
-              legitimate comments, or promising that negative feedback can be
-              removed is not part of this service. Those practices mislead
-              customers and undermine the presence they are meant to support.
+              We do not manufacture reviews, gate unhappy feedback, or sell removal guarantees for legitimate criticism. Instead, we build repeatable habits that earn genuine public trust safely over time.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What we help put in place</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The work stays on monitoring, response, and presentation. We do
-            not run review-generation schemes, guarantee a rating, suppress
-            feedback, or claim a method that removes legitimate negative
-            reviews.
+            Practical monitoring, ethical review collection workflows, and consistent reply guidelines built around your daily operations.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -299,7 +258,7 @@ export default function ReputationManagementPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -307,13 +266,10 @@ export default function ReputationManagementPage() {
 
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">
-            Handling negative feedback
+            Handling critical reviews constructively
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Critical comments are part of a public presence. The aim is to
-            respond in a way that is fair to the customer and readable for
-            everyone else. This is practical guidance, not legal advice, and
-            it does not promise that a review can be taken down.
+            Even reliable businesses receive occasional criticism. A fair, measured public reply shows new buyers how your team handles real-world issues.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {negativeFeedback.map((item) => (
@@ -322,18 +278,16 @@ export default function ReputationManagementPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Our approach</h2>
+          <h2 className="text-3xl font-heading font-bold">Our 5-step approach</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The sequence is steady rather than promotional: notice feedback,
-            understand it, agree how to reply, and keep the public details
-            consistent.
+            Consistent monitoring, practical feedback links, and calm responses keep your public profile healthy without daily stress.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -345,19 +299,16 @@ export default function ReputationManagementPage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Why reputation matters</h2>
+          <h2 className="text-3xl font-heading font-bold">Why steady reputation governance matters</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            People use public feedback to decide whether a business feels
-            reliable. Handling that feedback well supports trust. It does not
-            guarantee a rating, a review count, or a particular business
-            result.
+            Trust compounds when authentic customer feedback sits beside accurate hours, real photos, and clear service pages.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -366,7 +317,7 @@ export default function ReputationManagementPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -375,10 +326,7 @@ export default function ReputationManagementPage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Reputation work is easier to sustain when the Business Profile,
-            Maps presence, local search foundations, and ongoing website
-            information stay aligned with the same facts customers see in
-            reviews.
+            Reputation governance reinforces your Google Business Profile, Local SEO pages, and AI search visibility.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -400,10 +348,10 @@ export default function ReputationManagementPage() {
               Google Maps SEO
             </Link>
             <Link
-              href="/services/local-seo"
+              href="/services/ai-search-optimization"
               className="rounded-full border border-border-color px-5 py-2 text-sm text-gray-text hover:text-light-bronze"
             >
-              Local SEO
+              AI Search Optimization
             </Link>
             <Link
               href="/services/website-management"
@@ -412,17 +360,37 @@ export default function ReputationManagementPage() {
               Website management
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Explore how review velocity and ≥3.5★ thresholds shape Google Maps and AI search citations in 2026:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/google-business-profile-optimization-checklist"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                GBP Optimization Checklist: Review Governance &amp; Replies →
+              </Link>
+              <Link
+                href="/blog/ai-search-optimization-geo-vs-aeo-vs-seo"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                How Reviews Weight 38% in Gemini Local AI Search →
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss how you handle public feedback
+            Review how your business handles customer feedback
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If you want a calmer, more consistent way to monitor reviews and
-            respond to customers, we can look at the current public presence
-            and agree a practical approach. There is no promised rating and
-            no offer to generate or remove reviews.
+            If reviews are sitting unanswered or you need a steady way to invite honest client feedback, reach out to review your listing—transparently scoped with zero fabricated testimonials or guaranteed star scores.
           </p>
           <Link
             href="/contact"

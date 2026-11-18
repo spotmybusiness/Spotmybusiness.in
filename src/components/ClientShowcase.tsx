@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExternalLink, Activity } from "lucide-react";
 
 interface ClientData {
@@ -9,6 +10,7 @@ interface ClientData {
   reviews: string;
   visibility: string;
   initials: string;
+  logo?: string;
   desc: string;
 }
 
@@ -16,12 +18,13 @@ const staticClients: ClientData[] = [
   {
     id: "1",
     name: "Science Squad Dankuni",
-    website: "https://science-squad-dankuni.localo.site/",
+    website: "https://sciencesquadkolkata.in/",
     businessType: "Academic Coaching",
     market: "Dankuni",
     reviews: "5.0 Star Rating (30+)",
     visibility: "#1 Google Maps Position",
     initials: "SS",
+    logo: "/images/portfolio/logos/science-squad-logo.webp",
     desc: "Science Squad Dankuni provides expert coaching for students seeking academic excellence in Dankuni.",
   },
   {
@@ -33,6 +36,7 @@ const staticClients: ClientData[] = [
     reviews: "4.9 Star Rating (300+)",
     visibility: "#1 Bike and Car Transportation Services in India",
     initials: "BR",
+    logo: "/images/portfolio/logos/bharat-relocators-logo.webp",
     desc: "Bharat Relocators is a professional moving and relocation service provider in Kolkata.",
   },
   {
@@ -44,6 +48,7 @@ const staticClients: ClientData[] = [
     reviews: "4.8 Star Rating (50+)",
     visibility: "#1 Near Me Searches",
     initials: "NDC",
+    logo: "/images/portfolio/logos/nayak-caterer-logo.webp",
     desc: "Nayak Decorators and Caterer provides catering and event decoration services across Behala and South Kolkata.",
   },
   {
@@ -67,10 +72,23 @@ function ClientCard({ client }: { client: ClientData }) {
 
       <div>
         <div className="flex justify-between items-start">
-          {/* Initials Avatar Logo */}
-          <div className="w-12 h-12 rounded-2xl bg-secondary-bg border border-border-color flex items-center justify-center font-heading font-bold text-light-bronze text-lg shadow-md group-hover:border-bronze/50 transition-colors">
-            {client.initials}
-          </div>
+          {/* Verified Client Logo or Initials Avatar */}
+          {client.logo ? (
+            <div className="w-12 h-12 rounded-full overflow-hidden border border-border-color bg-white shadow-md group-hover:border-bronze/50 transition-colors shrink-0">
+              <Image
+                src={client.logo}
+                alt={`${client.name} logo`}
+                width={48}
+                height={48}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ) : (
+            <div className="w-12 h-12 rounded-2xl bg-secondary-bg border border-border-color flex items-center justify-center font-heading font-bold text-light-bronze text-lg shadow-md group-hover:border-bronze/50 transition-colors">
+              {client.initials}
+            </div>
+          )}
 
           <a
             href={client.website}

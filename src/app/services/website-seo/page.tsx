@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Website SEO Services for Local Businesses | Spot My Business",
   description:
-    "On-page SEO, search-intent alignment, site structure, and technical fundamentals to help search engines understand your website.",
+    "Strengthen on-page SEO, semantic HTML hierarchy, Schema.org structured data, internal linking, and crawlability so search engines index your key pages cleanly.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/website-seo",
   },
   openGraph: {
     title: "Website SEO Services for Local Businesses | Spot My Business",
     description:
-      "On-page SEO, search-intent alignment, site structure, and technical fundamentals to help search engines understand your website.",
+      "Strengthen on-page SEO, semantic HTML hierarchy, Schema.org structured data, internal linking, and crawlability so search engines index your key pages cleanly.",
     url: "https://www.spotmybusiness.in/services/website-seo",
     siteName: "Spot My Business",
     type: "website",
@@ -49,103 +50,99 @@ export default function WebsiteSeoPage() {
         "@type": "Service",
         name: "Website SEO",
         description:
-          "On-page SEO, search intent optimization, internal linking, and technical crawlability improvements for websites.",
+          "On-page and technical SEO covering search intent mapping, semantic HTML, JSON-LD schema markup, internal linking, and crawl coverage resolution.",
         url: "https://www.spotmybusiness.in/services/website-seo",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Search intent and page relevance",
+      title: "Search intent & keyword-to-URL mapping",
       detail:
-        "We look at what people are actually trying to find and whether each important page answers that need, instead of repeating the same generic copy across the site.",
+        "We stop competing pages from cannibalizing one another by assigning each primary service or topic to one clear canonical URL.",
     },
     {
-      title: "On-page SEO",
+      title: "Semantic HTML & heading hierarchy",
       detail:
-        "Headings, body copy, and the main topic of each page are refined so both visitors and search engines can tell what the page is for.",
+        "Clean H1–H3 structure, pre-rendered server HTML, and descriptive anchor text make every page effortless for Googlebot and screen readers to parse.",
     },
     {
-      title: "Titles and meta descriptions",
+      title: "Titles & meta descriptions that earn clicks",
       detail:
-        "Page titles and descriptions are written to describe the page honestly in search results. They are not treated as a ranking switch.",
+        "We write clear, specific page titles and descriptions matching what searchers look for—avoiding truncated boilerplate or keyword stuffing.",
     },
     {
-      title: "Site structure and internal linking",
+      title: "Internal linking architecture",
       detail:
-        "Important pages are given a clear place in the site, and related pages are linked so people and crawlers can move between them without dead ends.",
+        "We connect homepage hubs, service pillars, portfolio proof, and field guides so crawl equity flows naturally to priority commercial pages.",
     },
     {
-      title: "Content that is useful to read",
+      title: "JSON-LD Schema.org implementation",
       detail:
-        "SEO work includes making the page worth visiting: specific service information, plain language, and a next step - not keyword-stuffed paragraphs.",
+        "Unified Organization, Service, BreadcrumbList, and Article structured data graphs help search engines disambiguate your business entity cleanly.",
     },
     {
-      title: "Technical SEO fundamentals",
+      title: "Crawlability, canonicals & sitemap hygiene",
       detail:
-        "Where it helps understanding and crawlability - indexable HTML, sensible URLs, one main heading per page, and pages that are not blocked from being found - we address those basics.",
+        "We resolve duplicate URLs, missing canonical tags, soft 404s, robots exclusions, and stale sitemap timestamps flagged in Search Console.",
     },
     {
-      title: "Priority pages, not every URL at once",
+      title: "Useful, readable page copy",
       detail:
-        "Work is aimed at the pages that should represent the business in search. Thin extra URLs created only to chase phrases are not the method.",
+        "We sharpen thin or robotic copy into clear explanations answering real customer questions—built for humans first and extractable for search.",
     },
   ];
 
   const process = [
     {
-      title: "Understand the site and the business",
+      title: "Crawl & Search Console audit",
       detail:
-        "We start with what you offer, which pages already exist, and how customers currently use the website.",
+        "We inspect indexed vs. excluded URLs, duplicate titles, canonicals, and existing organic query impressions.",
     },
     {
-      title: "Map search intent to pages",
+      title: "Map intent to priority pages",
       detail:
-        "We identify which searches the site should reasonably support and which page should own each topic.",
+        "We define which service or guide URL owns each search topic so pages reinforce rather than compete against each other.",
     },
     {
-      title: "Find structure and content gaps",
+      title: "Pinpoint technical & content gaps",
       detail:
-        "Missing headings, weak internal links, unclear titles, and pages that do not match their purpose are listed before changes are made.",
+        "Orphaned URLs, thin sections, broken links, and missing schema nodes are prioritized before editing begins.",
     },
     {
-      title: "Improve on-page and supporting technical details",
+      title: "Implement on-page & schema fixes",
       detail:
-        "Copy, titles, links, and crawlability issues that sit in scope are updated so the site is easier to interpret.",
+        "We update headings, internal links, metadata, sitemaps, and structured JSON-LD directly in clean source code.",
     },
     {
-      title: "Review and refine",
+      title: "Verify indexation & iterate",
       detail:
-        "The site is checked after changes. Further SEO, local search, or performance work is discussed only if it is genuinely a different need.",
+        "We monitor post-deployment crawling and CTR changes in Search Console and refine pages over time.",
     },
   ];
 
   const outcomes = [
     {
-      title: "Pages that match how people search",
+      title: "Faster, cleaner page indexation",
       detail:
-        "When a page is clearly about a real service or question, it is easier for the right visitor to recognize it. That is not a promised position in results.",
+        "Removing duplicate URLs, broken canonicals, and orphaned pages helps search crawlers focus budget on your revenue pages.",
     },
     {
-      title: "A site search engines can crawl and understand",
+      title: "Clear topical ownership",
       detail:
-        "Logical structure, crawlable links, and readable HTML give search engines a fairer picture of the business than a tangle of duplicate or empty pages.",
+        "Dedicated, well-structured service pages rank more reliably than a single crowded homepage trying to target twenty terms.",
     },
     {
-      title: "Content that still works for humans",
+      title: "Stronger search click-through rates",
       detail:
-        "Titles, headings, and copy should help a person decide whether to enquire. Search-friendly writing that nobody can use is not the goal.",
+        "Honest, well-crafted titles and rich breadcrumbs stand out cleanly on mobile and desktop results pages.",
     },
     {
-      title: "A clearer base for other search work",
+      title: "Shared foundation for Local & AI search",
       detail:
-        "Local SEO, Maps, and Business Profile work are easier to support when the website itself describes the same services and contact paths clearly.",
+        "Clean HTML, strong internal linking, and valid schema power Local SEO, Google Maps alignment, and generative search visibility alike.",
     },
   ];
 
@@ -157,7 +154,7 @@ export default function WebsiteSeoPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -181,14 +178,10 @@ export default function WebsiteSeoPage() {
             Website SEO
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Website SEO that makes your pages easier to understand and discover
+            Technical &amp; on-page Website SEO built for crawl clarity and rankings
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business improves how a website is structured, written,
-            and technically presented so search engines and people can see
-            what each page is for. The work is on the site itself - search
-            intent, on-page relevance, internal links, and crawlable
-            foundations - not a promise of rankings, traffic, or leads.
+            Even great services stay invisible when search engines encounter duplicate pages, broken canonicals, or vague headings. Spot My Business cleans up your site architecture, semantic HTML, internal links, and Schema.org markup so Google understands and surfaces your pages cleanly.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -209,51 +202,26 @@ export default function WebsiteSeoPage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              What this work involves
+              What technical &amp; on-page SEO fixes
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              Search engines need to find your pages, understand their
-              topics, and decide whether they match a query. Website SEO is
-              the craft of making that easier: relevant content, a coherent
-              site structure, and technical details that do not get in the
-              way.
+              Search engines evaluate both technical hygiene and topical clarity. If ten URLs repeat near-identical templates, sitemaps lack updated timestamps, or core service pages sit three clicks deep without internal links, Google often leaves pages stuck in &ldquo;Crawled – currently not indexed.&rdquo;
             </p>
             <p>
-              Search intent sits at the centre. A service page should answer
-              the person looking for that service. A contact page should make
-              contact possible. When every URL tries to rank for everything,
-              none of them is easy to interpret.
+              Website SEO fixes the architecture itself: mapping one clear search intent per page, cleaning up heading hierarchy and copy readability, wiring structured JSON-LD entities, and connecting pages logically so crawlers and people navigate effortlessly.
             </p>
             <p>
-              On-page work covers titles, headings, body copy, and how
-              related pages point to each other. Technical fundamentals
-              matter where they affect crawlability and clarity - indexable
-              content, working internal links, and pages that are not hidden
-              behind unnecessary barriers.
-            </p>
-            <p>
-              The same changes should help a human reader. A page that is
-              stuffed with phrases but hard to use is not a useful SEO
-              outcome. Spot My Business does not control Google&apos;s
-              ranking systems and does not claim special access to them.
-            </p>
-            <p>
-              Local SEO, Google Maps SEO, and Google Business Profile
-              optimization are related when customers search nearby. They are
-              not substitutes for a website that search engines can crawl and
-              understand. This page is about that website layer.
+              While Local SEO and Google Business Profile work capture neighborhood map intent, Website SEO makes sure the underlying domain earns organic trust across every service and educational page you publish.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What we optimize on your site</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Capabilities stay on pages, structure, and technical basics you
-            control. We do not sell unpublished ranking tools or guaranteed
-            placements.
+            Direct code-level and content improvements across your HTML, metadata, internal links, and structured data.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -262,18 +230,16 @@ export default function WebsiteSeoPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">How the work typically proceeds</h2>
+          <h2 className="text-3xl font-heading font-bold">How our Website SEO work proceeds</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            There is no published campaign length or ranking timeline here.
-            The sequence is diagnose, match intent to pages, then improve
-            what is unclear.
+            Diagnostic crawl first, intent mapping second, direct code implementation third, followed by Search Console verification.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -285,7 +251,7 @@ export default function WebsiteSeoPage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
@@ -293,12 +259,10 @@ export default function WebsiteSeoPage() {
 
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">
-            Why website search foundations matter
+            Why clean website foundations matter
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            If the site cannot be understood, other marketing has less to
-            land on. The points below describe that practical value. They
-            are not traffic, lead, or revenue forecasts.
+            Strong technical and on-page fundamentals make every piece of content, link, and local listing perform harder.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -307,7 +271,7 @@ export default function WebsiteSeoPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -316,9 +280,7 @@ export default function WebsiteSeoPage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            SEO on an existing site sits beside development, ongoing
-            management, technical performance, and local search when those
-            are the actual next need.
+            Combine Website SEO with Core Web Vitals tuning, Search Console management, and AI search entity architecture for full-stack organic coverage.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -358,17 +320,37 @@ export default function WebsiteSeoPage() {
               AI Search Optimization
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              Explore how traditional Website SEO connects directly with AEO Featured Snippets, GEO AI answers, and Local Pack rankings:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/ai-search-optimization-geo-vs-aeo-vs-seo"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                GEO vs. AEO vs. SEO Architecture Guide →
+              </Link>
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                Structuring Clean Landing Pages Without Doorway Spam →
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss your website&apos;s search foundation
+            Audit your website&apos;s technical SEO foundations
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If pages are hard for search engines or customers to interpret,
-            we can review structure, intent, and on-page clarity and agree a
-            practical starting point. There is no promised ranking and no
-            unpublished algorithm access in that conversation.
+            If important pages aren&apos;t getting indexed or organic impressions feel stuck, we can run a clean technical audit and prioritize what to fix first—without ranking guarantees or black-hat shortcuts.
           </p>
           <Link
             href="/contact"

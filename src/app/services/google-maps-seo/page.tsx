@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Google Maps SEO Services for Local Businesses | Spot My Business",
   description:
-    "Improve Google Maps visibility with aligned business profile signals, accurate category relevance, and supporting website structure.",
+    "Sharpen Google Maps visibility with rooftop pin accuracy, compliant service-area boundaries, category relevance, and supporting website location signals.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/google-maps-seo",
   },
   openGraph: {
     title: "Google Maps SEO Services for Local Businesses | Spot My Business",
     description:
-      "Improve Google Maps visibility with aligned business profile signals, accurate category relevance, and supporting website structure.",
+      "Sharpen Google Maps visibility with rooftop pin accuracy, compliant service-area boundaries, category relevance, and supporting website location signals.",
     url: "https://www.spotmybusiness.in/services/google-maps-seo",
     siteName: "Spot My Business",
     type: "website",
@@ -49,113 +51,104 @@ export default function GoogleMapsSeoPage() {
         "@type": "Service",
         name: "Google Maps SEO",
         description:
-          "Local discovery optimization and alignment between Google Maps presence, Google Business Profile, and website signals.",
+          "Google Maps visibility alignment covering storefront pin calibration, service-area boundary rules, category signals, and website-to-Maps consistency.",
         url: "https://www.spotmybusiness.in/services/google-maps-seo",
-        provider: {
-          "@type": "LocalBusiness",
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-        },
+        provider: getProviderReference(),
       },
     ],
   };
 
   const capabilities = [
     {
-      title: "Business Profile and Maps information alignment",
+      title: "Rooftop pin & service-area calibration",
       detail:
-        "The details that appear in Google Maps come from the same Google Business Profile. We check that name, location, hours, and contact information match how the business should appear on the map.",
+        "Storefronts need exact building/gate pins, while dispatched service-area businesses (SABs) must configure realistic 2-hour drive boundaries without address violations.",
     },
     {
-      title: "Category and service relevance",
+      title: "Primary category & service signal alignment",
       detail:
-        "Categories and services are reviewed so Maps and local search can associate the listing with what the business actually offers, rather than a vague or mismatched description.",
+        "We verify your primary and secondary categories match what nearby customers actually type when opening Google Maps.",
     },
     {
-      title: "Business information consistency",
+      title: "NAP & citation consistency",
       detail:
-        "We look for mismatches between Maps, the Business Profile, and other online mentions of the business so customers are not sent conflicting hours, names, or contact details.",
+        "We check for conflicting street addresses, pin codes, or old phone numbers across Indian directories and your website footer.",
     },
     {
-      title: "Local search presence",
+      title: "Neighborhood discovery assessment",
       detail:
-        "We review how the business currently appears when people search locally, including what information is visible on Maps, without treating any one snapshot as a guaranteed position.",
+        "We review how your listing appears across surrounding pin codes and corridors to uncover proximity drop-offs and missing relevance cues.",
     },
     {
-      title: "Website-to-profile alignment",
+      title: "Website-to-Maps topical symmetry",
       detail:
-        "The website and the Maps listing should describe the same business. We check that services, location information, and contact paths support each other instead of telling two different stories.",
+        "Google crawls your linked website URL to corroborate your Map listing. We ensure your website pages clearly confirm the services and neighborhoods shown on Maps.",
     },
     {
-      title: "Locally relevant on-site signals",
+      title: "Local schema & embedded map context",
       detail:
-        "Where the website can reasonably support Maps and local search - clear service pages, accurate location details, and usable contact information - we identify those supporting pieces.",
+        "Where appropriate, we reinforce your site with GeoCoordinates, LocalBusiness schema, and clear landmark directions.",
     },
     {
-      title: "Reviews and reputation considerations",
+      title: "Review & sentiment alignment",
       detail:
-        "Reviews that appear on Maps are part of how people judge a listing. We consider how that feedback is presented and how it fits a practical reputation approach, without creating reviews or ratings.",
+        "Ratings and recent customer reviews directly shape click decisions in the Maps pack. We help integrate steady response workflows using authentic reviews only.",
     },
     {
-      title: "Ongoing monitoring and refinement",
+      title: "Ongoing monitoring against edits",
       detail:
-        "Maps listings change as information is edited, hours shift, or Google updates how results are shown. When it is useful, we keep reviewing the listing and adjusting the supporting details.",
+        "Maps pins, hours, and categories can shift from crowdsourced edits or guideline updates. Regular checks protect your accuracy.",
     },
   ];
 
   const process = [
     {
-      title: "Assess current Maps and local presence",
+      title: "Audit current Maps visibility",
       detail:
-        "We look at how the business appears on Google Maps today, what information customers can see, and how that listing sits alongside Search and the website.",
+        "We inspect pin placement, service-area configuration, visible categories, and how your listing stacks up in neighboring localities.",
     },
     {
-      title: "Identify information and relevance gaps",
+      title: "Spot signal & pin discrepancies",
       detail:
-        "Missing, outdated, or mismatched details are listed, along with places where categories or services do not match what the business actually does.",
+        "We flag misplaced pins, guideline-risky keyword stuffing, conflicting directory phone numbers, and website disconnects.",
     },
     {
-      title: "Align Business Profile and website signals",
+      title: "Align Maps & website signals",
       detail:
-        "Profile information, Maps presentation, and relevant website content are brought into the same picture so customers and local search are not working from conflicting facts.",
+        "We synchronize your Business Profile, service-area boundaries, landing page URL, and structured schema around one clear entity.",
     },
     {
-      title: "Improve and maintain supporting presence",
+      title: "Strengthen supporting local pages",
       detail:
-        "We work through the agreed information updates and the on-site details that reasonably support local discovery - without inventing extra locations or coverage claims.",
+        "We refine the on-page service details and location context on your website that corroborate Maps relevance.",
     },
     {
-      title: "Monitor and refine",
+      title: "Track actions & refine",
       detail:
-        "The listing is reviewed again as the business changes. Refinement stays tied to accurate information, not to chasing a particular map position.",
+        "We monitor calls, direction taps, and Search Console clicks over time and adjust details as your services expand.",
     },
   ];
 
   const outcomes = [
     {
-      title: "Essential details in one place",
+      title: "Accurate navigation & arrival",
       detail:
-        "People using Maps can see hours, contact information, and a clearer sense of what the business does before they decide to get in touch.",
+        "Customers following Maps directions arrive at the right entrance or gate rather than getting lost in neighboring lanes.",
     },
     {
-      title: "Easier local discovery",
+      title: "Clearer visibility across your real service area",
       detail:
-        "When the listing is complete and relevant, it is easier for people who are already searching nearby to recognize the business. That is not the same as a promised ranking.",
+        "Aligned categories, citations, and supporting website pages help your listing stay relevant beyond the immediate block.",
     },
     {
-      title: "Clearer directions and location context",
+      title: "Higher tap-to-call & direction confidence",
       detail:
-        "Accurate location information helps customers understand where the business is and how to get there, instead of relying on incomplete or conflicting addresses.",
+        "Complete hours, real photos, and trustworthy ratings make mobile searchers far more likely to call or request directions.",
     },
     {
-      title: "Simpler customer actions",
+      title: "Reduced suspension & edit risk",
       detail:
-        "Calls, website visits, messages, and other actions available on the listing work better when the underlying details are present and correct.",
-    },
-    {
-      title: "Consistency with the website",
-      detail:
-        "Maps and the website should describe the same business. Alignment reduces confusion when someone checks both before contacting you.",
+        "Following Google's storefront vs. service-area rules protects your listing from sudden verification triggers or suspensions.",
     },
   ];
 
@@ -167,7 +160,7 @@ export default function GoogleMapsSeoPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
             <li>
@@ -191,14 +184,10 @@ export default function GoogleMapsSeoPage() {
             Google Maps SEO
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Google Maps SEO for a clearer local search presence
+            Google Maps SEO built on accurate pins, boundaries, and local signals
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business helps local businesses present accurate, relevant
-            information on Google Maps and strengthen the local search signals
-            around that listing - so customers can find the business, understand
-            it, and decide how to get in touch. Profile field-by-field
-            management is a related service, not the whole of this work.
+            For nearby services, Google Maps is where customers compare ratings, inspect photos, and tap to call or navigate. Spot My Business calibrates your storefront pin or service-area boundaries and aligns your linked website so local discovery translates into real enquiries.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -219,54 +208,44 @@ export default function GoogleMapsSeoPage() {
         <section className="grid gap-8 border-t border-border-color py-12 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-heading font-bold">
-              How Maps fits into local search
+              Relevance, proximity, and prominence on the map
             </h2>
           </div>
-          <div className="space-y-4 text-gray-text">
+          <div className="space-y-4 text-gray-text leading-relaxed">
             <p>
-              Google Maps is one of the places local customers compare
-              businesses, check opening hours, look at photos, and get
-              directions. For many searches, the map listing is the first
-              detailed look someone gets at a business.
+              Google Maps visibility depends on three core signals: relevance (how closely your categories and website match the query), distance (where your pin sits relative to the searcher), and prominence (your reviews, citations, and overall web authority).
             </p>
             <p>
-              Accurate, relevant information is the foundation. If the pin,
-              hours, services, or contact details are wrong, people may
-              dismiss the listing or arrive with the wrong expectation - even
-              if they found you in the first place.
+              Many businesses lose map visibility outside a tiny radius because their storefront pin is off by a block, their service-area settings span an unrealistic multi-state territory, or their linked website never backs up the categories listed on Maps.
             </p>
             <p>
-              Local search is often discussed in broad terms of relevance
-              (does this business match the query), proximity (how it relates
-              to where the searcher is), and prominence (how established and
-              understandable the business appears online). Those are useful
-              ways to think about the work. They are not a formula Spot My
-              Business can operate on Google&apos;s behalf.
-            </p>
-            <p>
-              Maps visibility is stronger when it sits inside a wider local
-              search approach: a Google Business Profile that is in good
-              order, a website that describes the same services and location
-              clearly, and consistent business information elsewhere online.
-              This page is about that Maps and local-discovery layer - not
-              about managing every profile field in isolation.
-            </p>
-            <p>
-              Nobody outside Google controls how Maps ranks listings. This
-              work improves the information and supporting presence customers
-              and local search can use. It does not guarantee a pin position,
-              a Map Pack placement, or a particular volume of enquiries.
+              While Google Business Profile optimization handles field-by-field hygiene inside the profile, Google Maps SEO connects that listing with your website structure, geo-signals, and public citations so local pack results stay consistent.
             </p>
           </div>
         </section>
 
-        <section className="py-12">
-          <h2 className="text-3xl font-heading font-bold">What we can help with</h2>
+        <section className="border-t border-border-color py-12">
+          <figure className="max-w-5xl">
+            <div className="overflow-hidden rounded-2xl border border-border-color bg-secondary-bg">
+              <Image
+                src="/images/blog/google-maps-seo-storefront-vs-sab.webp"
+                alt="Comparison diagram of Storefront rooftop map pin placement versus Service-Area Business (SAB) radius setup in Google Maps"
+                width={1200}
+                height={675}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <figcaption className="mt-3 text-xs text-gray-text">
+              Storefront rooftop pin precision vs. Service-Area Business (SAB) boundary configuration for compliant Google Maps visibility.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section className="border-t border-border-color py-12">
+          <h2 className="text-3xl font-heading font-bold">What we help strengthen</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The work combines Maps presentation, Business Profile alignment,
-            and the website signals that reasonably support local discovery.
-            We do not use unpublished ranking tools or privileged access to
-            Google&apos;s systems.
+            Focused, guideline-safe refinements connecting your Google Maps listing, local citations, and website pages.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {capabilities.map((item) => (
@@ -275,18 +254,16 @@ export default function GoogleMapsSeoPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
         </section>
 
         <section className="border-t border-border-color py-12">
-          <h2 className="text-3xl font-heading font-bold">Our approach</h2>
+          <h2 className="text-3xl font-heading font-bold">How our Maps SEO process runs</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            The process stays tied to what can actually be reviewed and
-            improved: the listing, the information behind it, and the
-            website details that should match.
+            Every step focuses on verifiable location facts, compliant boundaries, and matching website proof.
           </p>
           <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {process.map((item, index) => (
@@ -298,7 +275,7 @@ export default function GoogleMapsSeoPage() {
                   0{index + 1}
                 </span>
                 <p className="mt-3 font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-xs text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ol>
@@ -306,13 +283,10 @@ export default function GoogleMapsSeoPage() {
 
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">
-            Why Maps visibility matters
+            What stronger Maps alignment delivers
           </h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            People already use Maps to decide where to go and whom to
-            contact. A clearer listing helps that decision. It does not
-            replace a useful website, and the benefits below are not
-            guaranteed results.
+            Cleaner map details remove navigation friction and give nearby customers immediate confidence to call or visit.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {outcomes.map((item) => (
@@ -321,7 +295,7 @@ export default function GoogleMapsSeoPage() {
                 className="rounded-xl border border-border-color bg-secondary-bg p-5"
               >
                 <p className="font-semibold text-heading">{item.title}</p>
-                <p className="mt-2 text-gray-text">{item.detail}</p>
+                <p className="mt-2 text-sm text-gray-text leading-relaxed">{item.detail}</p>
               </li>
             ))}
           </ul>
@@ -330,9 +304,7 @@ export default function GoogleMapsSeoPage() {
         <section className="border-t border-border-color py-12">
           <h2 className="text-3xl font-heading font-bold">Related services</h2>
           <p className="mt-4 max-w-3xl text-gray-text leading-relaxed">
-            Maps work is easier to sustain when the Business Profile, local
-            search foundations, website SEO, and reputation approach are
-            treated as connected parts of the same presence.
+            Google Maps signals gain durability when backed by a complete Business Profile, local website pages, and active review management.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -393,14 +365,10 @@ export default function GoogleMapsSeoPage() {
 
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12">
           <h2 className="text-3xl font-heading font-bold">
-            Discuss how your business appears on Maps
+            Review how your business shows up on Maps
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            If customers already look for you on Google Maps - or you want that
-            listing to be easier to understand - we can review the current
-            presence and the supporting local search details. The
-            conversation is about useful information, not a promised pin
-            position.
+            Send us your current Google Maps listing and service areas. We will check your pin placement, category alignment, and website connection—without claiming unpublished ranking access or guaranteeing #1 positions.
           </p>
           <Link
             href="/contact"

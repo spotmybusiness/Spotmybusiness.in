@@ -12,10 +12,13 @@ export interface BlogPost {
   author: {
     name: string;
     role: string;
+    qualification: string;
+    linkedin: string;
   };
   excerpt: string;
   heroImage: string;
   heroImageAlt: string;
+  secondaryImages: string[];
   featured: boolean;
   keyHighlights: string[];
 }
@@ -32,17 +35,20 @@ export const blogPosts: BlogPost[] = [
     targetPillar: "AI Search Optimization (GEO & AEO)",
     targetServiceUrl: "/services/ai-search-optimization",
     publishDate: "2026-11-14",
-    modifiedDate: "2026-11-14",
+    modifiedDate: "2026-11-18",
     readTime: "13 min read",
     author: {
-      name: "Spot My Business Local Search & Technical SEO Team",
-      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+      name: "Srijan Seal",
+      role: "Co-Founder & Search Architecture Lead",
+      qualification: "Jadavpur University",
+      linkedin: "https://www.linkedin.com/in/srijan-seal-2055b43a5",
     },
     excerpt:
       "Decision-makers increasingly ask ChatGPT, Google Gemini, Perplexity, and Claude for vendor recommendations—yet generative engines do not guess in a vacuum. Explore 2026 empirical retrieval weights across 13,604 queries, Gemini's 3.5-star exclusion filter, and our 4-pillar GEO/AEO architecture.",
     heroImage: "/images/blog/geo-vs-aeo-vs-seo-architecture-2026.webp",
     heroImageAlt:
       "Diagram comparing Traditional SEO, Answer Engine Optimization AEO, and Generative Engine Optimization GEO",
+    secondaryImages: ["/images/blog/generative-ai-local-ranking-weights-2026.webp"],
     featured: true,
     keyHighlights: [
       "First Page Sage Oct 2026 RAG study (ChatGPT 52.1%, Gemini 26.9%, Claude 10.6%)",
@@ -61,17 +67,23 @@ export const blogPosts: BlogPost[] = [
     targetPillar: "Local SEO",
     targetServiceUrl: "/services/local-seo",
     publishDate: "2026-11-11",
-    modifiedDate: "2026-11-11",
+    modifiedDate: "2026-11-18",
     readTime: "12 min read",
     author: {
-      name: "Spot My Business Local Search & Technical SEO Team",
-      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+      name: "Swapnonil Nath",
+      role: "Co-Founder & Local Visibility Lead",
+      qualification: "IIT Kharagpur",
+      linkedin: "https://www.linkedin.com/in/swapnonil-nath-gmb-expert/",
     },
     excerpt:
-      "City-wide keywords in India are saturated, while hyperlocal neighborhood and 'near me' searches carry immediate buyer intent. Learn our 5-step Local SEO system for connecting your website, service-area pages, and local citations across Kolkata and 20 Indian markets—without thin doorway spam.",
+      "City-wide keywords in India are saturated, while hyperlocal neighborhood and 'near me' searches carry immediate buyer intent. Learn our 5-step Local SEO system for connecting your website, service-area pages, and local citations across Kolkata and Indian markets—without thin doorway spam.",
     heroImage: "/images/blog/local-seo-5-step-strategy-india.webp",
     heroImageAlt:
       "5-Step Local SEO Strategy Diagram connecting Website, Google Business Profile, and Maps",
+    secondaryImages: [
+      "/images/blog/authentic-location-page-vs-doorway.webp",
+      "/images/portfolio/bharat-relocators-preview.webp",
+    ],
     featured: true,
     keyHighlights: [
       "Hyperlocal neighborhood intent vs. city-wide keywords across Kolkata & Indian metros",
@@ -90,17 +102,23 @@ export const blogPosts: BlogPost[] = [
     targetPillar: "Google Maps SEO",
     targetServiceUrl: "/services/google-maps-seo",
     publishDate: "2026-11-08",
-    modifiedDate: "2026-11-08",
+    modifiedDate: "2026-11-18",
     readTime: "11 min read",
     author: {
-      name: "Spot My Business Local Search & Technical SEO Team",
-      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+      name: "Swapnonil Nath",
+      role: "Co-Founder & Local Visibility Lead",
+      qualification: "IIT Kharagpur",
+      linkedin: "https://www.linkedin.com/in/swapnonil-nath-gmb-expert/",
     },
     excerpt:
       "Why do some local businesses rank at the top of the Google Maps 3-Pack while others disappear outside a 1 km radius? Discover the technical differences between Storefront map pins and Service-Area Business (SAB) boundaries, proximity centroid rules, and how to align your website location signals.",
     heroImage: "/images/blog/google-maps-seo-storefront-vs-sab.webp",
     heroImageAlt:
       "Google Maps SEO comparison between storefront pin and service-area boundary",
+    secondaryImages: [
+      "/images/blog/storefront-vs-sab-conversion-flow.webp",
+      "/images/portfolio/science-squad-preview.webp",
+    ],
     featured: true,
     keyHighlights: [
       "Storefront rooftop pin calibration vs. Service-Area Business (SAB) boundary rules",
@@ -119,17 +137,20 @@ export const blogPosts: BlogPost[] = [
     targetPillar: "Google Business Profile Optimization",
     targetServiceUrl: "/services/google-business-profile-optimization",
     publishDate: "2026-11-06",
-    modifiedDate: "2026-11-06",
+    modifiedDate: "2026-11-18",
     readTime: "12 min read",
     author: {
-      name: "Spot My Business Local Search & Technical SEO Team",
-      role: "Local Search & GEO Architecture (Santoshpur, Kolkata)",
+      name: "Swapnonil Nath",
+      role: "Co-Founder & Local Visibility Lead",
+      qualification: "IIT Kharagpur",
+      linkedin: "https://www.linkedin.com/in/swapnonil-nath-gmb-expert/",
     },
     excerpt:
       "A complete 9-step practitioner checklist for auditing and optimizing your Google Business Profile in 2026. Learn how primary and secondary category calibration, structured service menus, Diversity Update URL selection, and ≥3.5★ review velocity govern Google Maps and Gemini AI discovery.",
     heroImage: "/images/blog/gbp-optimization-9-step-checklist.webp",
     heroImageAlt:
       "Google Business Profile Optimization 9-Step Checklist Diagram by Spot My Business",
+    secondaryImages: ["/images/blog/science-squad-gbp-comparison.webp"],
     featured: true,
     keyHighlights: [
       "Sterling Sky primary category field data & Google Diversity Update URL rules",
@@ -147,17 +168,20 @@ export const blogPosts: BlogPost[] = [
     targetPillar: "Google Business Profile Optimization & Google Maps SEO",
     targetServiceUrl: "/services/google-business-profile-optimization",
     publishDate: "2026-10-28",
-    modifiedDate: "2026-10-31",
+    modifiedDate: "2026-11-18",
     readTime: "9 min read",
     author: {
-      name: "Spot My Business Local Search Team",
-      role: "Local Search & GEO Architecture",
+      name: "Sagnik Bhaskar",
+      role: "Co-Founder & Web Engineering Lead",
+      qualification: "Kalyani Government Engineering College",
+      linkedin: "https://www.linkedin.com/in/sagnik-bhaskar-2b42b93a6",
     },
     excerpt:
       "Ranking on Google Maps in Kolkata takes far more than a verified pin. Discover why linked websites that contradict your profile destroy conversion rates, how 2026 on-page signals govern Local Pack inclusion, and the 7-step alignment checklist that turns Maps impressions into direct phone calls.",
     heroImage: "/images/blog/gbp-website-alignment-kolkata.webp",
     heroImageAlt:
       "Google Business Profile and website NAP alignment example for a local business in Santoshpur Kolkata",
+    secondaryImages: ["/images/blog/google-maps-call-growth-kolkata.webp"],
     featured: false,
     keyHighlights: [
       "Whitespark 2026 local ranking factor data breakdown (15% Pack / 33% Organic)",

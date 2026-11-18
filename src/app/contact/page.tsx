@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import Contact from "@/components/Contact";
-import { businessHours } from "@/lib/business";
+import { businessHours, getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Contact Spot My Business | Phone, WhatsApp, Email & Enquiry Form",
@@ -22,8 +22,44 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.spotmybusiness.in/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Contact",
+            item: "https://www.spotmybusiness.in/contact",
+          },
+        ],
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.spotmybusiness.in/contact#webpage",
+        url: "https://www.spotmybusiness.in/contact",
+        name: "Contact Spot My Business",
+        mainEntity: getProviderReference(),
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-primary-bg text-heading">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
       {/* Breadcrumb */}
       <nav
         aria-label="Breadcrumb"

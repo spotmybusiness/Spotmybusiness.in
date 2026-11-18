@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getProviderReference } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Internet Marketing Services in Kolkata | Spot My Business",
+  title: "Centralized Digital Presence & SEO Management in Kolkata | Spot My Business",
   description:
-    "Spot My Business provides internet marketing services in Kolkata for local businesses - combining Local SEO, Google Business Profile, Maps, and website solutions.",
+    "Unify custom web engineering, Local SEO, Google Business Profile optimization, Google Maps visibility, and Search Console telemetry under one coordinated strategy in Kolkata.",
   alternates: {
     canonical: "https://www.spotmybusiness.in/services/internet-marketing",
   },
   openGraph: {
-    title: "Internet Marketing Services in Kolkata | Spot My Business",
+    title: "Centralized Digital Presence & SEO Management in Kolkata | Spot My Business",
     description:
-      "Spot My Business provides internet marketing services in Kolkata for local businesses - combining Local SEO, Google Business Profile, Maps, and website solutions.",
+      "Unify custom web engineering, Local SEO, Google Business Profile optimization, Google Maps visibility, and Search Console telemetry under one coordinated strategy in Kolkata.",
     url: "https://www.spotmybusiness.in/services/internet-marketing",
     siteName: "Spot My Business",
     type: "website",
@@ -40,32 +41,18 @@ export default function InternetMarketingPage() {
           {
             "@type": "ListItem",
             position: 3,
-            name: "Internet Marketing",
+            name: "Centralized Digital Presence & SEO Management",
             item: "https://www.spotmybusiness.in/services/internet-marketing",
           },
         ],
       },
       {
         "@type": "Service",
-        name: "Internet Marketing Service",
+        name: "Centralized Digital Presence & SEO Management",
         description:
-          "Comprehensive internet marketing services in Kolkata encompassing Local SEO, Google Business Profile optimization, Google Maps visibility, and performance website development.",
+          "Unified multi-channel digital presence coordination encompassing Local SEO, Google Business Profile optimization, Google Maps visibility, Search Console tracking, and responsive web engineering.",
         url: "https://www.spotmybusiness.in/services/internet-marketing",
-        provider: {
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          name: "Spot My Business",
-          url: "https://www.spotmybusiness.in",
-          telephone: ["+91 9007960333", "+91 8597913452"],
-          email: "smb.spot.my.business@gmail.com",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Middle Rd, Sen Para, Santoshpur",
-            addressLocality: "Kolkata",
-            addressRegion: "West Bengal",
-            postalCode: "700075",
-            addressCountry: "IN",
-          },
-        },
+        provider: getProviderReference(),
       },
     ],
   };
@@ -185,7 +172,7 @@ export default function InternetMarketingPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-12 md:px-12 md:pt-32 md:pb-16">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-text">
           <ol className="flex flex-wrap gap-2">
@@ -201,24 +188,20 @@ export default function InternetMarketingPage() {
               </Link>
             </li>
             <li aria-hidden="true">→</li>
-            <li aria-current="page">Internet Marketing</li>
+            <li aria-current="page">Centralized Digital Presence</li>
           </ol>
         </nav>
 
         {/* Hero Section */}
         <section className="max-w-3xl py-16 md:py-24">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-light-bronze">
-            Internet Marketing Service
+            Multi-Channel Governance &amp; SEO
           </p>
           <h1 className="mt-4 text-4xl font-heading font-bold leading-tight md:text-6xl">
-            Internet Marketing Services in Kolkata for Local Businesses
+            Centralized Digital Presence &amp; Multi-Channel SEO Management
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-text">
-            Spot My Business provides end-to-end internet marketing services designed
-            specifically for local businesses. Based in Kolkata, we integrate Local SEO,
-            Google Business Profile optimization, Google Maps visibility, conversion-driven
-            websites, and reputation management into a unified strategy that drives customer
-            trust and genuine enquiries.
+            Local businesses often end up with a web developer updating pages in one corner, someone else tweaking a Google Business Profile in another, and nobody watching Search Console. From our Kolkata base, Spot My Business coordinates your website, Local SEO, Maps signals, and reputation workflows under one unified strategy.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -397,15 +380,38 @@ export default function InternetMarketingPage() {
               Search Console Management
             </Link>
           </div>
+
+          <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
+              Practitioner Field Guides
+            </p>
+            <p className="mt-2 text-sm text-gray-text">
+              See how synchronizing your Google Business Profile, website landing pages, and AI search entities turns visibility into phone enquiries:
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Why Your GBP Gets No Calls in Kolkata →
+              </Link>
+              <Link
+                href="/blog/local-seo-strategy-kolkata-indian-businesses"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
+              >
+                5-Step Local SEO Strategy for Indian Businesses →
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Contact CTA */}
         <section className="rounded-2xl bg-secondary-bg p-8 md:p-12 border border-border-color">
           <h2 className="text-3xl font-heading font-bold">
-            Strengthen Your Internet Marketing Strategy in Kolkata
+            Bring your website, Maps listing, and search visibility into alignment
           </h2>
           <p className="mt-3 max-w-2xl text-gray-text">
-            Ready to enhance your local search visibility, attract nearby clients, and build a reliable digital presence? Contact our Kolkata-based team to discuss your goals.
+            If your digital channels feel disconnected, our Kolkata team can review your website, Google Business Profile, and Search Console setup and map out practical next steps—without ranking guarantees or locked retainers.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
