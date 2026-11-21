@@ -218,3 +218,26 @@ body {
   color: #16a34a !important;
 }
 
+/* ================================================
+   BLOG EDITORIAL TOKENS (Dual-Theme Safe)
+   Applies the warm editorial palette in Light Mode
+   while keeping Dark Mode contrast intact.
+   ================================================ */
+.blog-editorial {
+  --blog-growth: #7B8E77;
+}
+
+[data-theme="light"] .blog-editorial {
+  --color-primary-bg: #F6F3EF;
+  --color-secondary-bg: #E7E2DC;
+  --color-bronze: #5A4030;
+  --color-light-bronze: #5A4030;
+  --color-champagne: #8B6B57;
+  --color-heading: #2D1F18;
+  --color-white-text: #2D1F18;
+  --color-gray-text: #5C5853;
+  --color-border-color: #D5CCC2;
+  --blog-growth: #7B8E77;
+}
+
+

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProviderReference } from "@/lib/business";
-import { getAllBlogPostSlugs, getBlogPostBySlug } from "@/lib/blog";
-import AiSearchOptimizationGeoVsAeoVsSeoPost from "@/app/blog/posts/AiSearchOptimizationGeoVsAeoVsSeoPost";
-import LocalSeoStrategyIndiaPost from "@/app/blog/posts/LocalSeoStrategyIndiaPost";
-import GoogleMapsSeoStorefrontVsSabPost from "@/app/blog/posts/GoogleMapsSeoStorefrontVsSabPost";
-import GbpOptimizationChecklistPost from "@/app/blog/posts/GbpOptimizationChecklistPost";
-import KolkataGbpNoCallsPost from "@/app/blog/posts/KolkataGbpNoCallsPost";
+import {
+  getAllBlogPostSlugs,
+  getBlogPostBySlug,
+  getRelatedBlogPosts,
+} from "@/lib/blog";
+import { blogPostRegistry } from "@/app/blog/posts/registry";
+import SocialShareBar from "@/components/blog/SocialShareBar";
+import RelatedArticlesSection from "@/components/blog/RelatedArticlesSection";
 
 export const dynamicParams = false;
 
@@ -30,6 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const canonicalUrl = `https://www.spotmybusiness.in/blog/${post.slug}`;
+  const absoluteImageUrl = `https://www.spotmybusiness.in${post.heroImage}`;
 
   return {
     title: {
@@ -50,12 +53,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author.name],
       images: [
         {
-          url: `https://www.spotmybusiness.in${post.heroImage}`,
+          url: absoluteImageUrl,
           width: 1200,
           height: 675,
           alt: post.heroImageAlt,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@spotmybusinesss",
+      creator: "@spotmybusinesss",
+      title: post.metaTitle,
+      description: post.metaDescription,
+      images: [absoluteImageUrl],
     },
   };
 }
@@ -68,7 +79,14 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const PostComponent = blogPostRegistry[post.slug];
+
+  if (!PostComponent) {
+    notFound();
+  }
+
   const canonicalUrl = `https://www.spotmybusiness.in/blog/${post.slug}`;
+  const relatedPosts = getRelatedBlogPosts(post.slug, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -138,7 +156,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   };
 
   return (
-    <main className="bg-primary-bg text-heading">
+    <main className="blog-editorial bg-primary-bg text-heading">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -146,17 +164,11 @@ export default async function BlogPostPage({ params }: PageProps) {
         }}
       />
 
-      {post.slug === "ai-search-optimization-geo-vs-aeo-vs-seo" ? (
-        <AiSearchOptimizationGeoVsAeoVsSeoPost post={post} />
-      ) : post.slug === "local-seo-strategy-kolkata-indian-businesses" ? (
-        <LocalSeoStrategyIndiaPost post={post} />
-      ) : post.slug === "google-maps-seo-service-area-businesses" ? (
-        <GoogleMapsSeoStorefrontVsSabPost post={post} />
-      ) : post.slug === "google-business-profile-optimization-checklist" ? (
-        <GbpOptimizationChecklistPost post={post} />
-      ) : (
-        <KolkataGbpNoCallsPost post={post} />
-      )}
+      <PostComponent post={post} />
+
+      <SocialShareBar title={post.title} url={canonicalUrl} />
+
+      <RelatedArticlesSection posts={relatedPosts} />
     </main>
   );
 }

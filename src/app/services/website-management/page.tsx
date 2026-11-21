@@ -303,18 +303,23 @@ export default function WebsiteManagementPage() {
               Search Console Management
             </Link>
           </div>
-
           <div className="mt-8 rounded-xl border border-border-color bg-secondary-bg p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-light-bronze">
               Practitioner Field Guides
             </p>
             <p className="mt-2 text-sm text-gray-text">
-              See why outdated website hours, broken NAP details, and stale landing pages quietly hurt Google Maps calls:
+              Understand recurring Indian AMC and Year-1 TCO benchmarks—and see why stale website hours quietly hurt Google Maps calls:
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link
-                href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                href="/blog/website-development-price-comparison-india"
                 className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Website Development &amp; AMC Cost Guide in India [2026] →
+              </Link>
+              <Link
+                href="/blog/why-your-google-business-profile-isnt-getting-calls-in-kolkata"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
               >
                 Fixing Website &amp; GBP Contradictions →
               </Link>

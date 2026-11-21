@@ -1212,6 +1212,211 @@ const generativeAiWeightsSvg = `
 </svg>
 `;
 
+// 11. Article 03 Hero: 2026 Website Development Price Comparison in India
+const webDevCostIndiaSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="240" cy="300" r="220" fill="#8B5E3C" fill-opacity="0.09"/>
+  <circle cx="960" cy="340" r="240" fill="#7B8E77" fill-opacity="0.1"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • 2026 INDIA WEB ENGINEERING COST BENCHMARK</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="25" font-weight="700">Website Development Price Comparison in India (2026): DIY vs. Freelancer vs. Agency</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Verified 2026 INR tiers across 49 vendor rate cards, SaaS checkouts &amp; agency audits (excl. 18% GST under SAC 998314)</text>
+
+  <!-- 4 Tier Cards (y=152) -->
+  <g transform="translate(60, 152)">
+    <!-- Card 1: DIY -->
+    <g transform="translate(0, 0)">
+      <rect width="256" height="360" rx="12" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.5"/>
+      <rect width="256" height="44" rx="12" fill="#222222"/>
+      <text x="20" y="28" fill="#E7D3B0" font-size="11.5" font-weight="700">01 • DIY BUILDERS</text>
+      <text x="20" y="76" fill="#F8F8F8" font-size="22" font-weight="700">₹1.7k – ₹19k/yr</text>
+      <text x="20" y="98" fill="#9CA3AF" font-size="11">Entry plans; up to ₹76.8k+/yr</text>
+      <text x="20" y="113" fill="#9CA3AF" font-size="11">with Shopify Basic + lean apps</text>
+      <line x1="20" y1="132" x2="236" y2="132" stroke="#2B2B2B"/>
+      <text x="20" y="156" fill="#D4A373" font-size="10" font-weight="700">VERIFIED 2026 PLATFORMS</text>
+      <text x="20" y="178" fill="#E5E7EB" font-size="11.5">• Shopify Basic: ₹1,499/mo*</text>
+      <text x="20" y="198" fill="#E5E7EB" font-size="11.5">• Webflow CMS: $25/mo*</text>
+      <text x="20" y="218" fill="#E5E7EB" font-size="11.5">• WordPress.com: ₹160–640/mo</text>
+      <text x="20" y="238" fill="#E5E7EB" font-size="11.5">• Wix: ₹199–₹1,599/mo (IN)</text>
+      <rect x="20" y="290" width="216" height="48" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="32" y="311" fill="#D4A373" font-size="10" font-weight="700">BEST FOR:</text>
+      <text x="32" y="328" fill="#CFCFCF" font-size="10.5">Solopreneurs &amp; MVP validation</text>
+    </g>
+
+    <!-- Card 2: Freelancer -->
+    <g transform="translate(274, 0)">
+      <rect width="256" height="360" rx="12" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.5"/>
+      <rect width="256" height="44" rx="12" fill="#222222"/>
+      <text x="20" y="28" fill="#E7D3B0" font-size="11.5" font-weight="700">02 • FREELANCERS</text>
+      <text x="20" y="76" fill="#F8F8F8" font-size="22" font-weight="700">₹5k – ₹1.8L+</text>
+      <text x="20" y="98" fill="#9CA3AF" font-size="11">Tier-2/3: ₹300–₹1,200/hr</text>
+      <text x="20" y="113" fill="#9CA3AF" font-size="11">Metro Senior: ₹1,500–₹4,000/hr</text>
+      <line x1="20" y1="132" x2="236" y2="132" stroke="#2B2B2B"/>
+      <text x="20" y="156" fill="#D4A373" font-size="10" font-weight="700">SCOPE REALITY</text>
+      <text x="20" y="178" fill="#E5E7EB" font-size="11.5">• Basic 5–8 pg: ₹10k–₹45k</text>
+      <text x="20" y="198" fill="#E5E7EB" font-size="11.5">• Multi-page CMS: ₹25k–₹1.2L</text>
+      <text x="20" y="218" fill="#E5E7EB" font-size="11.5">• Kolkata avg: ₹800–₹2,500/hr</text>
+      <text x="20" y="238" fill="#FCA5A5" font-size="11.5">• Sub-₹10k skips SEO &amp; QA</text>
+      <rect x="20" y="290" width="216" height="48" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="32" y="311" fill="#D4A373" font-size="10" font-weight="700">BEST FOR:</text>
+      <text x="32" y="328" fill="#CFCFCF" font-size="10.5">Tightly scoped brochure sites</text>
+    </g>
+
+    <!-- Card 3: Small Boutique Agency -->
+    <g transform="translate(548, 0)">
+      <rect width="256" height="360" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.8"/>
+      <rect width="256" height="44" rx="12" fill="#241D16"/>
+      <text x="20" y="28" fill="#D4A373" font-size="11.5" font-weight="700">03 • BOUTIQUE AGENCY</text>
+      <text x="20" y="76" fill="#F8F8F8" font-size="22" font-weight="700">₹40k – ₹5.0L</text>
+      <text x="20" y="98" fill="#E7D3B0" font-size="11">5–15 Staff • ₹1,500–₹3,500/hr</text>
+      <text x="20" y="113" fill="#9CA3AF" font-size="11">SMB sweet spot: ₹70k–₹2.0L</text>
+      <line x1="20" y1="132" x2="236" y2="132" stroke="#2B2B2B"/>
+      <text x="20" y="156" fill="#7B8E77" font-size="10" font-weight="700">WHAT IS INCLUDED</text>
+      <text x="20" y="178" fill="#E5E7EB" font-size="11.5">• Custom UI/UX &amp; mobile QA</text>
+      <text x="20" y="198" fill="#E5E7EB" font-size="11.5">• Technical SEO &amp; JSON-LD</text>
+      <text x="20" y="218" fill="#E5E7EB" font-size="11.5">• Client-owned domain/code</text>
+      <text x="20" y="238" fill="#E5E7EB" font-size="11.5">• Structured AMC (₹2k–15k/mo)</text>
+      <rect x="20" y="290" width="216" height="48" rx="8" fill="#182319" stroke="#7B8E77"/>
+      <text x="32" y="311" fill="#A3C49D" font-size="10" font-weight="700">BEST FOR:</text>
+      <text x="32" y="328" fill="#F8F8F8" font-size="10.5">Local SMEs &amp; growing D2C</text>
+    </g>
+
+    <!-- Card 4: Mid-Sized Agency -->
+    <g transform="translate(822, 0)">
+      <rect width="258" height="360" rx="12" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.5"/>
+      <rect width="258" height="44" rx="12" fill="#222222"/>
+      <text x="20" y="28" fill="#E7D3B0" font-size="11.5" font-weight="700">04 • MID-SIZED AGENCY</text>
+      <text x="20" y="76" fill="#F8F8F8" font-size="22" font-weight="700">₹1.5L – ₹35L+</text>
+      <text x="20" y="98" fill="#9CA3AF" font-size="11">30–150 Staff • ₹2,500–₹5,500/hr</text>
+      <text x="20" y="113" fill="#9CA3AF" font-size="11">Enterprise: up to ₹1Cr+</text>
+      <line x1="20" y1="132" x2="238" y2="132" stroke="#2B2B2B"/>
+      <text x="20" y="156" fill="#D4A373" font-size="10" font-weight="700">ENGINEERING SCOPE</text>
+      <text x="20" y="178" fill="#E5E7EB" font-size="11.5">• Custom Next.js / React apps</text>
+      <text x="20" y="198" fill="#E5E7EB" font-size="11.5">• ERP / CRM / API pipelines</text>
+      <text x="20" y="218" fill="#E5E7EB" font-size="11.5">• High-SKU e-commerce</text>
+      <text x="20" y="238" fill="#E5E7EB" font-size="11.5">• Dedicated SLAs &amp; DevOps</text>
+      <rect x="20" y="290" width="218" height="48" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="32" y="311" fill="#D4A373" font-size="10" font-weight="700">BEST FOR:</text>
+      <text x="32" y="328" fill="#CFCFCF" font-size="10.5">Funded SaaS &amp; B2B portals</text>
+    </g>
+  </g>
+
+  <!-- Bottom Regional & GST Bar -->
+  <rect x="60" y="538" width="1080" height="82" rx="10" fill="#181818" stroke="#2B2B2B"/>
+  <text x="84" y="566" fill="#D4A373" font-size="11.5" font-weight="700">KOLKATA VS. TIER-1 METRO RATE GAP:</text>
+  <text x="342" y="566" fill="#F8F8F8" font-size="11.5">Kolkata freelancers (₹800–₹2,500/hr) sit 38%–47% below Bengaluru/Mumbai/Delhi-NCR (₹1,500–₹4,000/hr).</text>
+  <text x="84" y="590" fill="#A3C49D" font-size="11" font-weight="600">TAX &amp; TCO REMINDER:</text>
+  <text x="225" y="590" fill="#CFCFCF" font-size="11">All registered agency invoices add 18% GST (SAC 998314). Always evaluate Year-1 Total Cost of Ownership (Domain + Hosting + AMC).</text>
+  <text x="84" y="610" fill="#9CA3AF" font-size="10">*Annual billing base tariff before 18% GST • Source: Spot My Business 2026 India Web Pricing Research Synthesis (49 Sources)</text>
+</svg>
+`;
+
+// 12. Article 03 Visual 1: Hidden Costs, 18% GST & Shopify 4.36% Fee Stacking + Year-1 TCO
+const hiddenCostsTcoIndiaSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="300" cy="340" r="230" fill="#8B5E3C" fill-opacity="0.08"/>
+  <circle cx="900" cy="340" r="240" fill="#7B8E77" fill-opacity="0.09"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">HIDDEN COST &amp; YEAR-1 TCO BREAKDOWN • INDIA 2026</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24.5" font-weight="700">Why Sticker Quotes Mislead: Year-1 TCO &amp; Shopify India Fee Stacking</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Exact arithmetic for an SMB WordPress build (₹60,000 base) vs. Shopify Basic prepaid order deductions in India</text>
+
+  <!-- Left Panel: Illustrative Year-1 TCO on a ₹60,000 SMB Build -->
+  <g transform="translate(60, 152)">
+    <rect width="525" height="430" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.6"/>
+    <rect width="525" height="46" rx="12" fill="#231D16"/>
+    <text x="24" y="29" fill="#E7D3B0" font-size="12" font-weight="700">EXAMPLE 1: YEAR-1 TCO FOR A ₹60,000 CUSTOM SMB WEBSITE</text>
+
+    <g transform="translate(22, 66)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#CFCFCF" font-size="11.5" font-weight="600">1. Custom SMB WordPress / CMS Base Build</text>
+      <text x="465" y="22" fill="#F8F8F8" font-size="13" font-weight="700" text-anchor="end">₹60,000</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">+ Mandatory 18% GST (SAC 998314 = ₹10,800) → ₹70,800 invoiced</text>
+    </g>
+
+    <g transform="translate(22, 128)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#CFCFCF" font-size="11.5" font-weight="600">2. Domain (.in / .com) + Reliable SMB Hosting (Yr 1)</text>
+      <text x="465" y="22" fill="#D4A373" font-size="13" font-weight="700" text-anchor="end">₹3,200 – ₹20,000</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">BigRock / GoDaddy domain + managed shared or cloud VPS</text>
+    </g>
+
+    <g transform="translate(22, 190)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#CFCFCF" font-size="11.5" font-weight="600">3. Premium Theme / Builder / Essential Plugin Licenses</text>
+      <text x="465" y="22" fill="#D4A373" font-size="13" font-weight="700" text-anchor="end">₹3,000 – ₹20,000</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">Annual renewals for security, backup, caching &amp; form plugins</text>
+    </g>
+
+    <g transform="translate(22, 252)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="22" fill="#CFCFCF" font-size="11.5" font-weight="600">4. Basic Annual Maintenance Contract (₹2k–₹5k/mo)</text>
+      <text x="465" y="22" fill="#D4A373" font-size="13" font-weight="700" text-anchor="end">₹24,000 – ₹60,000</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">Core updates, uptime checks, SSL &amp; malware patching</text>
+    </g>
+
+    <rect x="22" y="324" width="481" height="82" rx="10" fill="#182319" stroke="#7B8E77" stroke-width="1.4"/>
+    <text x="40" y="352" fill="#A3C49D" font-size="11" font-weight="700" letter-spacing="0.5">TRUE YEAR-1 TOTAL COST OF OWNERSHIP (BEFORE COPYWRITING)</text>
+    <text x="40" y="384" fill="#F8F8F8" font-size="22" font-weight="700">₹1,01,000 – ₹1,70,800</text>
+    <text x="465" y="384" fill="#A3C49D" font-size="11.5" font-weight="700" text-anchor="end">1.7x – 2.8x Base Quote</text>
+  </g>
+
+  <!-- Right Panel: Shopify India Stacked Transaction Fee Anatomy -->
+  <g transform="translate(615, 152)">
+    <rect width="525" height="430" rx="12" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.5"/>
+    <rect width="525" height="46" rx="12" fill="#261919"/>
+    <text x="24" y="29" fill="#FCA5A5" font-size="12" font-weight="700">EXAMPLE 2: SHOPIFY BASIC PREPAID ORDER MATH IN INDIA (₹1,000)</text>
+
+    <g transform="translate(22, 66)">
+      <rect width="481" height="72" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#F8F8F8" font-size="12" font-weight="700">Why Fees Stack on Shopify India</text>
+      <text x="16" y="44" fill="#CFCFCF" font-size="11">Shopify Payments is unavailable in India — stores pay Shopify's</text>
+      <text x="16" y="60" fill="#CFCFCF" font-size="11">3rd-party fee PLUS domestic gateway charges (Razorpay / Cashfree).</text>
+    </g>
+
+    <g transform="translate(22, 152)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#3F2323"/>
+      <text x="16" y="22" fill="#FCA5A5" font-size="11.5" font-weight="600">Shopify Basic 3rd-Party Transaction Fee (2.0%)</text>
+      <text x="465" y="22" fill="#FCA5A5" font-size="13" font-weight="700" text-anchor="end">- ₹20.00</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">Drops to 1.0% on Grow (₹5,599/mo) &amp; 0.6% on Advanced (₹22,680/mo)</text>
+    </g>
+
+    <g transform="translate(22, 214)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#3F2323"/>
+      <text x="16" y="22" fill="#FCA5A5" font-size="11.5" font-weight="600">Indian Payment Gateway (~2.0% + 18% GST = ~2.36%)</text>
+      <text x="465" y="22" fill="#FCA5A5" font-size="13" font-weight="700" text-anchor="end">- ₹23.60</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">Total stacked deduction: 4.36% per ₹1,000 prepaid order (₹956.40 net)</text>
+    </g>
+
+    <g transform="translate(22, 276)">
+      <rect width="481" height="52" rx="8" fill="#141414" stroke="#8B5E3C"/>
+      <text x="16" y="22" fill="#D4A373" font-size="11.5" font-weight="600">Monthly Base + Paid Apps Reality Check</text>
+      <text x="465" y="22" fill="#E7D3B0" font-size="13" font-weight="700" text-anchor="end">₹6,400+/mo</text>
+      <text x="16" y="40" fill="#9CA3AF" font-size="10.5">₹1,499 base + 18% GST + domain + 3 essential paid Shopify apps</text>
+    </g>
+
+    <rect x="22" y="342" width="481" height="64" rx="10" fill="#1F1B17" stroke="#8B5E3C"/>
+    <text x="38" y="368" fill="#D4A373" font-size="11" font-weight="700">BREAK-EVEN INSIGHT (BASIC → GROW UPGRADE):</text>
+    <text x="38" y="390" fill="#F8F8F8" font-size="11.5">Upgrading to Grow pays for itself above ~₹4.1L/mo prepaid sales (yearly).</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="618" fill="#9CA3AF" font-size="11" text-anchor="middle">Verified Oct–Nov 2026 Tariffs • Razorpay, Shopify India (shopify.com/in/pricing) &amp; Indian Agency Rate Card Audits</text>
+</svg>
+`;
+
 async function generate() {
   const file1 = path.join(outputDir, 'gbp-website-alignment-kolkata.webp');
   const file2 = path.join(outputDir, 'google-maps-call-growth-kolkata.webp');
@@ -1223,6 +1428,8 @@ async function generate() {
   const file8 = path.join(outputDir, 'authentic-location-page-vs-doorway.webp');
   const file9 = path.join(outputDir, 'geo-vs-aeo-vs-seo-architecture-2026.webp');
   const file10 = path.join(outputDir, 'generative-ai-local-ranking-weights-2026.webp');
+  const file11 = path.join(outputDir, 'website-development-cost-india-2026.webp');
+  const file12 = path.join(outputDir, 'shopify-gst-hidden-costs-india-2026.webp');
 
   console.log('Rendering gbp-website-alignment-kolkata.webp...');
   await sharp(Buffer.from(gbpSvg))
@@ -1283,6 +1490,18 @@ async function generate() {
     .webp({ quality: 56, effort: 6 })
     .toFile(file10);
   console.log('Saved:', file10);
+
+  console.log('Rendering website-development-cost-india-2026.webp...');
+  await sharp(Buffer.from(webDevCostIndiaSvg))
+    .webp({ quality: 56, effort: 6 })
+    .toFile(file11);
+  console.log('Saved:', file11);
+
+  console.log('Rendering shopify-gst-hidden-costs-india-2026.webp...');
+  await sharp(Buffer.from(hiddenCostsTcoIndiaSvg))
+    .webp({ quality: 56, effort: 6 })
+    .toFile(file12);
+  console.log('Saved:', file12);
 }
 
 generate().catch(err => {

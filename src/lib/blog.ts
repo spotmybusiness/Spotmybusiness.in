@@ -9,6 +9,9 @@ export interface BlogPost {
   publishDate: string;
   modifiedDate: string;
   readTime: string;
+  status?: "published" | "draft";
+  keywords?: string[];
+  relatedSlugs?: string[];
   author: {
     name: string;
     role: string;
@@ -25,6 +28,52 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "website-development-price-comparison-india",
+    title:
+      "Website Development Price Comparison in India: Freelancer vs Agency vs DIY Website Builders (2026 Guide)",
+    metaTitle: "Website Development Cost in India [2026 Price Comparison]",
+    metaDescription:
+      "Compare 2026 website development prices in India across DIY builders, freelancers, and agencies. Includes INR ranges, 18% GST, Shopify fees, and Kolkata rates.",
+    category: "Website Engineering & Pricing",
+    targetPillar: "Website Development & Management",
+    targetServiceUrl: "/services/website-development",
+    publishDate: "2026-11-22",
+    modifiedDate: "2026-11-22",
+    readTime: "14 min read",
+    status: "published",
+    keywords: [
+      "website development cost in india",
+      "freelancer vs agency website india",
+      "diy website builder cost india",
+      "website design cost in kolkata",
+      "shopify pricing india",
+      "website maintenance cost india",
+    ],
+    relatedSlugs: [
+      "ai-search-optimization-geo-vs-aeo-vs-seo",
+      "local-seo-strategy-kolkata-indian-businesses",
+      "google-business-profile-optimization-checklist",
+    ],
+    author: {
+      name: "Sagnik Bhaskar",
+      role: "Co-Founder & Web Engineering Lead",
+      qualification: "Kalyani Government Engineering College",
+      linkedin: "https://www.linkedin.com/in/sagnik-bhaskar-2b42b93a6",
+    },
+    excerpt:
+      "Why do two quotes for the same business website in India differ by 10x—from ₹12,000 to ₹1,20,000+? Compare verified 2026 INR pricing across DIY builders (Shopify, Webflow, Wix, WordPress.com), freelancers, and boutique agencies, plus 18% GST, hidden recurring fees, and Kolkata vs. metro rates.",
+    heroImage: "/images/blog/website-development-cost-india-2026.webp",
+    heroImageAlt:
+      "2026 Website Development Price Comparison in India across DIY Builders, Freelancers, Boutique Agencies, and Mid-Sized Agencies",
+    secondaryImages: ["/images/blog/shopify-gst-hidden-costs-india-2026.webp"],
+    featured: true,
+    keyHighlights: [
+      "Verified 2026 INR tiers across 49 vendor rate cards, SaaS checkouts & agency audits",
+      "Hidden cost math: 18% GST (SAC 998314), Shopify 4.36% fee stacking & Year-1 TCO",
+      "Kolkata & West Bengal vs. Bengaluru, Mumbai & Delhi-NCR rate benchmarks",
+    ],
+  },
+  {
     slug: "ai-search-optimization-geo-vs-aeo-vs-seo",
     title:
       "AI Search Optimization Explained: How GEO, AEO, and Traditional SEO Work Together in 2026",
@@ -37,6 +86,18 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-11-14",
     modifiedDate: "2026-11-18",
     readTime: "13 min read",
+    status: "published",
+    keywords: [
+      "generative engine optimization",
+      "geo vs aeo vs seo",
+      "ai search optimization",
+      "chatgpt gemini local business ranking",
+    ],
+    relatedSlugs: [
+      "website-development-price-comparison-india",
+      "local-seo-strategy-kolkata-indian-businesses",
+      "google-business-profile-optimization-checklist",
+    ],
     author: {
       name: "Srijan Seal",
       role: "Co-Founder & Search Architecture Lead",
@@ -69,6 +130,18 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-11-11",
     modifiedDate: "2026-11-18",
     readTime: "12 min read",
+    status: "published",
+    keywords: [
+      "local seo kolkata",
+      "hyperlocal seo india",
+      "near me searches",
+      "anti doorway location pages",
+    ],
+    relatedSlugs: [
+      "google-maps-seo-service-area-businesses",
+      "google-business-profile-optimization-checklist",
+      "ai-search-optimization-geo-vs-aeo-vs-seo",
+    ],
     author: {
       name: "Swapnonil Nath",
       role: "Co-Founder & Local Visibility Lead",
@@ -104,6 +177,18 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-11-08",
     modifiedDate: "2026-11-18",
     readTime: "11 min read",
+    status: "published",
+    keywords: [
+      "google maps seo",
+      "service area business gbp",
+      "storefront vs sab",
+      "local pack ranking",
+    ],
+    relatedSlugs: [
+      "local-seo-strategy-kolkata-indian-businesses",
+      "google-business-profile-optimization-checklist",
+      "why-your-google-business-profile-isnt-getting-calls-in-kolkata",
+    ],
     author: {
       name: "Swapnonil Nath",
       role: "Co-Founder & Local Visibility Lead",
@@ -133,12 +218,24 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Google Business Profile Optimization [2026 Checklist]",
     metaDescription:
       "Audit and optimize your Google Business Profile with our 9-step checklist. Align categories, services, NAP accuracy, and reviews in 2026.",
-    category: "Google Maps & Local SEO",
+    category: "Google Business Profile",
     targetPillar: "Google Business Profile Optimization",
     targetServiceUrl: "/services/google-business-profile-optimization",
     publishDate: "2026-11-06",
     modifiedDate: "2026-11-18",
     readTime: "12 min read",
+    status: "published",
+    keywords: [
+      "google business profile optimization",
+      "gbp checklist 2026",
+      "gbp primary secondary categories",
+      "local pack nap accuracy",
+    ],
+    relatedSlugs: [
+      "google-maps-seo-service-area-businesses",
+      "why-your-google-business-profile-isnt-getting-calls-in-kolkata",
+      "local-seo-strategy-kolkata-indian-businesses",
+    ],
     author: {
       name: "Swapnonil Nath",
       role: "Co-Founder & Local Visibility Lead",
@@ -160,16 +257,28 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "why-your-google-business-profile-isnt-getting-calls-in-kolkata",
-    title: "Why Your Google Business Profile Isn't Getting Calls in Kolkata [2026 Audit Checklist]",
+    title:
+      "Why Your Google Business Profile Isn't Getting Calls in Kolkata [2026 Audit Checklist]",
     metaTitle: "Why Your GBP Gets No Calls in Kolkata [2026 Audit]",
     metaDescription:
       "Ranking on Google Maps in Kolkata takes more than verifying a pin. See our 7-step GBP & website alignment checklist with real local Search Console snapshots.",
-    category: "Google Maps & Local SEO",
+    category: "Google Business Profile",
     targetPillar: "Google Business Profile Optimization & Google Maps SEO",
     targetServiceUrl: "/services/google-business-profile-optimization",
     publishDate: "2026-10-28",
     modifiedDate: "2026-11-18",
     readTime: "9 min read",
+    status: "published",
+    keywords: [
+      "google business profile calls kolkata",
+      "gbp website alignment",
+      "kolkata local seo audit",
+    ],
+    relatedSlugs: [
+      "google-business-profile-optimization-checklist",
+      "google-maps-seo-service-area-businesses",
+      "local-seo-strategy-kolkata-indian-businesses",
+    ],
     author: {
       name: "Sagnik Bhaskar",
       role: "Co-Founder & Web Engineering Lead",
@@ -192,13 +301,62 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
-  return blogPosts;
+  return blogPosts.filter((post) => post.status !== "draft");
 }
 
 export function getAllBlogPostSlugs(): string[] {
-  return blogPosts.map((post) => post.slug);
+  return getAllBlogPosts().map((post) => post.slug);
 }
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find((post) => post.slug === slug);
+  return getAllBlogPosts().find((post) => post.slug === slug);
+}
+
+export function getAllBlogCategories(): string[] {
+  const categories = new Set<string>();
+  for (const post of getAllBlogPosts()) {
+    categories.add(post.category);
+  }
+  return Array.from(categories);
+}
+
+export function getRelatedBlogPosts(currentSlug: string, limit = 3): BlogPost[] {
+  const published = getAllBlogPosts();
+  const current = published.find((p) => p.slug === currentSlug);
+  const candidates = published.filter((p) => p.slug !== currentSlug);
+
+  if (!current) {
+    return candidates.slice(0, limit);
+  }
+
+  const ordered: BlogPost[] = [];
+  const seen = new Set<string>();
+
+  if (current.relatedSlugs) {
+    for (const slug of current.relatedSlugs) {
+      const match = candidates.find((p) => p.slug === slug);
+      if (match && !seen.has(match.slug)) {
+        ordered.push(match);
+        seen.add(match.slug);
+      }
+    }
+  }
+
+  for (const post of candidates) {
+    if (ordered.length >= limit) break;
+    if (!seen.has(post.slug) && post.category === current.category) {
+      ordered.push(post);
+      seen.add(post.slug);
+    }
+  }
+
+  for (const post of candidates) {
+    if (ordered.length >= limit) break;
+    if (!seen.has(post.slug)) {
+      ordered.push(post);
+      seen.add(post.slug);
+    }
+  }
+
+  return ordered.slice(0, limit);
 }
