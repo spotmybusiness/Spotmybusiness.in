@@ -1417,6 +1417,210 @@ const hiddenCostsTcoIndiaSvg = `
 </svg>
 `;
 
+// 13. Post 6 Hero: Suspended Google Business Profile Reinstatement Roadmap (India 2026)
+const gbpSuspensionRoadmapSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="240" cy="300" r="220" fill="#8B5E3C" fill-opacity="0.09"/>
+  <circle cx="960" cy="340" r="240" fill="#7B8E77" fill-opacity="0.1"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">SPOT MY BUSINESS • GOOGLE BUSINESS PROFILE REINSTATEMENT PROTOCOL (INDIA 2026)</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="25" font-weight="700">Fixing a Suspended Google Business Profile in India: The 5-Step Recovery System</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Fix guideline triggers first, prepare exact 1:1 NAP Indian documents, and submit within Google's 60-minute appeal window</text>
+
+  <!-- Critical Warning Strip -->
+  <g transform="translate(60, 146)">
+    <rect width="1080" height="66" rx="10" fill="#261919" stroke="#EF4444" stroke-width="1.3"/>
+    <text x="24" y="28" fill="#FCA5A5" font-size="11" font-weight="700" letter-spacing="0.8">RULE #1 BEFORE CLICKING APPEAL:</text>
+    <text x="265" y="28" fill="#F8F8F8" font-size="12.5" font-weight="600">Never create a duplicate profile while suspended, and never open the Evidence Tool until every PDF is ready.</text>
+    <text x="24" y="50" fill="#CFCFCF" font-size="11">Google enforces a strict 60-minute evidence upload session—missing documents or unfixed title keywords cause immediate appeal rejection.</text>
+  </g>
+
+  <!-- 5-Step Cards (y=232) -->
+  <g transform="translate(60, 232)">
+    <!-- Step 01 -->
+    <g transform="translate(0, 0)">
+      <rect width="204" height="300" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+      <rect x="16" y="18" width="60" height="24" rx="6" fill="#8B5E3C" fill-opacity="0.25"/>
+      <text x="46" y="34" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 01</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Audit &amp; Fix</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Violations First</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">• Strip keyword stuffing</text>
+      <text x="16" y="138" fill="#CFCFCF" font-size="11.5">• Hide home address on</text>
+      <text x="16" y="155" fill="#CFCFCF" font-size="11.5">  Service-Area (SAB) pins</text>
+      <text x="16" y="175" fill="#CFCFCF" font-size="11.5">• Fix fake 24/7 hours</text>
+      <rect x="16" y="232" width="172" height="50" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="252" fill="#D4A373" font-size="10" font-weight="700">CHECK:</text>
+      <text x="26" y="268" fill="#9CA3AF" font-size="10.5">Match real signage 1:1</text>
+    </g>
+
+    <!-- Step 02 -->
+    <g transform="translate(219, 0)">
+      <rect width="204" height="300" rx="10" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.4"/>
+      <rect x="16" y="18" width="60" height="24" rx="6" fill="#8B5E3C" fill-opacity="0.25"/>
+      <text x="46" y="34" fill="#E7D3B0" font-size="10.5" font-weight="700" text-anchor="middle">STEP 02</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Assemble India</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Evidence Folder</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">• GST Reg. Certificate</text>
+      <text x="16" y="138" fill="#CFCFCF" font-size="11.5">• Municipal Trade / Shop</text>
+      <text x="16" y="155" fill="#CFCFCF" font-size="11.5">  &amp; Establishment Act</text>
+      <text x="16" y="175" fill="#CFCFCF" font-size="11.5">• Utility Bill + Udyam</text>
+      <rect x="16" y="232" width="172" height="50" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="252" fill="#D4A373" font-size="10" font-weight="700">FORMAT:</text>
+      <text x="26" y="268" fill="#9CA3AF" font-size="10.5">Clean PDFs (&lt;19 MB ZIP)</text>
+    </g>
+
+    <!-- Step 03 -->
+    <g transform="translate(438, 0)">
+      <rect width="204" height="300" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="18" width="60" height="24" rx="6" fill="#262626"/>
+      <text x="46" y="34" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 03</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Beat the 60-Min</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Appeals Window</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">• Open GBP Appeals Tool</text>
+      <text x="16" y="138" fill="#CFCFCF" font-size="11.5">• Cite Profile ID &amp; exact</text>
+      <text x="16" y="155" fill="#CFCFCF" font-size="11.5">  corrections made</text>
+      <text x="16" y="175" fill="#CFCFCF" font-size="11.5">• Upload proofs at once</text>
+      <rect x="16" y="232" width="172" height="50" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="252" fill="#FCA5A5" font-size="10" font-weight="700">DEADLINE:</text>
+      <text x="26" y="268" fill="#9CA3AF" font-size="10.5">Submit in 1 sitting (&lt;60m)</text>
+    </g>
+
+    <!-- Step 04 -->
+    <g transform="translate(657, 0)">
+      <rect width="204" height="300" rx="10" fill="#1A1A1A" stroke="#2D2D2D" stroke-width="1.4"/>
+      <rect x="16" y="18" width="60" height="24" rx="6" fill="#262626"/>
+      <text x="46" y="34" fill="#D4A373" font-size="10.5" font-weight="700" text-anchor="middle">STEP 04</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">1-Take Live</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Video Verify</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">• 30 sec – 2 min live</text>
+      <text x="16" y="138" fill="#CFCFCF" font-size="11.5">  unedited mobile video</text>
+      <text x="16" y="158" fill="#CFCFCF" font-size="11.5">• Location + Signage +</text>
+      <text x="16" y="175" fill="#CFCFCF" font-size="11.5">  Unlocking door / POS</text>
+      <rect x="16" y="232" width="172" height="50" rx="6" fill="#141414" stroke="#2B2B2B"/>
+      <text x="26" y="252" fill="#D4A373" font-size="10" font-weight="700">PRIVACY:</text>
+      <text x="26" y="268" fill="#9CA3AF" font-size="10.5">No faces or bank details</text>
+    </g>
+
+    <!-- Step 05 -->
+    <g transform="translate(876, 0)">
+      <rect width="204" height="300" rx="10" fill="#1A1A1A" stroke="#7B8E77" stroke-width="1.6"/>
+      <rect x="16" y="18" width="60" height="24" rx="6" fill="#7B8E77" fill-opacity="0.25"/>
+      <text x="46" y="34" fill="#A3C49D" font-size="10.5" font-weight="700" text-anchor="middle">STEP 05</text>
+      <text x="16" y="68" fill="#F8F8F8" font-size="14.5" font-weight="700">Re-Review &amp;</text>
+      <text x="16" y="88" fill="#F8F8F8" font-size="14.5" font-weight="700">Post-Recovery</text>
+      <text x="16" y="118" fill="#CFCFCF" font-size="11.5">• If denied: Request</text>
+      <text x="16" y="135" fill="#CFCFCF" font-size="11.5">  Additional Review</text>
+      <text x="16" y="155" fill="#CFCFCF" font-size="11.5">• Avoid bulk core edits</text>
+      <text x="16" y="175" fill="#CFCFCF" font-size="11.5">• Monitor weekly edits</text>
+      <rect x="16" y="232" width="172" height="50" rx="6" fill="#182319" stroke="#7B8E77"/>
+      <text x="26" y="252" fill="#A3C49D" font-size="10" font-weight="700">OUTCOME:</text>
+      <text x="26" y="268" fill="#F8F8F8" font-size="10.5">Policy-Safe Live Listing</text>
+    </g>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="60" y="556" width="1080" height="66" rx="10" fill="#181818" stroke="#2B2B2B"/>
+  <text x="84" y="584" fill="#D4A373" font-size="11.5" font-weight="700">ZERO-HYPE POLICY NOTE:</text>
+  <text x="255" y="584" fill="#F8F8F8" font-size="11.5">Reinstatement decisions belong exclusively to Google—no agency has "inside access" to override Google policy.</text>
+  <text x="84" y="606" fill="#9CA3AF" font-size="10.5">Spot My Business (/services/google-business-profile-optimization) • Verified Against Official Google Business Profile Help Center Guidelines</text>
+</svg>
+`;
+
+// 14. Post 6 Visual 1: Video Verification 3-Pillar Shot List (Storefront vs. SAB)
+const gbpVideoVerificationSvg = `
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0B0B0B"/>
+  <rect x="20" y="20" width="1160" height="635" rx="16" fill="#141414" stroke="#242424" stroke-width="2"/>
+
+  <!-- Subtle Glows -->
+  <circle cx="300" cy="340" r="230" fill="#8B5E3C" fill-opacity="0.08"/>
+  <circle cx="900" cy="340" r="240" fill="#7B8E77" fill-opacity="0.09"/>
+
+  <!-- Header -->
+  <text x="60" y="62" fill="#D4A373" font-size="12" font-weight="700" letter-spacing="3">GOOGLE VIDEO VERIFICATION SHOT LIST • 30 SECONDS TO 2 MINUTES (ONE CONTINUOUS TAKE)</text>
+  <text x="60" y="96" fill="#F8F8F8" font-size="24.5" font-weight="700">Storefront vs. Service-Area Business (SAB): What Your Live Video Must Show</text>
+  <text x="60" y="122" fill="#CFCFCF" font-size="13.5">Recorded live inside Google Maps/Search with GPS enabled — never pre-recorded from phone gallery, never edited or paused</text>
+
+  <!-- Left Panel: Storefront Video Script -->
+  <g transform="translate(60, 150)">
+    <rect width="525" height="432" rx="12" fill="#1A1A1A" stroke="#8B5E3C" stroke-width="1.6"/>
+    <rect width="525" height="46" rx="12" fill="#231D16"/>
+    <text x="24" y="29" fill="#E7D3B0" font-size="12" font-weight="700">SCRIPT A: PHYSICAL STOREFRONT (CLINIC / COACHING / SHOP)</text>
+
+    <g transform="translate(22, 66)">
+      <rect width="481" height="92" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#D4A373" font-size="10.5" font-weight="700">0:00 – 0:25 • PILLAR 1: PROOF OF PHYSICAL LOCATION</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="12" font-weight="600">Start outside on the street facing the building</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">Film street/lane board, neighboring shopfronts, landmark,</text>
+      <text x="16" y="82" fill="#CFCFCF" font-size="11">and building number matching your GBP postal address.</text>
+    </g>
+
+    <g transform="translate(22, 172)">
+      <rect width="481" height="92" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#D4A373" font-size="10.5" font-weight="700">0:25 – 0:55 • PILLAR 2: PERMANENT SIGNAGE &amp; INTERIOR</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="12" font-weight="600">Pan smoothly onto permanent mounted board</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">Show fixed signboard (not paper printouts/flex banner),</text>
+      <text x="16" y="82" fill="#CFCFCF" font-size="11">reception desk, classrooms, consultation room, or stock.</text>
+    </g>
+
+    <g transform="translate(22, 278)">
+      <rect width="481" height="92" rx="8" fill="#141414" stroke="#7B8E77" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#A3C49D" font-size="10.5" font-weight="700">0:55 – 1:30 • PILLAR 3: PROOF OF MANAGEMENT</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="12" font-weight="600">Demonstrate staff-only operational access</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">Unlock main door/shutter with key, enter staff cabin, operate</text>
+      <text x="16" y="82" fill="#CFCFCF" font-size="11">POS/billing computer, and hold Trade License / GST frame.</text>
+    </g>
+
+    <rect x="22" y="384" width="481" height="34" rx="6" fill="#182319"/>
+    <text x="262" y="405" fill="#A3C49D" font-size="11" font-weight="700" text-anchor="middle">TARGET LENGTH: 60 – 90 SECONDS • ZERO CUTS OR PAUSES</text>
+  </g>
+
+  <!-- Right Panel: Service-Area Business (SAB) Script -->
+  <g transform="translate(615, 150)">
+    <rect width="525" height="432" rx="12" fill="#1A1A1A" stroke="#7B8E77" stroke-width="1.6"/>
+    <rect width="525" height="46" rx="12" fill="#182319"/>
+    <text x="24" y="29" fill="#A3C49D" font-size="12" font-weight="700">SCRIPT B: SERVICE-AREA BUSINESS (MOVERS / CATERER / HOME)</text>
+
+    <g transform="translate(22, 66)">
+      <rect width="481" height="92" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#A3C49D" font-size="10.5" font-weight="700">0:00 – 0:25 • PILLAR 1: OPERATIONAL BASE CONTEXT</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="12" font-weight="600">Confirm GPS locality without publishing home pin</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">Film nearby street sign or neighborhood marker confirming</text>
+      <text x="16" y="82" fill="#CFCFCF" font-size="11">your real base locality inside your declared service area.</text>
+    </g>
+
+    <g transform="translate(22, 172)">
+      <rect width="481" height="92" rx="8" fill="#141414" stroke="#2B2B2B"/>
+      <text x="16" y="24" fill="#A3C49D" font-size="10.5" font-weight="700">0:25 – 0:55 • PILLAR 2: TOOLS, FLEET &amp; BRANDED GEAR</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="12" font-weight="600">Show physical proof of active field operations</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">Film branded delivery/moving vehicle, uniforms, packing</text>
+      <text x="16" y="82" fill="#CFCFCF" font-size="11">materials, catering vessels, or specialized service tools.</text>
+    </g>
+
+    <g transform="translate(22, 278)">
+      <rect width="481" height="92" rx="8" fill="#141414" stroke="#8B5E3C" stroke-width="1.2"/>
+      <text x="16" y="24" fill="#D4A373" font-size="10.5" font-weight="700">0:55 – 1:30 • PILLAR 3: OWNERSHIP &amp; DOCUMENTS</text>
+      <text x="16" y="46" fill="#F8F8F8" font-size="12" font-weight="600">Prove legal management &amp; vehicle/office control</text>
+      <text x="16" y="66" fill="#CFCFCF" font-size="11">Unlock commercial vehicle or storage bay, show printed</text>
+      <text x="16" y="82" fill="#CFCFCF" font-size="11">invoice book, Udyam / GST certificate &amp; utility bill header.</text>
+    </g>
+
+    <rect x="22" y="384" width="481" height="34" rx="6" fill="#261919"/>
+    <text x="262" y="405" fill="#FCA5A5" font-size="11" font-weight="700" text-anchor="middle">AVOID: FILMING FACES, BANK ACCOUNT NUMBERS OR AADHAAR/PAN</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="618" fill="#9CA3AF" font-size="11" text-anchor="middle">Aligned with Google Business Profile Video Verification Guidelines • Spot My Business Local Visibility Team (Kolkata)</text>
+</svg>
+`;
+
 async function generate() {
   const file1 = path.join(outputDir, 'gbp-website-alignment-kolkata.webp');
   const file2 = path.join(outputDir, 'google-maps-call-growth-kolkata.webp');
@@ -1430,6 +1634,8 @@ async function generate() {
   const file10 = path.join(outputDir, 'generative-ai-local-ranking-weights-2026.webp');
   const file11 = path.join(outputDir, 'website-development-cost-india-2026.webp');
   const file12 = path.join(outputDir, 'shopify-gst-hidden-costs-india-2026.webp');
+  const file13 = path.join(outputDir, 'gbp-suspension-reinstatement-roadmap-india-2026.webp');
+  const file14 = path.join(outputDir, 'gbp-video-verification-3-pillars-india.webp');
 
   console.log('Rendering gbp-website-alignment-kolkata.webp...');
   await sharp(Buffer.from(gbpSvg))
@@ -1502,6 +1708,18 @@ async function generate() {
     .webp({ quality: 56, effort: 6 })
     .toFile(file12);
   console.log('Saved:', file12);
+
+  console.log('Rendering gbp-suspension-reinstatement-roadmap-india-2026.webp...');
+  await sharp(Buffer.from(gbpSuspensionRoadmapSvg))
+    .webp({ quality: 56, effort: 6 })
+    .toFile(file13);
+  console.log('Saved:', file13);
+
+  console.log('Rendering gbp-video-verification-3-pillars-india.webp...');
+  await sharp(Buffer.from(gbpVideoVerificationSvg))
+    .webp({ quality: 50, effort: 6 })
+    .toFile(file14);
+  console.log('Saved:', file14);
 }
 
 generate().catch(err => {

@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
 import type { BlogPost } from "@/lib/blog";
+import FixSuspendedGbpIndiaPost from "@/app/blog/posts/FixSuspendedGbpIndiaPost";
 import WebsiteDevelopmentPriceComparisonIndiaPost from "@/app/blog/posts/WebsiteDevelopmentPriceComparisonIndiaPost";
 import AiSearchOptimizationGeoVsAeoVsSeoPost from "@/app/blog/posts/AiSearchOptimizationGeoVsAeoVsSeoPost";
 import LocalSeoStrategyIndiaPost from "@/app/blog/posts/LocalSeoStrategyIndiaPost";
@@ -8,6 +9,7 @@ import GbpOptimizationChecklistPost from "@/app/blog/posts/GbpOptimizationCheckl
 import KolkataGbpNoCallsPost from "@/app/blog/posts/KolkataGbpNoCallsPost";
 
 export const blogPostRegistry: Record<string, ComponentType<{ post: BlogPost }>> = {
+  "fix-suspended-google-business-profile-india": FixSuspendedGbpIndiaPost,
   "website-development-price-comparison-india":
     WebsiteDevelopmentPriceComparisonIndiaPost,
   "ai-search-optimization-geo-vs-aeo-vs-seo":

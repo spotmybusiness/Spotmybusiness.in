@@ -28,6 +28,51 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fix-suspended-google-business-profile-india",
+    title:
+      "How to Fix a Suspended Google Business Profile in India: Video Verification & Reinstatement Checklist",
+    metaTitle: "Fix a Suspended Google Business Profile in India [2026]",
+    metaDescription:
+      "Suspended Google Business Profile in India? Follow our 2026 reinstatement checklist covering GST/Udyam proof, the 60-minute appeal window & video verification.",
+    category: "Google Business Profile",
+    targetPillar: "Google Business Profile Optimization",
+    targetServiceUrl: "/services/google-business-profile-optimization",
+    publishDate: "2026-11-25",
+    modifiedDate: "2026-11-25",
+    readTime: "13 min read",
+    status: "published",
+    keywords: [
+      "suspended google business profile india",
+      "gbp video verification checklist",
+      "google business profile reinstatement india",
+      "gbp 60 minute appeal window",
+      "gst certificate gbp appeal",
+    ],
+    relatedSlugs: [
+      "google-business-profile-optimization-checklist",
+      "google-maps-seo-service-area-businesses",
+      "why-your-google-business-profile-isnt-getting-calls-in-kolkata",
+    ],
+    author: {
+      name: "Swapnonil Nath",
+      role: "Co-Founder & Local Visibility Lead",
+      qualification: "IIT Kharagpur",
+      linkedin: "https://www.linkedin.com/in/swapnonil-nath-gmb-expert/",
+    },
+    excerpt:
+      "Suspended Google Business Profile stopping local phone inquiries? Follow our policy-aligned 2026 Indian reinstatement playbook covering common suspension triggers, exact GST/Trade License/utility proofs, Google's 60-minute appeal window, and a 3-pillar live video verification shot list.",
+    heroImage: "/images/blog/gbp-suspension-reinstatement-roadmap-india-2026.webp",
+    heroImageAlt:
+      "5-Step Suspended Google Business Profile Reinstatement Roadmap for Indian Businesses in 2026",
+    secondaryImages: ["/images/blog/gbp-video-verification-3-pillars-india.webp"],
+    featured: true,
+    keyHighlights: [
+      "7 top GBP suspension triggers in India & pre-appeal guideline fixes",
+      "Indian evidence matrix: GST, Trade License, Udyam & utility bill 1:1 NAP rules",
+      "Storefront vs. Service-Area Business (SAB) 1-take live video verification script",
+    ],
+  },
+  {
     slug: "website-development-price-comparison-india",
     title:
       "Website Development Price Comparison in India: Freelancer vs Agency vs DIY Website Builders (2026 Guide)",

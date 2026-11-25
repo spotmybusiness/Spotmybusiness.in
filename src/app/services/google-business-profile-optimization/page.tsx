@@ -370,8 +370,14 @@ export default function GoogleBusinessProfileOptimizationPage() {
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link
-                href="/blog/google-business-profile-optimization-checklist"
+                href="/blog/fix-suspended-google-business-profile-india"
                 className="rounded-full border border-bronze/50 bg-primary-bg px-5 py-2 text-xs md:text-sm font-semibold text-light-bronze hover:border-bronze"
+              >
+                Fix a Suspended Google Business Profile in India [2026] →
+              </Link>
+              <Link
+                href="/blog/google-business-profile-optimization-checklist"
+                className="rounded-full border border-border-color bg-primary-bg px-5 py-2 text-xs md:text-sm text-gray-text hover:text-light-bronze"
               >
                 Google Business Profile Optimization Checklist (9 Steps) →
               </Link>
